@@ -1,0 +1,224 @@
+@font-face {
+	src: url('/VCGosh-Bold.woff2') format('woff2');
+	font-family: 'Gosh';
+}
+
+@font-face {
+	font-style: monospace;
+	font-weight: normal;
+	src: url('/ManifoldCF-Regular.woff2') format('woff2');
+	font-family: 'ManifoldCF';
+}
+
+@font-face {
+	font-style: normal;
+	font-weight: medium;
+	src: url('/ManifoldCF-Medium.woff2') format('woff2');
+	font-family: 'ManifoldCF';
+}
+@font-face {
+	font-style: italic;
+	font-weight: medium;
+	src: url('/ManifoldCF-MediumOblique.woff2') format('woff2');
+	font-family: 'ManifoldCF';
+}
+
+@font-face {
+	font-style: normal;
+	font-weight: bold;
+	src: url('/ManifoldCF-Bold.woff2') format('woff2');
+	font-family: 'ManifoldCF';
+}
+@font-face {
+	font-style: italic;
+	font-weight: bold;
+	src: url('/ManifoldCF-BoldOblique.woff2') format('woff2');
+	font-family: 'ManifoldCF';
+}
+
+@font-face {
+	font-style: normal;
+	font-weight: 800;
+	src: url('/ManifoldCF-ExtraBold.woff2') format('woff2');
+	font-family: 'ManifoldCF';
+}
+@font-face {
+	font-style: italic;
+	font-weight: 800;
+	src: url('/ManifoldCF-ExtraBoldOblique.woff2') format('woff2');
+	font-family: 'ManifoldCF';
+}
+
+@font-face {
+	font-style: normal;
+	font-weight: normal;
+	src: url('/GimletDisplayNarrow-Regular.woff2') format('woff2');
+	font-family: 'Gimlet Display Narrow';
+}
+@font-face {
+	font-style: italic;
+	font-weight: normal;
+	src: url('/GimletDisplayNarrow-Italic.woff2') format('woff2');
+	font-family: 'Gimlet Display Narrow';
+}
+
+@font-face {
+	font-style: normal;
+	font-weight: bold;
+	src: url('/GimletDisplayNarrow-Bold.woff2') format('woff2');
+	font-family: 'Gimlet Display Narrow';
+}
+@font-face {
+	font-style: italic;
+	font-weight: bold;
+	src: url('/GimletDisplayNarrow-BoldItalic.woff2') format('woff2');
+	font-family: 'Gimlet Display Narrow';
+}
+
+@font-face {
+	font-style: normal;
+	font-weight: normal;
+	src: url('/GimletText-Regular.woff2') format('woff2');
+	font-family: 'Gimlet Text';
+}
+@font-face {
+	font-style: italic;
+	font-weight: normal;
+	src: url('/GimletText-Italic.woff2') format('woff2');
+	font-family: 'Gimlet Text';
+}
+
+@font-face {
+	font-style: normal;
+	font-weight: bold;
+	src: url('/GimletText-Bold.woff2') format('woff2');
+	font-family: 'Gimlet Text';
+}
+@font-face {
+	font-style: italic;
+	font-weight: bold;
+	src: url('/GimletText-BoldItalic.woff2') format('woff2');
+	font-family: 'Gimlet Text';
+}
+
+:root {
+	overscroll-behavior: none;
+	--gap: clamp(1rem, 6vw, 3rem);
+	--padding: 1vmax;
+	--border-radius: 0.3vmax;
+
+	--font-title: 'Gosh', system-ui, sans-serif;
+	--font-sans: 'ManifoldCF', system-ui, sans-serif;
+	--font-body: 'Gimlet Text', serif;
+	--font-hed: 'Gimlet Display Narrow', serif;
+	/** https://jameshfisher.com/2024/03/12/a-formula-for-responsive-font-size/ */
+	font-size: calc(1rem + 0.25vw);
+
+	--hue-warm: 140deg;
+	--hue-cool: 180deg;
+
+	/** https://evilmartians.com/chronicles/better-dynamic-themes-in-tailwind-with-oklch-color-magic */
+
+	--color-warm-50: oklch(97.78% 0.0108 var(--hue-warm));
+	--color-warm-100: oklch(93.56% 0.0321 var(--hue-warm));
+	--color-warm-200: oklch(88.11% 0.0609 var(--hue-warm));
+	--color-warm-300: oklch(82.67% 0.0908 var(--hue-warm));
+	--color-warm-400: oklch(74.22% 0.1398 var(--hue-warm));
+	--color-warm-500: oklch(64.78% 0.1472 var(--hue-warm));
+	--color-warm-600: oklch(57.33% 0.1299 var(--hue-warm));
+	--color-warm-700: oklch(46.89% 0.1067 var(--hue-warm));
+	--color-warm-800: oklch(39.44% 0.0898 var(--hue-warm));
+	--color-warm-900: oklch(32% 0.0726 var(--hue-warm));
+	--color-warm-950: oklch(23.78% 0.054 var(--hue-warm));
+
+	--color-cool-50: oklch(97.78% 0.0108 var(--hue-cool));
+	--color-cool-100: oklch(93.56% 0.0321 var(--hue-cool));
+	--color-cool-200: oklch(88.11% 0.0609 var(--hue-cool));
+	--color-cool-300: oklch(82.67% 0.0908 var(--hue-cool));
+	--color-cool-400: oklch(74.22% 0.1398 var(--hue-cool));
+	--color-cool-500: oklch(64.78% 0.1472 var(--hue-cool));
+	--color-cool-600: oklch(57.33% 0.1299 var(--hue-cool));
+	--color-cool-700: oklch(46.89% 0.1067 var(--hue-cool));
+	--color-cool-800: oklch(39.44% 0.0898 var(--hue-cool));
+	--color-cool-900: oklch(32% 0.0726 var(--hue-cool));
+	--color-cool-950: oklch(23.78% 0.054 var(--hue-cool));
+
+	--color-links: var(--color-warm-500);
+	--color-links-hover: var(--color-warm-600);
+}
+
+html {
+	scrollbar-color: var(--color-links) var(--color-cool-700);
+	accent-color: var(--color-links);
+}
+
+::-webkit-scrollbar {
+	background: var(--color-cool-700);
+}
+::-webkit-scrollbar-thumb {
+	border: 3px solid var(--color-cool-700);
+	border-radius: 3rem;
+	background: var(--color-links);
+}
+
+body {
+	display: grid;
+	grid-template-rows: [header-start] min-content [header-end content-start] 1fr [content-end footer-start] min-content [footer-end];
+	grid-template-columns: [fullwidth-start] 1fr [content-start] min(50ch, 100% - var(--gap) * 2) [content-end] 1fr [fullwidth-end];
+	margin: 0;
+	background-color: var(--color-warm-300);
+	padding: 0;
+	width: 100%;
+	min-height: 100dvh;
+	font-family: system-ui, sans-serif;
+}
+
+main {
+	display: grid;
+	grid-template-columns: subgrid;
+	grid-row: content;
+	grid-column: fullwidth;
+	background-color: var(--color-cool-100);
+	background: linear-gradient(180deg, var(--color-cool-50) 0%, var(--color-cool-100) 100%);
+}
+
+a {
+	color: var(--color-links);
+	font-weight: bold;
+	text-decoration: none;
+	&:hover {
+		color: var(--color-links-hover);
+		text-decoration: underline;
+	}
+}
+
+button {
+	cursor: pointer;
+	margin: 0 auto;
+	border: 0;
+	border-radius: var(--border-radius);
+	background-color: var(--color-links);
+	padding: var(--padding) calc(var(--padding) * 2);
+	color: white;
+	font-weight: 700;
+	font-size: large;
+	font-family: var(--font-sans);
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+button:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+button:not(:disabled):hover {
+	background-color: var(--color-links-hover);
+}
+
+.sr-only:not(:focus):not(:active):not(:focus-within) {
+	position: absolute;
+	clip-path: inset(50%);
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	white-space: nowrap;
+}
