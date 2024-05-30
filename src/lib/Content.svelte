@@ -49,8 +49,7 @@
 			grid-column: fullwidth;
 			box-sizing: border-box;
 			margin: calc(var(--padding) * 2) auto 0 auto;
-			width: fit-content;
-			max-width: 100%;
+			max-width: fit-content;
 			font-size: smaller;
 		}
 	}
