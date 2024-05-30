@@ -43,13 +43,13 @@
 			padding: calc(var(--padding) / 6) calc(var(--padding) / 3);
 			word-wrap: break-word;
 			color: var(--color-cool-700);
-			font-size: larger;
 		}
 		& > code,
 		& > pre[class*='language-'] {
 			grid-column: fullwidth;
 			box-sizing: border-box;
 			margin: calc(var(--padding) * 2) auto 0 auto;
+			width: fit-content;
 			max-width: 100%;
 			font-size: smaller;
 		}
