@@ -2,6 +2,7 @@
 title: Some longer article title about something really interesting
 description: Lorem ipsum
 date: '2023-12-14'
+type: 'article'
 published: true
 ---
 

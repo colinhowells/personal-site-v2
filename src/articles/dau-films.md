@@ -1,8 +1,9 @@
 ---
-title: DAU
+title: DAU Films
 description: DAU films
 date: '2021-10-24'
-published: false
+type: 'review'
+published: true
 ---
 
 Hmmmm

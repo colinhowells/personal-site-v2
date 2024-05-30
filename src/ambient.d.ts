@@ -15,4 +15,5 @@ type Article = {
 	published: boolean;
 	slug: string;
 	title: string;
+	type: 'review' | 'article' | 'list';
 };
