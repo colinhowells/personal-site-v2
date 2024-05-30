@@ -1,9 +1,141 @@
 ---
-title: Reading 2024
-description: Books read in 2024
+title: Watching 2024
+description: Films seen in 2024
 date: '2021-10-24'
 type: 'list'
 published: true
 ---
 
-Hmmmm
+- Tons of YouTube lectures and documentaries
+- Shadows of Forgotten Ancestors (Sergei Parajanov, 1965)
+- Ikarie XB 1 (Jindřich Polák, 1963)
+- For All Mankind season 4
+- The Last Wave (Peter Weir, 1977)
+- The Proposition (John Hillcoat, 2005)
+- Fargo (Noah Hawley, 2024) season 5
+- True History of the Kelly Gang (Justin Kurzel, 2019)
+- The Underground Railroad (Barry Jenkins, 2021) rewatch
+- The Wild Bunch (Sam Peckinpah, 1969) rewatch
+- True Grit (Joel and Ethan Coen, 2010) rewatch
+- The Name of the Rose (Jean-Jacques Annaud, 1986)
+- Johnny Guitar (Nicholas Ray, 1956)
+- Effi Briest (Rainer Werner Fassbinder, 1974)
+- Pat Garrett and Billy the Kid (Sam Peckinpah, 1973)
+- Dark Star (John Carpenter, 1974)
+- Design for Living (Ernst Lubitsch, 1933)
+- The American Friend (Wim Wenders, 1977)
+- She Done Him Wrong (Lowell Sherman, 1933)
+- Letter Never Sent (Mikhail Kalatozov, 1959)
+- True Detective (Issa López, 2024) season 4
+- Zatoichi the Fugitive (Tokuzo Tanaka, 1963)
+- Memories of Murder (Bong Joon-ho, 2003) rewatch
+- Napoleon (Ridley Scott, 2023)
+- Margaret (Kenneth Lonergan, 2011)
+- Captain Conan (Bertrand Tavernier, 1996)
+- Extraction 2 (Sam Hargrave, 2023)
+- Heaven's Gate (Michael Cimino, 1980)
+- The Deer Hunter (Michael Cimino, 1978) rewatch
+- Ripley's Game (Liliana Cavani, 2002)
+- Year of the Dragon (Michael Cimino, 1985) rewatch
+- Let Joy Reign Supreme (Bertrand Tavernier, 1975)
+- Marketa Lazarová (František Vláčil, 1967)
+- The Passion of Joan of Arc (Carl Theodor Dreyer, 1928)
+- The Trial of Joan of Arc (Robert Bresson, 1962)
+- Sorcerer (William Friedkin, 1977) rewatch
+- Beau Is Afraid (Ari Aster, 2023)
+- Hereditary (Ari Aster, 2018) rewatch
+- Midsommar (Ari Aster, 2019) rewatch
+- The Curse (Nathan Fielder, 2023)
+- The Adventures of Baron Munchausen (Terry Gilliam, 1988) rewatch
+- Ferrari (Michael Mann, 2023)
+- The Big Risk (Claude Sautet, 1960)
+- Afire (Christian Petzold, 2023)
+- Elevator to the Gallows (Louis Malle, 1958)
+- The Life of Jesus (Bruno Dumont, 1997)
+- Miller's Crossing (Joel and Ethan Coen, 1990) rewatch
+- A History of Violence (David Cronenberg, 2005) rewatch
+- Martha (Rainer Werner Fassbinder, 1974)
+- The Judge and the Assassin (Bertrand Tavernier, 1976)
+- Mad Max (George Miller, 1979)
+- Max Max 2: The Road Warrior (George Miller, 1981)
+- Mad Max 3: Beyond Thunderdome (George Miller, 1985)
+- An Officer and a Spy (Roman Polanski, 2019)
+- Eternal Sunshine of The Spotless Mind (Michel Gondry, 2004) rewatch
+- The Ghost Writer (Roman Polanski, 2010)
+- Little Murders (Alan Arkin, 1971)
+- The Iron Claw (Sean Durkin, 2023)
+- The Clockmaker of St. Paul (Bertrand Tavernier, 1974)
+- Viridiana (Luis Buñuel, 1961)
+- Simon of the Desert (Luis Buñuel, 1965)
+- The Exterminating Angel (Luis Buñuel, 1962)
+- The Zone of Interest (Jonathan Glazer, 2023)
+- To Live and Die in LA (William Friedkin, 1985) rewatch
+- Jodhaa Akbar (Ashutosh Gowariker, 2008)
+- Little Odessa (James Gray, 1994)
+- The Yards (James Gray, 2000)
+- We Own the Night (James Gray, 2007)
+- Good Time (Josh and Benny Safdie, 2017)
+- Poor Things (Yorgos Lanthimos, 2023)
+- Save the Green Planet! (Jang Joon-hwan, 2003) rewatch
+- Black Narcissus (Michael Powell and Emeric Pressburger, 1947)
+- A Royal Affair (Nikolaj Arcel, 2012)
+- Anatomy of a Fall (Justine Triet, 2023)
+- The Hourglass Sanatorium (Wojciech Jerzy Has, 1973)
+- Songs from the Second Floor (Roy Andersson, 2000)
+- You, the Living (Roy Andersson, 2007)
+- A Pigeon Sat on a Branch Reflecting on Existence (Roy Andersson, 2014)
+- Dune: Part One (Denis Villeneuve, 2020) rewatch
+- Dune: Part Two (Denis Villeneuve, 2024)
+- American Fiction (Cord Jefferson, 2023)
+- The Wild Geese (Andrew V. McLaglen, 1978)
+- The Inn (Jerzy Kawalerowicz, 1983)
+- 3 Body Problem (David Benioff, D. B. Weiss, and Alexander Woo, 2024) season 1
+- Manhunt (Monica Beletsky, 2024) series
+- Chapaev (Georgi and Sergei Vasilyev, 1934)
+- The Saragossa Manuscript (Wojciech Jerzy Has, 1965)
+- A Foreign Affair (Billy Wilder, 1948)
+- American Conspiracy: The Octopus Murders (Zachary Treitz, 2024) series
+- Uncle Vanya (Ross MacGibbon & Ian Rickson, 2020)
+- An Enemy of the People (Gareth Davies, 1980)
+- Ghosts (Elijah Moshinsky, 1987)
+- A Doll's House (Joseph Losey, 1973)
+- Nora Helmer (Rainer Werner Fassbinder, 1974)
+- The Wild Duck (Henri Safran, 1984)
+- Sugar (Fernando Meirelles, 2024) series
+- Franklin (Kirk Ellis & Howard Korder, 2024) series
+- A Master Builder (Jonathan Demme, 2014)
+- Hedda Gabler (Waris Hussein, 1972)
+- Little Eyolf (Michael Darlow, 1982)
+- Salome’s Last Dance (Ken Russell, 1988) rewatch
+- Fallout (Jonathan Nolan et al, 2024) season 1
+- The Delinquents (Rodrigo Moreno, 2023)
+- The Sympathizer (Park Chan-wook et al, 2024) series
+- Ripley (Steven Zaillian, 2024) series
+- Le Amiche (Michelangelo Antonioni, 1955)
+- La Prisonnière (Henri-Georges Clouzot, 1968)
+- Beforeigners (Anne Bjørnstad & Eilif Skodvin, 2024) seasons 1 and 2
+- Shōgun (Rachel Kondo & Justin Marks, 2024) series
+- Godzilla Minus One (Takashi Yamazaki, 2023)
+- Humane (Caitlin Cronenberg, 2024)
+- After the Party (Robyn Malcolm & Dianne Taylor, 2023) series
+- Possessor (Brandon Cronenberg, 2020)
+- Infinity Pool (Brandon Cronenberg, 2023)
+- The Last of Sheila (Herbert Ross, 1973)
+- Werckmeister Harmonies (Béla Tarr & Ágnes Hranitzky, 2000)
+- The Verdict (Sidney Lumet, 1982)
+- A Sunday in the Country (Bertrand Tavernier, 1984)
+- People on Sunday (Robert Siodmak & Edgar G. Ulmer, 1930)
+- La Chimera (Alice Rohrwacher, 2023)
+- Odd Man Out (Carol Reed, 1947)
+- Life and Nothing But (Bertrand Tavernier, 1989)
+- Red River (Howard Hawks, 1948) rewatch
+- New Life (John Rosman, 2023)
+- Civil War (Alex Garland, 2024)
+- The Battle of Chile (Patricio Guzmán, 1975–79)
+- Colonia (Florian Gallenberger, 2015)
+- No (Pablo Larrain, 2012)
+- The Conformist (Bernardo Bertolucci, 1970) rewatch
+- The Garden of the Finzi-Continis (Vittorio De Sica, 1970) rewatch
+- Love and Anarchy (Lina Wertmüller, 1973)
+- Seven Beauties (Lina Wertmüller, 1976)
+- A Special Day (Ettore Scola, 1977)
