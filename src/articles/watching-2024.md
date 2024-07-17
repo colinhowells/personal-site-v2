@@ -1,7 +1,7 @@
 ---
 title: Watching 2024
 description: Films seen in 2024
-date: '2021-10-24'
+date: '2024-07-17'
 type: 'list'
 published: true
 ---
@@ -139,3 +139,26 @@ published: true
 - Love and Anarchy (Lina Wertmüller, 1973)
 - Seven Beauties (Lina Wertmüller, 1976)
 - A Special Day (Ettore Scola, 1977)
+- The Cremator (Juraj Herz, 1969)
+- The Damned (Luchino Visconti, 1969)
+- The Night Porter (Liliana Cavani, 1974)
+- Ilsa, She Wolf of the SS (Don Edmunds, 1975)
+- Salon Kitty (Tinto Brass, 1976)
+- Babi Yar. Context (Sergei Loznitsa, 2021)
+- The Battle of Moscow (Yuri Ozerov, 1985)
+- Overlord (Stuart Cooper, 1975)
+- Saving Private Ryan (Steven Spielberg, 1998) rewatch
+- Band of Brothers (Tom Hanks & Steven Spielberg, 2001) series, rewatch
+- The Tin Drum (Volker Schlöndorff, 1979)
+- Enemy at the Gates (Jean-Jacques Annaud, 2001)
+- Seventeen Moments of Spring (Tatyana Lioznova, 1973) series
+- Furiosa: a Mad Max Saga (George Miller, 2024)
+- The Boys (2019–2024) seasons 1–4
+- In a Violent Nature (2024)
+- Walker (Alex Cox, 1987)
+- From Here to Eternity (Fred Zinnemann, 1953)
+- Beau Travail (Claire Denis, 1999)
+- Cold In July (Jim Mickle, 2014)
+- Coup de Torchon (Bertrand Tavernier, 1981)
+- Targets (Peter Bogdanovich, 1968)
+- Point Blank (John Boorman, 1968)

@@ -1,7 +1,7 @@
 ---
 title: Reading 2024
 description: Books read in 2024
-date: '2021-10-24'
+date: '2024-07-17'
 type: 'list'
 published: true
 ---
@@ -16,3 +16,5 @@ published: true
 - All Souls’ Rising (Madison Smartt Bell, 1995)
 - Master of the Crossroads (Madison Smartt Bell, 2000)
 - The Stone That the Builder Refused (Madison Smartt Bell, 2004)
+- Aid State: Elite Panic, Disaster Capitalism, and the Battle to Control Haiti (Jake Johnston, 2024)
+- Gustav Mahler (Jens Malte Fischer, 2003)

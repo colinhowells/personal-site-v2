@@ -1,103 +1,103 @@
 @font-face {
-	src: url('/VCGosh-Bold.woff2') format('woff2');
+	src: url('/fonts/VCGosh-Bold.woff2') format('woff2');
 	font-family: 'Gosh';
 }
 
 @font-face {
 	font-style: monospace;
 	font-weight: normal;
-	src: url('/ManifoldCF-Regular.woff2') format('woff2');
+	src: url('/fonts/ManifoldCF-Regular.woff2') format('woff2');
 	font-family: 'ManifoldCF';
 }
 
 @font-face {
 	font-style: normal;
 	font-weight: medium;
-	src: url('/ManifoldCF-Medium.woff2') format('woff2');
+	src: url('/fonts/ManifoldCF-Medium.woff2') format('woff2');
 	font-family: 'ManifoldCF';
 }
 @font-face {
 	font-style: italic;
 	font-weight: medium;
-	src: url('/ManifoldCF-MediumOblique.woff2') format('woff2');
+	src: url('/fonts/ManifoldCF-MediumOblique.woff2') format('woff2');
 	font-family: 'ManifoldCF';
 }
 
 @font-face {
 	font-style: normal;
 	font-weight: bold;
-	src: url('/ManifoldCF-Bold.woff2') format('woff2');
+	src: url('/fonts/ManifoldCF-Bold.woff2') format('woff2');
 	font-family: 'ManifoldCF';
 }
 @font-face {
 	font-style: italic;
 	font-weight: bold;
-	src: url('/ManifoldCF-BoldOblique.woff2') format('woff2');
+	src: url('/fonts/ManifoldCF-BoldOblique.woff2') format('woff2');
 	font-family: 'ManifoldCF';
 }
 
 @font-face {
 	font-style: normal;
 	font-weight: 800;
-	src: url('/ManifoldCF-ExtraBold.woff2') format('woff2');
+	src: url('/fonts/ManifoldCF-ExtraBold.woff2') format('woff2');
 	font-family: 'ManifoldCF';
 }
 @font-face {
 	font-style: italic;
 	font-weight: 800;
-	src: url('/ManifoldCF-ExtraBoldOblique.woff2') format('woff2');
+	src: url('/fonts/ManifoldCF-ExtraBoldOblique.woff2') format('woff2');
 	font-family: 'ManifoldCF';
 }
 
 @font-face {
 	font-style: normal;
 	font-weight: normal;
-	src: url('/GimletDisplayNarrow-Regular.woff2') format('woff2');
+	src: url('/fonts/GimletDisplayNarrow-Regular.woff2') format('woff2');
 	font-family: 'Gimlet Display Narrow';
 }
 @font-face {
 	font-style: italic;
 	font-weight: normal;
-	src: url('/GimletDisplayNarrow-Italic.woff2') format('woff2');
+	src: url('/fonts/GimletDisplayNarrow-Italic.woff2') format('woff2');
 	font-family: 'Gimlet Display Narrow';
 }
 
 @font-face {
 	font-style: normal;
 	font-weight: bold;
-	src: url('/GimletDisplayNarrow-Bold.woff2') format('woff2');
+	src: url('/fonts/GimletDisplayNarrow-Bold.woff2') format('woff2');
 	font-family: 'Gimlet Display Narrow';
 }
 @font-face {
 	font-style: italic;
 	font-weight: bold;
-	src: url('/GimletDisplayNarrow-BoldItalic.woff2') format('woff2');
+	src: url('/fonts/GimletDisplayNarrow-BoldItalic.woff2') format('woff2');
 	font-family: 'Gimlet Display Narrow';
 }
 
 @font-face {
 	font-style: normal;
 	font-weight: normal;
-	src: url('/GimletText-Regular.woff2') format('woff2');
+	src: url('/fonts/GimletText-Regular.woff2') format('woff2');
 	font-family: 'Gimlet Text';
 }
 @font-face {
 	font-style: italic;
 	font-weight: normal;
-	src: url('/GimletText-Italic.woff2') format('woff2');
+	src: url('/fonts/GimletText-Italic.woff2') format('woff2');
 	font-family: 'Gimlet Text';
 }
 
 @font-face {
 	font-style: normal;
 	font-weight: bold;
-	src: url('/GimletText-Bold.woff2') format('woff2');
+	src: url('/fonts/GimletText-Bold.woff2') format('woff2');
 	font-family: 'Gimlet Text';
 }
 @font-face {
 	font-style: italic;
 	font-weight: bold;
-	src: url('/GimletText-BoldItalic.woff2') format('woff2');
+	src: url('/fonts/GimletText-BoldItalic.woff2') format('woff2');
 	font-family: 'Gimlet Text';
 }
 

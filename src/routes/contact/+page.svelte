@@ -2,7 +2,11 @@
 	import type { ActionData } from './$types';
 	import { enhance } from '$app/forms';
 
-	export let form: ActionData & { name: string; email: string; message: string };
+	export let form: ActionData & {
+		name: string;
+		email: string;
+		message: string;
+	};
 
 	let { name, email, error, message } = form ?? {};
 	$: ({ name, email, error, message } = form ?? {
@@ -11,6 +15,8 @@
 		error: { field: '', message: '' },
 		message: ''
 	});
+	$: error_field = error && error['field'];
+	$: error_message = error && error['message'];
 </script>
 
 <form method="POST" use:enhance>
@@ -23,12 +29,12 @@
 			id="name"
 			required
 			autocomplete="name"
-			aria-invalid={error?.field === 'name'}
-			aria-describedby={error?.field === 'name' ? 'name-error' : undefined}
+			aria-invalid={error_field === 'name'}
+			aria-describedby={error_field === 'name' ? 'name-error' : undefined}
 		/>
 	</label>
-	{#if error?.field === 'name'}
-		<small id="name-error" aria-live="polite">{error?.message}</small>
+	{#if error_field === 'name'}
+		<small id="name-error" aria-live="polite">{error_message}</small>
 	{/if}
 
 	<label for="email">
@@ -40,12 +46,12 @@
 			id="email"
 			required
 			autocomplete="email"
-			aria-invalid={error?.field === 'email'}
-			aria-describedby={error?.field === 'email' ? 'email-error' : undefined}
+			aria-invalid={error_field === 'email'}
+			aria-describedby={error_field === 'email' ? 'email-error' : undefined}
 		/>
 	</label>
-	{#if error?.field === 'email'}
-		<small id="email-error" aria-live="polite">{error?.message}</small>
+	{#if error_field === 'email'}
+		<small id="email-error" aria-live="polite">{error_message}</small>
 	{/if}
 
 	<label for="message">
@@ -56,17 +62,16 @@
 			cols="30"
 			rows="10"
 			required
-			aria-invalid={error?.field === 'message'}
-			aria-describedby={error?.field === 'message' ? 'message-error' : undefined}
-			>{message}</textarea
+			aria-invalid={error_field === 'message'}
+			aria-describedby={error_field === 'message' ? 'message-error' : undefined}>{message}</textarea
 		>
 	</label>
-	{#if error?.field === 'message'}
-		<small id="message-error" aria-live="polite">{error?.message}</small>
+	{#if error_field === 'message'}
+		<small id="message-error" aria-live="polite">{error_message}</small>
 	{/if}
 
-	{#if error?.field === 'submit'}
-		<small id="submit-error" aria-live="polite">{error?.message}</small>
+	{#if error_field === 'submit'}
+		<small id="submit-error" aria-live="polite">{error_message}</small>
 	{/if}
 
 	{#if form?.success}

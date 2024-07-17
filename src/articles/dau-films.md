@@ -18,3 +18,5 @@ https://www.izbaarts.com/dau-film-review-2/
 
 w Max Lawton:
 https://www.youtube.com/watch?v=0pHPDeBesv0
+
+![alt text](images/comparison.jpg 'Title')

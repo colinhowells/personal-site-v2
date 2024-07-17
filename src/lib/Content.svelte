@@ -1,3 +1,8 @@
+<script lang="ts" context="module">
+	import img from '$lib/img.svelte';
+	export { img };
+</script>
+
 <article>
 	<slot />
 </article>
@@ -51,6 +56,11 @@
 			margin: calc(var(--padding) * 2) auto 0 auto;
 			max-width: fit-content;
 			font-size: smaller;
+		}
+		& img {
+			width: var(--size);
+			max-width: 100%;
+			height: auto;
 		}
 	}
 </style>

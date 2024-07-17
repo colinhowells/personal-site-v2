@@ -5,7 +5,10 @@ import { mdsvex } from 'mdsvex';
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
 	extensions: ['.md'],
-	smartypants: true
+	smartypants: true,
+	layout: {
+		_: 'src/lib/Content.svelte'
+	}
 };
 
 /** @type {import('@sveltejs/kit').Config} */

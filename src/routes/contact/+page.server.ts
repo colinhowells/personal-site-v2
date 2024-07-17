@@ -40,9 +40,9 @@ export const actions = {
 				records: [
 					{
 						fields: {
-							name,
-							email,
-							message
+							Name: name, // Airtable fieldnames are case-sensitive
+							Email: email,
+							Message: message
 						}
 					}
 				]
@@ -55,6 +55,6 @@ export const actions = {
 			});
 		}
 
-		return { success: true };
+		return { success: true, name, email, message };
 	}
 } satisfies Actions;
