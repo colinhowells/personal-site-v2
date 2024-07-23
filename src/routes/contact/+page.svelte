@@ -19,7 +19,7 @@
 	$: error_message = error && error['message'];
 </script>
 
-<form method="POST" use:enhance>
+<form method="POST" aria-label="Contact form" use:enhance>
 	<label for="name">
 		Name
 		<input
