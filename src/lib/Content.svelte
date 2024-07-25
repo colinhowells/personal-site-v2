@@ -1,8 +1,3 @@
-<script lang="ts" context="module">
-	import img from '$lib/img.svelte';
-	export { img };
-</script>
-
 <article>
 	<slot />
 </article>
@@ -61,6 +56,18 @@
 			width: var(--size);
 			max-width: 100%;
 			height: auto;
+		}
+		& figure {
+			margin: 0;
+		}
+		& figcaption {
+			color: var(--color-cool-500);
+			font-weight: bold;
+			font-size: small;
+			font-family: var(--font-sans);
+			letter-spacing: 1px;
+			text-align: right;
+			text-transform: uppercase;
 		}
 	}
 </style>

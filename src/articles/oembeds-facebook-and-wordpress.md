@@ -3,7 +3,7 @@ title: oEmbeds, Facebook, and WordPress
 description: How to get Facebook to let you cache oEmbeds from Instagram or Facebook on your WordPress site
 date: '2021-10-24'
 type: 'article'
-published: true
+published: false
 ---
 
 We want to take some url on somebody else's service and embed it on our page. We could create an iframe ourselves, but then we're fiddling with a sometimes very large chunk of html stuck in our page and we're maintaining that forever. What if the embed needs to change somehow in future (becoming fluid and not fixed-width, maybe)? Also we're asking for that embed every time our page loads, that's a lot of requests our page has to make.

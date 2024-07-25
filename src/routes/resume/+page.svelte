@@ -194,8 +194,7 @@
 		<h3>Interests</h3>
 		<p>
 			{#each resume.interests as interest, i}
-				{interest.name}{#if i < resume.interests.length - 1},
-				{/if}
+				{interest.name}{#if i < resume.interests.length - 1}{`, `}{/if}
 			{/each}
 		</p>
 	</section>

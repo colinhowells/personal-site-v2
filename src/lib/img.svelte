@@ -4,4 +4,9 @@
 	export let title: string;
 </script>
 
-<img {src} loading="lazy" {alt} {title} />
+<figure>
+	<img {src} loading="lazy" {alt} {title} />
+	{#if title || alt}
+		<figcaption>{title ?? alt}</figcaption>
+	{/if}
+</figure>

@@ -7,7 +7,7 @@ const mdsvexOptions = {
 	extensions: ['.md'],
 	smartypants: true,
 	layout: {
-		_: 'src/lib/Content.svelte'
+		_: 'src/lib/CustomElements.svelte'
 	}
 };
 
