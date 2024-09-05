@@ -149,6 +149,7 @@ published: true
 - Overlord (Stuart Cooper, 1975)
 - Saving Private Ryan (Steven Spielberg, 1998) rewatch
 - Band of Brothers (Tom Hanks & Steven Spielberg, 2001) series, rewatch
+- The Pacific (Bruce C. McKenna et al, 2010) series, rewatch
 - The Tin Drum (Volker Schlöndorff, 1979)
 - Enemy at the Gates (Jean-Jacques Annaud, 2001)
 - Seventeen Moments of Spring (Tatyana Lioznova, 1973) series
@@ -162,3 +163,26 @@ published: true
 - Coup de Torchon (Bertrand Tavernier, 1981)
 - Targets (Peter Bogdanovich, 1968)
 - Point Blank (John Boorman, 1968)
+- The Outfit (John Flynn, 1973)
+- Red Rooms (Pascal Plante, 2023)
+- Arcadian (Benjamin Brewer, 2024)
+- Basic Lee: Live at the Lowry (Stewart Lee/Colin Dench, 2024)
+- Twilight of the Warriors: Walled In (Soi Cheang, 2024)
+- Pharaoh (Jerzy Kawalerowicz, 1966)
+- I Saw the TV Glow (Jane Schoenbrun, 2024)
+- Mermaid Legend (Toshiharu Ikeda, 1984)
+- Minor Premise (Eric Schultz, 2020)
+- Io Capitano (Matteo Garrone, 2024)
+- La 317ème section (Pierre Schoendoerffer, 1965)
+- Night Train (Jerzy Kawalerowicz, 1959)
+- Longlegs (Osgood Perkins, 2024)
+- That Obscure Object of Desire (Luis Buñuel, 1977)
+- Slow Machine (Joe DeNardo & Paul Felten, 2020)
+- The Ambassador (Mads Brügger, 2011)
+- The Promised Land (Nikolaj Arcel, 2024)
+- Taegukgi: The Brotherhood of War (Kang Je-gyu, 2004)
+- MASH (Robert Altman, 1970) rewatch
+- Joint Security Area (Park Chan-wook, 2000) rewatch
+- The Steel Helmet (Samuel Fuller, 1951)
+- The Bridges at Toko-Ri (Mark Robson, 1955)
+- Stalag 17 (Billy Wilder, 1953)
