@@ -31,6 +31,9 @@
 			color: #222;
 			line-height: 1.5;
 		}
+		& ul {
+			padding-left: var(--padding);
+		}
 		& li {
 			margin-bottom: var(--padding);
 			line-height: 1.5;
