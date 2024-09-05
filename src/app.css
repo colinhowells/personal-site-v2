@@ -148,6 +148,7 @@
 }
 
 html {
+	overflow-y: scroll;
 	scrollbar-color: var(--color-links) var(--color-cool-700);
 	accent-color: var(--color-links);
 }
