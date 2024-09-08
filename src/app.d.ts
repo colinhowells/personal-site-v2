@@ -10,7 +10,14 @@ declare global {
 		interface PageData {
 			articles?: Article[];
 			content?: any;
-			metadata?: any;
+			metadata?: {
+				title: string;
+				description: string;
+				datePublished: string;
+				dateModified: string;
+				type?: 'article' | 'diary' | 'list';
+				published?: boolean;
+			};
 		}
 		// interface PageState {}
 		// interface Platform {}

@@ -1,7 +1,8 @@
 ---
 title: oEmbeds, Facebook, and WordPress
 description: How to get Facebook to let you cache oEmbeds from Instagram or Facebook on your WordPress site
-date: '2021-10-24'
+datePublished: '2021-10-24'
+dateModified: '2021-10-24'
 type: 'article'
 published: false
 ---

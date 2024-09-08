@@ -20,5 +20,11 @@ export const load: PageServerLoad = async ({ params }) => {
 		(first, second) => new Date(second.date).getTime() - new Date(first.date).getTime()
 	);
 
-	return { articles };
+	const metadata = {
+		title: 'Welcome',
+		date: '2024-09-05',
+		description: 'Welcome to my personal website'
+	};
+
+	return { articles, metadata };
 };

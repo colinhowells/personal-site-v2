@@ -1,10 +1,13 @@
 ---
 title: Striking Phrases
 description: Phrases that jumped out from things I've read over the last few years
-date: '2023-03-04'
+datePublished: '2019-12-29'
+dateModified: '2023-03-04'
 type: 'list'
 published: true
 ---
+
+For a while I compiled a list of phrases that jumped out from things I read. I've stopped updating it, but here's the list as it stood in 2023:
 
 2023
 

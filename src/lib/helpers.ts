@@ -3,7 +3,13 @@ export const getSlugFromPath = (path: string): string | null =>
 
 export const getYear = (date: string): number => new Date(date).getFullYear();
 
-export const serializeSchema = (schema: object): string => {
+export const getISODate = (date: string): string => new Date(date).toISOString();
+
+export const serializeSchema = (schemaGraphObjects: Array<Record<string, any>>): string => {
+	let schema = {
+		'@context': 'https://schema.org',
+		'@graph': [...schemaGraphObjects]
+	};
 	return `<script type="application/ld+json">${JSON.stringify(schema, null, 2)}</script>`;
 };
 

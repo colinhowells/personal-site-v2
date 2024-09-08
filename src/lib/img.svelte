@@ -23,7 +23,7 @@
 
 <figure>
 	<img srcset={optimize(src)} loading="lazy" {alt} {title} />
-	{#if title || alt}
-		<figcaption>{title ?? alt}</figcaption>
+	{#if title}
+		<figcaption>{title}</figcaption>
 	{/if}
 </figure>

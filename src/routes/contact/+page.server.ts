@@ -1,8 +1,18 @@
 import { AIRTABLE_PERSONAL_ACCESS_TOKEN, AIRTABLE_BASE_ID } from '$env/static/private';
 
-import type { Actions } from './$types';
+import type { Actions, PageLoad } from './$types';
 import { fail } from '@sveltejs/kit';
 import { stripTags } from '$lib/helpers.ts';
+
+export const load: PageLoad = async () => {
+	return {
+		metadata: {
+			title: 'Contact',
+			date: '2024-09-05',
+			description: 'Contact form for Colin Howells'
+		}
+	};
+};
 
 export const actions = {
 	default: async ({ request }) => {

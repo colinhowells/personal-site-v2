@@ -1,106 +1,10 @@
 <script lang="ts">
-	import resume from './resume.json';
-	import { getYear, serializeSchema } from '$lib/helpers.ts';
-
-	let schema = {
-		'@context': 'http://schema.org',
-		'@graph': [] as Array<{ '@id': string }>
-	};
-	let schemaPerson = {
-		'@type': 'Person',
-		'@id': `${resume.basics.website}/resume/#person`,
-		subjectOf: {
-			'@id': `${resume.basics.website}/resume/#page`
-		},
-		name: resume.basics.name,
-		givenName: 'Colin',
-		familyName: 'Howells',
-		nationality: 'US',
-		image: 'https://github.com/colinhowells.png',
-		birthDate: '1971',
-		birthPlace: 'Bloomington, IN',
-		gender: 'http://schema.org/Male',
-		url: resume.basics.website,
-		email: resume.basics.email,
-		address: {
-			'@type': 'PostalAddress',
-			addressLocality: resume.basics.location.city,
-			addressRegion: resume.basics.location.region,
-			postalCode: resume.basics.location.postalCode,
-			streetAddress: resume.basics.location.address
-		},
-		description: resume.basics.summary,
-		sameAs: [] as Array<string>,
-		jobTitle: resume.basics.label,
-		worksFor: [] as Array<{ '@id': string }>,
-		alumniOf: {
-			'@id': `${resume.basics.website}/resume/#education`
-		},
-		knowsAbout: [] as Array<string>
-	};
-	for (let profile of resume.basics.profiles) {
-		schemaPerson.sameAs.push(profile.url);
-	}
-	for (let skill of resume.skills) {
-		schemaPerson.knowsAbout.push(skill.name);
-	}
-	schema['@graph'].push(schemaPerson);
-
-	let schemaEducation = {
-		'@type': 'CollegeOrUniversity',
-		'@id': `${resume.basics.website}/resume/#education`,
-		name: 'University of Michigan',
-		department: 'School of Art & Architecture (now Penny W. Stamps School of Art and Design)',
-		url: 'https://stamps.umich.edu/'
-	};
-	schema['@graph'].push(schemaEducation);
-
-	type EmployeeRole = {
-		'@type': 'EmployeeRole';
-		'@id': string;
-		subjectOf: {
-			'@id': string;
-		};
-		roleName: string;
-		description: string;
-		startDate: string;
-		endDate?: string;
-	};
-	for (const [i, job] of resume.work.entries()) {
-		const schemaOrganization = {
-			'@type': 'Organization',
-			'@id': `${resume.basics.website}/resume/#experience-${i + 1}`,
-			name: job.company,
-			url: job.website,
-			location: job.location
-		};
-		let schemaEmployeeRole: EmployeeRole = {
-			'@type': 'EmployeeRole',
-			'@id': `${resume.basics.website}/resume/#role-${i + 1}`,
-			subjectOf: {
-				'@id': `${resume.basics.website}/resume/#experience-${i + 1}`
-			},
-			roleName: job.position,
-			description: job.summary,
-			startDate: job.startDate
-		};
-		if (job.endDate) {
-			schemaEmployeeRole.endDate = job.endDate;
-		}
-		schemaPerson.worksFor.push({
-			'@id': `${resume.basics.website}/resume/#role-${i + 1}`
-		});
-		schema['@graph'].push(schemaOrganization);
-		schema['@graph'].push(schemaEmployeeRole);
-	}
+	import resume from '$lib/resume.json';
+	import { getYear } from '$lib/helpers.ts';
 </script>
 
-<svelte:head>
-	{@html serializeSchema(schema)}
-</svelte:head>
-
 <div class="h-resume">
-	<h1 hidden class="p-name">{resume.basics.name}</h1>
+	<h2 hidden class="p-name">{resume.basics.name}</h2>
 
 	<section class="contact">
 		<address class="p-contact h-card">

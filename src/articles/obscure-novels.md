@@ -1,7 +1,8 @@
 ---
 title: Obscure Novels
 description: Obscure novels I've read
-date: '2021-10-24'
+datePublished: '2024-09-07'
+dateModified: '2024-09-07'
 type: 'article'
 published: false
 ---

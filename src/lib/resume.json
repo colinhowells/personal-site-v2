@@ -27,11 +27,6 @@
 				"network": "mastodon",
 				"url": "https://toot.cafe/@colin_howells",
 				"username": "colin_howells"
-			},
-			{
-				"network": "twitter",
-				"url": "https://twitter.com/colin_howells",
-				"username": "colin_howells"
 			}
 		]
 	},
@@ -46,7 +41,21 @@
 	],
 	"skills": [
 		{
-			"keywords": ["HTML", "CSS", "Javascript"],
+			"keywords": [
+				"HTML",
+				"CSS",
+				"Javascript",
+				"TypeScript",
+				"Svelte",
+				"SvelteKit",
+				"React",
+				"Node",
+				"PHP",
+				"WordPress",
+				"Google Analytics",
+				"Online Advertising",
+				"SEO"
+			],
 			"level": "Senior",
 			"name": "Frontend"
 		},
@@ -56,7 +65,7 @@
 			"name": "Backend"
 		},
 		{
-			"keywords": ["AWS"],
+			"keywords": ["Git, AWS"],
 			"level": "Junior",
 			"name": "Devops"
 		}

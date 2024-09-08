@@ -1,9 +1,10 @@
 ---
 title: Some longer article title about something really interesting
 description: Lorem ipsum
-date: '2023-12-14'
+datePublished: '2024-09-07'
+dateModified: '2024-09-07'
 type: 'article'
-published: true
+published: false
 ---
 
 “Lorem ipsum, dolor sit amet consectetur adipisicing elit.” A iste totam sapiente accusantium

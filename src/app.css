@@ -1,6 +1,7 @@
 @font-face {
 	src: url('/fonts/VCGosh-Bold.woff2') format('woff2');
 	font-family: 'Gosh';
+	font-display: swap;
 }
 
 @font-face {
@@ -8,6 +9,7 @@
 	font-weight: normal;
 	src: url('/fonts/ManifoldCF-Regular.woff2') format('woff2');
 	font-family: 'ManifoldCF';
+	font-display: swap;
 }
 
 @font-face {
@@ -15,12 +17,14 @@
 	font-weight: medium;
 	src: url('/fonts/ManifoldCF-Medium.woff2') format('woff2');
 	font-family: 'ManifoldCF';
+	font-display: swap;
 }
 @font-face {
 	font-style: italic;
 	font-weight: medium;
 	src: url('/fonts/ManifoldCF-MediumOblique.woff2') format('woff2');
 	font-family: 'ManifoldCF';
+	font-display: swap;
 }
 
 @font-face {
@@ -28,12 +32,14 @@
 	font-weight: bold;
 	src: url('/fonts/ManifoldCF-Bold.woff2') format('woff2');
 	font-family: 'ManifoldCF';
+	font-display: swap;
 }
 @font-face {
 	font-style: italic;
 	font-weight: bold;
 	src: url('/fonts/ManifoldCF-BoldOblique.woff2') format('woff2');
 	font-family: 'ManifoldCF';
+	font-display: swap;
 }
 
 @font-face {
@@ -41,12 +47,14 @@
 	font-weight: 800;
 	src: url('/fonts/ManifoldCF-ExtraBold.woff2') format('woff2');
 	font-family: 'ManifoldCF';
+	font-display: swap;
 }
 @font-face {
 	font-style: italic;
 	font-weight: 800;
 	src: url('/fonts/ManifoldCF-ExtraBoldOblique.woff2') format('woff2');
 	font-family: 'ManifoldCF';
+	font-display: swap;
 }
 
 @font-face {
@@ -54,12 +62,14 @@
 	font-weight: normal;
 	src: url('/fonts/GimletDisplayNarrow-Regular.woff2') format('woff2');
 	font-family: 'Gimlet Display Narrow';
+	font-display: swap;
 }
 @font-face {
 	font-style: italic;
 	font-weight: normal;
 	src: url('/fonts/GimletDisplayNarrow-Italic.woff2') format('woff2');
 	font-family: 'Gimlet Display Narrow';
+	font-display: swap;
 }
 
 @font-face {
@@ -67,12 +77,14 @@
 	font-weight: bold;
 	src: url('/fonts/GimletDisplayNarrow-Bold.woff2') format('woff2');
 	font-family: 'Gimlet Display Narrow';
+	font-display: swap;
 }
 @font-face {
 	font-style: italic;
 	font-weight: bold;
 	src: url('/fonts/GimletDisplayNarrow-BoldItalic.woff2') format('woff2');
 	font-family: 'Gimlet Display Narrow';
+	font-display: swap;
 }
 
 @font-face {
@@ -80,12 +92,14 @@
 	font-weight: normal;
 	src: url('/fonts/GimletText-Regular.woff2') format('woff2');
 	font-family: 'Gimlet Text';
+	font-display: swap;
 }
 @font-face {
 	font-style: italic;
 	font-weight: normal;
 	src: url('/fonts/GimletText-Italic.woff2') format('woff2');
 	font-family: 'Gimlet Text';
+	font-display: swap;
 }
 
 @font-face {
@@ -93,12 +107,14 @@
 	font-weight: bold;
 	src: url('/fonts/GimletText-Bold.woff2') format('woff2');
 	font-family: 'Gimlet Text';
+	font-display: swap;
 }
 @font-face {
 	font-style: italic;
 	font-weight: bold;
 	src: url('/fonts/GimletText-BoldItalic.woff2') format('woff2');
 	font-family: 'Gimlet Text';
+	font-display: swap;
 }
 
 :root {

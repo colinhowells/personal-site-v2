@@ -1,7 +1,8 @@
 ---
 title: Watching 2024
 description: Films seen in 2024
-date: '2024-07-17'
+datePublished: '2024-09-07'
+dateModified: '2024-09-07'
 type: 'list'
 published: true
 ---
