@@ -13,8 +13,8 @@ declare global {
 			metadata?: {
 				title: string;
 				description: string;
-				datePublished: string;
-				dateModified: string;
+				datePublished?: string;
+				dateModified?: string;
 				type?: 'article' | 'diary' | 'list';
 				published?: boolean;
 			};

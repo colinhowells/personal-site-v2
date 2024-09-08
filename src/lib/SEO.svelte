@@ -10,12 +10,13 @@
 	const articleNodeId = `${$page.url.toString()}/#article`;
 	// const avatarUrl = `${PUBLIC_SITE_URL}/images/colin-2023.jpg`;
 	const avatarUrl = 'https://github.com/colinhowells.png';
+	const defaultDate = '2024-09-05';
 	const educationNodeId = `${PUBLIC_SITE_URL}/#education`;
 	const isArticle = '/[slug]' === $page.route.id;
 	const personNodeId = `${PUBLIC_SITE_URL}/#person`;
-	const publishedDateTime = getISODate(data.metadata.datePublished);
+	const publishedDateTime = getISODate(data.metadata.datePublished ?? defaultDate);
 	const siteNodeId = `${PUBLIC_SITE_URL}/#website`;
-	const updatedDateTime = getISODate(data.metadata.dateModified);
+	const updatedDateTime = getISODate(data.metadata.dateModified ?? defaultDate);
 	const webPageNodeId = $page.url.toString();
 
 	let schemaGraphObjects = [] as Array<Record<string, any>>;

@@ -22,7 +22,6 @@ export const load: PageServerLoad = async ({ params }) => {
 
 	const metadata = {
 		title: 'Welcome',
-		date: '2024-09-05',
 		description: 'Welcome to my personal website'
 	};
 

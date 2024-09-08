@@ -8,7 +8,6 @@ export const load: PageLoad = async () => {
 	return {
 		metadata: {
 			title: 'Contact',
-			date: '2024-09-05',
 			description: 'Contact form for Colin Howells'
 		}
 	};
