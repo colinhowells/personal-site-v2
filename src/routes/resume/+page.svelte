@@ -21,6 +21,11 @@
 			><br />
 			<span>Homepage: <a class="url" href={resume.basics.website}>{resume.basics.website}</a></span
 			><br />
+			<span
+				>Resume as JSON: <a class="url" href="/resume.json" data-sveltekit-reload
+					>{resume.basics.website}/resume.json</a
+				></span
+			>
 		</address>
 	</section>
 
