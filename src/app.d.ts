@@ -20,7 +20,16 @@ declare global {
 			};
 		}
 		// interface PageState {}
-		// interface Platform {}
+		interface Platform {
+			caches: CacheStorage & { default: Cache };
+			cf: IncomingRequestCfProperties;
+			context: {
+				waitUntil(promise: Promise<any>): void;
+			};
+			env: {
+				CF_PAGES_COMMIT_SHA: string;
+			};
+		}
 	}
 }
 
