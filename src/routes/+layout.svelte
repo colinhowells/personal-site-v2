@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onNavigate } from '$app/navigation';
-	import { dev } from '$app/environment';
+	// import { dev } from '$app/environment';
 	import { page } from '$app/stores';
 	import SEO from '$lib/SEO.svelte';
 	import Header from '$lib/Header.svelte';
@@ -12,14 +12,14 @@
 		if (!document.startViewTransition) return;
 
 		return new Promise((resolve) => {
-			document.startViewTransition(async () => {
+			document.startViewTransition?.(async () => {
 				resolve();
 				await navigation.complete;
 			});
 		});
 	});
 
-	$: if (dev) console.log($page);
+	// $: if (dev) console.log($page);
 </script>
 
 <SEO data={$page.data} />

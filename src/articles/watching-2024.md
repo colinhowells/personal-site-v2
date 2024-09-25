@@ -1,8 +1,8 @@
 ---
 title: Watching 2024
 description: Films seen in 2024
-datePublished: '2024-09-07'
-dateModified: '2024-09-07'
+datePublished: '2024-09-25'
+dateModified: '2024-09-25'
 type: 'list'
 published: true
 ---
@@ -187,3 +187,22 @@ published: true
 - The Steel Helmet (Samuel Fuller, 1951)
 - The Bridges at Toko-Ri (Mark Robson, 1955)
 - Stalag 17 (Billy Wilder, 1953)
+- Checkpoint (Aleksandr Rogozhkin, 1998)
+- The Childhood of a Leader (Brady Corbet, 2015)
+- Rebel Ridge (Jeremy Saulnier, 2024)
+- Green Room (Jeremy Saulnier, 2015)
+- Hold the Dark (Jeremy Saulnier, 2018)
+- The Day of the Jackal (Fred Zinnemann, 1973)
+- Vox Lux (Brady Corbet, 2018)
+- Strange Days (Kathryn Bigelow, 1995)
+- Only the River Flows (Wei Shujun, 2023)
+- Meek's Cutoff (Kelly Reichardt, 2010)
+- The Vast of Night (Andrew Patterson, 2019)
+- Beginning (Déa Kulumbegashvili, 2020)
+- The Long Good Friday (John Mackenzie, 1980)
+- In the Name of the Father (Jim Sheridan, 1993)
+- The Lost City of Z (James Gray, 2016)
+- Apocalypse Now (Francis Ford Coppola, 1979) Redux rewatch
+- House of Pleasures (Bertrand Bonello, 2011)
+- Nocturama (Bertrand Bonello, 2016)
+- The Beast (Bertrand Bonello, 2023)

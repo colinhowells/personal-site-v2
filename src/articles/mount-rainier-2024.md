@@ -5,7 +5,6 @@ datePublished: '2024-09-07'
 dateModified: '2024-09-07'
 type: 'diary'
 published: true
-image:
 ---
 
 Thanks to my friend Lura, fulfilled a Pacific Northwest dream and made it on – not up, on – Mount Rainier!
