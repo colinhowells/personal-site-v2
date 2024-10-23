@@ -22,7 +22,9 @@
 	// $: if (dev) console.log($page);
 </script>
 
-<SEO data={$page.data} />
+{#if !$page?.error}
+	<SEO data={$page.data} />
+{/if}
 
 <Header />
 <main>
