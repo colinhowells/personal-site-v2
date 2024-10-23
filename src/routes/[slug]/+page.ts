@@ -3,10 +3,12 @@ import { error } from '@sveltejs/kit';
 
 export const load: PageLoad = async ({ params }) => {
 	let article = null;
+	const errorMessage = `Sorry, that isn’t here – /${params.slug} may have been deleted or moved.`;
+
 	try {
 		article = await import(`../../../src/articles/${params?.slug}.md`);
 	} catch (e) {
-		error(404, `${params.slug} not found`);
+		error(404, errorMessage);
 	}
 
 	if (article && article?.metadata?.published) {
@@ -16,5 +18,5 @@ export const load: PageLoad = async ({ params }) => {
 		};
 	}
 
-	error(404, `${params.slug} not found`);
+	error(404, errorMessage);
 };

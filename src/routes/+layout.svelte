@@ -22,6 +22,10 @@
 	// $: if (dev) console.log($page);
 </script>
 
+<svelte:head>
+	{#if 404 === $page?.status}<title>Not Found | Colin Howells</title>{/if}
+</svelte:head>
+
 {#if !$page?.error}
 	<SEO data={$page.data} />
 {/if}
