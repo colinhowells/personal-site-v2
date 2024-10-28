@@ -165,17 +165,17 @@
 
 html {
 	overflow-y: scroll;
-	scrollbar-color: var(--color-links) var(--color-cool-700);
-	accent-color: var(--color-links);
+	scrollbar-color: var(--color-cool-100) var(--color-cool-600);
+	accent-color: var(--color-cool-100);
 }
 
 ::-webkit-scrollbar {
-	background: var(--color-cool-700);
+	background: var(--color-cool-600);
 }
 ::-webkit-scrollbar-thumb {
-	border: 3px solid var(--color-cool-700);
+	border: 3px solid var(--color-cool-600);
 	border-radius: 3rem;
-	background: var(--color-links);
+	background: var(--color-cool-100);
 }
 
 body {
