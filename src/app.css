@@ -1,13 +1,7 @@
 @font-face {
-	src: url('/fonts/VCGosh-Bold.woff2') format('woff2');
-	font-family: 'Gosh';
-	font-display: swap;
-}
-
-@font-face {
 	font-style: monospace;
 	font-weight: normal;
-	src: url('/fonts/ManifoldCF-Regular.woff2') format('woff2');
+	src: url($lib/fonts/ManifoldCF-Regular.woff2) format('woff2');
 	font-family: 'ManifoldCF';
 	font-display: swap;
 }
@@ -15,14 +9,14 @@
 @font-face {
 	font-style: normal;
 	font-weight: medium;
-	src: url('/fonts/ManifoldCF-Medium.woff2') format('woff2');
+	src: url($lib/fonts/ManifoldCF-Medium.woff2) format('woff2');
 	font-family: 'ManifoldCF';
 	font-display: swap;
 }
 @font-face {
 	font-style: italic;
 	font-weight: medium;
-	src: url('/fonts/ManifoldCF-MediumOblique.woff2') format('woff2');
+	src: url($lib/fonts/ManifoldCF-MediumOblique.woff2) format('woff2');
 	font-family: 'ManifoldCF';
 	font-display: swap;
 }
@@ -30,14 +24,14 @@
 @font-face {
 	font-style: normal;
 	font-weight: bold;
-	src: url('/fonts/ManifoldCF-Bold.woff2') format('woff2');
+	src: url($lib/fonts/ManifoldCF-Bold.woff2) format('woff2');
 	font-family: 'ManifoldCF';
 	font-display: swap;
 }
 @font-face {
 	font-style: italic;
 	font-weight: bold;
-	src: url('/fonts/ManifoldCF-BoldOblique.woff2') format('woff2');
+	src: url($lib/fonts/ManifoldCF-BoldOblique.woff2) format('woff2');
 	font-family: 'ManifoldCF';
 	font-display: swap;
 }
@@ -45,14 +39,14 @@
 @font-face {
 	font-style: normal;
 	font-weight: 800;
-	src: url('/fonts/ManifoldCF-ExtraBold.woff2') format('woff2');
+	src: url($lib/fonts/ManifoldCF-ExtraBold.woff2) format('woff2');
 	font-family: 'ManifoldCF';
 	font-display: swap;
 }
 @font-face {
 	font-style: italic;
 	font-weight: 800;
-	src: url('/fonts/ManifoldCF-ExtraBoldOblique.woff2') format('woff2');
+	src: url($lib/fonts/ManifoldCF-ExtraBoldOblique.woff2) format('woff2');
 	font-family: 'ManifoldCF';
 	font-display: swap;
 }
@@ -60,14 +54,14 @@
 @font-face {
 	font-style: normal;
 	font-weight: normal;
-	src: url('/fonts/GimletDisplayNarrow-Regular.woff2') format('woff2');
+	src: url($lib/fonts/GimletDisplayNarrow-Regular.woff2) format('woff2');
 	font-family: 'Gimlet Display Narrow';
 	font-display: swap;
 }
 @font-face {
 	font-style: italic;
 	font-weight: normal;
-	src: url('/fonts/GimletDisplayNarrow-Italic.woff2') format('woff2');
+	src: url($lib/fonts/GimletDisplayNarrow-Italic.woff2) format('woff2');
 	font-family: 'Gimlet Display Narrow';
 	font-display: swap;
 }
@@ -75,14 +69,14 @@
 @font-face {
 	font-style: normal;
 	font-weight: bold;
-	src: url('/fonts/GimletDisplayNarrow-Bold.woff2') format('woff2');
+	src: url($lib/fonts/GimletDisplayNarrow-Bold.woff2) format('woff2');
 	font-family: 'Gimlet Display Narrow';
 	font-display: swap;
 }
 @font-face {
 	font-style: italic;
 	font-weight: bold;
-	src: url('/fonts/GimletDisplayNarrow-BoldItalic.woff2') format('woff2');
+	src: url($lib/fonts/GimletDisplayNarrow-BoldItalic.woff2) format('woff2');
 	font-family: 'Gimlet Display Narrow';
 	font-display: swap;
 }
@@ -90,14 +84,14 @@
 @font-face {
 	font-style: normal;
 	font-weight: normal;
-	src: url('/fonts/GimletText-Regular.woff2') format('woff2');
+	src: url($lib/fonts/GimletText-Regular.woff2) format('woff2');
 	font-family: 'Gimlet Text';
 	font-display: swap;
 }
 @font-face {
 	font-style: italic;
 	font-weight: normal;
-	src: url('/fonts/GimletText-Italic.woff2') format('woff2');
+	src: url($lib/fonts/GimletText-Italic.woff2) format('woff2');
 	font-family: 'Gimlet Text';
 	font-display: swap;
 }
@@ -105,14 +99,14 @@
 @font-face {
 	font-style: normal;
 	font-weight: bold;
-	src: url('/fonts/GimletText-Bold.woff2') format('woff2');
+	src: url($lib/fonts/GimletText-Bold.woff2) format('woff2');
 	font-family: 'Gimlet Text';
 	font-display: swap;
 }
 @font-face {
 	font-style: italic;
 	font-weight: bold;
-	src: url('/fonts/GimletText-BoldItalic.woff2') format('woff2');
+	src: url($lib/fonts/GimletText-BoldItalic.woff2) format('woff2');
 	font-family: 'Gimlet Text';
 	font-display: swap;
 }
@@ -123,7 +117,6 @@
 	--padding: 1vmax;
 	--border-radius: 0.3vmax;
 
-	--font-title: 'Gosh', system-ui, sans-serif;
 	--font-sans: 'ManifoldCF', system-ui, sans-serif;
 	--font-body: 'Gimlet Text', serif;
 	--font-hed: 'Gimlet Display Narrow', serif;

@@ -176,6 +176,7 @@
 	<meta name="author" content={resume.basics.name} />
 	<meta property="fediverse:creator" content="@colin_howells@toot.cafe" />
 	<link rel="me" href="https://toot.cafe/@colin_howells" />
+	<link rel="me" href="https://bsky.app/profile/colinhowells.com" />
 	<link rel="me" href="https://github.com/colinhowells" />
 	<link rel="me" href="https://bandcamp.com/colinhowells" />
 	<link rel="canonical" href={$page.url.toString()} />
