@@ -2,21 +2,27 @@
 	import type { ActionData } from './$types';
 	import { enhance } from '$app/forms';
 
-	export let form: ActionData & {
-		name: string;
-		email: string;
-		message: string;
-	};
+	interface Props {
+		form: ActionData & {
+			name: string;
+			email: string;
+			error?: { field: string; message: string };
+			message: string;
+		};
+	}
 
-	let { name, email, error, message } = form ?? {};
-	$: ({ name, email, error, message } = form ?? {
-		name: '',
-		email: '',
-		error: { field: '', message: '' },
-		message: ''
-	});
-	$: error_field = error && error['field'];
-	$: error_message = error && error['message'];
+	let { form }: Props = $props();
+
+	let { name, email, error, message } = $state(
+		form ?? {
+			name: '',
+			email: '',
+			error: { field: '', message: '' },
+			message: ''
+		}
+	);
+	let error_field = $derived(error && error['field']);
+	let error_message = $derived(error && error['message']);
 </script>
 
 <form method="POST" aria-label="Contact form" use:enhance>
@@ -110,5 +116,8 @@
 		&:focus {
 			outline: 2px solid var(--color-links-hover);
 		}
+	}
+	p {
+		margin: auto;
 	}
 </style>

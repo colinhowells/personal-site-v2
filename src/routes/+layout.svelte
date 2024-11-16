@@ -7,6 +7,11 @@
 	import Content from '$lib/Content.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import '$css';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 
 	onNavigate((navigation) => {
 		if (!document.startViewTransition) return;
@@ -33,7 +38,7 @@
 <Header />
 <main>
 	<Content>
-		<slot />
+		{@render children?.()}
 	</Content>
 </main>
 <Footer />
