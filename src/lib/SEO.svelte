@@ -5,7 +5,11 @@
 	import resume from '$lib/resume.json';
 	import { serializeSchema, getISODate } from '$lib/helpers.ts';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 
 	const articleNodeId = `${$page.url.toString()}/#article`;
 	// const avatarUrl = `${PUBLIC_SITE_URL}/images/colin-2023.jpg`;
