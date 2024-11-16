@@ -3,11 +3,15 @@
 	import CustomElements from '$lib/CustomElements.svelte';
 	import 'prism-themes/themes/prism-material-oceanic.css';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 </script>
 
 <h2>{data.metadata.title}</h2>
 
 <CustomElements>
-	<svelte:component this={data.content} />
+	<data.content />
 </CustomElements>
