@@ -14,19 +14,24 @@
 		},
 		"profiles": [
 			{
-				"network": "github",
+				"network": "GitHub",
 				"url": "https://github.com/colinhowells",
 				"username": "colinhowells"
 			},
 			{
-				"network": "linkedin",
+				"network": "LinkedIn",
 				"url": "https://www.linkedin.com/in/colinhowells/",
 				"username": "colinhowells"
 			},
 			{
-				"network": "mastodon",
+				"network": "Mastodon",
 				"url": "https://toot.cafe/@colin_howells",
 				"username": "colin_howells"
+			},
+			{
+				"network": "Bluesky",
+				"url": "https://bsky.app/profile/colinhowells.com",
+				"username": "colinhowells.com"
 			}
 		]
 	},
@@ -44,12 +49,16 @@
 			"keywords": [
 				"HTML",
 				"CSS",
-				"Javascript",
+				"JavaScript",
 				"TypeScript",
 				"Svelte",
 				"SvelteKit",
 				"React",
 				"Node",
+				"Serverless",
+				"Headless",
+				"CMS",
+				"Cloudflare",
 				"PHP",
 				"WordPress",
 				"Google Analytics",
@@ -65,7 +74,7 @@
 			"name": "Backend"
 		},
 		{
-			"keywords": ["Git, AWS"],
+			"keywords": ["Git, AWS, Shopify"],
 			"level": "Junior",
 			"name": "Devops"
 		}
@@ -77,7 +86,8 @@
 			"location": "Seattle, WA",
 			"position": "Senior Web Developer",
 			"startDate": "2012-01-01",
-			"summary": "Designed and developed a mobile-optimized publishing network for the benefit of nonprofits, which became a significant ROI- positive revenue stream and led to massive changes in the business model.",
+			"endDate": "2024-11-20",
+			"summary": "Designed and developed a mobile-optimized publishing network of more than 30 WordPress sites featuring purpose-built themes, which monetized more than 75 million pageviews a month for the benefit of nonprofits, and reached over 100 million Facebook fans. It became a significant ROI-positive revenue stream and led to massive changes in the business model. Created many JavaScript-driven applications and sites, along with their databases, serverless functions, CI/CD pipelines, and APIs.",
 			"highlights": [
 				"More than 60 WordPress sites, featuring custom themes",
 				"100M+ Facebook fans",
@@ -160,6 +170,12 @@
 		},
 		{
 			"name": "Literature"
+		},
+		{
+			"name": "Film"
+		},
+		{
+			"name": "Politics"
 		}
 	]
 }

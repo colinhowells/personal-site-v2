@@ -45,7 +45,7 @@
 							<time datetime={job.startDate} class="dt-start"
 								>{getYear(job.startDate).toString()}</time
 							>{#if job.endDate}–<time datetime={job.endDate} class="dt-end"
-									>{getYear(job.endDate).toString()}}</time
+									>{getYear(job.endDate).toString()}</time
 								>{/if},
 						</span>
 						<span class="p-location">{job.location}</span>
