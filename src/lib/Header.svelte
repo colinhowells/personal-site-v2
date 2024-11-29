@@ -11,23 +11,35 @@
 	>
 	<div>
 		<p>Web developer living in Seattle</p>
-		<div>
-			<a rel="me" href="https://github.com/colinhowells" title="Colin on GitHub"
+		<nav>
+			<a
+				rel="me"
+				href="https://github.com/colinhowells"
+				title="Colin on GitHub"
+				aria-label="Colin on GitHub"
 				><svg width="45" height="45">
 					<use xlink:href="#icon-github" />
 				</svg></a
 			>
-			<a rel="me" href="https://toot.cafe/@colin_howells" title="Colin on Mastodon"
+			<a
+				rel="me"
+				href="https://toot.cafe/@colin_howells"
+				title="Colin on Mastodon"
+				aria-label="Colin on Mastodon"
 				><svg width="45" height="45">
 					<use xlink:href="#icon-mastodon" />
 				</svg></a
 			>
-			<a rel="me" href="https://bsky.app/profile/colinhowells.com" title="Colin on Bluesky"
+			<a
+				rel="me"
+				href="https://bsky.app/profile/colinhowells.com"
+				title="Colin on Bluesky"
+				aria-label="Colin on Bluesky"
 				><svg width="45" height="45">
 					<use xlink:href="#icon-bluesky" />
 				</svg></a
 			>
-		</div>
+		</nav>
 	</div>
 	<Nav />
 </header>
@@ -198,7 +210,7 @@
 			height: auto;
 		}
 	}
-	header > div {
+	div {
 		display: flex;
 		grid-column: 2;
 		flex-flow: row nowrap;
@@ -207,7 +219,7 @@
 		margin: 0 0 var(--gap) 0;
 		font-family: var(--font-sans);
 		fill: var(--color-cool-50);
-		font-size: 1.2rem;
+		font-size: 0.8rem;
 		& p {
 			margin: 0;
 			color: white;
@@ -215,10 +227,13 @@
 		& svg {
 			display: inline-block;
 			width: auto;
-			height: 0.7lh;
+			height: 0.6lh;
 			fill: white;
 			margin-top: 0.2lh;
 		}
+	}
+	nav > a {
+		padding: 0 1dvw;
 	}
 	a {
 		text-decoration: none;
@@ -229,9 +244,27 @@
 			}
 		}
 	}
-	@media (width > 450px) {
-		header > div {
-			font-size: 1.5rem;
+	@media (width > 360px) {
+		div {
+			font-size: 1rem;
+		}
+	}
+	@media (width > 400px) {
+		div {
+			font-size: 1.1rem;
+		}
+		nav > a {
+			padding: 0 0.5dvw;
+		}
+	}
+	@media (width > 480px) {
+		div {
+			font-size: 1.4rem;
+		}
+	}
+	@media (width > 540px) {
+		div {
+			font-size: 1.6rem;
 		}
 	}
 </style>
