@@ -233,7 +233,7 @@
 		}
 	}
 	nav > a {
-		padding: 0 1dvw;
+		padding: 0 0.5dvw;
 	}
 	a {
 		text-decoration: none;
@@ -244,27 +244,9 @@
 			}
 		}
 	}
-	@media (width > 360px) {
+	@media (width > 380px) {
 		div {
-			font-size: 1rem;
-		}
-	}
-	@media (width > 400px) {
-		div {
-			font-size: 1.1rem;
-		}
-		nav > a {
-			padding: 0 0.5dvw;
-		}
-	}
-	@media (width > 480px) {
-		div {
-			font-size: 1.4rem;
-		}
-	}
-	@media (width > 540px) {
-		div {
-			font-size: 1.6rem;
+			font-size: clamp(0.8rem, 0.7rem + 2dvw, 1.6rem);
 		}
 	}
 </style>
