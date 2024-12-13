@@ -3,7 +3,7 @@
 	import { getYear } from '$lib/helpers.ts';
 </script>
 
-<div class="h-resume">
+<article class="h-resume">
 	<h2 hidden class="p-name">{resume.basics.name}</h2>
 
 	<section class="contact">
@@ -107,17 +107,22 @@
 			{/each}
 		</p>
 	</section>
-</div>
+</article>
 
 <style>
 	section {
-		margin-bottom: var(--gap);
+		margin-bottom: calc(var(--gap) / 2);
+		width: 100%;
+		& > * {
+			width: 100%;
+		}
 		& > div {
-			margin-bottom: calc(var(--padding) * 4);
+			margin-bottom: calc(var(--padding) * 2);
+			width: 100%;
 		}
 	}
 	h3 {
-		margin-bottom: calc(var(--padding) * 2);
+		margin: 0 0 calc(var(--padding) * 2) 0;
 		color: var(--color-cool-500);
 		font-size: x-large;
 		font-family: var(--font-sans);

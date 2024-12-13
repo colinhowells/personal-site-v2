@@ -1,9 +1,9 @@
 ---
 title: Some longer article title about something really interesting
 description: Lorem ipsum
-datePublished: '2024-09-07'
-dateModified: '2024-09-07'
-type: 'article'
+datePublished: 2024-09-07
+dateModified: 2024-09-07
+type: article
 published: false
 ---
 

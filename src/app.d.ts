@@ -15,8 +15,9 @@ declare global {
 				description: string;
 				datePublished?: string;
 				dateModified?: string;
-				type?: 'article' | 'diary' | 'list';
+				type?: 'article' | 'diary' | 'list' | 'work';
 				published?: boolean;
+				image?: string;
 			};
 		}
 		// interface PageState {}
