@@ -6,7 +6,7 @@ export const load: PageLoad = async ({ params }) => {
 	const errorMessage = `Sorry, that isn’t here – /${params.slug} may have been deleted or moved.`;
 
 	try {
-		article = await import(`../../../src/articles/${params?.slug}.md`);
+		article = await import(`$lib/articles/${params?.slug}.md`);
 	} catch (e) {
 		error(404, errorMessage);
 	}

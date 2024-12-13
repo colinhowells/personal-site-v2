@@ -113,7 +113,7 @@
 
 :root {
 	overscroll-behavior: none;
-	--gap: clamp(1rem, 6vw, 3rem);
+	--gap: clamp(1rem, 4dvw, 3rem);
 	--padding: 1vmax;
 	--border-radius: 0.3vmax;
 
@@ -121,7 +121,9 @@
 	--font-body: 'Gimlet Text', serif;
 	--font-hed: 'Gimlet Display Narrow', serif;
 	/** https://jameshfisher.com/2024/03/12/a-formula-for-responsive-font-size/ */
-	font-size: calc(1rem + 0.25vw);
+	font-size: calc(1rem + 0.25dvw);
+
+	--transition-time: 0.3s;
 
 	--hue-warm: 140deg;
 	--hue-cool: 180deg;
@@ -174,7 +176,9 @@ html {
 body {
 	display: grid;
 	grid-template-rows: [header-start] min-content [header-end content-start] 1fr [content-end footer-start] min-content [footer-end];
-	grid-template-columns: [fullwidth-start] 1fr [content-start] min(50ch, 100% - var(--gap) * 2) [content-end] 1fr [fullwidth-end];
+	grid-template-columns:
+		[fullwidth-start] 1fr [content-start] min(50ch, 100% - var(--gap) * 2)
+		[content-end] 1fr [fullwidth-end];
 	margin: 0;
 	background-color: var(--color-warm-300);
 	padding: 0;
@@ -190,9 +194,21 @@ main {
 	grid-column: fullwidth;
 	background-color: var(--color-cool-100);
 	background: linear-gradient(180deg, var(--color-cool-50) 0%, var(--color-cool-100) 100%);
+	& > * {
+		display: grid;
+		grid-template-columns: subgrid;
+		grid-column: content;
+		align-content: flex-start;
+		padding: 0;
+		text-align: left;
+	}
+	& > article {
+		grid-column: fullwidth;
+	}
 }
 
 a {
+	transition: color var(--transition-time);
 	color: var(--color-links);
 	font-weight: bold;
 	text-decoration: none;
@@ -203,6 +219,7 @@ a {
 }
 
 button {
+	transition: background-color var(--transition-time);
 	cursor: pointer;
 	margin: 0 auto;
 	border: 0;
@@ -233,33 +250,33 @@ button:not(:disabled):hover {
 	white-space: nowrap;
 }
 
+h2 {
+	color: var(--color-cool-700);
+	line-height: 1.2;
+	font-family: var(--font-hed);
+}
+
 article {
-	display: grid;
-	grid-template-columns: subgrid;
-	grid-column: fullwidth;
-	align-content: flex-start;
 	padding: var(--gap) 0;
 	hanging-punctuation: first;
 	font-family: var(--font-body);
-	text-align: left;
-	text-wrap: pretty;
-	> * {
+	& > * {
 		grid-column: content;
-		margin: 0;
-		width: 100%;
+		margin: 0 auto calc(var(--padding) * 2) auto;
 	}
-	> * + * {
-		margin: calc(var(--padding) * 2) auto 0 auto;
-	}
-	h2 {
-		color: var(--color-cool-700);
-		line-height: 1.2;
-		font-family: var(--font-hed);
+	h2.title {
+		font-size: clamp(1.5rem, 3dvw, 2rem);
+		text-align: center;
+		text-wrap: balance;
+		text-wrap: pretty;
 	}
 	p,
 	address {
 		color: #222;
 		line-height: 1.5;
+	}
+	p:empty {
+		display: none;
 	}
 	ul {
 		padding-left: var(--padding);
@@ -286,12 +303,15 @@ article {
 		font-size: smaller;
 	}
 	img {
+		margin: auto;
 		width: var(--size);
 		max-width: 100%;
 		height: auto;
 	}
 	figure {
-		margin: 0;
+		grid-column: fullwidth;
+		max-width: max-content;
+		text-align: center;
 	}
 	figcaption {
 		color: var(--color-cool-500);
@@ -299,7 +319,7 @@ article {
 		font-size: small;
 		font-family: var(--font-sans);
 		letter-spacing: 1px;
-		text-align: right;
 		text-transform: uppercase;
+		text-wrap: balance;
 	}
 }

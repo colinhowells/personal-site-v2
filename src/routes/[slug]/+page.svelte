@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import CustomElements from '$lib/CustomElements.svelte';
 	import 'prism-themes/themes/prism-material-oceanic.css';
 
 	interface Props {
@@ -10,8 +9,7 @@
 	let { data }: Props = $props();
 </script>
 
-<h2>{data.metadata.title}</h2>
-
-<CustomElements>
+<article>
+	<h2 class="title">{data.metadata.title}</h2>
 	<data.content />
-</CustomElements>
+</article>

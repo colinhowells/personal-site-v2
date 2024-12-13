@@ -92,6 +92,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: calc(var(--padding) * 2);
+		padding: var(--gap) 0;
 	}
 	label {
 		display: flex;

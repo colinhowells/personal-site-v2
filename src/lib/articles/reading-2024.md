@@ -1,9 +1,9 @@
 ---
 title: Reading 2024
 description: Books read in 2024
-datePublished: '2024-09-07'
-dateModified: '2024-09-07'
-type: 'list'
+datePublished: 2024-09-07
+dateModified: 2024-09-07
+type: list
 published: true
 ---
 
@@ -25,3 +25,12 @@ published: true
 - Lake of the Long Sun (Gene Wolfe, 1994)
 - Caldé of the Long Sun (Gene Wolfe, 1994)
 - Exodus from the Long Sun (Gene Wolfe, 1996)
+- The Origin of the World (Pierre Michon, 1996)
+- Woodcutters (Thomas Bernhard, 1984)
+- Zone (Mathias Énard, 2008)
+- Event Factory (Renee Gladman, 2010)
+- The Star Diaries (Stanislaw Lem, 1971)
+- Herscht 07769 (László Krasznahorkai, 2021)
+- Tyll (Daniel Kehlmann, 2017)
+- Washington Square (Henry James, 1880)
+- Bleeding Edge (Thomas Pynchon, 2013)

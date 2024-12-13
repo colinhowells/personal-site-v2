@@ -4,7 +4,6 @@
 	import { page } from '$app/stores';
 	import SEO from '$lib/SEO.svelte';
 	import Header from '$lib/Header.svelte';
-	import Content from '$lib/Content.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import '$css';
 	interface Props {
@@ -37,8 +36,6 @@
 
 <Header />
 <main>
-	<Content>
-		{@render children?.()}
-	</Content>
+	{@render children?.()}
 </main>
 <Footer />

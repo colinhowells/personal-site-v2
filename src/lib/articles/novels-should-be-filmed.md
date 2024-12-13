@@ -1,9 +1,9 @@
 ---
 title: Books That Should Be Filmed
 description: Excellent novels that should be made into films
-datePublished: '2024-09-07'
-dateModified: '2024-09-07'
-type: 'article'
+datePublished: 2024-09-07
+dateModified: 2024-09-07
+type: article
 published: false
 ---
 

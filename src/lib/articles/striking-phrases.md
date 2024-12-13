@@ -1,15 +1,15 @@
 ---
 title: Striking Phrases
 description: Phrases that jumped out from things I've read over the last few years
-datePublished: '2019-12-29'
-dateModified: '2023-03-04'
-type: 'list'
+datePublished: 2019-12-29
+dateModified: 2023-03-04
+type: list
 published: true
 ---
 
 For a while I compiled a list of phrases that jumped out from things I read. I've stopped updating it, but here's the list as it stood in 2023:
 
-2023
+### 2023
 
 - [prompt engineering](https://simonwillison.net/2023/Feb/21/in-defense-of-prompt-engineering/)
 - [stochastic parrots](https://dl.acm.org/doi/pdf/10.1145/3442188.3445922)
@@ -18,7 +18,7 @@ For a while I compiled a list of phrases that jumped out from things I read. I'v
 - [moral incapacity](https://www.americasquarterly.org/article/what-just-happened-in-peru-understanding-vizcarras-sudden-impeachment/)
 - [liminal consciousness](https://smoothbrains.net/posts/2022-08-24-planetary-scale-vibe-collapse.html)
 
-2022
+### 2022
 
 - [participatory disinformation](https://www.cip.uw.edu/2021/05/26/participatory-disinformation-kate-starbird/)
 - [elite projection](https://kottke.org/22/12/the-dangers-of-elite-projection)
@@ -60,7 +60,7 @@ For a while I compiled a list of phrases that jumped out from things I read. I'v
 - [mass mortification](https://www.newyorker.com/magazine/2022/03/28/the-shaming-industrial-complex-cathy-oneil-the-shame-machine-owen-flanagan-how-to-do-things-with-emotions)
 - [loitering munitions](https://www.csis.org/analysis/send-swarm)
 
-2021
+### 2021
 
 - [performative indignation](https://www.politico.com/news/magazine/2021/04/11/republican-party-brain-swap-anti-corporate-480622)
 - [brain debris](https://padiracinnovation.org/News/2021/04/better-drainage-of-brain-debris-improves-alzheimers-disease-therapies)
@@ -82,7 +82,7 @@ For a while I compiled a list of phrases that jumped out from things I read. I'v
 - [recreancy](https://doi.org/10.1080/08941920.2012.690066)
 - [success disaster](https://apenwarr.ca/log/20211201)
 
-2020
+### 2020
 
 - explosive demotion
 - universal stultification
@@ -102,7 +102,7 @@ For a while I compiled a list of phrases that jumped out from things I read. I'v
 - [enantiodromia](https://en.m.wikipedia.org/wiki/Enantiodromia)
 - [quantum nanodiamonds](https://phys.org/news/2020-11-quantum-nanodiamonds-disease-earlier.html)
 
-2019
+### 2019
 
 - reputation laundering
 - experimental theology

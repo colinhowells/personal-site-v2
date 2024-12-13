@@ -1,8 +1,10 @@
 <script>
+	import { updated } from '$app/stores';
+
 	import Nav from '$lib/Nav.svelte';
 </script>
 
-<header>
+<header data-sveltekit-reload={$updated ? '' : 'off'}>
 	<h1 id="name" class="sr-only">Colin Howells</h1>
 	<a href="/" aria-labelledby="name"
 		><svg width="788" height="89">
@@ -229,6 +231,7 @@
 			width: auto;
 			height: 0.6lh;
 			fill: white;
+			transition: fill var(--transition-time);
 			margin-top: 0.2lh;
 		}
 	}
@@ -236,6 +239,7 @@
 		padding: 0 0.5dvw;
 	}
 	a {
+		transition: color var(--transition-time);
 		text-decoration: none;
 		&:hover {
 			color: var(--color-links-hover);
