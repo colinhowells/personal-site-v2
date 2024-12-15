@@ -2,7 +2,7 @@
 title: Reading 2024
 description: Books read in 2024
 datePublished: 2024-09-07
-dateModified: 2024-09-07
+dateModified: 2024-12-14
 type: list
 published: true
 ---
@@ -34,3 +34,6 @@ published: true
 - Tyll (Daniel Kehlmann, 2017)
 - Washington Square (Henry James, 1880)
 - Bleeding Edge (Thomas Pynchon, 2013)
+- Roadside Picnic (Arkady & Boris Strugatsky, 1972)
+- Globalists: The End of Empire and the Birth of Neoliberalism (Quinn Slobodian, 2018)
+- The Wizard of the Kremlin (Giuliano da Empoli, 2022)
