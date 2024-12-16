@@ -1,10 +1,10 @@
 <script>
-	import { updated } from '$app/stores';
+	import { updated } from '$app/state';
 
 	import Nav from '$lib/Nav.svelte';
 </script>
 
-<header data-sveltekit-reload={$updated ? '' : 'off'}>
+<header data-sveltekit-reload={updated.current ? '' : 'off'}>
 	<h1 id="name" class="sr-only">Colin Howells</h1>
 	<a href="/" aria-labelledby="name"
 		><svg width="788" height="89">

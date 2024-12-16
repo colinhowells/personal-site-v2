@@ -1,19 +1,19 @@
 <script>
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 </script>
 
 <nav>
 	<ul>
-		<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+		<li aria-current={page.url.pathname === '/' ? 'page' : undefined}>
 			<a href="/">Writing</a>
 		</li>
-		<li aria-current={$page.url.pathname === '/resume' ? 'page' : undefined}>
+		<li aria-current={page.url.pathname === '/resume' ? 'page' : undefined}>
 			<a href="/resume">Resume</a>
 		</li>
-		<li aria-current={$page.url.pathname === '/portfolio' ? 'page' : undefined}>
+		<li aria-current={page.url.pathname === '/portfolio' ? 'page' : undefined}>
 			<a href="/portfolio">Portfolio</a>
 		</li>
-		<li aria-current={$page.url.pathname === '/contact' ? 'page' : undefined}>
+		<li aria-current={page.url.pathname === '/contact' ? 'page' : undefined}>
 			<a href="/contact">Contact</a>
 		</li>
 	</ul>

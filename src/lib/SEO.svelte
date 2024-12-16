@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import { PUBLIC_SITE_URL } from '$env/static/public';
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import resume from '$lib/resume.json';
 	import { serializeSchema, getISODate } from '$lib/helpers.ts';
 
@@ -11,17 +11,17 @@
 
 	let { data }: Props = $props();
 
-	const articleNodeId = `${$page.url.toString()}/#article`;
+	const articleNodeId = `${page.url.toString()}/#article`;
 	// const avatarUrl = `${PUBLIC_SITE_URL}/images/colin-2023.jpg`;
 	const avatarUrl = 'https://github.com/colinhowells.png';
 	const defaultDate = '2024-09-05';
 	const educationNodeId = `${PUBLIC_SITE_URL}/#education`;
-	const isArticle = '/[slug]' === $page.route.id;
+	const isArticle = '/[slug]' === page.route.id;
 	const personNodeId = `${PUBLIC_SITE_URL}/#person`;
 	const publishedDateTime = getISODate(data.metadata.datePublished ?? defaultDate);
 	const siteNodeId = `${PUBLIC_SITE_URL}/#website`;
 	const updatedDateTime = getISODate(data.metadata.dateModified ?? defaultDate);
-	const webPageNodeId = $page.url.toString();
+	const webPageNodeId = page.url.toString();
 
 	let schemaGraphObjects = [] as Array<Record<string, any>>;
 
@@ -52,7 +52,7 @@
 		isPartOf: {
 			'@id': siteNodeId
 		},
-		url: $page.url.toString(),
+		url: page.url.toString(),
 		name: data.metadata.title,
 		datePublished: publishedDateTime,
 		dateModified: updatedDateTime,
@@ -72,7 +72,7 @@
 			mainEntityOfPage: {
 				'@id': webPageNodeId
 			},
-			url: $page.url.toString(),
+			url: page.url.toString(),
 			headline: data.metadata.title,
 			description: data.metadata.description,
 			inLanguage: 'en-US',
@@ -183,13 +183,13 @@
 	<link rel="me" href="https://bsky.app/profile/colinhowells.com" />
 	<link rel="me" href="https://github.com/colinhowells" />
 	<link rel="me" href="https://bandcamp.com/colinhowells" />
-	<link rel="canonical" href={$page.url.toString()} />
+	<link rel="canonical" href={page.url.toString()} />
 	<meta property="og:title" content={data.metadata.title} />
 	<meta property="og:description" content={data.metadata.description} />
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:site_name" content={resume.basics.name} />
 	<meta property="og:type" content={isArticle ? 'article' : 'website'} />
-	<meta property="og:url" content={$page.url.toString()} />
+	<meta property="og:url" content={page.url.toString()} />
 	<meta property="og:updated_time" content={updatedDateTime} />
 	{#if isArticle}
 		<meta property="article:author" content="https://www.facebook.com/cghowells" />
