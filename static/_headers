@@ -1,14 +1,10 @@
-https://colinhowells.com/*
+/*
+  Content-Security-Policy: default-src 'self'; frame-ancestors 'none'; form-action 'self';
   Permissions-Policy: interest-cohort=()
-  X-Content-Type-Options: nosniff
-  X-Frame-Options: DENY
-  X-XSS-Protection: 1; mode=block
-
-https://colinhowells-site.pages.dev/*
-  Permissions-Policy: interest-cohort=()
+  Referrer-Policy: strict-origin-when-cross-origin
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
 
 https://:colinhowells-site.pages.dev/*
-  X-Robots-Tag: noindex  
+  X-Robots-Tag: noindex
