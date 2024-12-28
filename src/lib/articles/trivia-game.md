@@ -16,6 +16,8 @@ import playing from '$lib/images/trivia-mobile-playing-people-cropped.png';
 import tablet from '$lib/images/trivia-tablet-playing-pets-cropped.png';
 </script>
 
+<a href="https://trivia.greatergood.com" rel="noreferrer" aria-label="Trivia to Give game">https://trivia.greatergood.com &rarr;</a>
+
 Some time had elapsed since using WordPress to build games, and when the time came for another game project I was anxious to use a stack I’d been coveting for a while, [Svelte](https://svelte.dev) on [Cloudflare Workers](https://workers.cloudflare.com) (specifically its Pages incarnation, which is a package of Workers with bound [KV storage](https://developers.cloudflare.com/kv/) wrapped in a [delightful GitHub-sourced CI/CD pipeline](https://developers.cloudflare.com/pages/get-started/git-integration/)). My experience with both had been fantastic; there are some rough edges to Cloudflare products, which are understandable functions of constant feature iteration, but I’d prefer those to the sometimes Byzantine world of AWS.
 
 There had to be another piece, however – the headless CMS. The company had needs beyond this particular project, so some time was spent shopping for one, but eventually this project was able to use the first choice, [DatoCMS](https://www.datocms.com) – which started as an in-house CMS used by an Italian agency and became a customer-facing product itself. While the content was authored there, there was some pre-processing necessary to construct a tidy JSON blob of fresh questions for a given 24-hour period for the game engine to have immediately to hand, and KV was perfect as a cache.

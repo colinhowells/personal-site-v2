@@ -24,7 +24,7 @@ I was anxious about avoiding wildfire smoke, and now [trips to National Parks ne
 
 <Figure src={traversable} alt="Trail leading up to Mount Rainer, partally snow-covered" width="1024" height="768" />
 
-Unbeknownst to me there was [a hotel on the mountain](https://mtrainierguestservices.com/accommodations/paradise-inn/) – there's an additional hotel to the south and lower down, the [National Park Inn at Longmire](https://mtrainierguestservices.com/accommodations/national-park-inn/)
+Unbeknownst to me there was [a hotel on the mountain](https://mtrainierguestservices.com/accommodations/paradise-inn/) – there's an additional hotel to the south and lower down, the [National Park Inn at Longmire](https://mtrainierguestservices.com/accommodations/national-park-inn/).
 
 <Figure src={porch} alt="View from the porch of the Paradise Inn on Mount Rainier" caption="Paradise Inn porch view" width="1024" height="768" />
 

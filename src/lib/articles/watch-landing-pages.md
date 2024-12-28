@@ -17,6 +17,8 @@ import quiz from '$lib/images/watch-desktop-page-quiz.png';
 import more from '$lib/images/watch-desktop-page-more.png';
 </script>
 
+<a href="https://watch.greatergood.com" rel="noreferrer" aria-label="Watch to Give product landing pages">https://watch.greatergood.com &rarr;</a>
+
 We gave a unique spin on soliciting donations by presenting them as a kind of mini-game funnel; the user travelled through three stages, emerging from the last into a [Shopify checkout](https://www.shopify.com/checkout) (donations for the company needing to be purchases).
 
 These pages had gone through a number of rewrites; before this version, each page was its own React application, with its own verbose Webpack configuration, and there was no CMS or templating. This was extremely inefficient, even maddening if there was ever a need to edit older pages, so I was desperate to change this situation – especially because it was a situation I was responsible for! Nothing motivates quite like one’s perceived failures.

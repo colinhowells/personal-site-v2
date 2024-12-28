@@ -15,6 +15,8 @@ import desktop from '$lib/images/account-desktop.png';
 import mobile from '$lib/images/account-mobile-cropped.png';
 </script>
 
+<a href="https://account.greatergood.com" rel="noreferrer" aria-label="GreaterGood Guardians loyalty program">https://account.greatergood.com &rarr;</a>
+
 Devising a paid loyalty program that could be leveraged across sites on varying platforms was challenging. Luckily Stytch helped with what would have been a very difficult piece, authentication of its abstracted users. The databases and APIs as such weren’t as much of a problem as managing the metadata associated with user action - which action? Which membership tier? Which chronological ruleset (actions only being allowed within temporal windows) applied?
 
 Walking the prospective customer through all this was the function of the onboarding site, which had to communicate quite a bit of information while being usable and not overwhelming. By this time [Svelte](https://svelte.dev) had been accepted as the UI framework of choice, which was an excellent decision (especially for me, the Svelte fanboy). TypeScript was used extensively, which I still have mixed feelings about and am not sure is necessary for every project, even though I can perfectly understand why it’s popular to the point of being ubiquitous.
