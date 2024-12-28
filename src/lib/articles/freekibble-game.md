@@ -16,6 +16,8 @@ import mobile from '$lib/images/freekibble-mobile-cropped.png';
 import totals from '$lib/images/freekibble-desktop-totals-cropped.png';
 </script>
 
+<a href="https://www.freekibble.com" rel="noreferrer" aria-label="Freekibble game">https://www.freekibble.com &rarr;</a>
+
 Our company had incorporated/acquihired the client for this trivia-playing project, who’d been running the site for years and wanted to expand it to include paid memberships. Given that it used a passwordless login system (the user had a query parameter which designated them, which was about as secure as you’d imagine) it needed a complete rebuild. My first thought was to do it as a SPA or even an iOS app, but advertising was being sold by the page url, so because of that as well as JS-driven sites being somewhat novel at the time, WordPress was chosen, and [Virtual Native](https://www.virtualnative.com) was brought in to devise the initial back-end functionality.
 
 This wasn’t a terrible decision in some ways, because the questions could be [custom post types](https://developer.wordpress.org/plugins/post-types/registering-custom-post-types/) and the membership and payment infrastructure could be dealt with using [Restrict Content Pro](https://restrictcontentpro.com) and WP’s own users, but there were challenges – a game needs to be real-time, which made the site no longer an extremely-cacheable blog. The mechanism that drove the game finally was a peculiar melange of jQuery and form requests and there was some work with our host to make sure some routes were exempt from caching policies, but it was reliable, responsive (as in quick), and most importantly real-time.
