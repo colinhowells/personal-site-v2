@@ -1,10 +1,10 @@
 ---
 title: Watching 2024
 description: Films seen in 2024
-datePublished: 2024-09-25
-dateModified: 2024-09-25
+datePublished: 2024-12-31
+dateModified: 2024-12-31
 type: list
-published: false
+published: true
 ---
 
 - Tons of YouTube lectures and documentaries
@@ -53,7 +53,7 @@ published: false
 - Afire (Christian Petzold, 2023)
 - Elevator to the Gallows (Louis Malle, 1958)
 - The Life of Jesus (Bruno Dumont, 1997)
-- Miller's Crossing (Joel and Ethan Coen, 1990) rewatch
+- Miller’s Crossing (Joel and Ethan Coen, 1990) rewatch
 - A History of Violence (David Cronenberg, 2005) rewatch
 - Martha (Rainer Werner Fassbinder, 1974)
 - The Judge and the Assassin (Bertrand Tavernier, 1976)
@@ -99,7 +99,7 @@ published: false
 - Uncle Vanya (Ross MacGibbon & Ian Rickson, 2020)
 - An Enemy of the People (Gareth Davies, 1980)
 - Ghosts (Elijah Moshinsky, 1987)
-- A Doll's House (Joseph Losey, 1973)
+- A Doll’s House (Joseph Losey, 1973)
 - Nora Helmer (Rainer Werner Fassbinder, 1974)
 - The Wild Duck (Henri Safran, 1984)
 - Sugar (Fernando Meirelles, 2024) series
@@ -196,7 +196,7 @@ published: false
 - Vox Lux (Brady Corbet, 2018)
 - Strange Days (Kathryn Bigelow, 1995)
 - Only the River Flows (Wei Shujun, 2023)
-- Meek's Cutoff (Kelly Reichardt, 2010)
+- Meek’s Cutoff (Kelly Reichardt, 2010)
 - The Vast of Night (Andrew Patterson, 2019)
 - Beginning (Déa Kulumbegashvili, 2020)
 - The Long Good Friday (John Mackenzie, 1980)
@@ -206,3 +206,72 @@ published: false
 - House of Pleasures (Bertrand Bonello, 2011)
 - Nocturama (Bertrand Bonello, 2016)
 - The Beast (Bertrand Bonello, 2023)
+- Slingshot (Mikael Håfström, 2024)
+- War Game (Jesse Moss & Tony Gerber, 2024)
+- My Own Private Idaho (Gus Van Sant, 1991)
+- Lone Star (John Sayles, 1996)
+- Evil Does Not Exist (Ryusuke Hamaguchi, 2023)
+- Deadpool & Wolverine (Shawn Levy, 2024)
+- Safety Not Guaranteed (Colin Trevorrow, 2012)
+- Things Will Be Different (Michael Felker, 2024)
+- It’s What’s Inside (Greg Jardin, 2024)
+- June Zero (Jake Paltrow, 2022)
+- Xiao Wu (Jia Zhangke, 1997)
+- Platform (Jia Zhangke, 2000)
+- Unknown Pleasures (Jia Zhangke, 2002)
+- The World (Jia Zhangke, 2004)
+- Still Life (Jia Zhangke, 2006)
+- 24 City (Jia Zhangke, 2008)
+- No Other Land (Basel Adra, Hamdan Ballal, Yuval Abraham & Rachel Szor, 2024)
+- A Touch of Sin (Jia Zhangke, 2013)
+- A Touch of Zen (King Hu, 1971)
+- Once Upon a Time in China (Tsui Hark, 1991) rewatch
+- Once Upon a Time in China II (Tsui Hark, 1992) rewatch
+- Once Upon a Time in China III (Tsui Hark, 1993) rewatch
+- 10 Rillington Place (Richard Fleischer, 1971)
+- A Day on the Grand Canal with the Emperor of China (Philip Haas, 1988)
+- The Apprentice (Ali Abbasi, 2024)
+- Where’s My Roy Cohn? (Matt Tyrnauer, 2019)
+- 64 Days (Nick Quested, 2024)
+- Kingdom Uncovered: Inside Saudi Arabia (Sam Collins, 2024)
+- The Mist (Frank Darabont, 2007)
+- Wolf Hall (2015) season 1 rewatch, season 2
+- Cold War (Paweł Pawlikowski, 2018)
+- The Artifice Girl (Franklin Ritch, 2023)
+- Drive My Car (Ryusuke Hamaguchi, 2021)
+- Silo (2024) seasons 1, 2
+- The Bibi Files (Alexis Bloom, 2024)
+- One from the Heart (Francis Ford Coppola, 1981) Reprise
+- Old Boyfriends (Joan Tewkesbury, 1979)
+- Liquid Sky (Slava Tsukerman, 1982)
+- A Serious Man (Joel and Ethan Coen, 2009)
+- Conclave (Edward Berger, 2024)
+- Kiss of the Spider Woman (Héctor Babenco, 1985)
+- The Sea Gull (Sidney Lumet, 1968)
+- Bigger Than Life (Nicolas Ray, 1956)
+- World On a Wire (Rainer Werner Fassbinder, 1973)
+- Three Sisters (Cedric Massina, 1970)
+- The Cherry Orchard (Richard Eyre, 1981)
+- The Goldman Case (Cédric Kahn, 2023)
+- Heretic (Scott Beck & Bryan Woods, 2024)
+- Z (Costa-Gavras, 1969)
+- General Idi Amin Dada: A Self Portrait (Barbet Schroeder, 1974)
+- Andrei Rublev (Andrei Tarkovsky, 1966) rewatch
+- Juror #2 (Clint Eastwood, 2024)
+- The Substance (Coralie Fargeat, 2024)
+- Lumumba: Death of a Prophet (Raoul Peck, 1991)
+- Anora (Sean Baker, 2024)
+- Jeanne Dielman, 23, quai du Commerce, 1080 Bruxelles (Chantal Akerman, 1975)
+- 12 Monkeys (Terry Gilliam, 1995) rewatch
+- Kagemusha (Akira Kurosawa, 1980) rewatch
+- The Battle of Algiers (Gillo Pontecorvo, 1966) rewatch
+- The Order (Justin Kurzel, 2024)
+- Unknown Soldier (Aku Louhimies, 2018)
+- Gladiator II (Ridley Scott, 2024)
+- Europa Europa (Agnieszka Holland, 1990)
+- The Bridge (Bernhard Wicki, 1959)
+- Fox and His Friends (Rainer Werner Fassbinder, 1975)
+- Inside the Yellow Cocoon Shell (Phạm Thiên Ân, 2023)
+- God Told Me To (Larry Cohen, 1975)
+- The Lion in Winter (Anthony Harvey, 1968)
+- The Birthday (Eugenio Mira, 2004)
