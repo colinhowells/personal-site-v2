@@ -38,5 +38,5 @@ published: true
 - Globalists: The End of Empire and the Birth of Neoliberalism (Quinn Slobodian, 2018)
 - The Wizard of the Kremlin (Giuliano da Empoli trans. Willard Wood, 2023)
 - Winter Mythologies and Abbots (Pierre Michon trans. Ann Jefferson, 2023)
-- On the Calculation of Volume Vol I (Solvej Balle trans. Barbara J. Haveland, 2020)
-- On the Calculation of Volume Vol II (Solvej Balle trans. Barbara J. Haveland, 2020)
+- On the Calculation of Volume Vol I (Solvej Balle trans. Barbara J. Haveland, 2024)
+- On the Calculation of Volume Vol II (Solvej Balle trans. Barbara J. Haveland, 2024)
