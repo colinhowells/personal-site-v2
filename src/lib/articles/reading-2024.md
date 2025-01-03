@@ -29,7 +29,7 @@ published: true
 - Woodcutters (Thomas Bernhard trans. David McLintock, 1987)
 - Zone (Mathias Énard trans. Charlotte Mandell, 2010)
 - Event Factory (Renee Gladman, 2010)
-- The Star Diaries (Stanislaw Lem trans. Michael Kandel, 1985)
+- The Star Diaries (Stanisław Lem trans. Michael Kandel, 1985)
 - Herscht 07769 (László Krasznahorkai trans. Ottilie Mulzet, 2024)
 - Tyll (Daniel Kehlmann trans. Ross Benjamin, 2021)
 - Washington Square (Henry James, 1880)
