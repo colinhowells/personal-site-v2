@@ -8,3 +8,4 @@ published: false
 ---
 
 - Solenoid (Mircea Cărtărescu trans. Sean Cotter, 2022)
+- President Carter: The White House Years (Stuart E. Eizenstat, 2018)

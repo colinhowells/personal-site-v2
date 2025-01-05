@@ -2,10 +2,12 @@
 title: Watching 2024
 description: Films seen in 2024
 datePublished: 2024-12-31
-dateModified: 2024-12-31
+dateModified: 2025-01-04
 type: list
 published: true
 ---
+
+_Favorites in **bold**_
 
 - Tons of YouTube lectures and documentaries
 - Shadows of Forgotten Ancestors (Sergei Parajanov, 1965)
@@ -15,7 +17,7 @@ published: true
 - The Proposition (John Hillcoat, 2005)
 - Fargo (Noah Hawley, 2024) season 5
 - True History of the Kelly Gang (Justin Kurzel, 2019)
-- The Underground Railroad (Barry Jenkins, 2021) rewatch
+- **The Underground Railroad (Barry Jenkins, 2021)** rewatch
 - The Wild Bunch (Sam Peckinpah, 1969) rewatch
 - True Grit (Joel and Ethan Coen, 2010) rewatch
 - The Name of the Rose (Jean-Jacques Annaud, 1986)
@@ -29,64 +31,67 @@ published: true
 - Letter Never Sent (Mikhail Kalatozov, 1959)
 - True Detective (Issa López, 2024) season 4
 - Zatoichi the Fugitive (Tokuzo Tanaka, 1963)
-- Memories of Murder (Bong Joon-ho, 2003) rewatch
+- **Memories of Murder (Bong Joon-ho, 2003)** rewatch
 - Napoleon (Ridley Scott, 2023)
-- Margaret (Kenneth Lonergan, 2011)
+- **Margaret (Kenneth Lonergan, 2011)**
 - Captain Conan (Bertrand Tavernier, 1996)
 - Extraction 2 (Sam Hargrave, 2023)
-- Heaven's Gate (Michael Cimino, 1980)
-- The Deer Hunter (Michael Cimino, 1978) rewatch
+- **Heaven's Gate (Michael Cimino, 1980)**
+- **The Deer Hunter (Michael Cimino, 1978)** rewatch
 - Ripley's Game (Liliana Cavani, 2002)
 - Year of the Dragon (Michael Cimino, 1985) rewatch
-- Let Joy Reign Supreme (Bertrand Tavernier, 1975)
+- **Let Joy Reign Supreme (Bertrand Tavernier, 1975)**
 - Marketa Lazarová (František Vláčil, 1967)
 - The Passion of Joan of Arc (Carl Theodor Dreyer, 1928)
 - The Trial of Joan of Arc (Robert Bresson, 1962)
-- Sorcerer (William Friedkin, 1977) rewatch
+- **Sorcerer (William Friedkin, 1977)** rewatch
 - Beau Is Afraid (Ari Aster, 2023)
 - Hereditary (Ari Aster, 2018) rewatch
 - Midsommar (Ari Aster, 2019) rewatch
-- The Curse (Nathan Fielder, 2023)
-- The Adventures of Baron Munchausen (Terry Gilliam, 1988) rewatch
+- **The Curse (Nathan Fielder, 2023)** series
+- **The Adventures of Baron Munchausen (Terry Gilliam, 1988)** rewatch
 - Ferrari (Michael Mann, 2023)
 - The Big Risk (Claude Sautet, 1960)
-- Afire (Christian Petzold, 2023)
+- **Barbara (Christian Petzold, 2012)**
+- **Phoenix (Christian Petzold, 2014)**
+- **Transit (Christian Petzold, 2018)**
+- **Afire (Christian Petzold, 2023)**
 - Elevator to the Gallows (Louis Malle, 1958)
 - The Life of Jesus (Bruno Dumont, 1997)
-- Miller’s Crossing (Joel and Ethan Coen, 1990) rewatch
+- **Miller’s Crossing (Joel and Ethan Coen, 1990)** rewatch
 - A History of Violence (David Cronenberg, 2005) rewatch
 - Martha (Rainer Werner Fassbinder, 1974)
-- The Judge and the Assassin (Bertrand Tavernier, 1976)
-- Mad Max (George Miller, 1979)
-- Max Max 2: The Road Warrior (George Miller, 1981)
-- Mad Max 3: Beyond Thunderdome (George Miller, 1985)
-- An Officer and a Spy (Roman Polanski, 2019)
-- Eternal Sunshine of The Spotless Mind (Michel Gondry, 2004) rewatch
-- The Ghost Writer (Roman Polanski, 2010)
-- Little Murders (Alan Arkin, 1971)
-- The Iron Claw (Sean Durkin, 2023)
-- The Clockmaker of St. Paul (Bertrand Tavernier, 1974)
+- **The Judge and the Assassin (Bertrand Tavernier, 1976)**
+- **Mad Max (George Miller, 1979)**
+- **Mad Max 2: The Road Warrior (George Miller, 1981)**
+- **Mad Max 3: Beyond Thunderdome (George Miller, 1985)**
+- **An Officer and a Spy (Roman Polanski, 2019)**
+- **Eternal Sunshine of The Spotless Mind (Michel Gondry, 2004)** rewatch
+- **The Ghost Writer (Roman Polanski, 2010)**
+- **Little Murders (Alan Arkin, 1971)**
+- **The Iron Claw (Sean Durkin, 2023)**
+- **The Clockmaker of St. Paul (Bertrand Tavernier, 1974)**
 - Viridiana (Luis Buñuel, 1961)
 - Simon of the Desert (Luis Buñuel, 1965)
 - The Exterminating Angel (Luis Buñuel, 1962)
-- The Zone of Interest (Jonathan Glazer, 2023)
+- **The Zone of Interest (Jonathan Glazer, 2023)**
 - To Live and Die in LA (William Friedkin, 1985) rewatch
 - Jodhaa Akbar (Ashutosh Gowariker, 2008)
-- Little Odessa (James Gray, 1994)
-- The Yards (James Gray, 2000)
-- We Own the Night (James Gray, 2007)
+- **Little Odessa (James Gray, 1994)**
+- **The Yards (James Gray, 2000)**
+- **We Own the Night (James Gray, 2007)**
 - Good Time (Josh and Benny Safdie, 2017)
-- Poor Things (Yorgos Lanthimos, 2023)
-- Save the Green Planet! (Jang Joon-hwan, 2003) rewatch
+- **Poor Things (Yorgos Lanthimos, 2023)**
+- **Save the Green Planet! (Jang Joon-hwan, 2003)** rewatch
 - Black Narcissus (Michael Powell and Emeric Pressburger, 1947)
-- A Royal Affair (Nikolaj Arcel, 2012)
-- Anatomy of a Fall (Justine Triet, 2023)
+- **A Royal Affair (Nikolaj Arcel, 2012)**
+- **Anatomy of a Fall (Justine Triet, 2023)**
 - The Hourglass Sanatorium (Wojciech Jerzy Has, 1973)
-- Songs from the Second Floor (Roy Andersson, 2000)
-- You, the Living (Roy Andersson, 2007)
+- **Songs from the Second Floor (Roy Andersson, 2000)**
+- **You, the Living (Roy Andersson, 2007)**
 - A Pigeon Sat on a Branch Reflecting on Existence (Roy Andersson, 2014)
-- Dune: Part One (Denis Villeneuve, 2020) rewatch
-- Dune: Part Two (Denis Villeneuve, 2024)
+- **Dune: Part One (Denis Villeneuve, 2020)** rewatch
+- **Dune: Part Two (Denis Villeneuve, 2024)**
 - American Fiction (Cord Jefferson, 2023)
 - The Wild Geese (Andrew V. McLaglen, 1978)
 - The Inn (Jerzy Kawalerowicz, 1983)
@@ -95,7 +100,7 @@ published: true
 - Chapaev (Georgi and Sergei Vasilyev, 1934)
 - The Saragossa Manuscript (Wojciech Jerzy Has, 1965)
 - A Foreign Affair (Billy Wilder, 1948)
-- American Conspiracy: The Octopus Murders (Zachary Treitz, 2024) series
+- **American Conspiracy: The Octopus Murders (Zachary Treitz, 2024)** series
 - Uncle Vanya (Ross MacGibbon & Ian Rickson, 2020)
 - An Enemy of the People (Gareth Davies, 1980)
 - Ghosts (Elijah Moshinsky, 1987)
@@ -107,40 +112,40 @@ published: true
 - A Master Builder (Jonathan Demme, 2014)
 - Hedda Gabler (Waris Hussein, 1972)
 - Little Eyolf (Michael Darlow, 1982)
-- Salome’s Last Dance (Ken Russell, 1988) rewatch
+- **Salome’s Last Dance (Ken Russell, 1988)** rewatch
 - Fallout (Jonathan Nolan et al, 2024) season 1
-- The Delinquents (Rodrigo Moreno, 2023)
+- **The Delinquents (Rodrigo Moreno, 2023)**
 - The Sympathizer (Park Chan-wook et al, 2024) series
-- Ripley (Steven Zaillian, 2024) series
+- **Ripley (Steven Zaillian, 2024)** series
 - Le Amiche (Michelangelo Antonioni, 1955)
-- La Prisonnière (Henri-Georges Clouzot, 1968)
+- **La Prisonnière (Henri-Georges Clouzot, 1968)**
 - Beforeigners (Anne Bjørnstad & Eilif Skodvin, 2024) seasons 1 and 2
-- Shōgun (Rachel Kondo & Justin Marks, 2024) series
-- Godzilla Minus One (Takashi Yamazaki, 2023)
+- **Shōgun (Rachel Kondo & Justin Marks, 2024)** series
+- **Godzilla Minus One (Takashi Yamazaki, 2023)**
 - Humane (Caitlin Cronenberg, 2024)
 - After the Party (Robyn Malcolm & Dianne Taylor, 2023) series
 - Possessor (Brandon Cronenberg, 2020)
 - Infinity Pool (Brandon Cronenberg, 2023)
-- The Last of Sheila (Herbert Ross, 1973)
-- Werckmeister Harmonies (Béla Tarr & Ágnes Hranitzky, 2000)
-- The Verdict (Sidney Lumet, 1982)
-- A Sunday in the Country (Bertrand Tavernier, 1984)
+- **The Last of Sheila (Herbert Ross, 1973)**
+- **Werckmeister Harmonies (Béla Tarr & Ágnes Hranitzky, 2000)**
+- **The Verdict (Sidney Lumet, 1982)**
+- **A Sunday in the Country (Bertrand Tavernier, 1984)**
 - People on Sunday (Robert Siodmak & Edgar G. Ulmer, 1930)
-- La Chimera (Alice Rohrwacher, 2023)
+- **La Chimera (Alice Rohrwacher, 2023)**
 - Odd Man Out (Carol Reed, 1947)
-- Life and Nothing But (Bertrand Tavernier, 1989)
+- **Life and Nothing But (Bertrand Tavernier, 1989)**
 - Red River (Howard Hawks, 1948) rewatch
 - New Life (John Rosman, 2023)
 - Civil War (Alex Garland, 2024)
 - The Battle of Chile (Patricio Guzmán, 1975–79)
 - Colonia (Florian Gallenberger, 2015)
-- No (Pablo Larrain, 2012)
-- The Conformist (Bernardo Bertolucci, 1970) rewatch
+- **No (Pablo Larrain, 2012)**
+- **The Conformist (Bernardo Bertolucci, 1970)** rewatch
 - The Garden of the Finzi-Continis (Vittorio De Sica, 1970) rewatch
 - Love and Anarchy (Lina Wertmüller, 1973)
 - Seven Beauties (Lina Wertmüller, 1976)
-- A Special Day (Ettore Scola, 1977)
-- The Cremator (Juraj Herz, 1969)
+- **A Special Day (Ettore Scola, 1977)**
+- **The Cremator (Juraj Herz, 1969)**
 - The Damned (Luchino Visconti, 1969)
 - The Night Porter (Liliana Cavani, 1974)
 - Ilsa, She Wolf of the SS (Don Edmunds, 1975)
@@ -148,79 +153,79 @@ published: true
 - Babi Yar. Context (Sergei Loznitsa, 2021)
 - The Battle of Moscow (Yuri Ozerov, 1985)
 - Overlord (Stuart Cooper, 1975)
-- Saving Private Ryan (Steven Spielberg, 1998) rewatch
-- Band of Brothers (Tom Hanks & Steven Spielberg, 2001) series, rewatch
+- **Saving Private Ryan (Steven Spielberg, 1998)** rewatch
+- **Band of Brothers (Tom Hanks & Steven Spielberg, 2001)** series, rewatch
 - The Pacific (Bruce C. McKenna et al, 2010) series, rewatch
-- The Tin Drum (Volker Schlöndorff, 1979)
+- **The Tin Drum (Volker Schlöndorff, 1979)**
 - Enemy at the Gates (Jean-Jacques Annaud, 2001)
 - Seventeen Moments of Spring (Tatyana Lioznova, 1973) series
-- Furiosa: a Mad Max Saga (George Miller, 2024)
+- **Furiosa: a Mad Max Saga (George Miller, 2024)**
 - The Boys (2019–2024) seasons 1–4
 - In a Violent Nature (2024)
 - Walker (Alex Cox, 1987)
 - From Here to Eternity (Fred Zinnemann, 1953)
-- Beau Travail (Claire Denis, 1999)
+- **Beau Travail (Claire Denis, 1999)**
 - Cold In July (Jim Mickle, 2014)
-- Coup de Torchon (Bertrand Tavernier, 1981)
+- **Coup de Torchon (Bertrand Tavernier, 1981)**
 - Targets (Peter Bogdanovich, 1968)
-- Point Blank (John Boorman, 1968)
+- **Point Blank (John Boorman, 1968)** rewatch
 - The Outfit (John Flynn, 1973)
-- Red Rooms (Pascal Plante, 2023)
+- **Red Rooms (Pascal Plante, 2023)**
 - Arcadian (Benjamin Brewer, 2024)
-- Basic Lee: Live at the Lowry (Stewart Lee/Colin Dench, 2024)
+- **Basic Lee: Live at the Lowry (Stewart Lee/Colin Dench, 2024)**
 - Twilight of the Warriors: Walled In (Soi Cheang, 2024)
 - Pharaoh (Jerzy Kawalerowicz, 1966)
 - I Saw the TV Glow (Jane Schoenbrun, 2024)
-- Mermaid Legend (Toshiharu Ikeda, 1984)
+- **Mermaid Legend (Toshiharu Ikeda, 1984)**
 - Minor Premise (Eric Schultz, 2020)
-- Io Capitano (Matteo Garrone, 2024)
-- La 317ème section (Pierre Schoendoerffer, 1965)
-- Night Train (Jerzy Kawalerowicz, 1959)
+- **Io Capitano (Matteo Garrone, 2024)**
+- **La 317ème section (Pierre Schoendoerffer, 1965)**
+- **Night Train (Jerzy Kawalerowicz, 1959)**
 - Longlegs (Osgood Perkins, 2024)
 - That Obscure Object of Desire (Luis Buñuel, 1977)
 - Slow Machine (Joe DeNardo & Paul Felten, 2020)
 - The Ambassador (Mads Brügger, 2011)
-- The Promised Land (Nikolaj Arcel, 2024)
+- **The Promised Land (Nikolaj Arcel, 2024)**
 - Taegukgi: The Brotherhood of War (Kang Je-gyu, 2004)
-- MASH (Robert Altman, 1970) rewatch
+- **MASH (Robert Altman, 1970)** rewatch
 - Joint Security Area (Park Chan-wook, 2000) rewatch
 - The Steel Helmet (Samuel Fuller, 1951)
 - The Bridges at Toko-Ri (Mark Robson, 1955)
 - Stalag 17 (Billy Wilder, 1953)
 - Checkpoint (Aleksandr Rogozhkin, 1998)
-- The Childhood of a Leader (Brady Corbet, 2015)
-- Rebel Ridge (Jeremy Saulnier, 2024)
-- Green Room (Jeremy Saulnier, 2015)
+- **The Childhood of a Leader (Brady Corbet, 2015)**
+- **Rebel Ridge (Jeremy Saulnier, 2024)**
+- **Green Room (Jeremy Saulnier, 2015)**
 - Hold the Dark (Jeremy Saulnier, 2018)
-- The Day of the Jackal (Fred Zinnemann, 1973)
+- **The Day of the Jackal (Fred Zinnemann, 1973)**
 - Vox Lux (Brady Corbet, 2018)
 - Strange Days (Kathryn Bigelow, 1995)
 - Only the River Flows (Wei Shujun, 2023)
-- Meek’s Cutoff (Kelly Reichardt, 2010)
-- The Vast of Night (Andrew Patterson, 2019)
-- Beginning (Déa Kulumbegashvili, 2020)
+- **Meek’s Cutoff (Kelly Reichardt, 2010)**
+- **The Vast of Night (Andrew Patterson, 2019)**
+- **Beginning (Déa Kulumbegashvili, 2020)**
 - The Long Good Friday (John Mackenzie, 1980)
 - In the Name of the Father (Jim Sheridan, 1993)
 - The Lost City of Z (James Gray, 2016)
-- Apocalypse Now (Francis Ford Coppola, 1979) Redux rewatch
-- House of Pleasures (Bertrand Bonello, 2011)
+- **Apocalypse Now (Francis Ford Coppola, 1979) Redux** rewatch
+- **House of Pleasures (Bertrand Bonello, 2011)**
 - Nocturama (Bertrand Bonello, 2016)
 - The Beast (Bertrand Bonello, 2023)
 - Slingshot (Mikael Håfström, 2024)
 - War Game (Jesse Moss & Tony Gerber, 2024)
 - My Own Private Idaho (Gus Van Sant, 1991)
-- Lone Star (John Sayles, 1996)
-- Evil Does Not Exist (Ryusuke Hamaguchi, 2023)
+- **Lone Star (John Sayles, 1996)**
+- **Evil Does Not Exist (Ryusuke Hamaguchi, 2023)**
 - Deadpool & Wolverine (Shawn Levy, 2024)
 - Safety Not Guaranteed (Colin Trevorrow, 2012)
-- Things Will Be Different (Michael Felker, 2024)
-- It’s What’s Inside (Greg Jardin, 2024)
+- **Things Will Be Different (Michael Felker, 2024)**
+- **It’s What’s Inside (Greg Jardin, 2024)**
 - June Zero (Jake Paltrow, 2022)
-- Xiao Wu (Jia Zhangke, 1997)
-- Platform (Jia Zhangke, 2000)
-- Unknown Pleasures (Jia Zhangke, 2002)
-- The World (Jia Zhangke, 2004)
-- Still Life (Jia Zhangke, 2006)
+- **Xiao Wu (Jia Zhangke, 1997)**
+- **Platform (Jia Zhangke, 2000)**
+- **Unknown Pleasures (Jia Zhangke, 2002)**
+- **The World (Jia Zhangke, 2004)**
+- **Still Life (Jia Zhangke, 2006)**
 - 24 City (Jia Zhangke, 2008)
 - No Other Land (Basel Adra, Hamdan Ballal, Yuval Abraham & Rachel Szor, 2024)
 - A Touch of Sin (Jia Zhangke, 2013)
@@ -230,15 +235,15 @@ published: true
 - Once Upon a Time in China III (Tsui Hark, 1993) rewatch
 - 10 Rillington Place (Richard Fleischer, 1971)
 - A Day on the Grand Canal with the Emperor of China (Philip Haas, 1988)
-- The Apprentice (Ali Abbasi, 2024)
+- **The Apprentice (Ali Abbasi, 2024)**
 - Where’s My Roy Cohn? (Matt Tyrnauer, 2019)
 - 64 Days (Nick Quested, 2024)
 - Kingdom Uncovered: Inside Saudi Arabia (Sam Collins, 2024)
 - The Mist (Frank Darabont, 2007)
-- Wolf Hall (2015) season 1 rewatch, season 2
+- **Wolf Hall (2015–2024)** season 1 rewatch, season 2
 - Cold War (Paweł Pawlikowski, 2018)
-- The Artifice Girl (Franklin Ritch, 2023)
-- Drive My Car (Ryusuke Hamaguchi, 2021)
+- **The Artifice Girl (Franklin Ritch, 2023)**
+- **Drive My Car (Ryusuke Hamaguchi, 2021)**
 - Silo (2024) seasons 1, 2
 - The Bibi Files (Alexis Bloom, 2024)
 - One from the Heart (Francis Ford Coppola, 1981) Reprise
@@ -246,7 +251,7 @@ published: true
 - Liquid Sky (Slava Tsukerman, 1982)
 - A Serious Man (Joel and Ethan Coen, 2009)
 - Conclave (Edward Berger, 2024)
-- Kiss of the Spider Woman (Héctor Babenco, 1985)
+- **Kiss of the Spider Woman (Héctor Babenco, 1985)**
 - The Sea Gull (Sidney Lumet, 1968)
 - Bigger Than Life (Nicolas Ray, 1956)
 - World On a Wire (Rainer Werner Fassbinder, 1973)
@@ -254,24 +259,24 @@ published: true
 - The Cherry Orchard (Richard Eyre, 1981)
 - The Goldman Case (Cédric Kahn, 2023)
 - Heretic (Scott Beck & Bryan Woods, 2024)
-- Z (Costa-Gavras, 1969)
+- **Z (Costa-Gavras, 1969)**
 - General Idi Amin Dada: A Self Portrait (Barbet Schroeder, 1974)
-- Andrei Rublev (Andrei Tarkovsky, 1966) rewatch
+- **Andrei Rublev (Andrei Tarkovsky, 1966)** rewatch
 - Juror #2 (Clint Eastwood, 2024)
 - The Substance (Coralie Fargeat, 2024)
 - Lumumba: Death of a Prophet (Raoul Peck, 1991)
-- Anora (Sean Baker, 2024)
-- Jeanne Dielman, 23, quai du Commerce, 1080 Bruxelles (Chantal Akerman, 1975)
+- **Anora (Sean Baker, 2024)**
+- **Jeanne Dielman, 23, quai du Commerce, 1080 Bruxelles (Chantal Akerman, 1975)**
 - 12 Monkeys (Terry Gilliam, 1995) rewatch
 - Kagemusha (Akira Kurosawa, 1980) rewatch
-- The Battle of Algiers (Gillo Pontecorvo, 1966) rewatch
+- **The Battle of Algiers (Gillo Pontecorvo, 1966)** rewatch
 - The Order (Justin Kurzel, 2024)
 - Unknown Soldier (Aku Louhimies, 2018)
 - Gladiator II (Ridley Scott, 2024)
 - Europa Europa (Agnieszka Holland, 1990)
 - The Bridge (Bernhard Wicki, 1959)
 - Fox and His Friends (Rainer Werner Fassbinder, 1975)
-- Inside the Yellow Cocoon Shell (Phạm Thiên Ân, 2023)
+- **Inside the Yellow Cocoon Shell (Phạm Thiên Ân, 2023)**
 - God Told Me To (Larry Cohen, 1975)
 - The Lion in Winter (Anthony Harvey, 1968)
 - The Birthday (Eugenio Mira, 2004)
