@@ -2,7 +2,7 @@
 title: Watching 2024
 description: Films seen in 2024
 datePublished: 2024-12-31
-dateModified: 2024-12-31
+dateModified: 2025-01-04
 type: list
 published: true
 ---

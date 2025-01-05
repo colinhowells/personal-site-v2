@@ -2,7 +2,7 @@
 title: Reading 2024
 description: Books read in 2024
 datePublished: 2024-09-07
-dateModified: 2024-12-31
+dateModified: 2025-01-04
 type: list
 published: true
 ---
