@@ -7,6 +7,16 @@ type: list
 published: true
 ---
 
+Fosse’s _Septology_ – this was my first Fosse, picked up after his Nobel win, and it’s an extraordinary book, told in a very deceptively naive style. Just when you think it’s only surface deep, additional layers, timelines, and allusions are introduced, and the experience becomes extremely rich.
+
+_The Books of Jacob_ – not being a religious person myself, I’m fascinated by religious experience in the way an anthropologist might be; not only its spiritual dimension but its sociological, cultural, economic, political, historical aspects (MacCulloch’s _The Reformation_ is a massive tome worth reading for anyone with the same mind). This is a tale of Jacob Frank, one of the many who claimed to be the Jewish Messiah, and the reader learns so much about him, and his immediate circle, his followers, and the cultures of the countries he passes through. Absolutely incredible, and copiously illustrated.
+
+There were other great novels in translation read this year: Pierre Michon, Daniel Kehlmann (_Tyll_ is enthralling), and Mathias Énard stand out.
+
+One detail in the maelstrom of the French Revolution and the Napoleonic era is Haiti, and much like so many other countries which suffered massively due to colonization, Haiti is a tragedy that continues to unfold. Madison Smartt Bell wrote three novels which tell the story of Toussaint Louverture (‘The Black Napoleon’), and do it so well I’m astonished they’ve never been filmed. You really feel as if you’ve been there – the landscapes, the culture, the varied peoples. One daring move is to tell the story of a ‘native’ – brought there as a slave – Haitian as an interior monologue; this could have come off as at best misguided and at worst paternalistic, having been written by a white author, but it succeeds brilliantly.
+
+There were a few disappointments: I wasn’t that impressed with Gene Wolfe’s Long Sun cycle, there were some narrative devices that I didn’t think worked. That said Wolfe is someone for whom one reading is never enough, and I’m sure I’ve missed plenty that I might find when reading again. _The Wizard of the Kremlin_ I found slight, because I was already very familiar with recent Russian history and [Surkov](https://en.wikipedia.org/wiki/Vladislav_Surkov), the person who the lead character of the novel is based on, and _On the Calculation of Volume_ (at least the two books that have been translated so far) and _A Memory Called Empire_ I thought were overhyped and predictable.
+
 - The Reformation: A History (Diarmaid MacCulloch, 2005)
 - The Other Name: Septology I–II (Jon Fosse trans. Damion Searls, 2019)
 - I Is Another: Septology III–V (Jon Fosse trans. Damion Searls, 2020)
