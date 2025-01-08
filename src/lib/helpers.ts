@@ -24,3 +24,21 @@ export const stripTags = (str: string): string => {
 export const getNextTootsUrl = (headers: Headers): string => {
 	return headers.get('Link')?.split(',')[0].slice(1, -13) ?? '';
 };
+
+export const slugify = (str: string): string => {
+	return str
+		.toLowerCase()
+		.split(' ')
+		.join('-')
+		.replace('&', 'and')
+		.replace(/[^a-z0-9-]/g, ''); // rm special characters except hyphens
+};
+
+export const getImageFilename = (url: string): string => {
+	return url.split('/').pop() ?? '';
+};
+
+// function to get image filename without extension
+export const getImageSlug = (url: string): string => {
+	return getImageFilename(url).split('.')[0];
+};

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { getImageSlug } from '$lib/helpers';
+
 	interface Props {
 		src: string;
 		alt?: string;
@@ -11,7 +13,15 @@
 </script>
 
 <figure>
-	<img {src} {alt} title={caption} {width} {height} loading="lazy" />
+	<img
+		{src}
+		{alt}
+		title={caption}
+		{width}
+		{height}
+		loading="lazy"
+		style:--hero="hero-{getImageSlug(src)}"
+	/>
 	{#if caption}
 		<figcaption>{caption}</figcaption>
 	{/if}

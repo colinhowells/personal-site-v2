@@ -11,7 +11,12 @@
 <nav>
 	<ul>
 		{#each data.articles.filter((a) => 'work' !== a.type) as article}
-			<li><a href="/{article.slug}">{article.title}</a> <span>{article.type}</span></li>
+			<li>
+				<a class="title" style:--title="title-{article.slug}" href="/{article.slug}"
+					>{article.title}</a
+				>
+				<span>{article.type}</span>
+			</li>
 		{/each}
 	</ul>
 </nav>

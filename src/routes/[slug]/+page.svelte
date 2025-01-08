@@ -10,6 +10,6 @@
 </script>
 
 <article>
-	<h2 class="title">{data.metadata.title}</h2>
+	<h2 class="title" style:--title="title-{data.metadata.slug}">{data.metadata.title}</h2>
 	<data.content />
 </article>
