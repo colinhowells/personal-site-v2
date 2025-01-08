@@ -12,6 +12,7 @@ export const load: PageLoad = async ({ params }) => {
 	}
 
 	if (article && article?.metadata?.published) {
+		article.metadata.slug = params.slug;
 		return {
 			content: article.default,
 			metadata: article.metadata

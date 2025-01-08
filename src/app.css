@@ -158,10 +158,12 @@
 	--color-links-hover: var(--color-warm-600);
 }
 
-html {
-	overflow-y: scroll;
-	scrollbar-color: var(--color-cool-100) var(--color-cool-600);
-	accent-color: var(--color-cool-100);
+@media (prefers-reduced-motion) {
+	::view-transition-group(*),
+	::view-transition-old(*),
+	::view-transition-new(*) {
+		animation: none !important;
+	}
 }
 
 ::-webkit-scrollbar {
@@ -171,6 +173,12 @@ html {
 	border: 3px solid var(--color-cool-600);
 	border-radius: 3rem;
 	background: var(--color-cool-100);
+}
+
+html {
+	overflow-y: scroll;
+	scrollbar-color: var(--color-cool-100) var(--color-cool-600);
+	accent-color: var(--color-cool-100);
 }
 
 body {
@@ -215,6 +223,9 @@ a {
 	&:hover {
 		color: var(--color-links-hover);
 		text-decoration: underline;
+	}
+	&.title {
+		view-transition-name: var(--title);
 	}
 }
 
@@ -270,6 +281,7 @@ article {
 		text-align: center;
 		text-wrap: balance;
 		text-wrap: pretty;
+		view-transition-name: var(--title);
 	}
 	p,
 	address {
@@ -308,6 +320,7 @@ article {
 		width: var(--size);
 		max-width: 100%;
 		height: auto;
+		view-transition-name: var(--hero);
 	}
 	figure {
 		grid-column: fullwidth;

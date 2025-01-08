@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
+	import { getImageSlug } from '$lib/helpers';
 
 	interface Props {
 		data: PageData;
@@ -13,11 +14,17 @@
 		{@const src = article?.image ? data.images[article.image] : null}
 		<a href="/{article.slug}">
 			<div>
-				<h3>{article.title}</h3>
+				<h3 style:--title="title-{article.slug}">{article.title}</h3>
 				<p>{article.description}</p>
 			</div>
 			{#if src}
-				<img data-src={src} alt={article.description} {src} loading="lazy" />
+				<img
+					data-src={src}
+					alt={article.description}
+					{src}
+					loading="lazy"
+					style:--hero="hero-{getImageSlug(src)}"
+				/>
 			{/if}
 		</a>
 	{/each}
@@ -66,6 +73,7 @@
 	h3 {
 		font-weight: 900;
 		font-size: 1.25rem;
+		view-transition-name: var(--title);
 	}
 	img {
 		opacity: 0.8;
@@ -76,6 +84,7 @@
 		width: 100%;
 		height: auto;
 		object-fit: cover;
+		view-transition-name: var(--hero);
 	}
 	p {
 		color: initial;
