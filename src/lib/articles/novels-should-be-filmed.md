@@ -2,7 +2,7 @@
 title: Novels that should be filmed
 description: Some lesser-known novels would be terrific films!
 datePublished: 2025-01-04
-dateModified: 2025-01-04
+dateModified: 2025-01-07
 type: article
 published: true
 ---
@@ -15,7 +15,7 @@ A science fiction novel featuring the titular Machine, a large but obscure piece
 
 ### Mary Doria Russell’s _The Sparrow_
 
-There is an SF subgenre of First Contacts That Go Horribly Wrong of which this is a proud member. First you have to accept the idea that Jesuits are the plucky astronauts, which is a bit counterintuitive and maybe unnecessary, but after that the disaster that follows is wonderfully apalling. Another novel with some similar themes is China Mieville’s _Embassytown_ which I can also recommend.
+There is an SF subgenre of First Contacts That Go Horribly Wrong of which this is a proud member. First you have to accept the idea that Jesuits are the plucky astronauts, which is a bit counterintuitive and maybe unnecessary, but after that the disaster that follows is wonderfully appalling. Another novel with some similar themes is China Mieville’s _Embassytown_ which I can also recommend.
 
 ### James Meek’s _The People’s Act of Love_
 
