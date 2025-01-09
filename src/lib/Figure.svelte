@@ -20,7 +20,7 @@
 		{width}
 		{height}
 		loading="lazy"
-		style:--hero="hero-{getImageSlug(src)}"
+		style:--transition-name="hero-{getImageSlug(src)}"
 	/>
 	{#if caption}
 		<figcaption>{caption}</figcaption>

@@ -12,7 +12,7 @@
 	<ul>
 		{#each data.articles.filter((a) => 'work' !== a.type) as article}
 			<li>
-				<a class="title" style:--title="title-{article.slug}" href="/{article.slug}"
+				<a class="title" style:--transition-name="title-{article.slug}" href="/{article.slug}"
 					>{article.title}</a
 				>
 				<span>{article.type}</span>
