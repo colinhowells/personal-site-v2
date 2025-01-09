@@ -225,7 +225,7 @@ a {
 		text-decoration: underline;
 	}
 	&.title {
-		view-transition-name: var(--title);
+		view-transition-name: var(--transition-name);
 	}
 }
 
@@ -281,7 +281,7 @@ article {
 		text-align: center;
 		text-wrap: balance;
 		text-wrap: pretty;
-		view-transition-name: var(--title);
+		view-transition-name: var(--transition-name);
 	}
 	p,
 	address {
@@ -320,7 +320,7 @@ article {
 		width: var(--size);
 		max-width: 100%;
 		height: auto;
-		view-transition-name: var(--hero);
+		view-transition-name: var(--transition-name);
 	}
 	figure {
 		grid-column: fullwidth;

@@ -14,7 +14,7 @@
 		{@const src = article?.image ? data.images[article.image] : null}
 		<a href="/{article.slug}">
 			<div>
-				<h3 style:--title="title-{article.slug}">{article.title}</h3>
+				<h3 style:--transition-name="title-{article.slug}">{article.title}</h3>
 				<p>{article.description}</p>
 			</div>
 			{#if src}
@@ -23,7 +23,7 @@
 					alt={article.description}
 					{src}
 					loading="lazy"
-					style:--hero="hero-{getImageSlug(src)}"
+					style:--transition-name="hero-{getImageSlug(src)}"
 				/>
 			{/if}
 		</a>
@@ -73,7 +73,7 @@
 	h3 {
 		font-weight: 900;
 		font-size: 1.25rem;
-		view-transition-name: var(--title);
+		view-transition-name: var(--transition-name);
 	}
 	img {
 		opacity: 0.8;
@@ -84,7 +84,7 @@
 		width: 100%;
 		height: auto;
 		object-fit: cover;
-		view-transition-name: var(--hero);
+		view-transition-name: var(--transition-name);
 	}
 	p {
 		color: initial;
