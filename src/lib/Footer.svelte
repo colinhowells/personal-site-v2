@@ -30,7 +30,8 @@
 		font-weight: bold;
 		text-decoration: none;
 	}
-	a:hover {
+	a:hover,
+	a:focus-within {
 		color: var(--color-cool-50);
 		text-decoration: underline;
 	}

@@ -26,6 +26,6 @@ WordPress wasn’t a bad decision in some ways, because the questions could be [
 
 <Figure src={mobile} alt="Site viewed with a mobile device" width="414" height="1546" />
 
-Because every user interaction had some sort of attributable point-scoring, there was also a lot of data being compiled on user activities. (For a while every database transaction was logged, but of course over time that became untenable. We have better solutions for that problem now, but at the time preserving them wasn’t worth the candle.)
+Because every user interaction had some sort of attributable point-scoring, there was also a lot of data being compiled on user activities, which meant some problems had to be solved around logging, aggregating, and caching.
 
 <Figure src={totals} alt="Table featuring aggregated points, accumulated by site users" width="414" height="1546" />
