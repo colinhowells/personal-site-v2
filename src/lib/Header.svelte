@@ -241,7 +241,8 @@
 	a {
 		transition: color var(--transition-time);
 		text-decoration: none;
-		&:hover {
+		&:hover,
+		&:focus-within {
 			color: var(--color-links-hover);
 			& svg {
 				fill: var(--color-links-hover);

@@ -53,7 +53,8 @@
 		background-color: var(--color-cool-50);
 		color: black;
 	}
-	li:not([aria-current]):hover {
+	li:not([aria-current]):hover,
+	li:not([aria-current]):focus-within {
 		background-color: var(--color-links-hover);
 	}
 	li a {

@@ -158,6 +158,11 @@
 	--color-links-hover: var(--color-warm-600);
 }
 
+/* // for MPAs
+@view-transition {
+	navigation: auto;
+} */
+
 @media (prefers-reduced-motion) {
 	::view-transition-group(*),
 	::view-transition-old(*),
@@ -220,7 +225,8 @@ a {
 	color: var(--color-links);
 	font-weight: bold;
 	text-decoration: none;
-	&:hover {
+	&:hover,
+	&:focus-within {
 		color: var(--color-links-hover);
 		text-decoration: underline;
 	}
