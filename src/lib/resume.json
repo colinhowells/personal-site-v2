@@ -2,7 +2,7 @@
 	"basics": {
 		"name": "Colin Howells",
 		"label": "Senior Web Developer",
-		"summary": "Technical and visual problem-solver with over 20 years’ graphic design and web development experience. Organized, dependable, and a tenacious learner, with a strong work ethic and the ability to deliver in fast-paced and multiplatform environments. Specializing in custom WordPress implementations and themes, with experience in JavaScript, PHP, SQL, CSS, HTML5.",
+		"summary": "Technical and visual problem-solver with over 25 years’ graphic design and web development experience. Organized, dependable, and a tenacious learner, with a strong work ethic and the ability to deliver in fast-paced and multi-platform environments, from the back end to the front.",
 		"website": "https://colinhowells.com",
 		"email": "colin@colinhowells.com",
 		"location": {
@@ -37,8 +37,8 @@
 	},
 	"education": [
 		{
-			"endDate": "1993",
-			"startDate": "1989",
+			"endDate": "1993-01-09",
+			"startDate": "1989-01-09",
 			"area": "Graphic Design",
 			"studyType": "Bachelor of Arts",
 			"institution": "University of Michigan School of Art & Architecture (now Penny W. Stamps School of Art and Design)"
@@ -53,13 +53,6 @@
 				"TypeScript",
 				"Svelte",
 				"SvelteKit",
-				"React",
-				"Node",
-				"Serverless",
-				"Headless",
-				"CMS",
-				"Cloudflare",
-				"PHP",
 				"WordPress",
 				"Google Analytics",
 				"Online Advertising",
@@ -69,12 +62,22 @@
 			"name": "Frontend"
 		},
 		{
-			"keywords": ["SQL"],
+			"keywords": ["Serverless", "Headless", "GraphQL", "CMS", "Cloudflare", "PHP"],
+			"level": "Senior",
+			"name": "Backend"
+		},
+		{
+			"keywords": ["React", "Shopify"],
+			"level": "Junior",
+			"name": "Frontend"
+		},
+		{
+			"keywords": ["Node", "SQL", "Stripe", "AWS"],
 			"level": "Junior",
 			"name": "Backend"
 		},
 		{
-			"keywords": ["Git, AWS, Shopify"],
+			"keywords": ["Git"],
 			"level": "Junior",
 			"name": "Devops"
 		}
@@ -87,11 +90,11 @@
 			"position": "Senior Web Developer",
 			"startDate": "2012-01-01",
 			"endDate": "2024-11-20",
-			"summary": "Designed and developed a mobile-optimized publishing network of more than 30 WordPress sites featuring purpose-built themes, which monetized more than 75 million pageviews a month for the benefit of nonprofits, and reached over 100 million Facebook fans. It became a significant ROI-positive revenue stream and led to massive changes in the business model. Created many JavaScript-driven applications and sites, along with their databases, serverless functions, CI/CD pipelines, and APIs.",
+			"summary": "Created and maintained WordPress networks at scale, eventually focusing on JavaScript-driven applications, middleware, and serverless architecture.",
 			"highlights": [
-				"More than 60 WordPress sites, featuring custom themes",
-				"100M+ Facebook fans",
-				"More than 75 million pageviews/month"
+				"Designed and developed a mobile-optimized publishing network of more than 50 WordPress sites featuring purpose-built themes, which monetized more than 75 million pageviews a month for the benefit of nonprofits, and reached over 100 million Facebook fans",
+				"Assisted in building a network-wide paid user account system using SvelteKit, TypeScript, Stripe, and Cloudflare Workers",
+				"Built a series of JavaScript-driven online games with an audience of tens of thousands using Svelte hosted on Cloudflare"
 			]
 		},
 		{
@@ -110,7 +113,7 @@
 			"position": "Manager, Graphics Department",
 			"startDate": "2008-01-01",
 			"endDate": "2010-01-01",
-			"summary": "Acted as traffic manager for design staff, assigning and coordinating production of merchandise, images, and online advertisements",
+			"summary": "Acted as traffic manager for design staff, assigning and coordinating production of merchandise, images, and online advertisements.",
 			"highlights": [
 				"Responsible for conducting interviews and making hiring decisions",
 				"Conducted annual performance reviews for department employees",
@@ -124,7 +127,7 @@
 			"position": "Graphic Designer",
 			"startDate": "2005-01-01",
 			"endDate": "2008-01-01",
-			"summary": "Created raster and vector branding, advertisements, and assets"
+			"summary": "Created raster and vector branding, advertisements, and assets."
 		},
 		{
 			"company": "SGI Publications (now Adams Street Publishing Co)",
@@ -133,7 +136,7 @@
 			"position": "Print Designer",
 			"startDate": "1997-01-01",
 			"endDate": "2005-01-01",
-			"summary": "Created raster and vector branding, advertisements, and assets",
+			"summary": "Designed and produced print publications and advertisements.",
 			"highlights": [
 				"Moved the business to an all-digital PDF prepress workflow to replace a camera-ready process",
 				"Initiated and supervised a complete redesign of the company’s flagship publication, a 100+ page monthly magazine of 20,000 circulation",

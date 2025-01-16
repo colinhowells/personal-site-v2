@@ -2,14 +2,14 @@
 title: Reading 2024
 description: Books read in 2024
 datePublished: 2024-09-07
-dateModified: 2025-01-04
+dateModified: 2025-01-16
 type: list
 published: true
 ---
 
 Fosse’s _Septology_ – this was my first Fosse, picked up after his Nobel win, and it’s an extraordinary book, told in a very deceptively naive style. Just when you think it’s only surface deep, additional layers, timelines, and allusions are introduced, and the experience becomes extremely rich.
 
-_The Books of Jacob_ – not being a religious person myself, I’m fascinated by religious experience in the way an anthropologist might be; not only its spiritual dimension but its sociological, cultural, economic, political, historical aspects (MacCulloch’s _The Reformation_ is a massive tome worth reading for anyone with the same mind). This is a tale of Jacob Frank, one of the many who claimed to be the Jewish Messiah, and the reader learns so much about him, and his immediate circle, his followers, and the cultures of the countries he passes through. Absolutely incredible, and copiously illustrated.
+_The Books of Jacob_ – not being a religious person myself, I’m fascinated by religious experience in the way an anthropologist might be; not only its spiritual dimension but its sociological, cultural, economic, political, historical aspects (MacCulloch’s _The Reformation_ is a massive tome worth reading for anyone with the same mind). This is a tale of Jacob Frank in 18th-century Poland, one of the many who claimed to be the Jewish Messiah, and the reader learns so much about him, and his immediate circle, his followers, and the cultures of the countries he passes through. Absolutely incredible, and copiously illustrated.
 
 There were other great novels in translation read this year: Pierre Michon, Daniel Kehlmann (_Tyll_ is enthralling), and Mathias Énard stand out.
 
