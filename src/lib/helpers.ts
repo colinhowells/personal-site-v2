@@ -1,9 +1,26 @@
 export const getSlugFromPath = (path: string): string | null =>
 	path.match(/([\w-]+)\.(svelte\.md|md|svx)/i)?.[1] ?? null;
 
-export const getYear = (date: string): number => new Date(date).getFullYear();
+// check that date is in YYYY-MM-DD format
+export const isValidDate = (date: string): boolean => {
+	return /^\d{4}-\d{2}-\d{2}$/.test(date);
+};
 
-export const getISODate = (date: string): string => new Date(date).toISOString();
+export const getYear = (date: string): number => {
+	if (!isValidDate(date)) {
+		console.error('Invalid date format: ', date);
+		return 0;
+	}
+	return new Date(date).getFullYear();
+};
+
+export const getISODate = (date: string): string => {
+	if (!isValidDate(date)) {
+		console.error('Invalid date format: ', date);
+		return '';
+	}
+	return new Date(date).toISOString();
+};
 
 export const serializeSchema = (schemaGraphObjects: Array<Record<string, any>>): string => {
 	let schema = {
