@@ -1,4 +1,5 @@
 <script lang="ts">
+	import type { LayoutProps } from './$types';
 	import { onNavigate } from '$app/navigation';
 	// import { dev } from '$app/environment';
 	import { page } from '$app/state';
@@ -6,11 +7,8 @@
 	import Header from '$lib/Header.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import '$css';
-	interface Props {
-		children?: import('svelte').Snippet;
-	}
 
-	let { children }: Props = $props();
+	let { children }: LayoutProps = $props();
 
 	onNavigate((navigation) => {
 		if (!document.startViewTransition) return;

@@ -12,7 +12,7 @@
 	let { src, alt = '', caption, width, height }: Props = $props();
 </script>
 
-<figure role="figure" aria-label={caption}>
+<figure aria-label={caption}>
 	<img
 		{src}
 		{alt}
