@@ -2,7 +2,7 @@
 	import type { ActionData } from './$types';
 	import { enhance } from '$app/forms';
 
-	interface Props {
+	interface PageProps {
 		form: ActionData & {
 			name: string;
 			email: string;
@@ -11,7 +11,7 @@
 		};
 	}
 
-	let { form }: Props = $props();
+	let { form }: PageProps = $props();
 
 	let { name, email, error, message } = $state(
 		form ?? {
