@@ -2,7 +2,7 @@
 	"basics": {
 		"name": "Colin Howells",
 		"label": "Senior Web Developer",
-		"summary": "Technical and visual problem-solver with over 25 years’ graphic design and web development experience. Organized, dependable, and a tenacious learner, with a strong work ethic and the ability to deliver in fast-paced and multi-platform environments, from the back end to the front.",
+		"summary": "Technical and visual problem-solver with 12 years of all-round web-development experience – creating branding, architecting back-end services, optimizing front-end performance, and improving user experiences.",
 		"website": "https://colinhowells.com",
 		"email": "colin@colinhowells.com",
 		"location": {
@@ -72,14 +72,9 @@
 			"name": "Frontend"
 		},
 		{
-			"keywords": ["Node", "SQL", "Stripe", "AWS"],
+			"keywords": ["Node", "SQL", "Stripe", "AWS", "Git"],
 			"level": "Junior",
 			"name": "Backend"
-		},
-		{
-			"keywords": ["Git"],
-			"level": "Junior",
-			"name": "Devops"
 		}
 	],
 	"work": [
@@ -90,11 +85,11 @@
 			"position": "Senior Web Developer",
 			"startDate": "2012-01-01",
 			"endDate": "2024-11-20",
-			"summary": "Created and maintained WordPress networks at scale, eventually focusing on JavaScript-driven applications, middleware, and serverless architecture.",
+			"summary": "Created and maintained WordPress networks at scale, as well as JavaScript-driven applications, middleware, and serverless architecture.",
 			"highlights": [
-				"Designed and developed a mobile-optimized publishing network of more than 50 WordPress sites featuring purpose-built themes, which monetized more than 75 million pageviews a month for the benefit of nonprofits, and reached over 100 million Facebook fans",
-				"Assisted in building a network-wide paid user account system using SvelteKit, TypeScript, Stripe, and Cloudflare Workers",
-				"Built a series of JavaScript-driven online games with an audience of tens of thousands using Svelte hosted on Cloudflare"
+				"Designed and developed a mobile-optimized publishing network of more than 50 WordPress sites featuring purpose-built themes, which monetized more than 75 million pageviews a month for the benefit of nonprofits, and reached over 100 million Facebook fans. It became a significant ROI-positive revenue stream and led to massive changes in the business model.",
+				"Assisted in building a network-wide paid user account system using SvelteKit, TypeScript, Stripe, and Cloudflare Workers.",
+				"Built a series of JavaScript-driven online games with an audience of tens of thousands using Svelte hosted on Cloudflare."
 			]
 		},
 		{
@@ -104,7 +99,13 @@
 			"position": "Web Designer, Email Marketing",
 			"startDate": "2010-01-01",
 			"endDate": "2012-01-01",
-			"summary": "Created and revised email marketing templates to improve deliverability and presentation; also created initial Facebook presence for the company (FBML!), and assisted in the creation of many successful social-networking promotions."
+			"summary": "Created and revised email marketing templates to improve deliverability and presentation; also created initial Facebook presence for the company (FBML!), and assisted in the creation of many successful social-networking promotions.",
+			"highlights": [
+				"Created initial Facebook presence for the company and also assisted in the creation of many successful social-networking promotions.",
+				"Added responsive HTML delivery to two existing text-only daily email deliveries.",
+				"Created and revised email marketing templates to improve deliverability and presentation. Studied best industry practices and competitors to keep up with the constantly-shifting online retail environment and email deliverability issues.",
+				"Analyzed and reported on clickthrough rates for e-cards and email marketing of retail promotions."
+			]
 		},
 		{
 			"company": "GreaterGood Network",
@@ -115,9 +116,9 @@
 			"endDate": "2010-01-01",
 			"summary": "Acted as traffic manager for design staff, assigning and coordinating production of merchandise, images, and online advertisements.",
 			"highlights": [
-				"Responsible for conducting interviews and making hiring decisions",
-				"Conducted annual performance reviews for department employees",
-				"Worked with buyers and designers to develop and manufacture merchandise for retail sale"
+				"Responsible for conducting interviews and making hiring decisions.",
+				"Conducted annual performance reviews for department employees.",
+				"Worked with buyers and designers to develop and manufacture merchandise for retail sale."
 			]
 		},
 		{
@@ -127,7 +128,12 @@
 			"position": "Graphic Designer",
 			"startDate": "2005-01-01",
 			"endDate": "2008-01-01",
-			"summary": "Created raster and vector branding, advertisements, and assets."
+			"summary": "Created raster and vector branding, advertisements, and assets.",
+			"highlights": [
+				"Created printed packaging for products as well as advertisements and promotional materials.",
+				"Made illustrations for use on apparel and supervised their production.",
+				"Color-corrected and masked raw product photography."
+			]
 		},
 		{
 			"company": "SGI Publications (now Adams Street Publishing Co)",
@@ -138,19 +144,19 @@
 			"endDate": "2005-01-01",
 			"summary": "Designed and produced print publications and advertisements.",
 			"highlights": [
-				"Moved the business to an all-digital PDF prepress workflow to replace a camera-ready process",
-				"Initiated and supervised a complete redesign of the company’s flagship publication, a 100+ page monthly magazine of 20,000 circulation",
-				"Designed print advertisements, brochures, logos, and coupons, as well as editorial content, under tight deadlines",
-				"Wrote feature articles and contributed to the editing of numerous publications",
-				"Thoroughly revised the publisher’s Web presence for increased usability",
-				"Acted as network and database administrator for the company"
+				"Moved the business to an all-digital PDF prepress workflow to replace a camera-ready process.",
+				"Initiated and supervised a complete redesign of the company’s flagship publication, a 100+ page monthly magazine of 20,000 circulation.",
+				"Designed print advertisements, brochures, logos, and coupons, as well as editorial content, under tight deadlines.",
+				"Wrote feature articles and contributed to the editing of numerous publications.",
+				"Thoroughly revised the publisher’s Web presence for increased usability.",
+				"Acted as network and database administrator for the company."
 			]
 		}
 	],
 	"references": [
 		{
 			"reference": "I’ve worked with a lot of different designers and web developers on all sorts of different projects. As a project manager, I often find that designers can be tricky to work with because of their work styles, attitude, personal design opinions and ego. Every time I’ve collaborated on a project with Colin, however, there have never been issues like this. In fact, he brings a complete openness to each and every project, with zero personal agenda. He always takes the time to understand the goals of the campaign and needs of the client. In fact, often Colin has taken the energy to grasp the concepts of the overall campaign so well, that he brings new and valuable perspective which ultimately manifests in an improved vision. His work style and attitude are truly refreshing and I’ve never been disappointed with the work he’s turned out.",
-			"name": "Rian Cool, Outbound Marketing Manager, GreaterGood Network"
+			"name": "Rian Cool, Great Life Publishing"
 		},
 		{
 			"reference": "I wanted to pass along that Colin Howells has been very gracious in helping me create a great-looking ad in your paper ... Colin has shared his time and expertise to improve the quality of what I have submitted. His professionalism and attitude is what will keep me [placing advertisements with you].",
@@ -158,7 +164,7 @@
 		},
 		{
 			"reference": "I have had the chance to work with Colin in two different companies – a publishing house in Ann Arbor, MI and a successful charity website in Seattle, WA. He is a talented designer, who pays attention to detail and works extremely well under pressure. He can analyze projects not only from a creative point of view, but also from a very broad and goal-oriented perspective. The financial success of my division could not have been attained without his hard work, knowledge and dedication.",
-			"name": "Daniele Otto, Online Campaign Manager GreaterGood Network"
+			"name": "Daniele Otto, Online Campaign Manager, GreaterGood Network"
 		}
 	],
 	"interests": [
