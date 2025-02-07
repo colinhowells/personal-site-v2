@@ -33,7 +33,7 @@
 {/if}
 
 <Header />
-<main>
+<main role="main">
 	{@render children?.()}
 </main>
 <Footer />
