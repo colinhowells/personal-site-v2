@@ -85,11 +85,13 @@
 			"position": "Senior Web Developer",
 			"startDate": "2012-01-01",
 			"endDate": "2024-11-20",
-			"summary": "Created and maintained WordPress networks at scale, as well as JavaScript-driven applications, middleware, and serverless architecture.",
+			"summary": "Created and maintained WordPress networks at scale, as well as serverless JavaScript- and TypeScript-driven applications and middleware.",
 			"highlights": [
-				"Designed and developed a mobile-optimized publishing network of more than 50 WordPress sites featuring purpose-built themes, which monetized more than 75 million pageviews a month for the benefit of nonprofits, and reached over 100 million Facebook fans. It became a significant ROI-positive revenue stream and led to massive changes in the business model.",
-				"Assisted in building a network-wide paid user account system using SvelteKit, TypeScript, Stripe, and Cloudflare Workers.",
-				"Built a series of JavaScript-driven online games with an audience of tens of thousands using Svelte hosted on Cloudflare."
+				"Designed and developed a mobile-optimized publishing network of more than 50 WordPress sites featuring  custom-built themes, plugins, and tables, which monetized more than 75 million pageviews a month for the benefit of nonprofits, and reached over 100 million Facebook fans. It became a significant ROI-positive revenue stream and led to massive changes in the business model.",
+				"Handled the ancillary technology which runs enterprise-scale sites: CDNs, analytics, SEO and structured markup, third-party scripts, advertising (including header bidding), social media promotion, custom APIs and middleware, e-commerce integrations, AWS (API Gateway, CloudFront, S3).",
+				"Built dashboards for editing and surfacing actionable insights.",
+				"Assisted in building a network-wide paid loyalty program using SvelteKit, TypeScript, Stripe, and Cloudflare Workers.",
+				"Built a number of JavaScript-driven online games with an audience of tens of thousands using Svelte hosted on Cloudflare."
 			]
 		},
 		{
@@ -99,12 +101,12 @@
 			"position": "Web Designer, Email Marketing",
 			"startDate": "2010-01-01",
 			"endDate": "2012-01-01",
-			"summary": "Created and revised email marketing templates to improve deliverability and presentation; also created initial Facebook presence for the company (FBML!), and assisted in the creation of many successful social-networking promotions.",
+			"summary": "Created and revised email marketing templates to improve deliverability and presentation; also created initial social media presence for the company, and assisted in the creation of many successful social-networking promotions.",
 			"highlights": [
-				"Created initial Facebook presence for the company and also assisted in the creation of many successful social-networking promotions.",
+				"Created initial Facebook presence for the company (FBML!) across many Pages.",
 				"Added responsive HTML delivery to two existing text-only daily email deliveries.",
 				"Created and revised email marketing templates to improve deliverability and presentation. Studied best industry practices and competitors to keep up with the constantly-shifting online retail environment and email deliverability issues.",
-				"Analyzed and reported on clickthrough rates for e-cards and email marketing of retail promotions."
+				"Analyzed and reported on clickthrough rates for email marketing of retail promotions."
 			]
 		},
 		{
@@ -118,7 +120,7 @@
 			"highlights": [
 				"Responsible for conducting interviews and making hiring decisions.",
 				"Conducted annual performance reviews for department employees.",
-				"Worked with buyers and designers to develop and manufacture merchandise for retail sale."
+				"Worked with product buyers and designers to develop and manufacture merchandise for retail sale."
 			]
 		},
 		{
