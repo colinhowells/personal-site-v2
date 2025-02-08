@@ -2,7 +2,7 @@
 	import { page } from '$app/state';
 </script>
 
-<nav>
+<nav aria-label="Primary site navigation">
 	<ul>
 		<li aria-current={page.url.pathname === '/' ? 'page' : undefined}>
 			<a href="/">Writing</a>
