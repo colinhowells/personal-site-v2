@@ -4,7 +4,7 @@
 	import Nav from '$lib/Nav.svelte';
 </script>
 
-<header role="banner" data-sveltekit-reload={updated.current ? '' : 'off'}>
+<header data-sveltekit-reload={updated.current ? '' : 'off'}>
 	<h1 id="name" class="sr-only">Colin Howells</h1>
 	<a href="/" aria-labelledby="name"
 		><svg width="788" height="89">

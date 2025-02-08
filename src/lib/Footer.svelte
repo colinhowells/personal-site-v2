@@ -1,4 +1,4 @@
-<footer role="contentinfo">
+<footer>
 	<p>
 		Fonts by <a href="https://www.futurefonts.xyz/very-cool-studio/gosh">Very Cool Studio</a>,
 		<a href="https://connary.com/manifold.html">Connary Fagen</a>, and
