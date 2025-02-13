@@ -40,25 +40,19 @@
 			contentUrl: avatarUrl,
 			caption: 'Colin Howells'
 		},
-		publisher: {
-			'@id': personNodeId
-		}
+		publisher: { '@id': personNodeId }
 	};
 	schemaGraphObjects.push(WebSite);
 
 	const WebPage = {
 		'@type': 'WebPage',
 		'@id': webPageNodeId,
-		isPartOf: {
-			'@id': siteNodeId
-		},
+		isPartOf: { '@id': siteNodeId },
 		url: page.url.toString(),
 		name: data.metadata.title,
 		datePublished: publishedDateTime,
 		dateModified: updatedDateTime,
-		author: {
-			'@id': personNodeId
-		}
+		author: { '@id': personNodeId }
 	};
 	schemaGraphObjects.push(WebPage);
 
@@ -66,21 +60,15 @@
 		const Article = {
 			'@type': 'Article',
 			'@id': articleNodeId,
-			isPartOf: {
-				'@id': webPageNodeId
-			},
-			mainEntityOfPage: {
-				'@id': webPageNodeId
-			},
+			isPartOf: { '@id': webPageNodeId },
+			mainEntityOfPage: { '@id': webPageNodeId },
 			url: page.url.toString(),
 			headline: data.metadata.title,
 			description: data.metadata.description,
 			inLanguage: 'en-US',
 			datePublished: publishedDateTime,
 			dateModified: updatedDateTime,
-			author: {
-				'@id': personNodeId
-			}
+			author: { '@id': personNodeId }
 		};
 		schemaGraphObjects.push(Article);
 	}
@@ -88,9 +76,7 @@
 	let Person = {
 		'@type': 'Person',
 		'@id': personNodeId,
-		subjectOf: {
-			'@id': siteNodeId
-		},
+		subjectOf: { '@id': siteNodeId },
 		name: resume.basics.name,
 		givenName: 'Colin',
 		familyName: 'Howells',
@@ -112,16 +98,15 @@
 		sameAs: [] as Array<string>,
 		jobTitle: resume.basics.label,
 		worksFor: [] as Array<{ '@id': string }>,
-		alumniOf: {
-			'@id': educationNodeId
-		},
+		alumniOf: { '@id': educationNodeId },
 		knowsAbout: [] as Array<string>
 	};
 	for (let profile of resume.basics.profiles) {
 		Person.sameAs.push(profile.url);
 	}
-	for (let skill of resume.skills) {
-		Person.knowsAbout.push(skill.name);
+	Person.knowsAbout = [];
+	for (const skill of resume.skills) {
+		Person.knowsAbout = [...Person.knowsAbout, ...skill.keywords];
 	}
 	schemaGraphObjects.push(Person);
 
@@ -137,11 +122,10 @@
 	type EmployeeRole = {
 		'@type': 'EmployeeRole';
 		'@id': string;
-		subjectOf: {
-			'@id': string;
-		};
+		subjectOf: { '@id': string };
 		roleName: string;
 		description: string;
+		highlights?: Array<string>;
 		startDate: string;
 		endDate?: string;
 	};
@@ -156,9 +140,7 @@
 		let EmployeeRole: EmployeeRole = {
 			'@type': 'EmployeeRole',
 			'@id': `${PUBLIC_SITE_URL}/#role-${i + 1}`,
-			subjectOf: {
-				'@id': `${PUBLIC_SITE_URL}/#experience-${i + 1}`
-			},
+			subjectOf: { '@id': `${PUBLIC_SITE_URL}/#experience-${i + 1}` },
 			roleName: job.position,
 			description: job.summary,
 			startDate: job.startDate
@@ -166,9 +148,7 @@
 		if (job.endDate) {
 			EmployeeRole.endDate = job.endDate;
 		}
-		Person.worksFor.push({
-			'@id': `${PUBLIC_SITE_URL}/#role-${i + 1}`
-		});
+		Person.worksFor.push({ '@id': `${PUBLIC_SITE_URL}/#role-${i + 1}` });
 		schemaGraphObjects.push(Organization);
 		schemaGraphObjects.push(EmployeeRole);
 	}

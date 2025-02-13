@@ -37,8 +37,8 @@
 	},
 	"education": [
 		{
-			"endDate": "1993-01-09",
 			"startDate": "1989-01-09",
+			"endDate": "1993-01-09",
 			"area": "Graphic Design",
 			"studyType": "Bachelor of Arts",
 			"institution": "University of Michigan School of Art & Architecture (now Penny W. Stamps School of Art and Design)"
@@ -67,7 +67,7 @@
 			"name": "Backend"
 		},
 		{
-			"keywords": ["React", "Shopify"],
+			"keywords": ["React", "Shopify", "Next"],
 			"level": "Junior",
 			"name": "Frontend"
 		},
@@ -83,15 +83,40 @@
 			"website": "https://greatergood.com",
 			"location": "Seattle, WA",
 			"position": "Senior Web Developer",
-			"startDate": "2012-01-01",
+			"startDate": "2016-01-01",
 			"endDate": "2024-11-20",
-			"summary": "Created and maintained WordPress networks at scale, as well as serverless JavaScript- and TypeScript-driven applications and middleware.",
+			"summary": "Began building sites as serverless functions using Svelte and SvelteKit, and started using headless CMSes for content management.",
 			"highlights": [
-				"Designed and developed a mobile-optimized publishing network of more than 50 WordPress sites featuring  custom-built themes, plugins, and tables, which monetized more than 75 million pageviews a month for the benefit of nonprofits, and reached over 100 million Facebook fans. It became a significant ROI-positive revenue stream and led to massive changes in the business model.",
-				"Handled the ancillary technology which runs enterprise-scale sites: CDNs, analytics, SEO and structured markup, third-party scripts, advertising (including header bidding), social media promotion, custom APIs and middleware, e-commerce integrations, AWS (API Gateway, CloudFront, S3).",
-				"Built dashboards for editing and surfacing actionable insights.",
-				"Assisted in building a network-wide paid loyalty program using SvelteKit, TypeScript, Stripe, and Cloudflare Workers.",
-				"Built a number of JavaScript-driven online games with an audience of tens of thousands using Svelte hosted on Cloudflare."
+				"Assisted in building a network-wide paid loyalty program using SvelteKit, TypeScript, Stripe, and Cloudflare Workers, which involved chronologically-delimited actions per user, multiple membership tiers with different features offered, and product purchases from accumulated point redemptions.",
+				"Built a number of JavaScript-driven trivia games with an audience of tens of thousands using Svelte hosted on Cloudflare, using headless CMSes to retrieving content as well as writing it, via REST and GraphQL. Content caches were created based on the user’s geolocation.",
+				"Created internal dashboards for editing content and surfacing actionable insights."
+			]
+		},
+		{
+			"company": "GreaterGood Network",
+			"website": "https://greatergood.com",
+			"location": "Seattle, WA",
+			"position": "Senior Web Designer",
+			"startDate": "2015-01-01",
+			"endDate": "2016-01-01",
+			"summary": "Expanded and improved the WordPress publishing network, and started creating React-driven landing pages.",
+			"highlights": [
+				"Handled the integrations, optimizations, and troubleshooting typical to enterprise-scale sites: SEO and structured markup, analytics (data modeling, custom events) and GTM, advertising (including header bidding), ecommerce integrations, custom APIs and middleware, machine-learning recommendation systems, hosting and caching, AWS (API Gateway, CloudFront, S3), as well as the repackaging of content for other platforms (ex. Facebook’s Instant Articles).",
+				"Designed and built a number of applications enabling editors to schedule gamified product-purchase landing pages featuring videos and quizzes. Some of these were React-based, some Svelte."
+			]
+		},
+		{
+			"company": "GreaterGood Network",
+			"website": "https://greatergood.com",
+			"location": "Seattle, WA",
+			"position": "Web Developer/Designer",
+			"startDate": "2012-01-01",
+			"endDate": "2015-01-01",
+			"summary": "Designed and developed a publishing network of more than 50 WordPress sites featuring custom-built themes, plugins, branding, and tables, with islands of React-driven interactivity.",
+			"highlights": [
+				"Monetized more than 75 million pageviews a month for the benefit of nonprofits.",
+				"Reached over 100 million Facebook fans.",
+				"The network became a significant revenue stream and massively changed the business model."
 			]
 		},
 		{
@@ -101,12 +126,11 @@
 			"position": "Web Designer, Email Marketing",
 			"startDate": "2010-01-01",
 			"endDate": "2012-01-01",
-			"summary": "Created and revised email marketing templates to improve deliverability and presentation; also created initial social media presence for the company, and assisted in the creation of many successful social-networking promotions.",
+			"summary": "Created and revised email marketing templates to improve deliverability and presentation.",
 			"highlights": [
-				"Created initial Facebook presence for the company (FBML!) across many Pages.",
-				"Added responsive HTML delivery to two existing text-only daily email deliveries.",
-				"Created and revised email marketing templates to improve deliverability and presentation. Studied best industry practices and competitors to keep up with the constantly-shifting online retail environment and email deliverability issues.",
-				"Analyzed and reported on clickthrough rates for email marketing of retail promotions."
+				"Created initial Facebook presence for the company (FBML!) across many Pages, and assisted in many successful social-networking promotions.",
+				"Analyzed and reported on clickthrough rates for email marketing of retail promotions.",
+				"Studied best industry practices and competitors to keep up with the changing online retail environment and resolve deliverability issues."
 			]
 		},
 		{
@@ -116,11 +140,11 @@
 			"position": "Manager, Graphics Department",
 			"startDate": "2008-01-01",
 			"endDate": "2010-01-01",
-			"summary": "Acted as traffic manager for design staff, assigning and coordinating production of merchandise, images, and online advertisements.",
+			"summary": "Acted as traffic manager for design staff, assigning work and coordinating production of ecommerce online advertisements and product images.",
 			"highlights": [
-				"Responsible for conducting interviews and making hiring decisions.",
+				"Responsible for conducting interviews of designers and making hiring decisions.",
 				"Conducted annual performance reviews for department employees.",
-				"Worked with product buyers and designers to develop and manufacture merchandise for retail sale."
+				"Worked with product buyers and designers to develop and manufacture merchandise for sale."
 			]
 		},
 		{
@@ -130,12 +154,7 @@
 			"position": "Graphic Designer",
 			"startDate": "2005-01-01",
 			"endDate": "2008-01-01",
-			"summary": "Created raster and vector branding, advertisements, and assets.",
-			"highlights": [
-				"Created printed packaging for products as well as advertisements and promotional materials.",
-				"Made illustrations for use on apparel and supervised their production.",
-				"Color-corrected and masked raw product photography."
-			]
+			"summary": "Created illustrations and packaging for products, as well as advertisements and promotional materials. Color-corrected and masked raw product photography."
 		},
 		{
 			"company": "SGI Publications (now Adams Street Publishing Co)",
@@ -144,11 +163,10 @@
 			"position": "Print Designer",
 			"startDate": "1997-01-01",
 			"endDate": "2005-01-01",
-			"summary": "Designed and produced print publications and advertisements.",
+			"summary": "Designed print advertisements, brochures, logos, and coupons, as well as editorial content, under tight deadlines.",
 			"highlights": [
 				"Moved the business to an all-digital PDF prepress workflow to replace a camera-ready process.",
 				"Initiated and supervised a complete redesign of the company’s flagship publication, a 100+ page monthly magazine of 20,000 circulation.",
-				"Designed print advertisements, brochures, logos, and coupons, as well as editorial content, under tight deadlines.",
 				"Wrote feature articles and contributed to the editing of numerous publications.",
 				"Thoroughly revised the publisher’s Web presence for increased usability.",
 				"Acted as network and database administrator for the company."
