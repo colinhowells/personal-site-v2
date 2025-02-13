@@ -11,7 +11,7 @@ export const getYear = (date: string): number => {
 		console.error('Invalid date format: ', date);
 		return 0;
 	}
-	return new Date(date).getFullYear();
+	return parseInt(date.split('-')[0]);
 };
 
 export const getISODate = (date: string): string => {
