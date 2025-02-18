@@ -1,15 +1,11 @@
 <script lang="ts">
-	import type { PageData } from './$types';
+	import type { PageProps } from './$types';
 	import { PUBLIC_SITE_URL } from '$env/static/public';
 	import { page } from '$app/state';
 	import resume from '$lib/resume.json';
 	import { serializeSchema, getISODate } from '$lib/helpers.ts';
 
-	interface Props {
-		data: PageData;
-	}
-
-	let { data }: Props = $props();
+	let { data }: PageProps = $props();
 
 	const articleNodeId = `${page.url.toString()}/#article`;
 	// const avatarUrl = `${PUBLIC_SITE_URL}/images/colin-2023.jpg`;

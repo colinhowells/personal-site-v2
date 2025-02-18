@@ -3,6 +3,9 @@ export const getSlugFromPath = (path: string): string | null =>
 
 // check that date is in YYYY-MM-DD format
 export const isValidDate = (date: string): boolean => {
+	// check for datetimes: '2025-02-18T00:00:00.000Z'
+	if (date.includes('T')) date = date.split('T')[0];
+	// now test for 'YYYY-MM-DD'
 	return /^\d{4}-\d{2}-\d{2}$/.test(date);
 };
 
