@@ -156,6 +156,8 @@
 
 	--color-links: var(--color-warm-500);
 	--color-links-hover: var(--color-warm-600);
+
+	--accent-color: var(--color-cool-100);
 }
 
 /* // for MPAs
@@ -177,13 +179,17 @@
 ::-webkit-scrollbar-thumb {
 	border: 3px solid var(--color-cool-600);
 	border-radius: 3rem;
-	background: var(--color-cool-100);
+	background: var(--accent-color);
 }
 
 html {
 	overflow-y: scroll;
-	scrollbar-color: var(--color-cool-100) var(--color-cool-600);
-	accent-color: var(--color-cool-100);
+	scrollbar-color: var(--accent-color) var(--color-cool-600);
+	accent-color: var(--accent-color);
+}
+
+::selection {
+	background-color: var(--accent-color);
 }
 
 body {
@@ -291,6 +297,7 @@ article {
 	}
 	p,
 	address {
+		width: 100%;
 		color: #222;
 		line-height: 1.5;
 	}
