@@ -37,8 +37,8 @@
 	},
 	"education": [
 		{
-			"startDate": "1989-01-09",
-			"endDate": "1993-01-09",
+			"startDate": "1989-09-09",
+			"endDate": "1993-05-09",
 			"area": "Graphic Design",
 			"studyType": "Bachelor of Arts",
 			"institution": "University of Michigan School of Art & Architecture (now Penny W. Stamps School of Art and Design)"
@@ -83,7 +83,7 @@
 			"website": "https://greatergood.com",
 			"location": "Seattle, WA",
 			"position": "Senior Web Developer",
-			"startDate": "2016-01-01",
+			"startDate": "2016-10-01",
 			"endDate": "2024-11-20",
 			"summary": "Began building sites as serverless functions using Svelte and SvelteKit, and started using headless CMSes for content management.",
 			"highlights": [
@@ -97,8 +97,8 @@
 			"website": "https://greatergood.com",
 			"location": "Seattle, WA",
 			"position": "Senior Web Designer",
-			"startDate": "2015-01-01",
-			"endDate": "2016-01-01",
+			"startDate": "2015-09-02",
+			"endDate": "2016-09-28",
 			"summary": "Expanded and improved the WordPress publishing network, and started creating React-driven landing pages.",
 			"highlights": [
 				"Handled the integrations, optimizations, and troubleshooting typical to enterprise-scale sites: SEO and structured markup, analytics (data modeling, custom events) and GTM, advertising (including header bidding), ecommerce integrations, custom APIs and middleware, machine-learning recommendation systems, hosting and caching, AWS (API Gateway, CloudFront, S3), as well as the repackaging of content for other platforms (ex. Facebook’s Instant Articles).",
@@ -110,8 +110,8 @@
 			"website": "https://greatergood.com",
 			"location": "Seattle, WA",
 			"position": "Web Developer/Designer",
-			"startDate": "2012-01-01",
-			"endDate": "2015-01-01",
+			"startDate": "2012-01-15",
+			"endDate": "2015-09-01",
 			"summary": "Designed and developed a publishing network of more than 50 WordPress sites featuring custom-built themes, plugins, branding, and tables, with islands of React-driven interactivity.",
 			"highlights": [
 				"Monetized more than 75 million pageviews a month for the benefit of nonprofits.",
@@ -124,8 +124,8 @@
 			"website": "https://greatergood.com",
 			"location": "Seattle, WA",
 			"position": "Web Designer, Email Marketing",
-			"startDate": "2010-01-01",
-			"endDate": "2012-01-01",
+			"startDate": "2010-01-02",
+			"endDate": "2012-01-14",
 			"summary": "Created and revised email marketing templates to improve deliverability and presentation.",
 			"highlights": [
 				"Created initial Facebook presence for the company (FBML!) across many Pages, and assisted in many successful social-networking promotions.",
@@ -138,7 +138,7 @@
 			"website": "https://greatergood.com",
 			"location": "Seattle, WA",
 			"position": "Manager, Graphics Department",
-			"startDate": "2008-01-01",
+			"startDate": "2008-01-02",
 			"endDate": "2010-01-01",
 			"summary": "Acted as traffic manager for design staff, assigning work and coordinating production of ecommerce online advertisements and product images.",
 			"highlights": [
