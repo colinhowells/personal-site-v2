@@ -6,8 +6,6 @@
 		"website": "https://colinhowells.com",
 		"email": "colin@colinhowells.com",
 		"location": {
-			"address": "1621 17th Ave Apt 203",
-			"postalCode": "98122",
 			"city": "Seattle",
 			"region": "Washington",
 			"countryCode": "US"
