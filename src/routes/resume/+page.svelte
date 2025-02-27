@@ -9,11 +9,6 @@
 	<section class="contact">
 		<address class="p-contact h-card">
 			<span class="p-name"><strong>{resume.basics.name}</strong></span><br />
-			<span class="adr">
-				<span class="street-address">1621 17th Ave Apt 203</span>
-				<span class="locality">Seattle</span>, <span class="region">WA</span>
-				<span class="postal-code">98122-2764</span>
-			</span><br />
 			<span
 				>Email: <a class="email" href="mailto:colin+contact@colinhowells.com"
 					>{resume.basics.email}</a

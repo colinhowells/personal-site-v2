@@ -85,10 +85,11 @@
 		email: resume.basics.email,
 		address: {
 			'@type': 'PostalAddress',
+			// postalCode: resume.basics.location.postalCode,
+			// streetAddress: resume.basics.location.address,
 			addressLocality: resume.basics.location.city,
 			addressRegion: resume.basics.location.region,
-			postalCode: resume.basics.location.postalCode,
-			streetAddress: resume.basics.location.address
+			addressCountry: resume.basics.location.countryCode
 		},
 		description: resume.basics.summary,
 		sameAs: [] as Array<string>,
