@@ -62,3 +62,31 @@ export const getImageFilename = (url: string): string => {
 export const getImageSlug = (url: string): string => {
 	return getImageFilename(url).split('.')[0];
 };
+
+export const getArticles = (): Array<Article> => {
+	let articles: Array<Article> = [];
+	const articlePaths = import.meta.glob('$lib/articles/*.md', { eager: true });
+	for (const path in articlePaths) {
+		const file = articlePaths[path];
+		const slug = getSlugFromPath(path);
+		if (file && typeof file === 'object' && 'metadata' in file && slug) {
+			const metadata = file.metadata as Omit<Article, 'slug'>;
+			const article = { ...metadata, slug } satisfies Article;
+			article.published && articles.push(article);
+		}
+	}
+	return articles.sort(
+		(first, second) =>
+			new Date(second.datePublished).getTime() - new Date(first.datePublished).getTime()
+	);
+};
+
+export const getImages = (): Record<string, string> => {
+	let images: Record<string, string> = {};
+	const imageModules = import.meta.glob('$lib/images/*', { eager: true });
+	for (const [path, module] of Object.entries(imageModules)) {
+		const filename = path.split('/').pop() as string;
+		images[filename] = (module as { default: string }).default;
+	}
+	return images;
+};
