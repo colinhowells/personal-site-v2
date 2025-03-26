@@ -41,6 +41,15 @@
 					<use xlink:href="#icon-bluesky" />
 				</svg></a
 			>
+			<a
+				rel="external"
+				href="/rss.xml"
+				title="Colin Howells RSS feed"
+				aria-label="Colin Howells RSS feed"
+				><svg width="45" height="45">
+					<use xlink:href="#icon-rss" />
+				</svg></a
+			>
 		</nav>
 	</div>
 	<Nav />
@@ -72,6 +81,16 @@
 		<path
 			fill="currentFill"
 			d="M111.8 62.2C170.2 105.9 233 194.7 256 242.4c23-47.6 85.8-136.4 144.2-180.2c42.1-31.6 110.3-56 110.3 21.8c0 15.5-8.9 130.5-14.1 149.2C478.2 298 412 314.6 353.1 304.5c102.9 17.5 129.1 75.5 72.5 133.5c-107.4 110.2-154.3-27.6-166.3-62.9l0 0c-1.7-4.9-2.6-7.8-3.3-7.8s-1.6 3-3.3 7.8l0 0c-12 35.3-59 173.1-166.3 62.9c-56.5-58-30.4-116 72.5-133.5C100 314.6 33.8 298 15.7 233.1C10.4 214.4 1.5 99.4 1.5 83.9c0-77.8 68.2-53.4 110.3-21.8z"
+		/>
+	</symbol>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" role="img">
+	<!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+	<symbol id="icon-rss" viewBox="0 0 448 512">
+		<path
+			fill="currentFill"
+			d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM96 136c0-13.3 10.7-24 24-24c137 0 248 111 248 248c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-110.5-89.5-200-200-200c-13.3 0-24-10.7-24-24zm0 96c0-13.3 10.7-24 24-24c83.9 0 152 68.1 152 152c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-57.4-46.6-104-104-104c-13.3 0-24-10.7-24-24zm0 120a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"
 		/>
 	</symbol>
 </svg>
@@ -251,7 +270,7 @@
 	}
 	@media (width > 380px) {
 		div {
-			font-size: clamp(0.8rem, 0.7rem + 2dvw, 1.6rem);
+			font-size: clamp(0.5rem, 0.6rem + 2dvw, 1.5rem);
 		}
 	}
 </style>
