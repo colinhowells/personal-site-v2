@@ -285,6 +285,7 @@ article {
 	padding: var(--gap) 0;
 	hanging-punctuation: first;
 	font-family: var(--font-body);
+	text-wrap: pretty;
 	& > * {
 		grid-column: content;
 		margin: 0 auto calc(var(--padding) * 2) auto;
@@ -293,7 +294,6 @@ article {
 		font-size: clamp(1.5rem, 3dvw, 2rem);
 		text-align: center;
 		text-wrap: balance;
-		text-wrap: pretty;
 		view-transition-name: var(--transition-name);
 	}
 	p,
@@ -320,14 +320,16 @@ article {
 		padding: calc(var(--padding) / 6) calc(var(--padding) / 3);
 		word-wrap: break-word;
 		color: var(--color-cool-700);
+		text-wrap: auto;
 	}
 	> code,
 	> pre[class*='language-'] {
 		grid-column: fullwidth;
 		box-sizing: border-box;
-		margin: calc(var(--padding) * 2) auto 0 auto;
+		margin: 0 auto calc(var(--padding) * 2) auto;
 		max-width: fit-content;
 		font-size: smaller;
+		text-wrap: auto;
 	}
 	img {
 		margin: auto;
