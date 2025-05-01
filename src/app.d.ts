@@ -1,3 +1,5 @@
+import { IncomingRequestCfProperties } from '@cloudflare/workers-types';
+
 // https://svelte.dev/docs/kit/types#app.d.ts
 
 declare global {
