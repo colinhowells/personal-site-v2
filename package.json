@@ -4,8 +4,8 @@
 	"private": true,
 	"type": "module",
 	"devDependencies": {
-		"@sveltejs/adapter-cloudflare": "^7.0.1",
-		"@sveltejs/kit": "^2.20.7",
+		"@sveltejs/adapter-cloudflare": "^7.0.2",
+		"@sveltejs/kit": "^2.20.8",
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",
 		"mdsvex": "^0.12.5",
 		"prettier": "^3.5.3",
@@ -16,7 +16,7 @@
 		"svelte-check": "^4.1.6",
 		"tslib": "^2.7.0",
 		"typescript": "^5.8.3",
-		"vite": "^6.3.3"
+		"vite": "^6.3.4"
 	},
 	"scripts": {
 		"dev": "vite dev",

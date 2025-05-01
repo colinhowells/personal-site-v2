@@ -1,4 +1,4 @@
-// https://kit.svelte.dev/docs/types#app
+// https://svelte.dev/docs/kit/types#app.d.ts
 
 declare global {
 	interface Document {
