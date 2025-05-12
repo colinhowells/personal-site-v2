@@ -1,4 +1,6 @@
-// https://kit.svelte.dev/docs/types#app
+import { IncomingRequestCfProperties } from '@cloudflare/workers-types';
+
+// https://svelte.dev/docs/kit/types#app.d.ts
 
 declare global {
 	interface Document {
