@@ -1,15 +1,13 @@
 {
 	"basics": {
-		"name": "Colin Howells",
-		"label": "Senior Web Developer",
-		"summary": "Technical and visual problem-solver with 12 years of all-round web-development experience – creating branding, architecting back-end services, optimizing front-end performance, and improving user experiences.",
-		"website": "https://colinhowells.com",
 		"email": "colin@colinhowells.com",
+		"label": "Senior Web Developer",
 		"location": {
 			"city": "Seattle",
-			"region": "Washington",
-			"countryCode": "US"
+			"countryCode": "US",
+			"region": "Washington"
 		},
+		"name": "Colin Howells",
 		"profiles": [
 			{
 				"network": "GitHub",
@@ -31,15 +29,51 @@
 				"url": "https://bsky.app/profile/colinhowells.com",
 				"username": "colinhowells.com"
 			}
-		]
+		],
+		"summary": "Technical and visual problem-solver with 13 years of all-round web-development experience – creating branding, architecting back-end services, optimizing front-end performance, and improving user experiences.",
+		"website": "https://colinhowells.com"
 	},
 	"education": [
 		{
-			"startDate": "1989-09-09",
-			"endDate": "1993-05-09",
 			"area": "Graphic Design",
-			"studyType": "Bachelor of Arts",
-			"institution": "University of Michigan School of Art & Architecture (now Penny W. Stamps School of Art and Design)"
+			"endDate": "1993-05-09",
+			"institution": "University of Michigan School of Art & Architecture (now Penny W. Stamps School of Art and Design)",
+			"startDate": "1989-09-09",
+			"studyType": "Bachelor of Arts"
+		}
+	],
+	"interests": [
+		{
+			"name": "History"
+		},
+		{
+			"name": "Music"
+		},
+		{
+			"name": "Art"
+		},
+		{
+			"name": "Literature"
+		},
+		{
+			"name": "Film"
+		},
+		{
+			"name": "Politics"
+		}
+	],
+	"references": [
+		{
+			"name": "Rian Cool, Great Life Publishing",
+			"reference": "I’ve worked with a lot of different designers and web developers on all sorts of different projects. As a project manager, I often find that designers can be tricky to work with because of their work styles, attitude, personal design opinions and ego. Every time I’ve collaborated on a project with Colin, however, there have never been issues like this. In fact, he brings a complete openness to each and every project, with zero personal agenda. He always takes the time to understand the goals of the campaign and needs of the client. In fact, often Colin has taken the energy to grasp the concepts of the overall campaign so well, that he brings new and valuable perspective which ultimately manifests in an improved vision. His work style and attitude are truly refreshing and I’ve never been disappointed with the work he’s turned out."
+		},
+		{
+			"name": "Joe Kraut, Like Water Drumworks",
+			"reference": "I wanted to pass along that Colin Howells has been very gracious in helping me create a great-looking ad in your paper ... Colin has shared his time and expertise to improve the quality of what I have submitted. His professionalism and attitude is what will keep me [placing advertisements with you]."
+		},
+		{
+			"name": "Daniele Otto, Online Campaign Manager, GreaterGood Network",
+			"reference": "I have had the chance to work with Colin in two different companies – a publishing house in Ann Arbor, MI and a successful charity website in Seattle, WA. He is a talented designer, who pays attention to detail and works extremely well under pressure. He can analyze projects not only from a creative point of view, but also from a very broad and goal-oriented perspective. The financial success of my division could not have been attained without his hard work, knowledge and dedication."
 		}
 	],
 	"skills": [
@@ -77,132 +111,106 @@
 	],
 	"work": [
 		{
-			"company": "GreaterGood Network",
-			"website": "https://greatergood.com",
+			"company": "DockYard",
 			"location": "Seattle, WA",
-			"position": "Senior Web Developer",
-			"startDate": "2016-10-01",
+			"position": "Senior Software Engineer",
+			"startDate": "2025-06-12",
+			"summary": "Front-end development, JavaScript consulting, and feature development services.",
+			"website": "https://dockyard.com"
+		},
+		{
+			"company": "GreaterGood Network",
 			"endDate": "2024-11-20",
-			"summary": "Began building sites as serverless functions using Svelte and SvelteKit, and started using headless CMSes for content management.",
 			"highlights": [
 				"Assisted in building a network-wide paid loyalty program using SvelteKit, TypeScript, Stripe, and Cloudflare Workers, which involved chronologically-delimited actions per user, multiple membership tiers with different features offered, and product purchases from accumulated point redemptions.",
 				"Built a number of JavaScript-driven trivia games with an audience of tens of thousands using Svelte hosted on Cloudflare, using headless CMSes to retrieving content as well as writing it, via REST and GraphQL. Content caches were created based on the user’s geolocation.",
 				"Created internal dashboards for editing content and surfacing actionable insights."
-			]
+			],
+			"location": "Seattle, WA",
+			"position": "Senior Web Developer",
+			"startDate": "2016-10-01",
+			"summary": "Began building sites as serverless functions using Svelte and SvelteKit, and started using headless CMSes for content management.",
+			"website": "https://greatergood.com"
 		},
 		{
 			"company": "GreaterGood Network",
-			"website": "https://greatergood.com",
-			"location": "Seattle, WA",
-			"position": "Senior Web Designer",
-			"startDate": "2015-09-02",
 			"endDate": "2016-09-28",
-			"summary": "Expanded and improved the WordPress publishing network, and started creating React-driven landing pages.",
 			"highlights": [
 				"Handled the integrations, optimizations, and troubleshooting typical to enterprise-scale sites: SEO and structured markup, analytics (data modeling, custom events) and GTM, advertising (including header bidding), ecommerce integrations, custom APIs and middleware, machine-learning recommendation systems, hosting and caching, AWS (API Gateway, CloudFront, S3), as well as the repackaging of content for other platforms (ex. Facebook’s Instant Articles).",
 				"Designed and built a number of applications enabling editors to schedule gamified product-purchase landing pages featuring videos and quizzes. Some of these were React-based, some Svelte."
-			]
+			],
+			"location": "Seattle, WA",
+			"position": "Senior Web Designer",
+			"startDate": "2015-09-02",
+			"summary": "Expanded and improved the WordPress publishing network, and started creating React-driven landing pages.",
+			"website": "https://greatergood.com"
 		},
 		{
 			"company": "GreaterGood Network",
-			"website": "https://greatergood.com",
-			"location": "Seattle, WA",
-			"position": "Web Developer/Designer",
-			"startDate": "2012-01-15",
 			"endDate": "2015-09-01",
-			"summary": "Designed and developed a publishing network of more than 50 WordPress sites featuring custom-built themes, plugins, branding, and tables, with islands of React-driven interactivity.",
 			"highlights": [
 				"Monetized more than 75 million pageviews a month for the benefit of nonprofits.",
 				"Reached over 100 million Facebook fans.",
 				"The network became a significant revenue stream and massively changed the business model."
-			]
+			],
+			"location": "Seattle, WA",
+			"position": "Web Developer/Designer",
+			"startDate": "2012-01-15",
+			"summary": "Designed and developed a publishing network of more than 50 WordPress sites featuring custom-built themes, plugins, branding, and tables, with islands of React-driven interactivity.",
+			"website": "https://greatergood.com"
 		},
 		{
 			"company": "GreaterGood Network",
-			"website": "https://greatergood.com",
-			"location": "Seattle, WA",
-			"position": "Web Designer, Email Marketing",
-			"startDate": "2010-01-02",
 			"endDate": "2012-01-14",
-			"summary": "Created and revised email marketing templates to improve deliverability and presentation.",
 			"highlights": [
 				"Created initial Facebook presence for the company (FBML!) across many Pages, and assisted in many successful social-networking promotions.",
 				"Analyzed and reported on clickthrough rates for email marketing of retail promotions.",
 				"Studied best industry practices and competitors to keep up with the changing online retail environment and resolve deliverability issues."
-			]
+			],
+			"location": "Seattle, WA",
+			"position": "Web Designer, Email Marketing",
+			"startDate": "2010-01-02",
+			"summary": "Created and revised email marketing templates to improve deliverability and presentation.",
+			"website": "https://greatergood.com"
 		},
 		{
 			"company": "GreaterGood Network",
-			"website": "https://greatergood.com",
-			"location": "Seattle, WA",
-			"position": "Manager, Graphics Department",
-			"startDate": "2008-01-02",
 			"endDate": "2010-01-01",
-			"summary": "Acted as traffic manager for design staff, assigning work and coordinating production of ecommerce online advertisements and product images.",
 			"highlights": [
 				"Responsible for conducting interviews of designers and making hiring decisions.",
 				"Conducted annual performance reviews for department employees.",
 				"Worked with product buyers and designers to develop and manufacture merchandise for sale."
-			]
+			],
+			"location": "Seattle, WA",
+			"position": "Manager, Graphics Department",
+			"startDate": "2008-01-02",
+			"summary": "Acted as traffic manager for design staff, assigning work and coordinating production of ecommerce online advertisements and product images.",
+			"website": "https://greatergood.com"
 		},
 		{
 			"company": "GreaterGood Network",
-			"website": "https://greatergood.com",
+			"endDate": "2008-01-01",
 			"location": "Seattle, WA",
 			"position": "Graphic Designer",
 			"startDate": "2005-01-01",
-			"endDate": "2008-01-01",
-			"summary": "Created illustrations and packaging for products, as well as advertisements and promotional materials. Color-corrected and masked raw product photography."
+			"summary": "Created illustrations and packaging for products, as well as advertisements and promotional materials. Color-corrected and masked raw product photography.",
+			"website": "https://greatergood.com"
 		},
 		{
 			"company": "SGI Publications (now Adams Street Publishing Co)",
-			"website": "https://www.ecurrent.com",
-			"location": "Ann Arbor, MI",
-			"position": "Print Designer",
-			"startDate": "1997-01-01",
 			"endDate": "2005-01-01",
-			"summary": "Designed covers and editorial content, print advertisements, brochures, logos, and coupons, under tight deadlines.",
 			"highlights": [
 				"Created an all-digital PDF prepress workﬂow to replace a camera-ready process.",
 				"Initiated and supervised a complete redesign of the company’s flagship publication, a 100+ page monthly magazine of 20,000 circulation.",
 				"Wrote feature articles and contributed to the editing of numerous publications.",
 				"Thoroughly revised the publisher’s Web presence for increased usability.",
 				"Acted as network and database administrator for the company."
-			]
-		}
-	],
-	"references": [
-		{
-			"reference": "I’ve worked with a lot of different designers and web developers on all sorts of different projects. As a project manager, I often find that designers can be tricky to work with because of their work styles, attitude, personal design opinions and ego. Every time I’ve collaborated on a project with Colin, however, there have never been issues like this. In fact, he brings a complete openness to each and every project, with zero personal agenda. He always takes the time to understand the goals of the campaign and needs of the client. In fact, often Colin has taken the energy to grasp the concepts of the overall campaign so well, that he brings new and valuable perspective which ultimately manifests in an improved vision. His work style and attitude are truly refreshing and I’ve never been disappointed with the work he’s turned out.",
-			"name": "Rian Cool, Great Life Publishing"
-		},
-		{
-			"reference": "I wanted to pass along that Colin Howells has been very gracious in helping me create a great-looking ad in your paper ... Colin has shared his time and expertise to improve the quality of what I have submitted. His professionalism and attitude is what will keep me [placing advertisements with you].",
-			"name": "Joe Kraut, Like Water Drumworks"
-		},
-		{
-			"reference": "I have had the chance to work with Colin in two different companies – a publishing house in Ann Arbor, MI and a successful charity website in Seattle, WA. He is a talented designer, who pays attention to detail and works extremely well under pressure. He can analyze projects not only from a creative point of view, but also from a very broad and goal-oriented perspective. The financial success of my division could not have been attained without his hard work, knowledge and dedication.",
-			"name": "Daniele Otto, Online Campaign Manager, GreaterGood Network"
-		}
-	],
-	"interests": [
-		{
-			"name": "History"
-		},
-		{
-			"name": "Music"
-		},
-		{
-			"name": "Art"
-		},
-		{
-			"name": "Literature"
-		},
-		{
-			"name": "Film"
-		},
-		{
-			"name": "Politics"
+			],
+			"location": "Ann Arbor, MI",
+			"position": "Print Designer",
+			"startDate": "1997-01-01",
+			"summary": "Designed covers and editorial content, print advertisements, brochures, logos, and coupons, under tight deadlines.",
+			"website": "https://www.ecurrent.com"
 		}
 	]
 }
