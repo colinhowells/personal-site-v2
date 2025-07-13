@@ -1,11 +1,11 @@
 <script lang="ts">
-	import type { PageProps } from './$types';
 	import { getImageSlug } from '$lib/helpers';
+	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
 </script>
 
-<nav>
+<nav aria-label="Work Projects">
 	{#each data.articles.filter((a) => 'work' === a.type) as article}
 		{@const src = article?.image ? data.images[article.image] : null}
 		<a href="/{article.slug}">

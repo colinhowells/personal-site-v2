@@ -4,7 +4,7 @@
 	let { data }: PageProps = $props();
 </script>
 
-<nav>
+<nav aria-label="Recent Writing">
 	<ul>
 		{#each data.articles.filter((a) => 'work' !== a.type) as article}
 			<li>

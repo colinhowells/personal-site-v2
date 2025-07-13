@@ -218,11 +218,17 @@ main {
 		grid-template-columns: subgrid;
 		grid-column: content;
 		align-content: flex-start;
-		padding: 0;
+		padding: var(--gap) 0;
 		text-align: left;
 	}
 	& > article {
 		grid-column: fullwidth;
+	}
+	& > nav ul {
+		margin: 0;
+	}
+	& > nav[aria-label='Work Projects'] {
+		--gap: 0;
 	}
 }
 
@@ -282,7 +288,6 @@ h2 {
 }
 
 article {
-	padding: var(--gap) 0;
 	hanging-punctuation: first;
 	font-family: var(--font-body);
 	text-wrap: pretty;
