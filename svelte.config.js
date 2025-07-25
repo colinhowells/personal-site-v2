@@ -21,7 +21,14 @@ const config = {
 			pollInterval: 30000 // 30s as ms
 		}
 	},
-	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)]
+	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
+	vitePlugin: {
+		inspector: {
+			toggleKeyCombo: 'alt-x',
+			showToggleButton: 'always',
+			toggleButtonPos: 'bottom-right'
+		}
+	}
 };
 
 export default config;
