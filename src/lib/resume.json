@@ -111,14 +111,6 @@
 	],
 	"work": [
 		{
-			"company": "DockYard",
-			"location": "Hingham, MA",
-			"position": "Senior Software Engineer",
-			"startDate": "2025-06-12",
-			"summary": "Front-end development, JavaScript consulting, and feature development services.",
-			"website": "https://dockyard.com"
-		},
-		{
 			"company": "GreaterGood Network",
 			"endDate": "2024-11-20",
 			"highlights": [
