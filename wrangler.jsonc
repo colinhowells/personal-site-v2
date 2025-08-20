@@ -7,5 +7,26 @@
 		"binding": "ASSETS",
 		"directory": ".svelte-kit/cloudflare"
 	},
-	"preview_urls": true
+	"env": {
+		"staging": {
+			"name": "colinhowells-site-staging",
+			"vars": {
+				"ENVIRONMENT": "staging",
+				"PUBLIC_SITE_URL": "https://colinhowells.com"
+			},
+			"workers_dev": true
+		},
+		"production": {
+			"vars": {
+				"ENVIRONMENT": "production",
+				"PUBLIC_SITE_URL": "https://colinhowells.com"
+			},
+			"routes": [
+				{
+					"pattern": "colinhowells.com",
+					"custom_domain": true
+				}
+			]
+		}
+	}
 }
