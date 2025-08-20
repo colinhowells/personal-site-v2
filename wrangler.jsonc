@@ -17,6 +17,7 @@
 			"workers_dev": true
 		},
 		"production": {
+			"name": "colinhowells-site",
 			"vars": {
 				"ENVIRONMENT": "production",
 				"PUBLIC_SITE_URL": "https://colinhowells.com"
