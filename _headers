@@ -6,5 +6,8 @@
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
 
+https://:worker.:subdomain.workers.dev/*
+  X-Robots-Tag: noindex
+
 https://:version.:subdomain.workers.dev/*
   X-Robots-Tag: noindex
