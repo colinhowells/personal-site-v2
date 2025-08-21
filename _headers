@@ -6,8 +6,5 @@
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
 
-https://:colinhowells-site-staging.colin-395.workers.dev/*
+https://:version.:subdomain.workers.dev/*
   X-Robots-Tag: noindex
-
-https://:version.:colinhowells-site-staging.colin-395.workers.dev/*
-  X-Robots-Tag: noindex  
