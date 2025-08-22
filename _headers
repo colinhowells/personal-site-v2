@@ -4,7 +4,9 @@
   Referrer-Policy: strict-origin-when-cross-origin
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
-  X-XSS-Protection: 1; mode=block
+  
+https://:worker.:subdomain.workers.dev/*
+  X-Robots-Tag: noindex
 
-https://:colinhowells-site.pages.dev/*
+https://:version.:subdomain.workers.dev/*
   X-Robots-Tag: noindex
