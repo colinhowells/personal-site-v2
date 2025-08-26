@@ -1,5 +1,5 @@
-import type { LayoutServerLoad } from './$types';
 import { getArticles, getImages } from '$lib/helpers.ts';
+import type { LayoutServerLoad } from './$types';
 
 export const load: LayoutServerLoad = async () => {
 	// articles
