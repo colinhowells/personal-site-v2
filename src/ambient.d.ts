@@ -1,6 +1,4 @@
 declare module 'mdsvex';
-declare module 'svelte-infinite-scroll';
-declare module 'tsl-mastodon-api';
 
 interface MdsvexFile {
 	default: import('svelte/internal').SvelteComponent;
