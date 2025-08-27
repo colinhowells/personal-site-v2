@@ -1,9 +1,9 @@
-import { getArticles, getImages } from '$lib/helpers.ts';
+import { getArticlesMetadata, getImages } from '$lib/helpers.ts';
 import type { LayoutServerLoad } from './$types';
 
 export const load: LayoutServerLoad = async () => {
 	// articles
-	const articles: Array<Article> = getArticles();
+	const articles: Array<ArticleMetadata> = getArticlesMetadata();
 
 	// images
 	const images: Record<string, string> = getImages();

@@ -10,7 +10,7 @@ declare global {
 		// interface Error {}
 		// interface Locals {}
 		interface PageData {
-			articles?: Article[];
+			articles?: Array<ArticleMetadata>;
 			content?: any;
 			metadata?: {
 				title: string;

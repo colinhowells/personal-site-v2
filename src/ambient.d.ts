@@ -7,7 +7,7 @@ interface MdsvexFile {
 
 type MdsvexResolver = () => Promise<MdsvexFile>;
 
-type Article = {
+type ArticleMetadata = {
 	dateModified: string;
 	datePublished: string;
 	description: string;

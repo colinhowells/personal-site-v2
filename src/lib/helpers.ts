@@ -63,15 +63,15 @@ export const getImageSlug = (url: string): string => {
 	return getImageFilename(url).split('.')[0];
 };
 
-export const getArticles = (): Array<Article> => {
-	let articles: Array<Article> = [];
+export const getArticlesMetadata = (): Array<ArticleMetadata> => {
+	let articles: Array<ArticleMetadata> = [];
 	const articlePaths = import.meta.glob('$lib/articles/*.md', { eager: true });
 	for (const path in articlePaths) {
 		const file = articlePaths[path];
 		const slug = getSlugFromPath(path);
 		if (file && typeof file === 'object' && 'metadata' in file && slug) {
-			const metadata = file.metadata as Omit<Article, 'slug'>;
-			const article = { ...metadata, slug } satisfies Article;
+			const metadata = file.metadata as Omit<ArticleMetadata, 'slug'>;
+			const article = { ...metadata, slug } satisfies ArticleMetadata;
 			article.published && articles.push(article);
 		}
 	}
