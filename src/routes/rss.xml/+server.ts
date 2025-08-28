@@ -1,5 +1,5 @@
 import { PUBLIC_SITE_URL } from '$env/static/public';
-import { getArticles } from '$lib/helpers.ts';
+import { getArticlesMetadata } from '$lib/helpers.ts';
 import type { RequestHandler } from './$types';
 
 export const GET: RequestHandler = () => {
@@ -7,7 +7,7 @@ export const GET: RequestHandler = () => {
 		'Cache-Control': 'max-age=0, s-maxage=3600',
 		'Content-Type': 'application/xml'
 	};
-	const articles = getArticles();
+	const articles = getArticlesMetadata();
 	const xml = `
 		<?xml version="1.0" encoding="UTF-8"?>	
 		<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
