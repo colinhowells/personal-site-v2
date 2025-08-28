@@ -1,8 +1,8 @@
-import { AIRTABLE_PERSONAL_ACCESS_TOKEN, AIRTABLE_BASE_ID } from '$env/static/private';
+import { AIRTABLE_BASE_ID, AIRTABLE_PERSONAL_ACCESS_TOKEN } from '$env/static/private';
 
-import type { Actions, PageLoad } from './$types';
-import { fail } from '@sveltejs/kit';
 import { stripTags } from '$lib/helpers.ts';
+import { fail } from '@sveltejs/kit';
+import type { Actions, PageLoad } from './$types';
 
 export const load: PageLoad = async () => {
 	return {

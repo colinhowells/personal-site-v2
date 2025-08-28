@@ -17,7 +17,8 @@ const config = {
 			$css: 'src/app.css'
 		},
 		version: {
-			name: process?.env?.CF_PAGES_COMMIT_SHA ?? Date.now().toString(),
+			// https://developers.cloudflare.com/workers/ci-cd/builds/configuration/#default-variables
+			name: process?.env?.WORKERS_CI_BUILD_UUID ?? Date.now().toString(),
 			pollInterval: 30000 // 30s as ms
 		}
 	},

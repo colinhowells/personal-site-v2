@@ -1,6 +1,4 @@
 declare module 'mdsvex';
-declare module 'svelte-infinite-scroll';
-declare module 'tsl-mastodon-api';
 
 interface MdsvexFile {
 	default: import('svelte/internal').SvelteComponent;
@@ -9,7 +7,7 @@ interface MdsvexFile {
 
 type MdsvexResolver = () => Promise<MdsvexFile>;
 
-type Article = {
+type ArticleMetadata = {
 	dateModified: string;
 	datePublished: string;
 	description: string;

@@ -10,7 +10,7 @@ declare global {
 		// interface Error {}
 		// interface Locals {}
 		interface PageData {
-			articles?: Article[];
+			articles?: Array<ArticleMetadata>;
 			content?: any;
 			metadata?: {
 				title: string;
@@ -30,7 +30,7 @@ declare global {
 				waitUntil(promise: Promise<any>): void;
 			};
 			env: {
-				CF_PAGES_COMMIT_SHA: string;
+				WORKERS_CI_BUILD_UUID: string;
 			};
 		}
 	}
