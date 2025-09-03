@@ -4,9 +4,11 @@ import { stripTags } from '$lib/helpers.ts';
 import { fail } from '@sveltejs/kit';
 import type { Actions, PageLoad } from './$types';
 
-export const load: PageLoad = async () => {
+export const load: PageLoad = async (): Promise<{
+	seoData: Omit<SEOData, 'datePublished' | 'dateModified'>;
+}> => {
 	return {
-		metadata: {
+		seoData: {
 			title: 'Contact',
 			description: 'Contact form for Colin Howells'
 		}

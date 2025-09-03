@@ -1,21 +1,25 @@
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 
-export const load: PageLoad = async ({ params }): Promise<MdsvexFile> => {
-	let markdown = null;
-	const errorMessage = `Sorry, that isn’t here – /${params.slug} may have been deleted or moved.`;
+export const load: PageLoad = async ({
+	params
+}): Promise<Omit<App.PageData, 'articlesList' | 'images'>> => {
+	const article = await import(`$lib/articles/${params?.slug}.md`);
 
-	try {
-		markdown = await import(`$lib/articles/${params?.slug}.md`);
-	} catch (e) {
-		error(404, errorMessage);
+	if (article && article?.metadata?.published) {
+		article.metadata.slug = params.slug;
+		const { datePublished, dateModified, title, description } = article.metadata;
+
+		return {
+			article,
+			seoData: {
+				datePublished,
+				dateModified,
+				title,
+				description
+			}
+		};
 	}
 
-	if (!markdown || !markdown?.metadata?.published) {
-		error(404, errorMessage);
-	}
-
-	markdown.metadata.slug = params.slug;
-
-	return { ...markdown };
+	error(404, `Sorry, that isn't here; /${params.slug} may have been deleted or moved.`);
 };

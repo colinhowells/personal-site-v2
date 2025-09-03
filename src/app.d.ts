@@ -1,28 +1,19 @@
 import { IncomingRequestCfProperties } from '@cloudflare/workers-types';
 
-// https://svelte.dev/docs/kit/types#app.d.ts
-
 declare global {
 	interface Document {
 		startViewTransition?: any;
 	}
+
+	/** {@link https://svelte.dev/docs/kit/types#app.d.ts} */
 	namespace App {
-		// interface Error {}
-		// interface Locals {}
 		interface PageData {
-			articles?: Array<ArticleMetadata>;
-			content?: any;
-			metadata?: {
-				title: string;
-				description: string;
-				datePublished?: string;
-				dateModified?: string;
-				type?: 'article' | 'diary' | 'list' | 'work';
-				published?: boolean;
-				image?: string;
-			};
+			article?: Article;
+			articlesList: ArticlesList;
+			images: Images;
+			seoData: SEOData;
 		}
-		// interface PageState {}
+
 		interface Platform {
 			caches: CacheStorage & { default: Cache };
 			cf: IncomingRequestCfProperties;

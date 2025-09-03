@@ -1,15 +1,7 @@
 <script lang="ts">
 	import { getImageSlug } from '$lib/helpers';
 
-	interface Props {
-		src: string;
-		alt?: string;
-		caption?: string;
-		width?: string;
-		height?: string;
-	}
-
-	let { src, alt = '', caption, width, height }: Props = $props();
+	let { src, alt = '', caption, width, height }: FigureProps = $props();
 </script>
 
 <figure aria-label={caption}>

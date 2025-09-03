@@ -1,11 +1,16 @@
+import { getISODate } from '$lib/helpers';
 import type { PageLoad } from './$types';
 
-export const load: PageLoad = () => {
+const dateModified = getISODate('2025-08-19');
+
+export const load: PageLoad = async (): Promise<{
+	seoData: Omit<SEOData, 'datePublished'>;
+}> => {
 	return {
-		metadata: {
+		seoData: {
 			title: 'Resume',
 			description: 'Resume for Colin Howells',
-			dateModified: '2025-02-13'
+			dateModified
 		}
 	};
 };

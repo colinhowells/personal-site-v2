@@ -1,5 +1,5 @@
 import { PUBLIC_SITE_URL } from '$env/static/public';
-import { getArticlesMetadata } from '$lib/helpers.ts';
+import { getArticlesList } from '$lib/helpers.ts';
 import type { RequestHandler } from './$types';
 
 export const GET: RequestHandler = () => {
@@ -7,7 +7,7 @@ export const GET: RequestHandler = () => {
 		'Cache-Control': 'max-age=0, s-maxage=3600',
 		'Content-Type': 'application/xml'
 	};
-	const articles = getArticlesMetadata();
+	const articlesList = getArticlesList();
 	const xml = `
 		<?xml version="1.0" encoding="UTF-8"?>	
 		<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
@@ -16,8 +16,8 @@ export const GET: RequestHandler = () => {
 				<description>RSS feed</description>
 				<link>${PUBLIC_SITE_URL}</link>
 				<atom:link href="${PUBLIC_SITE_URL}/rss.xml" rel="self" type="application/rss+xml"/>
-				<lastBuildDate>${new Date(articles[0].datePublished).toUTCString()}</lastBuildDate>
-				${articles
+				<lastBuildDate>${new Date(articlesList[0].datePublished).toUTCString()}</lastBuildDate>
+				${articlesList
 					.map(
 						(article) => `
 						<item>
