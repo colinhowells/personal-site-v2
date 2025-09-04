@@ -3,11 +3,12 @@
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
+	const { articlesList, images } = data;
 </script>
 
 <nav aria-label="Work Projects">
-	{#each data.articles.filter((a) => 'work' === a.type) as article}
-		{@const src = article?.image ? data.images[article.image] : null}
+	{#each articlesList.filter((a) => 'work' === a.type) as article}
+		{@const src = article?.image ? images[article.image] : null}
 		<a href="/{article.slug}">
 			<div>
 				<h3 style:--transition-name="title-{article.slug}">{article.title}</h3>

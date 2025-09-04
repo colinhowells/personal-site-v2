@@ -1,6 +1,6 @@
 <script lang="ts">
-	import resume from '$lib/resume.json';
 	import { getYear } from '$lib/helpers.ts';
+	import resume from '$lib/resume.json';
 </script>
 
 <article class="h-resume">

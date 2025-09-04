@@ -2,11 +2,12 @@
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
+	const { articlesList } = data;
 </script>
 
 <nav aria-label="Recent Writing">
 	<ul>
-		{#each data.articles.filter((a) => 'work' !== a.type) as article}
+		{#each articlesList.filter((a) => 'work' !== a.type) as article}
 			<li>
 				<a class="title" style:--transition-name="title-{article.slug}" href="/{article.slug}"
 					>{article.title}</a

@@ -1,12 +1,11 @@
 <script lang="ts">
-	import type { LayoutProps } from './$types';
 	import { onNavigate } from '$app/navigation';
-	// import { dev } from '$app/environment';
 	import { page } from '$app/state';
-	import SEO from '$lib/SEO.svelte';
-	import Header from '$lib/Header.svelte';
-	import Footer from '$lib/Footer.svelte';
 	import '$css';
+	import Footer from '$lib/Footer.svelte';
+	import Header from '$lib/Header.svelte';
+	import SEO from '$lib/SEO.svelte';
+	import type { LayoutProps } from './$types';
 
 	let { children }: LayoutProps = $props();
 
@@ -20,8 +19,6 @@
 			});
 		});
 	});
-
-	// $: if (dev) console.log(page);
 </script>
 
 <svelte:head>
@@ -29,11 +26,13 @@
 </svelte:head>
 
 {#if !page?.error}
-	<SEO data={page.data} />
+	<SEO />
 {/if}
 
-<Header />
-<main>
-	{@render children?.()}
-</main>
-<Footer />
+<svelte:boundary>
+	<Header />
+	<main>
+		{@render children?.()}
+	</main>
+	<Footer />
+</svelte:boundary>

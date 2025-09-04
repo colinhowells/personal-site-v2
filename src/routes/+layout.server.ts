@@ -1,18 +1,18 @@
-import { getArticlesMetadata, getImages } from '$lib/helpers.ts';
+import { getArticlesList, getImages, getISODate } from '$lib/helpers.ts';
 import type { LayoutServerLoad } from './$types';
 
+const defaultDate = getISODate('2024-09-05');
+
 export const load: LayoutServerLoad = async () => {
-	// articles
-	const articles: Array<ArticleMetadata> = getArticlesMetadata();
-
-	// images
-	const images: Record<string, string> = getImages();
-
-	// metadata
-	const metadata = {
+	const articlesList = getArticlesList();
+	const images = getImages();
+	const seoData: SEOData = {
 		title: 'Welcome',
-		description: 'Welcome to my personal website'
+		description:
+			'Personal website of Colin Howells, a web developer and designer living in Seattle',
+		datePublished: defaultDate,
+		dateModified: defaultDate
 	};
 
-	return { articles, images, metadata };
+	return { articlesList, images, seoData };
 };
