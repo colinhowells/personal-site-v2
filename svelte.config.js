@@ -1,3 +1,4 @@
+import { WORKERS_CI_BUILD_UUID } from '$env/static/private';
 import adapter from '@sveltejs/adapter-cloudflare';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex } from 'mdsvex';
@@ -18,7 +19,7 @@ const config = {
 		},
 		version: {
 			// https://developers.cloudflare.com/workers/ci-cd/builds/configuration/#default-variables
-			name: process?.env?.WORKERS_CI_BUILD_UUID ?? Date.now().toString(),
+			name: WORKERS_CI_BUILD_UUID ?? Date.now().toString(),
 			pollInterval: 30000 // 30s as ms
 		}
 	},
