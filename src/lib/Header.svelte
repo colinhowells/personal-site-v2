@@ -270,7 +270,7 @@
 	}
 	@media (width > 380px) {
 		div {
-			font-size: clamp(0.5rem, 0.6rem + 2dvw, 1.5rem);
+			font-size: clamp(0.5rem, 0.6rem + 2dvw, 1.45rem);
 		}
 	}
 </style>
