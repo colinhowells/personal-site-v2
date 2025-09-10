@@ -129,7 +129,7 @@
 			"endDate": "2016-09-28",
 			"highlights": [
 				"Handled the integrations, optimizations, and troubleshooting typical to enterprise-scale sites: SEO and structured markup, analytics (data modeling, custom events) and GTM, advertising (including header bidding), ecommerce integrations, custom APIs and middleware, machine-learning recommendation systems, hosting and caching, AWS (API Gateway, CloudFront, S3), as well as the repackaging of content for other platforms (ex. Facebook’s Instant Articles).",
-				"Designed and built a number of applications enabling editors to schedule gamified product-purchase landing pages featuring videos and quizzes. Some of these were React-based, some Svelte."
+				"Designed and built a number of applications enabling editors to schedule gamified conversion-funnel landing pages featuring videos and quizzes. Some of these were React-based, some Svelte."
 			],
 			"location": "Seattle, WA",
 			"position": "Senior Web Designer",
