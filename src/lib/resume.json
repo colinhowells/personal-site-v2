@@ -30,7 +30,7 @@
 				"username": "colinhowells.com"
 			}
 		],
-		"summary": "Technical and visual problem-solver with 13 years of all-round web-development experience – creating branding, architecting back-end services, optimizing front-end performance, and improving user experiences.",
+		"summary": "Technical and visual problem-solver with 12 years of all-round web-development experience – creating branding, architecting back-end services, optimizing front-end performance, and improving user experiences.",
 		"website": "https://colinhowells.com"
 	},
 	"education": [
@@ -114,9 +114,10 @@
 			"company": "GreaterGood Network",
 			"endDate": "2024-11-20",
 			"highlights": [
+				"Built a number of JavaScript-driven trivia games as serverless functions with an audience of tens of thousands using Svelte hosted on Cloudflare, modeling content data in headless CMSes, queried and mutated via REST and GraphQL. The visitor’s geolocation determined which day’s content cache was retrieved.",
 				"Assisted in building a network-wide paid loyalty program using SvelteKit, TypeScript, Stripe, and Cloudflare Workers, which involved chronologically-delimited actions per user, multiple membership tiers with different features offered, and product purchases from accumulated point redemptions.",
-				"Built a number of JavaScript-driven trivia games with an audience of tens of thousands using Svelte hosted on Cloudflare, using headless CMSes to retrieving content as well as writing it, via REST and GraphQL. Content caches were created based on the user’s geolocation.",
-				"Created internal dashboards for editing content and surfacing actionable insights."
+				"Created internal dashboards for editing content and surfacing actionable insights.",
+				"Worked on Shopify themes, involving web components."
 			],
 			"location": "Seattle, WA",
 			"position": "Senior Web Developer",
@@ -129,7 +130,7 @@
 			"endDate": "2016-09-28",
 			"highlights": [
 				"Handled the integrations, optimizations, and troubleshooting typical to enterprise-scale sites: SEO and structured markup, analytics (data modeling, custom events) and GTM, advertising (including header bidding), ecommerce integrations, custom APIs and middleware, machine-learning recommendation systems, hosting and caching, AWS (API Gateway, CloudFront, S3), as well as the repackaging of content for other platforms (ex. Facebook’s Instant Articles).",
-				"Designed and built a number of applications enabling editors to schedule gamified product-purchase landing pages featuring videos and quizzes. Some of these were React-based, some Svelte."
+				"Designed and built a number of applications enabling editors to create and schedule gamified conversion-funnel landing pages featuring videos and quizzes. Some of these were React-based, some Svelte."
 			],
 			"location": "Seattle, WA",
 			"position": "Senior Web Designer",
