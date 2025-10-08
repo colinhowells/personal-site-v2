@@ -30,7 +30,7 @@
 				"username": "colinhowells.com"
 			}
 		],
-		"summary": "Technical and visual problem-solver with 12 years of all-round web-development experience – creating branding, architecting back-end services, optimizing front-end performance, and improving user experiences.",
+		"summary": "Tenacious learner with 12 years of all-round web-development experience – creating branding, architecting back-end services, optimizing front-end performance, and improving user experiences.",
 		"website": "https://colinhowells.com"
 	},
 	"education": [
@@ -114,7 +114,7 @@
 			"company": "GreaterGood Network",
 			"endDate": "2024-11-20",
 			"highlights": [
-				"Built a number of JavaScript-driven trivia games as serverless functions with an audience of tens of thousands using Svelte hosted on Cloudflare, modeling content data in headless CMSes, queried and mutated via REST and GraphQL. The visitor’s geolocation determined which day’s content cache was retrieved.",
+				"Built a number of JavaScript-driven trivia games with an audience of tens of thousands using my proposed stack of SvelteKit hosted on Cloudflare as Workers, modeling and authoring content in headless CMSes, queried and mutated via GraphQL and REST. In addition to being technically much simpler than our typical architecture, it was much cheaper to host and run.",
 				"Assisted in building a network-wide paid loyalty program using SvelteKit, TypeScript, Stripe, and Cloudflare Workers, which involved chronologically-delimited actions per user, multiple membership tiers with different features offered, and product purchases from accumulated point redemptions.",
 				"Created internal dashboards for editing content and surfacing actionable insights.",
 				"Worked on Shopify themes, involving web components."
