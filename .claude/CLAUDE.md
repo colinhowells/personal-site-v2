@@ -2,6 +2,200 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## CSS MCP Server
+
+### Available MCP Tools:
+
+#### 1. get_docs
+
+Fetch CSS documentation for any property, selector, function, or concept.
+
+**Parameters:**
+
+- `slug` (string) - CSS feature name or MDN path
+
+**Examples:**
+
+```javascript
+// Simple slugs (auto-normalized)
+get_docs({ slug: 'grid' });
+get_docs({ slug: ':has' });
+get_docs({ slug: 'flexbox' });
+get_docs({ slug: '@media' });
+get_docs({ slug: '::before' });
+
+// Full MDN paths also work
+get_docs({ slug: 'Web/CSS/grid' });
+get_docs({ slug: 'en-US/docs/Web/CSS/border-radius' });
+```
+
+**Returns:**
+
+```json
+{
+	"source": "mdn-doc",
+	"slug": "/en-US/docs/Web/CSS/grid",
+	"url": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid/index.json",
+	"title": "grid",
+	"mdn_url": "/en-US/docs/Web/CSS/grid",
+	"summary": "The grid CSS property is a shorthand...",
+	"body": [
+		{
+			"type": "prose",
+			"title": "Syntax",
+			"content": "The **`grid`** property is a shorthand..."
+		}
+	]
+}
+```
+
+#### 2. get_browser_compatibility
+
+Fetch browser compatibility data for CSS features.
+
+**Parameters:**
+
+- `bcd_id` (string) - Browser Compat Data ID (e.g., `"css.properties.grid"`)
+
+**Example:**
+
+```javascript
+get_browser_compatibility({ bcd_id: 'css.properties.grid' });
+get_browser_compatibility({ bcd_id: 'css.selectors.has' });
+```
+
+#### 3. analyze_css
+
+Analyze CSS code for quality, complexity, and design patterns. Returns **curated summary by default** (lightweight, ~1-2k tokens). Use `summaryOnly: false` for complete 150+ metrics (uses ~10k+ tokens).
+
+**Parameters:**
+
+- `css` (string, required) - CSS code to analyze
+- `summaryOnly` (boolean, optional) - Return summary instead of full analysis. Default: `true`
+
+**Examples:**
+
+```javascript
+// Summary mode (default, lightweight)
+analyze_css({
+	css: `
+    .container {
+      display: grid;
+      color: #3b82f6;
+    }
+  `
+});
+
+// Full analysis with all 150+ metrics
+analyze_css({
+	css: '...',
+	summaryOnly: false
+});
+```
+
+**Returns (default summary):**
+
+```json
+{
+	"analysis": {
+		"stylesheet": {
+			"sourceLinesOfCode": 5,
+			"size": 72
+		},
+		"rules": { "total": 1 },
+		"selectors": {
+			"total": 1,
+			"averageComplexity": 1.0,
+			"maxComplexity": 1
+		},
+		"colors": {
+			"unique": 1,
+			"uniqueColors": ["#3b82f6"]
+		}
+	},
+	"note": "Summary metrics only. Use summaryOnly: false for complete 150+ metrics."
+}
+```
+
+#### 4. analyze_project_css
+
+Analyze all CSS files in a project. Finds CSS files recursively, combines them, and provides project-wide analysis. **Framework-agnostic** - works with built CSS from any framework (SvelteKit, React, Vue, etc.).
+
+Returns **curated summary metrics by default** (lightweight, ~1-2k tokens). Use `includeFullAnalysis: true` for complete data (uses ~10k+ tokens).
+
+**Automatically excludes:**
+
+- `**/node_modules/**`
+- `**/*.min.css`
+
+**Parameters:**
+
+- `path` (string, required) - File path, directory, or glob pattern
+- `includeFullAnalysis` (boolean, optional) - Return full 150+ metrics instead of summary. Default: `false`
+- `exclude` (array of strings, optional) - Additional glob patterns to exclude
+
+**Examples:**
+
+```javascript
+// Analyze all CSS in a directory (summary - default, lightweight)
+analyze_project_css({ path: 'dist' });
+
+// Full analysis with all 150+ metrics (uses more tokens)
+analyze_project_css({
+	path: 'dist',
+	includeFullAnalysis: true
+});
+
+// Exclude additional patterns
+analyze_project_css({
+	path: 'dist',
+	exclude: ['**/vendor/**', '**/*.legacy.css']
+});
+
+// Analyze specific file
+analyze_project_css({ path: 'public/styles.css' });
+
+// Use glob patterns
+analyze_project_css({ path: 'dist/**/*.css' });
+```
+
+**Returns (default summary):**
+
+```json
+{
+  "files": {
+    "total": 5,
+    "analyzed": 5,
+    "errors": 0,
+    "list": [
+      { "path": "/path/to/style.css", "size": 2048 },
+      { "path": "/path/to/theme.css", "size": 1024 }
+    ]
+  },
+  "summary": {
+    "stylesheet": {
+      "sourceLinesOfCode": 450,
+      "size": 12800
+    },
+    "rules": { "total": 85 },
+    "selectors": {
+      "total": 120,
+      "averageComplexity": 1.4,
+      "maxComplexity": 5
+    },
+    "colors": {
+      "unique": 12,
+      "uniqueColors": ["#3b82f6", "#10b981", ...]
+    },
+    "fontSizes": {
+      "unique": 8,
+      "uniqueSizes": ["1rem", "1.5rem", ...]
+    }
+  },
+  "note": "Summary metrics only. Use includeFullAnalysis: true for complete data."
+}
+```
+
 ## Svelte MCP Server
 
 You are able to use the Svelte MCP server, where you have access to comprehensive Svelte 5 and SvelteKit documentation. Here's how to use the available tools effectively:
@@ -33,6 +227,7 @@ After completing the code, ask the user if they want a playground link. Only cal
 This is a personal website/blog built with SvelteKit 2 and Svelte 5, deployed to Cloudflare Workers. It uses mdsvex to render Markdown articles as Svelte components with frontmatter metadata.
 
 **Tech Stack:**
+
 - SvelteKit 2 with Svelte 5 (using runes)
 - TypeScript
 - mdsvex for Markdown processing
@@ -67,6 +262,7 @@ npm run cf-typegen
 ### Content System
 
 **Articles are Markdown files in `src/lib/articles/`** with frontmatter metadata:
+
 - Each `.md` file has frontmatter with: `title`, `description`, `datePublished`, `dateModified`, `type` (review|article|list|work), `published` (boolean), and optional `image`
 - Articles are dynamically imported using Vite's `import.meta.glob()` in `getArticlesList()` helper
 - Only articles with `published: true` are displayed
@@ -105,6 +301,7 @@ npm run cf-typegen
 ### Component Library
 
 Reusable components in `src/lib/`:
+
 - `SEO.svelte` - SEO metadata component
 - `Header.svelte` - Site header
 - `Footer.svelte` - Site footer
@@ -122,12 +319,14 @@ Deployed to Cloudflare Workers using `@sveltejs/adapter-cloudflare`. The build U
 ## Working with Articles
 
 To add a new article:
+
 1. Create a new `.md` file in `src/lib/articles/`
 2. Add frontmatter with all required fields (see existing articles for examples)
 3. Set `published: true` when ready to publish
 4. The filename becomes the URL slug automatically
 
 To reference images in articles:
+
 1. Add image to `src/lib/images/`
 2. Import in article's `<script>` section: `import imageName from '$lib/images/filename.png';`
 3. Use with `<Figure>` component or standard `<img>` tag
