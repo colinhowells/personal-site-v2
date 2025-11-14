@@ -1,5 +1,5 @@
 ---
-globs: *.svelte,+[layout|page|server|error]*
+globs: *.svelte,+[layout|page|server|error]*,*.remote.*
 alwaysApply: false
 ---
 

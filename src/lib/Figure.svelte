@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { getImageSlug } from '$lib/helpers';
+	import { getImageSlug } from '$lib/helpers.ts';
 
 	let { src, alt = '', caption, width, height }: FigureProps = $props();
 </script>

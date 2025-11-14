@@ -7,13 +7,6 @@ declare global {
 
 	/** {@link https://svelte.dev/docs/kit/types#app.d.ts} */
 	namespace App {
-		interface PageData {
-			article?: Article;
-			articlesList: ArticlesList;
-			images: Images;
-			seoData: SEOData;
-		}
-
 		interface Platform {
 			caches: CacheStorage & { default: Cache };
 			cf: IncomingRequestCfProperties;

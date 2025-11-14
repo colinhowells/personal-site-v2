@@ -1,31 +1,44 @@
 <script lang="ts">
-	import { enhance } from '$app/forms';
-	import type { ActionData } from './$types';
+	import { sendContact } from '$lib/api/contact.remote';
+	import SEO from '$lib/SEO.svelte';
 
-	interface PageProps {
-		form: ActionData & {
-			name: string;
-			email: string;
-			error?: { field: string; message: string };
-			message: string;
-		};
-	}
-
-	let { form }: PageProps = $props();
-
-	let { name, email, error, message } = $state(
-		form ?? {
-			name: '',
-			email: '',
-			error: { field: '', message: '' },
-			message: ''
-		}
-	);
-	let error_field = $derived(error && error['field']);
-	let error_message = $derived(error && error['message']);
+	const { name, email, message } = sendContact.fields;
 </script>
 
-<form method="POST" aria-label="Contact form" use:enhance>
+<SEO title="Contact" description="Contact form for Colin Howells" />
+
+<form {...sendContact} aria-label="Contact form">
+	<label for="name">
+		Name
+		<input {...name.as('text')} required autocomplete="name" />
+	</label>
+
+	<label for="email">
+		Email
+		<input {...email.as('email')} required autocomplete="email" />
+	</label>
+
+	<label for="message">
+		Your message
+		<textarea {...message.as('text')} rows="5" required></textarea>
+	</label>
+
+	{#if sendContact.result?.success}
+		<p>Thanks for your message!</p>
+	{:else if sendContact.result?.error}
+		<p>There's an issue with our form but we'll fix it!</p>
+	{:else}
+		<button disabled={Boolean(sendContact.pending)}
+			>{sendContact.pending ? 'Sending…' : 'Submit'}</button
+		>
+	{/if}
+
+	{#each sendContact.fields.allIssues() as issue}
+		<p>{issue.message}</p>
+	{/each}
+</form>
+
+<!-- <form method="POST" aria-label="Contact form" use:enhance>
 	<label for="name">
 		Name
 		<input
@@ -85,19 +98,19 @@
 	{:else}
 		<button>Submit</button>
 	{/if}
-</form>
+</form> -->
 
 <style>
 	form {
 		display: flex;
 		flex-direction: column;
-		gap: calc(var(--padding) * 2);
+		gap: var(--padding);
 		padding: var(--gap) 0;
 	}
 	label {
 		display: flex;
 		flex-flow: column nowrap;
-		gap: var(--padding);
+		gap: calc(var(--padding) / 4);
 		color: var(--color-links);
 		font-family: var(--font-sans);
 		&:focus-within {
@@ -120,5 +133,7 @@
 	}
 	p {
 		margin: auto;
+		padding: var(--padding) calc(var(--padding) * 2);
+		font-family: var(--font-sans);
 	}
 </style>

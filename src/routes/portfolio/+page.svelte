@@ -1,10 +1,14 @@
 <script lang="ts">
-	import { getImageSlug } from '$lib/helpers';
-	import type { PageProps } from './$types';
+	import { getArticlesList } from '$lib/api/articles.remote';
+	import { getImages } from '$lib/api/images.remote';
+	import { getImageSlug } from '$lib/helpers.ts';
+	import SEO from '$lib/SEO.svelte';
 
-	let { data }: PageProps = $props();
-	const { articlesList, images } = data;
+	const articlesList = await getArticlesList();
+	const images = await getImages();
 </script>
+
+<SEO title="Portfolio" description="Website work by Colin Howells" />
 
 <nav aria-label="Work Projects">
 	{#each articlesList.filter((a) => 'work' === a.type) as article}
