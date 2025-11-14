@@ -20,6 +20,14 @@ const config = {
 			// https://developers.cloudflare.com/workers/ci-cd/builds/configuration/#default-variables
 			name: process?.env?.WORKERS_CI_BUILD_UUID ?? Date.now().toString(),
 			pollInterval: 30000 // 30s as ms
+		},
+		experimental: {
+			remoteFunctions: true
+		}
+	},
+	compilerOptions: {
+		experimental: {
+			async: true
 		}
 	},
 	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],

@@ -1,7 +1,10 @@
 <script lang="ts">
 	import { getYear } from '$lib/helpers.ts';
 	import resume from '$lib/resume.json';
+	import SEO from '$lib/SEO.svelte';
 </script>
+
+<SEO title="Resume" description="Resume for Colin Howells" />
 
 <article class="h-resume">
 	<h2 hidden class="p-name">{resume.basics.name}</h2>

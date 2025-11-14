@@ -46,7 +46,7 @@
 		font-weight: 800;
 		font-size: clamp(0.7rem, 1.5vmin, 1rem);
 		font-family: var(--font-sans);
-		letter-spacing: 0.1vmin;
+		letter-spacing: 0.3vmin;
 		text-transform: uppercase;
 	}
 	li[aria-current='page'] {

@@ -1,9 +1,11 @@
 <script lang="ts">
-	import type { PageProps } from './$types';
+	import SEO from '$lib/SEO.svelte';
+	import { getArticlesList } from '$lib/api/articles.remote';
 
-	let { data }: PageProps = $props();
-	const { articlesList } = data;
+	const articlesList = await getArticlesList();
 </script>
+
+<SEO />
 
 <nav aria-label="Recent Writing">
 	<ul>
