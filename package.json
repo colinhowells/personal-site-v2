@@ -32,6 +32,7 @@
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"cf-typegen": "npx wrangler types"
+		"cf-typegen": "wrangler types",
+		"cf-preview": "npm run cf-typegen && npm run build && wrangler dev"
 	}
 }
