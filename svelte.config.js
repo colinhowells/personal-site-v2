@@ -30,14 +30,7 @@ const config = {
 			async: true
 		}
 	},
-	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
-	vitePlugin: {
-		inspector: {
-			toggleKeyCombo: 'alt-x',
-			showToggleButton: 'always',
-			toggleButtonPos: 'bottom-right'
-		}
-	}
+	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)]
 };
 
 export default config;

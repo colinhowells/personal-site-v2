@@ -26,6 +26,7 @@ type ArticleMetadata = SEOData & {
 	slug: string;
 	type: ArticleTypes;
 	image?: string;
+	imgSrc?: string;
 };
 
 type Article = {

@@ -26,7 +26,7 @@
 		{#snippet failed(error)}
 			<article>
 				<h2 class="title">Whoops</h2>
-				<p>{(error?.message && error.message) || 'Something went wrong'}</p>
+				<p>{error instanceof Error ? error?.message : String(error)}</p>
 			</article>
 		{/snippet}
 	</svelte:boundary>

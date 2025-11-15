@@ -91,6 +91,11 @@ export const getArticlesList = (): ArticlesList => {
 
 export const getImages = (): Images => {
 	let images: Images = {};
+
+	/**
+	 * @example
+	 * [ [ '/src/lib/images/filename.jpg', [Object: null prototype] [Module] { default: [Getter] } ], [...], [...] ]
+	 */
 	const imageModules = import.meta.glob('$lib/images/*', { eager: true });
 
 	for (const [path, module] of Object.entries(imageModules)) {

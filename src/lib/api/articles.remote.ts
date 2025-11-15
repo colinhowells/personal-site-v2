@@ -1,5 +1,5 @@
 import { prerender, query } from '$app/server';
-import { getSlugFromPath } from '$lib/helpers.ts';
+import { getImages, getSlugFromPath } from '$lib/helpers.ts';
 import { error } from '@sveltejs/kit';
 import { render } from 'svelte/server';
 import * as v from 'valibot';
@@ -7,13 +7,21 @@ import * as v from 'valibot';
 export const getArticlesList = prerender(async (): Promise<Array<ArticleMetadata>> => {
 	let articlesList: Array<ArticleMetadata> = [];
 	const filePaths = import.meta.glob('$lib/articles/*.md', { eager: true });
+	const images = getImages();
 
 	for (const path in filePaths) {
 		const file = filePaths[path];
 		const slug = getSlugFromPath(path);
+
 		if (file && typeof file === 'object' && 'metadata' in file && slug) {
 			let metadata = file.metadata as Omit<ArticleMetadata, 'slug'>;
 			const articleMetadata = { ...metadata, slug } satisfies ArticleMetadata;
+
+			// if article has a featured image (filename as 'image'), find the src for it and attach
+			if (articleMetadata?.image) {
+				articleMetadata.imgSrc = images[articleMetadata.image];
+			}
+
 			articleMetadata.published && articlesList.push({ ...articleMetadata, slug });
 		}
 	}

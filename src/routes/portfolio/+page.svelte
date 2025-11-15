@@ -1,30 +1,28 @@
 <script lang="ts">
 	import { getArticlesList } from '$lib/api/articles.remote';
-	import { getImages } from '$lib/api/images.remote';
-	import { getImageSlug } from '$lib/helpers.ts';
+	import { getImageSlug } from '$lib/helpers';
 	import SEO from '$lib/SEO.svelte';
 
 	const articlesList = await getArticlesList();
-	const images = await getImages();
+	const workArticles = articlesList.filter((a) => 'work' === a.type);
 </script>
 
 <SEO title="Portfolio" description="Website work by Colin Howells" />
 
 <nav aria-label="Work Projects">
-	{#each articlesList.filter((a) => 'work' === a.type) as article}
-		{@const src = article?.image ? images[article.image] : null}
+	{#each workArticles as article}
 		<a href="/{article.slug}">
 			<div>
 				<h3 style:--transition-name="title-{article.slug}">{article.title}</h3>
 				<p>{article.description}</p>
 			</div>
-			{#if src}
+			{#if article.imgSrc}
 				<img
-					data-src={src}
+					data-src={article.imgSrc}
 					alt={article.description}
-					{src}
+					src={article.imgSrc}
 					loading="lazy"
-					style:--transition-name="hero-{getImageSlug(src)}"
+					style:--transition-name="hero-{getImageSlug(article.imgSrc)}"
 				/>
 			{/if}
 		</a>
