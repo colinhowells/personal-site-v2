@@ -1,10 +1,10 @@
-import { prerender, query } from '$app/server';
+import { query } from '$app/server';
 import { getImages, getSlugFromPath } from '$lib/helpers';
 import { error } from '@sveltejs/kit';
 import { render } from 'svelte/server';
 import * as v from 'valibot';
 
-export const getArticlesList = prerender(async (): Promise<Array<ArticleMetadata>> => {
+export const getArticlesList = query(async (): Promise<Array<ArticleMetadata>> => {
 	let articlesList: Array<ArticleMetadata> = [];
 	const filePaths = import.meta.glob('$lib/articles/*.md', { eager: true });
 	const images = getImages();
