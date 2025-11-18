@@ -1,5 +1,5 @@
 import { prerender, query } from '$app/server';
-import { getImages, getSlugFromPath } from '$lib/helpers.ts';
+import { getImages, getSlugFromPath } from '$lib/helpers';
 import { error } from '@sveltejs/kit';
 import { render } from 'svelte/server';
 import * as v from 'valibot';

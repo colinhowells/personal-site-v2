@@ -1,11 +1,11 @@
 import { form } from '$app/server';
 import { AIRTABLE_BASE_ID, AIRTABLE_PERSONAL_ACCESS_TOKEN } from '$env/static/private';
-import { stripTags } from '$lib/helpers.ts';
+import { stripTags } from '$lib/helpers';
 import * as v from 'valibot';
 
 const ContactSchema = v.object({
 	name: v.pipe(v.string(), v.nonEmpty()),
-	email: v.pipe(v.string(), v.nonEmpty()),
+	email: v.pipe(v.string(), v.email(), v.nonEmpty()),
 	message: v.pipe(v.string(), v.nonEmpty())
 });
 

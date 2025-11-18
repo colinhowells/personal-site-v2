@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import { PUBLIC_SITE_URL } from '$env/static/public';
-	import { getISODate, serializeSchema } from '$lib/helpers.ts';
+	import { getISODate, serializeSchema } from '$lib/helpers';
 	import resume from '$lib/resume.json';
 
 	let {

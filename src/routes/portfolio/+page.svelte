@@ -70,12 +70,13 @@
 		}
 	}
 	h3 {
+		view-transition-name: var(--transition-name);
 		font-weight: 900;
 		font-size: 1.25rem;
-		view-transition-name: var(--transition-name);
 	}
 	img {
 		opacity: 0.8;
+		view-transition-name: var(--transition-name);
 		transition: opacity var(--transition-time);
 		border: 1px solid var(--color-cool-200);
 		background: white;
@@ -83,7 +84,6 @@
 		width: 100%;
 		height: auto;
 		object-fit: cover;
-		view-transition-name: var(--transition-name);
 	}
 	p {
 		color: initial;

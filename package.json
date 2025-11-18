@@ -18,7 +18,7 @@
 		"prettier-plugin-css-order": "^2.1.2",
 		"prettier-plugin-svelte": "^3.4.0",
 		"prism-themes": "^1.9.0",
-		"svelte": "^5.43.6",
+		"svelte": "^5.43.10",
 		"svelte-check": "^4.3.4",
 		"tslib": "^2.8.1",
 		"typescript": "^5.9.3",
@@ -33,6 +33,7 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"cf-typegen": "wrangler types",
-		"cf-preview": "npm run cf-typegen && npm run build && wrangler dev"
+		"cf-preview-prod": "npm run cf-typegen && npm run build && wrangler dev",
+		"cf-preview-staging": "npm run cf-typegen && npm run build && wrangler dev --env staging"
 	}
 }

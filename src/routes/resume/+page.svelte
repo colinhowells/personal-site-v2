@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { getYear } from '$lib/helpers.ts';
+	import { getYear } from '$lib/helpers';
 	import resume from '$lib/resume.json';
 	import SEO from '$lib/SEO.svelte';
 </script>

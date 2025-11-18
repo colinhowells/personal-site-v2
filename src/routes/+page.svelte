@@ -1,15 +1,16 @@
 <script lang="ts">
-	import SEO from '$lib/SEO.svelte';
 	import { getArticlesList } from '$lib/api/articles.remote';
+	import SEO from '$lib/SEO.svelte';
 
 	const articlesList = await getArticlesList();
+	const playArticles = articlesList.filter((a) => 'work' !== a.type);
 </script>
 
 <SEO />
 
 <nav aria-label="Recent Writing">
 	<ul>
-		{#each articlesList.filter((a) => 'work' !== a.type) as article}
+		{#each playArticles as article}
 			<li>
 				<a class="title" style:--transition-name="title-{article.slug}" href="/{article.slug}"
 					>{article.title}</a
