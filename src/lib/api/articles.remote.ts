@@ -1,36 +1,39 @@
-import { query } from '$app/server';
+import { prerender, query } from '$app/server';
 import { getImages, getSlugFromPath } from '$lib/helpers';
 import { error } from '@sveltejs/kit';
 import { render } from 'svelte/server';
 import * as v from 'valibot';
 
-export const getArticlesList = query(async (): Promise<Array<ArticleMetadata>> => {
-	let articlesList: Array<ArticleMetadata> = [];
-	const filePaths = import.meta.glob('$lib/articles/*.md', { eager: true });
-	const images = getImages();
+export const getArticlesList = prerender(
+	async (): Promise<Array<ArticleMetadata>> => {
+		let articlesList: Array<ArticleMetadata> = [];
+		const filePaths = import.meta.glob('$lib/articles/*.md', { eager: true });
+		const images = getImages();
 
-	for (const path in filePaths) {
-		const file = filePaths[path];
-		const slug = getSlugFromPath(path);
+		for (const path in filePaths) {
+			const file = filePaths[path];
+			const slug = getSlugFromPath(path);
 
-		if (file && typeof file === 'object' && 'metadata' in file && slug) {
-			let metadata = file.metadata as Omit<ArticleMetadata, 'slug'>;
-			const articleMetadata = { ...metadata, slug } satisfies ArticleMetadata;
+			if (file && typeof file === 'object' && 'metadata' in file && slug) {
+				let metadata = file.metadata as Omit<ArticleMetadata, 'slug'>;
+				const articleMetadata = { ...metadata, slug } satisfies ArticleMetadata;
 
-			// if article has a featured image (filename as 'image'), find the src for it and attach
-			if (articleMetadata?.image) {
-				articleMetadata.imgSrc = images[articleMetadata.image];
+				// if article has a featured image (filename as 'image'), find the src for it and attach
+				if (articleMetadata?.image) {
+					articleMetadata.imgSrc = images[articleMetadata.image];
+				}
+
+				articleMetadata.published && articlesList.push({ ...articleMetadata, slug });
 			}
-
-			articleMetadata.published && articlesList.push({ ...articleMetadata, slug });
 		}
-	}
 
-	return articlesList.sort(
-		(first, second) =>
-			new Date(second.datePublished).getTime() - new Date(first.datePublished).getTime()
-	);
-});
+		return articlesList.sort(
+			(first, second) =>
+				new Date(second.datePublished).getTime() - new Date(first.datePublished).getTime()
+		);
+	},
+	{ dynamic: true }
+);
 
 export const getArticle = query(v.string(), async (slug): Promise<Article> => {
 	const notFoundMessage = `Sorry, that isn't here; /${slug} may have been deleted or moved.`;
