@@ -3,6 +3,9 @@
 	import SEO from '$lib/SEO.svelte';
 	import type { PageProps } from './$types';
 
+	// import { getArticlesList } from '$lib/api/articles.remote';
+	// const articlesList = await getArticlesList();
+
 	let { data }: PageProps = $props();
 	const { articlesList } = data;
 	const workArticles = articlesList.filter((metadata) => 'work' === metadata.type);

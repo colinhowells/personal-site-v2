@@ -3,6 +3,10 @@
 	import 'prism-themes/themes/prism-material-oceanic.css';
 	import type { PageProps } from './$types';
 
+	// let { params }: PageProps = $props();
+	// // derived, because the props rune is involved
+	// const article = $derived(await getArticle(params.slug));
+
 	let { data }: PageProps = $props();
 	const { article } = data;
 </script>
@@ -19,6 +23,7 @@
 		<h2 class="title" style:--transition-name="title-{article.metadata.slug}">
 			{article.metadata.title}
 		</h2>
+		<!-- {@html article.content} -->
 		<article.default />
 	{/if}
 </article>

@@ -35,4 +35,9 @@ type Article = {
 	metadata: ArticleMetadata;
 };
 
+// type Article = {
+// 	content: string;
+// 	metadata: ArticleMetadata;
+// };
+
 type ArticlesList = Array<ArticleMetadata>;
