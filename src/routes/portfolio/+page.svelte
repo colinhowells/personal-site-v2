@@ -1,10 +1,11 @@
 <script lang="ts">
-	import { getArticlesList } from '$lib/api/articles.remote';
-	import { getImageSlug } from '$lib/helpers';
+	import { getSlug } from '$lib/helpers';
 	import SEO from '$lib/SEO.svelte';
+	import type { PageProps } from './$types';
 
-	const articlesList = await getArticlesList();
-	const workArticles = articlesList.filter((a) => 'work' === a.type);
+	let { data }: PageProps = $props();
+	const { articlesList } = data;
+	const workArticles = articlesList.filter((metadata: ArticleMetadata) => 'work' === metadata.type);
 </script>
 
 <SEO title="Portfolio" description="Website work by Colin Howells" />
@@ -22,7 +23,7 @@
 					alt={article.description}
 					src={article.imgSrc}
 					loading="lazy"
-					style:--transition-name="hero-{getImageSlug(article.imgSrc)}"
+					style:--transition-name="hero-{getSlug(article.imgSrc)}"
 				/>
 			{/if}
 		</a>

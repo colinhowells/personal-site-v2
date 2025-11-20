@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { sendContact } from '$lib/api/contact.remote';
 	import SEO from '$lib/SEO.svelte';
+	import { sendContact } from './form.remote';
 
 	const { name, email, message } = sendContact.fields;
 </script>

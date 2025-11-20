@@ -1,6 +1,3 @@
-export const getSlugFromPath = (path: string): string | null =>
-	path.match(/([\w-]+)\.(svelte\.md|md|svx)/i)?.[1] ?? null;
-
 /** check that date is in YYYY-MM-DD format */
 export const isValidDate = (date: string): boolean => {
 	// check for datetimes: '2025-02-18T00:00:00.000Z'
@@ -60,33 +57,14 @@ export const slugify = (str: string): string => {
 		.replace(/[^a-z0-9-]/g, ''); // rm special characters except hyphens
 };
 
-export const getImageFilename = (url: string): string => {
-	return url.split('/').pop() ?? '';
+/** get filename with extension eg 'whatever-file.md' */
+export const getFilename = (path: string): string => {
+	return path.split('/').pop() ?? '';
 };
 
-/** get image filename without extension */
-export const getImageSlug = (url: string): string => {
-	return getImageFilename(url).split('.')[0];
-};
-
-export const getArticlesList = (): ArticlesList => {
-	let articles: ArticlesList = [];
-	const articlePaths = import.meta.glob('$lib/articles/*.md', { eager: true });
-
-	for (const path in articlePaths) {
-		const file = articlePaths[path];
-		const slug = getSlugFromPath(path);
-		if (file && typeof file === 'object' && 'metadata' in file && slug) {
-			const metadata = file.metadata as Omit<ArticleMetadata, 'slug'>;
-			const article = { ...metadata, slug } satisfies ArticleMetadata;
-			article.published && articles.push(article);
-		}
-	}
-
-	return articles.sort(
-		(first, second) =>
-			new Date(second.datePublished).getTime() - new Date(first.datePublished).getTime()
-	);
+/** get filename without extension eg 'whatever-file' */
+export const getSlug = (path: string): string => {
+	return getFilename(path).split('.')[0];
 };
 
 export const getImages = (): Images => {
@@ -104,4 +82,32 @@ export const getImages = (): Images => {
 	}
 
 	return images;
+};
+
+export const getArticlesList = (): ArticlesList => {
+	let articlesList: ArticlesList = [];
+	const filePaths = import.meta.glob('$lib/articles/*.md', { eager: true });
+	const images = getImages();
+
+	for (const path in filePaths) {
+		const file = filePaths[path];
+		const slug = getSlug(path);
+
+		if (file && typeof file === 'object' && 'metadata' in file && slug) {
+			let metadata = file.metadata as Omit<ArticleMetadata, 'slug'>;
+			const articleMetadata = { ...metadata, slug } satisfies ArticleMetadata;
+
+			// if article has a featured image (filename as 'image'), find the src for it and attach
+			if (articleMetadata?.image) {
+				articleMetadata.imgSrc = images[articleMetadata.image];
+			}
+
+			articleMetadata.published && articlesList.push({ ...articleMetadata, slug });
+		}
+	}
+
+	return articlesList.sort(
+		(first, second) =>
+			new Date(second.datePublished).getTime() - new Date(first.datePublished).getTime()
+	);
 };

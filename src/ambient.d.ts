@@ -29,8 +29,9 @@ type ArticleMetadata = SEOData & {
 	imgSrc?: string;
 };
 
+/** {@link https://github.com/pngwn/MDsveX/blob/main/packages/mdsvex/globals.d.ts} */
 type Article = {
-	content: string;
+	default: import('svelte/internal').SvelteComponent;
 	metadata: ArticleMetadata;
 };
 

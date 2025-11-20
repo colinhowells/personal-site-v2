@@ -1,9 +1,10 @@
 <script lang="ts">
-	import { getArticlesList } from '$lib/api/articles.remote';
 	import SEO from '$lib/SEO.svelte';
+	import type { PageProps } from './$types';
 
-	const articlesList = await getArticlesList();
-	const playArticles = articlesList.filter((a) => 'work' !== a.type);
+	let { data }: PageProps = $props();
+	const { articlesList } = data;
+	const playArticles = articlesList.filter((metadata: ArticleMetadata) => 'work' !== metadata.type);
 </script>
 
 <SEO />

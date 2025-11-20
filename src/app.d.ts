@@ -17,6 +17,10 @@ declare global {
 				WORKERS_CI_BUILD_UUID: string;
 			};
 		}
+		interface PageData {
+			article?: Article;
+			articlesList: ArticlesList;
+		}
 	}
 }
 
