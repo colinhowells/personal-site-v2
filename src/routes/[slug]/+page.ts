@@ -1,18 +1,5 @@
-import { getArticlesList } from '$lib/helpers';
 import { error } from '@sveltejs/kit';
-import type { EntryGenerator, PageLoad } from './$types';
-
-export const prerender = true;
-
-export const entries: EntryGenerator = () => {
-	const articlesList = getArticlesList();
-
-	return articlesList.map((a) => {
-		return {
-			slug: a.slug
-		};
-	});
-};
+import type { PageLoad } from './$types';
 
 export const load: PageLoad = async ({ params }): Promise<Omit<App.PageData, 'articlesList'>> => {
 	const article = await import(`$lib/articles/${params?.slug}.md`);
