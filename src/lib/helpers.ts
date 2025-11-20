@@ -84,6 +84,7 @@ export const getImages = (): Images => {
 	return images;
 };
 
+/** only returns published articles */
 export const getArticlesList = (): ArticlesList => {
 	let articlesList: ArticlesList = [];
 	const filePaths = import.meta.glob('$lib/articles/*.md', { eager: true });

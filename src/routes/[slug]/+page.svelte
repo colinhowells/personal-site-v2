@@ -5,8 +5,6 @@
 
 	let { data }: PageProps = $props();
 	const { article } = data;
-
-	console.log(article);
 </script>
 
 <SEO
@@ -17,8 +15,10 @@
 />
 
 <article>
-	<h2 class="title" style:--transition-name="title-{article?.metadata.slug}">
-		{article?.metadata.title}
-	</h2>
-	<article.default />
+	{#if article}
+		<h2 class="title" style:--transition-name="title-{article.metadata.slug}">
+			{article.metadata.title}
+		</h2>
+		<article.default />
+	{/if}
 </article>

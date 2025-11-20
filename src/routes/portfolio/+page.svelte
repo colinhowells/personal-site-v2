@@ -5,7 +5,7 @@
 
 	let { data }: PageProps = $props();
 	const { articlesList } = data;
-	const workArticles = articlesList.filter((metadata: ArticleMetadata) => 'work' === metadata.type);
+	const workArticles = articlesList.filter((metadata) => 'work' === metadata.type);
 </script>
 
 <SEO title="Portfolio" description="Website work by Colin Howells" />

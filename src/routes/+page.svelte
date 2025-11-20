@@ -4,7 +4,7 @@
 
 	let { data }: PageProps = $props();
 	const { articlesList } = data;
-	const playArticles = articlesList.filter((metadata: ArticleMetadata) => 'work' !== metadata.type);
+	const playArticles = articlesList.filter((metadata) => 'work' !== metadata.type);
 </script>
 
 <SEO />
