@@ -3,6 +3,7 @@
 	import 'prism-themes/themes/prism-material-oceanic.css';
 	import type { PageProps } from './$types';
 
+	// import { getArticle } from '$lib/api/articles.remote';
 	// let { params }: PageProps = $props();
 	// // derived, because the props rune is involved
 	// const article = $derived(await getArticle(params.slug));
