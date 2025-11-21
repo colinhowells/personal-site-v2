@@ -1,9 +1,9 @@
 import { PUBLIC_SITE_URL } from '$env/static/public';
-import { getArticlesList } from '$lib/helpers';
+import { getArticlesList } from '$lib/api/articles.remote';
 import type { RequestHandler } from './$types';
 
-export const GET: RequestHandler = () => {
-	const articlesList = getArticlesList();
+export const GET: RequestHandler = async () => {
+	const articlesList = await getArticlesList();
 
 	const headers = {
 		'Cache-Control': 'max-age=0, s-maxage=3600',
@@ -11,7 +11,7 @@ export const GET: RequestHandler = () => {
 	};
 
 	const xml = `
-		<?xml version="1.0" encoding="UTF-8"?>	
+		<?xml version="1.0" encoding="UTF-8"?>
 		<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
 			<channel>
 				<title>Colin Howells</title>
