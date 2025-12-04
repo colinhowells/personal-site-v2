@@ -3,7 +3,8 @@
 	"name": "colinhowells-site",
 	"main": ".svelte-kit/cloudflare/_worker.js",
 	"compatibility_date": "2025-08-15",
-	"compatibility_flags": ["nodejs_compat"],
+	// https://developers.cloudflare.com/workers/configuration/compatibility-flags/#enable-auto-populating-processenv
+	"compatibility_flags": ["nodejs_compat", "nodejs_compat_populate_process_env"],
 	"assets": {
 		"binding": "ASSETS",
 		"directory": ".svelte-kit/cloudflare"
