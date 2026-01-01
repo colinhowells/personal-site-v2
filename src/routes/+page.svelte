@@ -8,10 +8,10 @@
 </script>
 
 <SEO
-	title={getISODate('2024-09-05')}
-	description={getISODate('2024-09-05')}
-	datePublished="Personal website of Colin Howells, a web developer and designer living in Seattle"
-	dateModified="Welcome"
+	title="Welcome"
+	description="Personal website of Colin Howells, a web developer and designer living in Seattle"
+	datePublished={getISODate('2024-09-05')}
+	dateModified={getISODate('2024-09-05')}
 />
 
 <nav aria-label="Recent Writing">
