@@ -1,15 +1,10 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import { PUBLIC_SITE_URL } from '$env/static/public';
-	import { getISODate, serializeSchema } from '$lib/helpers';
+	import { serializeSchema } from '$lib/helpers';
 	import resume from '$lib/resume.json';
 
-	let {
-		dateModified = getISODate('2024-09-05'),
-		datePublished = getISODate('2024-09-05'),
-		description = 'Personal website of Colin Howells, a web developer and designer living in Seattle',
-		title = 'Welcome'
-	} = $props();
+	let props = $props();
 
 	const articleNodeId = `${page.url.toString()}/#article`;
 	// const avatarUrl = `${PUBLIC_SITE_URL}/images/colin-2023.jpg`;
@@ -46,9 +41,9 @@
 		'@id': webPageNodeId,
 		isPartOf: { '@id': siteNodeId },
 		url: page.url.toString(),
-		name: title,
-		datePublished,
-		dateModified,
+		name: props.title,
+		datePublished: props.datePublished,
+		dateModified: props.dateModified,
 		author: { '@id': personNodeId }
 	};
 	schemaGraphObjects.push(WebPage);
@@ -60,11 +55,11 @@
 			isPartOf: { '@id': webPageNodeId },
 			mainEntityOfPage: { '@id': webPageNodeId },
 			url: page.url.toString(),
-			headline: title,
-			description,
+			headline: props.title,
+			description: props.description,
 			inLanguage: 'en-US',
-			datePublished,
-			dateModified,
+			datePublished: props.datePublished,
+			dateModified: props.dateModified,
 			author: { '@id': personNodeId }
 		};
 		schemaGraphObjects.push(Article);
@@ -153,8 +148,8 @@
 </script>
 
 <svelte:head>
-	<title>{title} | Colin Howells</title>
-	<meta name="description" content={description} />
+	<title>{props.title} | Colin Howells</title>
+	<meta name="description" content={props.description} />
 	<meta name="author" content={resume.basics.name} />
 	<meta property="fediverse:creator" content="@colin_howells@toot.cafe" />
 	<link rel="me" href="https://toot.cafe/@colin_howells" />
@@ -162,17 +157,17 @@
 	<link rel="me" href="https://github.com/colinhowells" />
 	<link rel="me" href="https://bandcamp.com/colinhowells" />
 	<link rel="canonical" href={page.url.toString()} />
-	<meta property="og:title" content={title} />
-	<meta property="og:description" content={description} />
+	<meta property="og:title" content={props.title} />
+	<meta property="og:description" content={props.description} />
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:site_name" content={resume.basics.name} />
 	<meta property="og:type" content={isArticle ? 'article' : 'website'} />
 	<meta property="og:url" content={page.url.toString()} />
-	<meta property="og:updated_time" content={dateModified} />
+	<meta property="og:updated_time" content={props.dateModified} />
 	{#if isArticle}
 		<meta property="article:author" content="https://www.facebook.com/cghowells" />
-		<meta property="article:published_time" content={datePublished} />
-		<meta property="article:modified_time" content={dateModified} />
+		<meta property="article:published_time" content={props.datePublished} />
+		<meta property="article:modified_time" content={props.dateModified} />
 	{/if}
 	{@html serializeSchema(schemaGraphObjects)}
 </svelte:head>
