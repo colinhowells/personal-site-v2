@@ -1,10 +1,8 @@
 <script lang="ts">
 	import { onNavigate } from '$app/navigation';
-	import { page } from '$app/state';
 	import '$css';
 	import Footer from '$lib/Footer.svelte';
 	import Header from '$lib/Header.svelte';
-	import SEO from '$lib/SEO.svelte';
 	import type { LayoutProps } from './$types';
 
 	let { children }: LayoutProps = $props();
@@ -21,18 +19,16 @@
 	});
 </script>
 
-<svelte:head>
-	{#if 404 === page?.status}<title>Not Found | Colin Howells</title>{/if}
-</svelte:head>
-
-{#if !page?.error}
-	<SEO />
-{/if}
-
-<svelte:boundary>
-	<Header />
-	<main>
+<Header />
+<main>
+	<svelte:boundary>
 		{@render children?.()}
-	</main>
-	<Footer />
-</svelte:boundary>
+		{#snippet failed(error)}
+			<article>
+				<h2 class="title">Whoops</h2>
+				<p>{error instanceof Error ? error?.message : String(error)}</p>
+			</article>
+		{/snippet}
+	</svelte:boundary>
+</main>
+<Footer />

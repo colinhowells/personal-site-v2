@@ -1,15 +1,17 @@
 import { PUBLIC_SITE_URL } from '$env/static/public';
-import { getArticlesList } from '$lib/helpers.ts';
+import { getArticlesList } from '$lib/api/articles.remote';
 import type { RequestHandler } from './$types';
 
-export const GET: RequestHandler = () => {
+export const GET: RequestHandler = async () => {
+	const articlesList = await getArticlesList();
+
 	const headers = {
 		'Cache-Control': 'max-age=0, s-maxage=3600',
 		'Content-Type': 'application/xml'
 	};
-	const articlesList = getArticlesList();
+
 	const xml = `
-		<?xml version="1.0" encoding="UTF-8"?>	
+		<?xml version="1.0" encoding="UTF-8"?>
 		<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
 			<channel>
 				<title>Colin Howells</title>
