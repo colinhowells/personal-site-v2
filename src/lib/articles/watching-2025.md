@@ -135,7 +135,7 @@ published: true
 - Q (Jude Chehab, 2023)
 - Cleopatra (Joseph L. Mankiewicz, 1963)
 - Rome (John Milius et al, 2005–07) seasons 1 and 2 rewatch
-- Sandman (someone, 2025) season 2
+- Sandman (Neil Gaiman/David S. Goyer/Allan Heinberg, 2025) season 2
 - Miami Vice (Michael Mann, 2006) rewatch
 - Atlantics (Mati Diop, 2019)
 - Dark Blue Girl (Mascha Schilinski, 2017)
