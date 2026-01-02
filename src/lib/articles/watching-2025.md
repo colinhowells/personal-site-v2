@@ -1,10 +1,262 @@
 ---
 title: Watching 2025
 description: Films seen in 2025
-datePublished: 2024-12-31
-dateModified: 2024-12-31
+datePublished: 2025-12-31
+dateModified: 2025-12-31
 type: list
-published: false
+published: true
 ---
-
 - Tons of YouTube lectures and documentaries
+- All the Mornings of the World (Alain Corneau, 1991)
+- Dont Look Back (DA Pennebaker, 1967) rewatch
+- Triangle (Christopher Smith, 2009)
+- American Psycho (Mary Harron, 2000) rewatch
+- Safe Conduct (Bertrand Tavernier, 2002)
+- About Dry Grasses (Nuri Bilge Ceylan, 2023)
+- High and Low (Akira Kurosawa, 1963) rewatch
+- Zero Dark Thirty (Kathryn Bigelow, 2012)
+- In the Loop (Armando Iannucci, 2009)
+- Flame & Citron (Ole Christian Madsen, 2008)
+- Victims of Sin (Emilio Fernández, 1951)
+- Haywire (Steven Soderbergh, 2011)
+- Black Book (Paul Verhoeven, 2006)
+- The Universal Theory (Roderick Warich & Timm Kröger, 2024)
+- Dead Man (Jim Jarmusch, 1995)
+- Desert Fury (Lewis Allen, 1947)
+- No Country for Old Men (Joel Coen & Ethan Coen, 2007) rewatch
+- The Settlers (Felipe Gálvez Haberle, 2023)
+- Mussolini: Son of the Century (Joe Wright, 2025) series
+- Nosferatu (Robert Eggers, 2024)
+- The Fifth Seal (Zoltán Fábri, 1976)
+- The Red and the White (Miklós Jancsó, 1967)
+- The Cold-Blooded Trap (Takahisa Zeze, 1998)
+- The Zone of Interest (Jonathan Glazer, 2023) rewatch
+- The Girl With the Needle (Magnus von Horn, 2024)
+- The Color of Pomegranates (Sergei Parajanov,  1969)
+- Soundtrack to a Coup d’Etat (Johan Grimonprez, 2024)
+- The Man Standing Next (Woo Min-ho, 2020)
+- 12.12: The Day (Kim Sung-su, 2023)
+- Twenty Hours (Zoltán Fábri, 1965)
+- Caballerango (Juan Pablo González, 2018)
+- Vermiglio (Maura Delpero, 2024)
+- Den of Thieves (Christian Gudegast, 2018)
+- Den of Thieves 2: Pantera (Christian Gudegast, 2025)
+- The Devil (Andrzej Żuławski, 1972)
+- That Most Important Thing: Love (Andrzej Żuławski, 1975)
+- Possession (Andrzej Żuławski, 1981) rewatch
+- The Public Woman (Andrzej Żuławski, 1984)
+- On the Silver Globe (Andrzej Żuławski, 1987)
+- The Blue Note (Andrzej Żuławski, 1991)
+- Fidelity (Andrzej Żuławski, 2000)
+- Sisters (Sergei Bodrov Jr, 2001)
+- Brother (Aleksei Balabanov, 1997)
+- Brother 2 (Aleksei Balabanov, 2000)
+- Cargo 200 (Aleksei Balabanov, 2007)
+- Everybody Dies But Me (Valeriya Gai Germanika, 2008)
+- Leviathan (Andrey Zvyagintsev, 2014)
+- Petrov’s Flu (Kirill Serebrennikov, 2021)
+- The Brutalist (Brady Corbet, 2024)
+- Senso (Luchino Visconti, 1954)
+- Rocco and His Brothers (Luchino Visconti, 1960)
+- Death in Venice (Luchino Visconti, 1971)
+- Ludwig (Luchino Visconti, 1973)
+- Severance (Ben Stiller et al, 2025) season 2
+- The Promised Land (Andrzej Wajda, 1975)
+- The Seed of the Sacred Fig (Mohammad Rasoulof, 2024)
+- Good Morning, Night (Marco Bellocchio, 2003)
+- Impromptu (James Lapine, 1991)
+- Adolescence (Jack Thorne & Stephen Graham, 2025) series
+- Happy As Lazzaro (Alice Rohrwacher, 2018)
+- Next of Kin (Tony Williams, 1982)
+- Nickel Boys (RaMell Ross, 2024)
+- Kiss Kiss Bang Bang (Shane Black, 2005)
+- Spartan (David Mamet, 2004)
+- Fort Saganne (Alain Corneau, 1984)
+- Santosh (Sandhya Suri, 2024)
+- The Innocents (Jack Clayton, 1961)
+- These Encounters of Theirs (Straub–Huillet, 2005)
+- Salò, or the 120 Days of Sodom (Pier Paolo Pasolini, 1975)
+- Rome, Open City (Roberto Rossellini, 1945)
+- There's Still Tomorrow (Paola Cortellesi, 2023)
+- Black Bag (Steven Soderbergh, 2025)
+- The Godfather (Francis Ford Coppola, 1972) rewatch
+- The Godfather Part II (Francis Ford Coppola, 1974) rewatch
+- The Godfather Part III (Francis Ford Coppola, 1990) rewatch
+- Fists in the Pocket (Marco Bellocchio, 1965)
+- Right Now, Wrong Then (Hong Sang-soo, 2015)
+- Apocalypto (Mel Gibson, 2006)
+- Havoc (Gareth Evans, 2025)
+- The Hunt for Red October (John McTiernan, 1990) rewatch
+- Andor (Tony Gilroy, 2025) season 2
+- The Last of Us (Craig Mazin & Neil Druckmann, 2025) season 2
+- Barbarian (Zach Cregger, 2022)
+- Angels and Insects (Philip Haas, 1995)
+- Companion (Drew Hancock, 2025)
+- The Assessment (Fleur Fortuné, 2025)
+- Warfare (Alex Garland, 2025)
+- Heist (David Mamet, 2001)
+- Inside Man (Spike Lee, 2006)
+- Restrepo (Tim Hetherington & Sebastian Junger, 2010)
+- The Eternaut (Bruno Stagnaro, 2025) season 1
+- April (Déa Kulumbegashvili, 2025)
+- The Covenant (Guy Ritchie, 2023)
+- The Kingdom (Julien Colonna, 2025)
+- Leptirica (Đordje Kadijević, 1973)
+- Society (Brian Yuzna, 1989)
+- The Mirror (Jafar Panahi, 1997)
+- The Circle (Jafar Panahi, 2000)
+- Offside (Jafar Panahi, 2006)
+- This Is Not a Film (Jafar Panahi, 2011)
+- No Bears (Jafar Panahi, 2022)
+- The Three Musketeers (Richard Lester, 1973)
+- The Four Musketeers (Richard Lester, 1974)
+- The Boy and the Heron (Hayao Miyazaki, 2023)
+- Sinners (Ryan Coogler, 2025)
+- Rick and Morty (Scott Marder, 2025) season 8
+- Kaili Blues (Bi Gan, 2015)
+- Long Day’s Journey into Night (Bi Gan, 2018)
+- Adieu Philippine (Jacques Rozier, 1962)
+- Du Côté d'Orouët (Jacques Rozier, 1973)
+- The Castaways of Turtle Island (Jacques Rozier, 1976)
+- Cairo Station (Youssef Chahine, 1958)
+- The Trip (Michael Winterbottom, 2010)
+- The Trip to Italy (Michael Winterbottom, 2014)
+- The Trip to Spain (Michael Winterbottom, 2017)
+- The Trip to Greece (Michael Winterbottom, 2020)
+- Misericordia (Alain Guiraudie, 2024)
+- Beat the Devil (John Huston, 1953)
+- Kundun (Martin Scorcese, 1997)
+- Love and Mercy (Bill Pohlad, 2014)
+- The Last Temptation of Christ (Martin Scorcese, 1988) rewatch
+- Monty Python’s Life of Brian (Terry Jones, 1979) rewatch
+- The Passion of the Christ (Mel Gibson, 2004)
+- Quo Vadis (Mervyn LeRoy, 1951)
+- Corpo Celeste (Alice Rohrwacher, 2011)
+- Q (Jude Chehab, 2023)
+- Cleopatra (Joseph L. Mankiewicz, 1963)
+- Rome (John Milius et al, 2005–07) seasons 1 and 2 rewatch
+- Sandman (Neil Gaiman/David S. Goyer/Allan Heinberg, 2025) season 2
+- Miami Vice (Michael Mann, 2006) rewatch
+- Atlantics (Mati Diop, 2019)
+- Dark Blue Girl (Mascha Schilinski, 2017)
+- Yeelen (Souleymane Cissé, 1987)
+- 28 Days Later (Danny Boyle, 2002) rewatch
+- 28 Weeks Later (Juan Carlos Fresnadillo, 2007)
+- 28 Years Later (Danny Boyle, 2025)
+- Looper (Rian Johnson, 2012) rewatch
+- Oppenheimer (Christopher Nolan, 2023) rewatch
+- Shifty (Adam Curtis, 2025)
+- Harvest (Athina Rachel Tsangari, 2024)
+- Breakdown (Jonathan Mostow, 1997)
+- Eddington (Ari Aster, 2025)
+- Death and the Maiden (Roman Polanski, 1994)
+- Race for Glory: Audi vs. Lancia (Stefano Mordini, 2024)
+- Penda’s Fen (Alan Clarke, 1974)
+- Superman (James Gunn, 2025)
+- Manitou’s Shoe (Michael Herbig, 2001)
+- F1: The Movie (Joseph Kosinski, 2025)
+- Babel (Alejandro González Iñárritu, 2006)
+- Margin Call (J.C. Chandor, 2011)
+- A Most Violent Year (J.C. Chandor, 2014)
+- Triple Frontier (J.C. Chandor, 2019)
+- Bring Her Back (Danny & Michael Philippou, 2025)
+- Alien: Earth (Noah Hawley, 2025) season 1
+- City Streets (Rouben Mamoulian, 1931)
+- Weapons (Zach Cregger, 2025)
+- 25th Hour (Spike Lee, 2002)
+- Highest 2 Lowest (Spike Lee, 2025)
+- Suddenly, Last Summer (Joseph L. Mankiewicz, 1959)
+- Pamfir (Dmytro Sukholytkyy-Sobchuk, 2022)
+- All the President’s Men (Alan J. Pakula, 1976) rewatch
+- Sneakers (Phil Alden Robinson, 1992)
+- Relay (David Mackenzie, 2024)
+- Andersonville (John Frankenheimer, 1996)
+- Young Törless (Volker Schlöndorff, 1966)
+- Fantastic Four: First Steps (Matt Shakman, 2025)
+- Touchez pas au grisbi (Jacques Becker, 1954)
+- Coma (Bertrand Bonello, 2022)
+- One Battle After Another (PT Anderson, 2025)
+- The Cook the Thief His Wife and Her Lover (Peter Greenaway, 1989) rewatch
+- The Baby of Mâcon (Peter Greenaway, 1993)
+- CHAOS: The Manson Murders (Errol Morris, 2025)
+- The Ninth Configuration (William Peter Blatty, 1980)
+- The Exorcist (William Friedkin, 1973) rewatch
+- The Exorcist II: The Heretic (John Boorman, 1977)
+- The Exorcist III (William Peter Blatty, 1990)
+- Rabbit Trap (Bryn Chainey, 2025)
+- The Abominable Dr Phibes (Robert Fuest, 1971)
+- [•REC] (Jaume Balagueró & Paco Plaza, 2007)
+- Enys Men (Mark Jenkin, 2023)
+- Tombs of the Blind Dead (Amando de Ossorio, 1972) Spanish version
+- The Conjuring (James Wan, 2013)
+- The Descent (Neil Marshall, 2005)
+- The Babadook (Jennifer Kent, 2014)
+- Lake Mungo (Joel Anderson, 2008) rewatch
+- The Master and Margarita (Michael Lockshin, 2023)
+- May (Lucky McKee, 2002)
+- The Cabin in the Woods (Drew Goddard, 2012)
+- Sinister (Scott Derrickson, 2012)
+- The Empty Man (David Prior, 2020)
+- A Quiet Place (John Krasinski, 2018)
+- Nightwatching (Peter Greenaway, 2007)
+- The Devil’s Backbone (Guillermo Del Toro, 2001)
+- Pan’s Labyrinth (Guillermo Del Toro, 2006) rewatch
+- Crimson Peak (Guillermo Del Toro, 2015)
+- The Shape of Water (Guillermo Del Toro, 2017)
+- The War Is Over (Alain Resnais, 1966)
+- Fascination (Jean Rollin, 1979)
+- Leila and the Wolves (Heiny Srour, 1984)
+- The Haunting (Robert Wise, 1963)
+- Viy (Konstantin Yershov & Georgi Kropachyov, 1967)
+- Toby Dammit (Federico Fellini, 1968)
+- Prince of Darkness (John Carpenter, 1987) rewatch
+- Frailty (Bill Paxton, 2002)
+- Trouble Every Day (Claire Denis, 2001)
+- Punishment Park (Peter Witkins, 1971)
+- The Invisible Man (Leigh Whannell, 2020)
+- Tim’s Vermeer (Teller, 2013)
+- Over the Garden Wall (Patrick McHale, 2014)
+- Frankenstein (Guillermo Del Toro, 2025)
+- The Flying Dutchman (Jos Stelling, 1995)
+- Harakiri (Masaki Kobayashi, 1962)
+- The Sword of Doom (Kihachi Okamoto, 1966)
+- The Round-Up (Miklós Jancsó, 1966)
+- Death By Lightning (Mike Makowsky, 2025) series
+- It Was Just An Accident (Jafar Panahi, 2025)
+- Train Dreams (Clint Bentley, 2025)
+- Lola Montès (Max Ophuls, 1955) rewatch
+- Mahler (Ken Russell, 1974)
+- Champ d’honneur (Jean-Pierre Denis, 1987)
+- Il buco (Michelangelo Frammartino, 2021)
+- Le Quattro Volte (Michelangelo Frammartino, 2010)
+- Il Dono (Michelangelo Frammartino, 2003)
+- The Human Factor (Otto Preminger, 1979)
+- Rosencrantz and Guildenstern are Dead (Tom Stoppard, 1990) rewatch
+- Professional Foul (Michael Lindsay-Hogg, 1977)
+- Despair (Rainier Werner Fassbinder, 1978)
+- Beyond the Hills (Cristian Mungiu, 2012)
+- Remorques (Jean Grémillon, 1941)
+- Lumière d’été (Jean Grémillon, 1943)
+- Le ciel est à vous (Jean Grémillon, 1944)
+- Le corbeau (Henri-Georges Clouzot, 1943)
+- Hôtel du Nord (Marcel Carné, 1938)
+- Cloud (Kiyoshi Kurosawa, 2024)
+- Le Quai des brumes (Marcel Carné, 1938)
+- La bête humaine (Jean Renoir, 1938)
+- Le jour se lève (Marcel Carné, 1939)
+- Le plaisir (Max Ophuls, 1952)
+- La règle du jeu (Jean Renoir, 1939) rewatch
+- L’Atalante (Jean Vigo, 1934)
+- Zéro de conduite (Jean Vigo, 1933)
+- Trouble In Mind (Alan Rudolph, 1985)
+- Ash Is Purest White (Jia Zhangke, 2018)
+- L’Histoire de Souleymane (Boris Lojkine, 2024)
+- The Earrings of Madame de … (Max Ophuls, 1953)
+- Casque d’or (Jacques Becker, 1952)
+- The Tree of Wooden Clogs (Ermanno Olmi, 1978)
+- The Mastermind (Kelly Reichardt, 2025)
+- Germinal (Claude Berri, 1993)
+- J’accuse (Roman Polanski, 2019) rewatch
+- A Man Escaped (Robert Bresson, 1956)
+- Le trou (Jacques Becker, 1960)
+- Eyes Wide Shut (Stanley Kubrick, 1999) rewatch

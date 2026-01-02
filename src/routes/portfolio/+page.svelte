@@ -1,26 +1,28 @@
 <script lang="ts">
-	import { getImageSlug } from '$lib/helpers';
-	import type { PageProps } from './$types';
+	import { getArticlesList } from '$lib/api/articles.remote';
+	import { getSlug } from '$lib/helpers';
+	import SEO from '$lib/SEO.svelte';
 
-	let { data }: PageProps = $props();
-	const { articlesList, images } = data;
+	const articlesList = await getArticlesList();
+	const workArticles = articlesList.filter((metadata) => 'work' === metadata.type);
 </script>
 
+<SEO title="Portfolio" description="Website work by Colin Howells" />
+
 <nav aria-label="Work Projects">
-	{#each articlesList.filter((a) => 'work' === a.type) as article}
-		{@const src = article?.image ? images[article.image] : null}
+	{#each workArticles as article}
 		<a href="/{article.slug}">
 			<div>
 				<h3 style:--transition-name="title-{article.slug}">{article.title}</h3>
 				<p>{article.description}</p>
 			</div>
-			{#if src}
+			{#if article.imgSrc}
 				<img
-					data-src={src}
+					data-src={article.imgSrc}
 					alt={article.description}
-					{src}
+					src={article.imgSrc}
 					loading="lazy"
-					style:--transition-name="hero-{getImageSlug(src)}"
+					style:--transition-name="hero-{getSlug(article.imgSrc)}"
 				/>
 			{/if}
 		</a>
@@ -68,12 +70,13 @@
 		}
 	}
 	h3 {
+		view-transition-name: var(--transition-name);
 		font-weight: 900;
 		font-size: 1.25rem;
-		view-transition-name: var(--transition-name);
 	}
 	img {
 		opacity: 0.8;
+		view-transition-name: var(--transition-name);
 		transition: opacity var(--transition-time);
 		border: 1px solid var(--color-cool-200);
 		background: white;
@@ -81,7 +84,6 @@
 		width: 100%;
 		height: auto;
 		object-fit: cover;
-		view-transition-name: var(--transition-name);
 	}
 	p {
 		color: initial;

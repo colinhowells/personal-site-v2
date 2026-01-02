@@ -1,103 +1,54 @@
 <script lang="ts">
-	import { enhance } from '$app/forms';
-	import type { ActionData } from './$types';
+	import SEO from '$lib/SEO.svelte';
+	import { sendContact } from '$lib/api/form.remote';
 
-	interface PageProps {
-		form: ActionData & {
-			name: string;
-			email: string;
-			error?: { field: string; message: string };
-			message: string;
-		};
-	}
-
-	let { form }: PageProps = $props();
-
-	let { name, email, error, message } = $state(
-		form ?? {
-			name: '',
-			email: '',
-			error: { field: '', message: '' },
-			message: ''
-		}
-	);
-	let error_field = $derived(error && error['field']);
-	let error_message = $derived(error && error['message']);
+	const { name, email, message } = sendContact.fields;
 </script>
 
-<form method="POST" aria-label="Contact form" use:enhance>
+<SEO title="Contact" description="Contact form for Colin Howells" />
+
+<form {...sendContact} aria-label="Contact form">
 	<label for="name">
 		Name
-		<input
-			value={name}
-			type="text"
-			name="name"
-			id="name"
-			required
-			autocomplete="name"
-			aria-invalid={error_field === 'name'}
-			aria-describedby={error_field === 'name' ? 'name-error' : undefined}
-		/>
+		<input {...name.as('text')} required autocomplete="name" />
 	</label>
-	{#if error_field === 'name'}
-		<small id="name-error" aria-live="polite">{error_message}</small>
-	{/if}
 
 	<label for="email">
 		Email
-		<input
-			value={email}
-			type="email"
-			name="email"
-			id="email"
-			required
-			autocomplete="email"
-			aria-invalid={error_field === 'email'}
-			aria-describedby={error_field === 'email' ? 'email-error' : undefined}
-		/>
+		<input {...email.as('email')} required autocomplete="email" />
 	</label>
-	{#if error_field === 'email'}
-		<small id="email-error" aria-live="polite">{error_message}</small>
-	{/if}
 
 	<label for="message">
 		Your message
-		<textarea
-			name="message"
-			id="message"
-			cols="30"
-			rows="10"
-			required
-			aria-invalid={error_field === 'message'}
-			aria-describedby={error_field === 'message' ? 'message-error' : undefined}>{message}</textarea
-		>
+		<textarea {...message.as('text')} rows="5" required></textarea>
 	</label>
-	{#if error_field === 'message'}
-		<small id="message-error" aria-live="polite">{error_message}</small>
-	{/if}
 
-	{#if error_field === 'submit'}
-		<small id="submit-error" aria-live="polite">{error_message}</small>
-	{/if}
-
-	{#if form?.success}
+	{#if sendContact.result?.success}
 		<p>Thanks for your message!</p>
+	{:else if sendContact.result?.error}
+		<p>There's an issue with our form but we'll fix it!</p>
 	{:else}
-		<button>Submit</button>
+		<button disabled={Boolean(sendContact.pending)}
+			>{sendContact.pending ? 'Sending…' : 'Submit'}</button
+		>
 	{/if}
+
+	{#each sendContact.fields.allIssues() as issue}
+		<p>{issue.message}</p>
+	{/each}
 </form>
 
 <style>
 	form {
 		display: flex;
 		flex-direction: column;
-		gap: calc(var(--padding) * 2);
+		gap: var(--padding);
 		padding: var(--gap) 0;
 	}
 	label {
 		display: flex;
 		flex-flow: column nowrap;
-		gap: var(--padding);
+		gap: calc(var(--padding) / 4);
 		color: var(--color-links);
 		font-family: var(--font-sans);
 		&:focus-within {
@@ -120,5 +71,7 @@
 	}
 	p {
 		margin: auto;
+		padding: var(--padding) calc(var(--padding) * 2);
+		font-family: var(--font-sans);
 	}
 </style>

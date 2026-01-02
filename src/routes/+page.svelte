@@ -1,13 +1,22 @@
 <script lang="ts">
-	import type { PageProps } from './$types';
+	import SEO from '$lib/SEO.svelte';
+	import { getArticlesList } from '$lib/api/articles.remote';
+	import { getISODate } from '$lib/helpers';
 
-	let { data }: PageProps = $props();
-	const { articlesList } = data;
+	const articlesList = await getArticlesList();
+	const playArticles = articlesList.filter((metadata) => 'work' !== metadata.type);
 </script>
+
+<SEO
+	title="Welcome"
+	description="Personal website of Colin Howells, a web developer and designer living in Seattle"
+	datePublished={getISODate('2024-09-05')}
+	dateModified={getISODate('2024-09-05')}
+/>
 
 <nav aria-label="Recent Writing">
 	<ul>
-		{#each articlesList.filter((a) => 'work' !== a.type) as article}
+		{#each playArticles as article}
 			<li>
 				<a class="title" style:--transition-name="title-{article.slug}" href="/{article.slug}"
 					>{article.title}</a

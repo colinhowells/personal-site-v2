@@ -149,7 +149,7 @@
 			"location": "Seattle, WA",
 			"position": "Web Developer/Designer",
 			"startDate": "2012-01-15",
-			"summary": "Designed and developed a publishing network of more than 50 WordPress sites featuring custom-built themes, plugins, branding, and tables, with islands of React-driven interactivity.",
+			"summary": "Designed and developed a publishing network of more than 50 WordPress sites featuring custom-built themes, plugins, branding, and tables, with islands of React-driven interactivity. Deployments were handled via GitHub Actions.",
 			"website": "https://greatergood.com"
 		},
 		{

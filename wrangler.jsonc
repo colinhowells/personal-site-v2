@@ -1,8 +1,10 @@
 {
+	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "colinhowells-site",
 	"main": ".svelte-kit/cloudflare/_worker.js",
 	"compatibility_date": "2025-08-15",
-	"compatibility_flags": ["nodejs_als", "nodejs_compat_populate_process_env"],
+	// https://developers.cloudflare.com/workers/configuration/compatibility-flags/#enable-auto-populating-processenv
+	"compatibility_flags": ["nodejs_compat", "nodejs_compat_populate_process_env"],
 	"assets": {
 		"binding": "ASSETS",
 		"directory": ".svelte-kit/cloudflare"
@@ -14,7 +16,12 @@
 				"PUBLIC_ENVIRONMENT": "staging",
 				"PUBLIC_SITE_URL": "https://colinhowells.com"
 			},
-			"workers_dev": true
+			"workers_dev": true,
+			"preview_urls": true,
+			"observability": {
+				"enabled": true,
+				"head_sampling_rate": 1
+			}
 		},
 		"production": {
 			"name": "colinhowells-site",
@@ -23,6 +30,7 @@
 				"PUBLIC_SITE_URL": "https://colinhowells.com"
 			},
 			"workers_dev": false,
+			"preview_urls": false,
 			"routes": [
 				{
 					"pattern": "colinhowells.com",
