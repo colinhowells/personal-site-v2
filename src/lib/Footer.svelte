@@ -5,12 +5,8 @@
 		<a href="https://djr.com/gimlet">David Jonathan Ross</a>
 	</p>
 	<p>
-		<a href="https://cloudflare.com"
-			><img
-				src="https://workers.cloudflare.com/built-with-cloudflare.svg"
-				alt="Built with Cloudflare"
-			/></a
-		>
+		Built with <a href="https://svelte.dev/">Svelte</a>, hosted via
+		<a href="https://workers.cloudflare.com">Cloudflare</a>
 	</p>
 </footer>
 
