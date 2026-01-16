@@ -1,11 +1,18 @@
 {
 	"name": "personal-site-v2",
 	"version": "2.7.0",
+	"description": "Colin Howells' personal website",
+	"author": "Colin Howells",
 	"private": true,
+	"license": "UNLICENSED",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/colinhowells/personal-site-v2.git"
+	},
 	"type": "module",
 	"engines": {
-		"node": "22.x",
-		"npm": "10.x"
+		"node": ">=22.x",
+		"npm": ">=10.x"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-cloudflare": "^7.2.5",
@@ -36,6 +43,6 @@
 		"cf-typegen": "wrangler types",
 		"cf-preview-prod": "npm run cf-typegen && npm run build && wrangler dev",
 		"cf-preview-staging": "npm run cf-typegen && npm run build && wrangler dev --env staging",
-		"validate-resume": "resumed validate ./src/lib/resume.json"
+		"test:resume": "resumed validate ./src/lib/resume.json"
 	}
 }
