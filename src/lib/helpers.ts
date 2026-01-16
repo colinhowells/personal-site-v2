@@ -1,3 +1,5 @@
+import { PUBLIC_SITE_URL } from '$env/static/public';
+
 /** check that date is in YYYY-MM-DD format */
 export const isValidDate = (date: string): boolean => {
 	// check for datetimes: '2025-02-18T00:00:00.000Z'
@@ -23,6 +25,21 @@ export const getISODate = (date: string): string => {
 	}
 
 	return new Date(date).toISOString();
+};
+
+export const getHash = (str: string): string => {
+	let hash = 0;
+	for (let i = 0; i < str.length; i++) {
+		const char = str.charCodeAt(i);
+		hash = (hash << 5) - hash + char;
+	}
+	// convert to 32bit unsigned integer in base 36 and pad with "0" to ensure length is 7
+	return (hash >>> 0).toString(36).padStart(7, '0');
+};
+
+/** @see https://developer.yoast.com/features/schema/technology-approach/ */
+export const getSchemaNodeId = (type: string, id: string | number = 1): string => {
+	return `${PUBLIC_SITE_URL}/#/schema/${type.toLowerCase()}/${id}`;
 };
 
 export const serializeSchema = (schemaGraphObjects: Array<Record<string, any>>): string => {

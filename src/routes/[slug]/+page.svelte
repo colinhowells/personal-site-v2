@@ -15,6 +15,7 @@
 	datePublished={article?.metadata.datePublished}
 	dateModified={article?.metadata.dateModified}
 	articleSection={article?.metadata.type}
+	slug={'whaaat'}
 />
 
 <article>
