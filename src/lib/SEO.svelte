@@ -40,7 +40,7 @@
 
 	// person ------------------------------------------------------------------------------------
 
-	let Person = {
+	let Person: Record<string, any> = {
 		'@type': 'Person',
 		'@id': personNodeId,
 		name: resume.basics.name,
@@ -119,8 +119,9 @@
 	let companies = new Set<string>();
 
 	for (const [i, job] of resume.work.entries()) {
-		// first the company as an independent node in the graph, avoiding dupes …
 		const organizationNodeId = getSchemaNodeId('Organization', getHash(job.company));
+
+		// first the company as an independent node in the graph, avoiding dupes …
 		if (!companies.has(organizationNodeId)) {
 			let Organization = {
 				'@type': 'Organization',
@@ -133,18 +134,30 @@
 			companies.add(organizationNodeId);
 		}
 
-		// … then the employee role, as a part of the Person
-		const employeeRoleNodeId = getSchemaNodeId('EmployeeRole', i + 1);
-		let EmployeeRole: Record<string, any> = {
-			'@type': 'EmployeeRole',
-			'@id': employeeRoleNodeId,
-			owner: { '@id': organizationNodeId },
-			roleName: job.position,
-			description: job.summary,
-			startDate: job.startDate
-		};
-		if (job.endDate) EmployeeRole.endDate = job.endDate;
-		Person.hasOccupation.push(EmployeeRole);
+		if (job.endDate) {
+			// … then the (past) employee role, as a part of the Person …
+			const EmployeeRole: Record<string, any> = {
+				'@type': 'EmployeeRole',
+				'@id': getSchemaNodeId('EmployeeRole', i + 1),
+				owner: { '@id': organizationNodeId },
+				roleName: job.position,
+				description: job.summary,
+				startDate: job.startDate,
+				endDate: job.endDate
+			};
+			Person.hasOccupation.push(EmployeeRole);
+		} else {
+			// … or when employed, the current occupation
+			const Occupation = {
+				'@type': 'Occupation',
+				'@id': getSchemaNodeId('Occupation'),
+				name: job.position,
+				description: job.summary,
+				owner: { '@id': organizationNodeId }
+			};
+			Person.hasOccupation.push(Occupation);
+			Person.worksFor = [{ '@id': organizationNodeId }];
+		}
 	}
 
 	// render ------------------------------------------------------------------------------------
