@@ -138,11 +138,7 @@
 		let EmployeeRole: Record<string, any> = {
 			'@type': 'EmployeeRole',
 			'@id': employeeRoleNodeId,
-			subjectOf: {
-				'@type': 'BusinessEvent',
-				'@id': getSchemaNodeId('BusinessEvent', i + 1),
-				organizer: { '@id': organizationNodeId }
-			},
+			owner: { '@id': organizationNodeId },
 			roleName: job.position,
 			description: job.summary,
 			startDate: job.startDate
