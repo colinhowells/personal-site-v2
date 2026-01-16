@@ -3,6 +3,7 @@
 	import '$css';
 	import Footer from '$lib/Footer.svelte';
 	import Header from '$lib/Header.svelte';
+	import SEO from '$lib/SEO.svelte';
 	import type { LayoutProps } from './$types';
 
 	let { children }: LayoutProps = $props();
@@ -18,6 +19,8 @@
 		});
 	});
 </script>
+
+<SEO />
 
 <Header />
 <main>

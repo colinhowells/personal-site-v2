@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { getYear } from '$lib/helpers';
 	import resume from '$lib/resume.json';
-	import SEO from '$lib/SEO.svelte';
+	import SEOWebPage from '$lib/SEOWebPage.svelte';
 </script>
 
-<SEO title="Resume" description="Resume for Colin Howells" />
+<SEOWebPage title="Resume" description="Resume for Colin Howells" />
 
 <article class="h-resume">
 	<h2 hidden class="p-name">{resume.basics.name}</h2>
@@ -87,7 +87,7 @@
 		<h3 class="skills-dt">Skills</h3>
 		{#each resume.skills as skill}
 			<div>
-				<h4>{skill.name}, {skill.level}</h4>
+				<h4>{skill.name}: {skill.level}</h4>
 				<ul>
 					{#each skill.keywords as keyword}
 						<li class="p-skill">{keyword}</li>

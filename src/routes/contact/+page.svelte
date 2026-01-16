@@ -1,11 +1,11 @@
 <script lang="ts">
-	import SEO from '$lib/SEO.svelte';
+	import SEOWebPage from '$lib/SEOWebPage.svelte';
 	import { sendContact } from '$lib/api/form.remote';
 
 	const { name, email, message } = sendContact.fields;
 </script>
 
-<SEO title="Contact" description="Contact form for Colin Howells" />
+<SEOWebPage title="Contact" description="Contact form for Colin Howells" />
 
 <form {...sendContact} aria-label="Contact form">
 	<label for="name">

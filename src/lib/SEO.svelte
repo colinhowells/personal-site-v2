@@ -1,19 +1,13 @@
 <script lang="ts">
-	import { page } from '$app/state';
 	import { PUBLIC_SITE_URL } from '$env/static/public';
 	import { serializeSchema } from '$lib/helpers';
 	import resume from '$lib/resume.json';
 
-	let props = $props();
-
-	const articleNodeId = `${page.url.toString()}/#article`;
 	// const avatarUrl = `${PUBLIC_SITE_URL}/images/colin-2023.jpg`;
 	const avatarUrl = 'https://github.com/colinhowells.png';
 	const educationNodeId = `${PUBLIC_SITE_URL}/#education`;
-	const isArticle = '/[slug]' === page.route.id;
 	const personNodeId = `${PUBLIC_SITE_URL}/#person`;
 	const siteNodeId = `${PUBLIC_SITE_URL}/#website`;
-	const webPageNodeId = page.url.toString();
 
 	let schemaGraphObjects: SchemaGraphObjects = [];
 
@@ -35,35 +29,6 @@
 		publisher: { '@id': personNodeId }
 	};
 	schemaGraphObjects.push(WebSite);
-
-	const WebPage = {
-		'@type': 'WebPage',
-		'@id': webPageNodeId,
-		isPartOf: { '@id': siteNodeId },
-		url: page.url.toString(),
-		name: props.title,
-		datePublished: props.datePublished,
-		dateModified: props.dateModified,
-		author: { '@id': personNodeId }
-	};
-	schemaGraphObjects.push(WebPage);
-
-	if (isArticle) {
-		const Article = {
-			'@type': 'Article',
-			'@id': articleNodeId,
-			isPartOf: { '@id': webPageNodeId },
-			mainEntityOfPage: { '@id': webPageNodeId },
-			url: page.url.toString(),
-			headline: props.title,
-			description: props.description,
-			inLanguage: 'en-US',
-			datePublished: props.datePublished,
-			dateModified: props.dateModified,
-			author: { '@id': personNodeId }
-		};
-		schemaGraphObjects.push(Article);
-	}
 
 	let Person = {
 		'@type': 'Person',
@@ -101,6 +66,9 @@
 	for (const skill of resume.skills) {
 		Person.knowsAbout = [...Person.knowsAbout, ...skill.keywords];
 	}
+	Person.knowsAbout[Person.knowsAbout.indexOf('jQuery')] = 'JQuery';
+	Person.knowsAbout.sort();
+	Person.knowsAbout[Person.knowsAbout.indexOf('JQuery')] = 'jQuery';
 	schemaGraphObjects.push(Person);
 
 	let Education = {
@@ -148,26 +116,13 @@
 </script>
 
 <svelte:head>
-	<title>{props.title} | Colin Howells</title>
-	<meta name="description" content={props.description} />
 	<meta name="author" content={resume.basics.name} />
 	<meta property="fediverse:creator" content="@colin_howells@toot.cafe" />
 	<link rel="me" href="https://toot.cafe/@colin_howells" />
 	<link rel="me" href="https://bsky.app/profile/colinhowells.com" />
 	<link rel="me" href="https://github.com/colinhowells" />
 	<link rel="me" href="https://bandcamp.com/colinhowells" />
-	<link rel="canonical" href={page.url.toString()} />
-	<meta property="og:title" content={props.title} />
-	<meta property="og:description" content={props.description} />
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:site_name" content={resume.basics.name} />
-	<meta property="og:type" content={isArticle ? 'article' : 'website'} />
-	<meta property="og:url" content={page.url.toString()} />
-	<meta property="og:updated_time" content={props.dateModified} />
-	{#if isArticle}
-		<meta property="article:author" content="https://www.facebook.com/cghowells" />
-		<meta property="article:published_time" content={props.datePublished} />
-		<meta property="article:modified_time" content={props.dateModified} />
-	{/if}
 	{@html serializeSchema(schemaGraphObjects)}
 </svelte:head>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import SEO from '$lib/SEO.svelte';
+	import SEOWebPage from '$lib/SEOWebPage.svelte';
 	import { getArticlesList } from '$lib/api/articles.remote';
 	import { getISODate } from '$lib/helpers';
 
@@ -7,7 +7,7 @@
 	const playArticles = articlesList.filter((metadata) => 'work' !== metadata.type);
 </script>
 
-<SEO
+<SEOWebPage
 	title="Welcome"
 	description="Personal website of Colin Howells, a web developer and designer living in Seattle"
 	datePublished={getISODate('2024-09-05')}
