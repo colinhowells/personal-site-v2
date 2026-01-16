@@ -21,7 +21,13 @@
 		name: props.title,
 		datePublished: props.datePublished,
 		dateModified: props.dateModified,
-		author: { '@id': personNodeId }
+		author: { '@id': personNodeId },
+		potentialAction: [
+			{
+				'@type': 'ReadAction',
+				target: [page.url.toString()]
+			}
+		]
 	};
 	schemaGraphObjects.push(WebPage);
 
