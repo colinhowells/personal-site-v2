@@ -7,7 +7,7 @@
 	"license": "UNLICENSED",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/colinhowells/personal-site-v2.git"
+		"url": "git+https://github.com/colinhowells/personal-site-v2.git"
 	},
 	"type": "module",
 	"engines": {
