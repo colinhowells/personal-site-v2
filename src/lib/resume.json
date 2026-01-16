@@ -30,7 +30,7 @@
 				"username": "colinhowells.com"
 			}
 		],
-		"summary": "Tenacious learner with 12 years of all-round web-development experience – creating branding, architecting back-end services, optimizing front-end performance, and improving user experiences.",
+		"summary": "Tenacious learner with 12 years of all-round web-development experience: creating branding, architecting back-end services, optimizing front-end performance, and improving user experiences.",
 		"website": "https://colinhowells.com"
 	},
 	"education": [
@@ -43,6 +43,9 @@
 		}
 	],
 	"interests": [
+		{
+			"name": "Technology"
+		},
 		{
 			"name": "History"
 		},
@@ -65,7 +68,7 @@
 	"references": [
 		{
 			"name": "Rian Cool, Great Life Publishing",
-			"reference": "I’ve worked with a lot of different designers and web developers on all sorts of different projects. As a project manager, I often find that designers can be tricky to work with because of their work styles, attitude, personal design opinions and ego. Every time I’ve collaborated on a project with Colin, however, there have never been issues like this. In fact, he brings a complete openness to each and every project, with zero personal agenda. He always takes the time to understand the goals of the campaign and needs of the client. In fact, often Colin has taken the energy to grasp the concepts of the overall campaign so well, that he brings new and valuable perspective which ultimately manifests in an improved vision. His work style and attitude are truly refreshing and I’ve never been disappointed with the work he’s turned out."
+			"reference": "I've worked with a lot of different designers and web developers on all sorts of different projects. As a project manager, I often find that designers can be tricky to work with because of their work styles, attitude, personal design opinions and ego. Every time I've collaborated on a project with Colin, however, there have never been issues like this. In fact, he brings a complete openness to each and every project, with zero personal agenda. He always takes the time to understand the goals of the campaign and needs of the client. In fact, often Colin has taken the energy to grasp the concepts of the overall campaign so well, that he brings new and valuable perspective which ultimately manifests in an improved vision. His work style and attitude are truly refreshing and I've never been disappointed with the work he's turned out."
 		},
 		{
 			"name": "Joe Kraut, Like Water Drumworks",
@@ -73,40 +76,113 @@
 		},
 		{
 			"name": "Daniele Otto, Online Campaign Manager, GreaterGood Network",
-			"reference": "I have had the chance to work with Colin in two different companies – a publishing house in Ann Arbor, MI and a successful charity website in Seattle, WA. He is a talented designer, who pays attention to detail and works extremely well under pressure. He can analyze projects not only from a creative point of view, but also from a very broad and goal-oriented perspective. The financial success of my division could not have been attained without his hard work, knowledge and dedication."
+			"reference": "I have had the chance to work with Colin in two different companies -- a publishing house in Ann Arbor, MI and a successful charity website in Seattle, WA. He is a talented designer, who pays attention to detail and works extremely well under pressure. He can analyze projects not only from a creative point of view, but also from a very broad and goal-oriented perspective. The financial success of my division could not have been attained without his hard work, knowledge and dedication."
 		}
 	],
 	"skills": [
 		{
 			"keywords": [
-				"HTML",
-				"CSS",
+				"Accessibility (a11y)",
+				"Adobe Creative Suite",
+				"Advertising",
+				"AJAX",
+				"Bootstrap",
+				"Branding",
+				"Cascading Style Sheets (CSS/CCS3)",
+				"Design systems",
+				"ES6",
+				"HTML/HTML5",
+				"HTTP",
 				"JavaScript",
-				"TypeScript",
+				"jQuery",
+				"LESS",
+				"Lighthouse",
+				"Next.js",
+				"React",
+				"SASS/SCSS",
 				"Svelte",
-				"SvelteKit",
-				"WordPress",
-				"Google Analytics",
-				"Online Advertising",
-				"SEO"
+				"Tailwind",
+				"User experience (UX)",
+				"User interfaces (UI)",
+				"Vue",
+				"Web components"
 			],
 			"level": "Senior",
-			"name": "Frontend"
+			"name": "Front End"
 		},
 		{
-			"keywords": ["Serverless", "Headless", "GraphQL", "CMS", "Cloudflare", "PHP"],
+			"keywords": [
+				"Advanced Custom Fields (ACF)",
+				"Contentful",
+				"Headless CMS",
+				"Laravel",
+				"Sanity",
+				"Shopify",
+				"Strapi",
+				"WordPress (headless and multisite)"
+			],
 			"level": "Senior",
-			"name": "Backend"
+			"name": "Content Management"
 		},
 		{
-			"keywords": ["React", "Shopify", "Next"],
-			"level": "Junior",
-			"name": "Frontend"
+			"keywords": [
+				"APIs",
+				"Data modeling",
+				"GraphQL",
+				"MySQL",
+				"Node",
+				"PHP",
+				"REST",
+				"Sentry",
+				"SQL",
+				"Systems design",
+				"TypeScript",
+				"Vite"
+			],
+			"level": "Intermediate",
+			"name": "Back End"
 		},
 		{
-			"keywords": ["Node", "SQL", "Stripe", "AWS", "Git"],
-			"level": "Junior",
-			"name": "Backend"
+			"keywords": [
+				"API Gateway",
+				"Amazon Web Services (AWS)",
+				"Cloudflare Workers",
+				"CloudFront",
+				"Docker",
+				"EC2",
+				"Git",
+				"GitHub",
+				"GitHub Actions",
+				"S3",
+				"Serverless",
+				"Vercel",
+				"WPEngine"
+			],
+			"level": "Intermediate",
+			"name": "Hosting, Devops, & CI/CD"
+		},
+		{
+			"keywords": [
+				"A/B testing",
+				"Agile",
+				"Confluence",
+				"Google Analytics",
+				"Google Tag Manager (GTM)",
+				"Jira",
+				"LD+JSON",
+				"Optimizely",
+				"Search engine optimization (SEO)",
+				"Structured markup",
+				"Third-party integrations",
+				"Yoast"
+			],
+			"level": "Intermediate",
+			"name": "Project Management & Business Intelligence"
+		},
+		{
+			"keywords": ["Claude", "Cursor", "GitHub Copilot"],
+			"level": "Beginner",
+			"name": "AI"
 		}
 	],
 	"work": [
@@ -130,7 +206,7 @@
 			"endDate": "2016-09-28",
 			"highlights": [
 				"Handled the integrations, optimizations, and troubleshooting typical to enterprise-scale sites: SEO and structured markup, analytics (data modeling, custom events) and GTM, advertising (including header bidding), ecommerce integrations, custom APIs and middleware, machine-learning recommendation systems, hosting and caching, AWS (API Gateway, CloudFront, S3), as well as the repackaging of content for other platforms (ex. Facebook’s Instant Articles).",
-				"Designed and built a number of applications enabling editors to create and schedule gamified conversion-funnel landing pages featuring videos and quizzes. Some of these were React-based, some Svelte."
+				"Designed and built a number of applications enabling editors to create and schedule gamified conversion-funnel landing pages benefitting charities and nonprofits featuring videos and quizzes. Some of these were React-based, some Svelte."
 			],
 			"location": "Seattle, WA",
 			"position": "Senior Web Designer",
@@ -142,21 +218,21 @@
 			"company": "GreaterGood Network",
 			"endDate": "2015-09-01",
 			"highlights": [
-				"Monetized more than 75 million pageviews a month for the benefit of nonprofits.",
+				"Monetized more than 75 million pageviews a month for the benefit of nonprofits and charities.",
 				"Reached over 100 million Facebook fans.",
 				"The network became a significant revenue stream and massively changed the business model."
 			],
 			"location": "Seattle, WA",
 			"position": "Web Developer/Designer",
 			"startDate": "2012-01-15",
-			"summary": "Designed and developed a publishing network of more than 50 WordPress sites featuring custom-built themes, plugins, branding, and tables, with islands of React-driven interactivity. Deployments were handled via GitHub Actions.",
+			"summary": "Designed and developed a publishing network of more than 50 WordPress sites, some multisite, featuring custom-built themes, plugins, branding, and tables, with islands of React-driven interactivity. (Docker was used for local development, running Node for its asset build step, which leveraged Laravel Mix, and deployed via GitHub Actions.)",
 			"website": "https://greatergood.com"
 		},
 		{
 			"company": "GreaterGood Network",
 			"endDate": "2012-01-14",
 			"highlights": [
-				"Created initial Facebook presence for the company (FBML!) across many Pages, and assisted in many successful social-networking promotions.",
+				"Created initial Facebook presence for the company, and assisted in many successful social-networking promotions.",
 				"Analyzed and reported on clickthrough rates for email marketing of retail promotions.",
 				"Studied best industry practices and competitors to keep up with the changing online retail environment and resolve deliverability issues."
 			],
@@ -194,9 +270,9 @@
 			"endDate": "2005-01-01",
 			"highlights": [
 				"Created an all-digital PDF prepress workﬂow to replace a camera-ready process.",
-				"Initiated and supervised a complete redesign of the company’s flagship publication, a 100+ page monthly magazine of 20,000 circulation.",
+				"Initiated and supervised a complete redesign of the company's flagship publication, a 100+ page monthly magazine of 20,000 circulation.",
 				"Wrote feature articles and contributed to the editing of numerous publications.",
-				"Thoroughly revised the publisher’s Web presence for increased usability.",
+				"Thoroughly revised the publisher's Web presence for increased usability.",
 				"Acted as network and database administrator for the company."
 			],
 			"location": "Ann Arbor, MI",

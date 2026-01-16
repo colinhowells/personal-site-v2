@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { getArticlesList } from '$lib/api/articles.remote';
 	import { getSlug } from '$lib/helpers';
-	import SEO from '$lib/SEO.svelte';
+	import SEOWebPage from '$lib/SEOWebPage.svelte';
 
 	const articlesList = await getArticlesList();
 	const workArticles = articlesList.filter((metadata) => 'work' === metadata.type);
 </script>
 
-<SEO title="Portfolio" description="Website work by Colin Howells" />
+<SEOWebPage title="Portfolio" description="Website work by Colin Howells" />
 
 <nav aria-label="Work Projects">
 	{#each workArticles as article}

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { getArticle } from '$lib/api/articles.remote';
-	import SEO from '$lib/SEO.svelte';
+	import SEOWebPage from '$lib/SEOWebPage.svelte';
 	import 'prism-themes/themes/prism-material-oceanic.css';
 	import type { PageProps } from './$types';
 
@@ -9,7 +9,7 @@
 	const article = $derived(await getArticle(params.slug));
 </script>
 
-<SEO
+<SEOWebPage
 	title={article?.metadata.title}
 	description={article?.metadata.description}
 	datePublished={article?.metadata.datePublished}
