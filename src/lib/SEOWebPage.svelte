@@ -40,6 +40,7 @@
 			url: page.url.toString(),
 			headline: props.title,
 			description: props.description,
+			articleSection: [props.articleSection],
 			inLanguage: 'en-US',
 			datePublished: props.datePublished,
 			dateModified: props.dateModified,
