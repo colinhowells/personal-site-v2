@@ -1,5 +1,6 @@
 import { PUBLIC_SITE_URL } from '$env/static/public';
 import { getArticlesList } from '$lib/api/articles.remote';
+import { getDateString } from '$lib/helpers';
 import type { RequestHandler } from './$types';
 
 export const GET: RequestHandler = async () => {
@@ -18,7 +19,7 @@ export const GET: RequestHandler = async () => {
 				<description>RSS feed</description>
 				<link>${PUBLIC_SITE_URL}</link>
 				<atom:link href="${PUBLIC_SITE_URL}/rss.xml" rel="self" type="application/rss+xml"/>
-				<lastBuildDate>${new Date(articlesList[0].datePublished).toUTCString()}</lastBuildDate>
+				<lastBuildDate>${getDateString(articlesList[0].datePublished, 'utc')}</lastBuildDate>
 				${articlesList
 					.map(
 						(article) => `
@@ -27,7 +28,7 @@ export const GET: RequestHandler = async () => {
 							<![CDATA[<description>${article.description}</description>]]>
 							<link>${PUBLIC_SITE_URL}/${article.slug}</link>
 							<guid isPermaLink="true">${PUBLIC_SITE_URL}/${article.slug}</guid>
-							<pubDate>${new Date(article.datePublished).toUTCString()}</pubDate>
+							<pubDate>${getDateString(articlesList[0].datePublished, 'utc')}</pubDate>
 						</item>
 					`
 					)
