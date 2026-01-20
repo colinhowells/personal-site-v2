@@ -1,30 +1,34 @@
 import { PUBLIC_SITE_URL } from '$env/static/public';
 
-/** check that date is in YYYY-MM-DD format */
+/** check that date is, or can have, a YYYY-MM-DD format */
 export const isValidDate = (date: string): boolean => {
 	// check for datetimes: '2025-02-18T00:00:00.000Z'
 	if (date.includes('T')) date = date.split('T')[0];
-
-	// now test for 'YYYY-MM-DD'
+	// test for 'YYYY-MM-DD'
 	return /^\d{4}-\d{2}-\d{2}$/.test(date);
 };
 
-export const getYear = (date: string): number => {
+/** get a date as YYYY-MM-DD, or ISO, or a year as a number */
+export const getDateString = (
+	date: string,
+	as: 'simple' | 'iso' | 'utc' | 'year'
+): string | number => {
 	if (!isValidDate(date)) {
 		console.error('Invalid date format: ', date);
 		return 0;
 	}
-
-	return parseInt(date.split('-')[0]);
-};
-
-export const getISODate = (date: string): string => {
-	if (!isValidDate(date)) {
-		console.error('Invalid date format: ', date);
-		return '';
+	switch (as) {
+		case 'simple':
+			return date.split('T')[0]; // '2026-01-01'
+		case 'iso':
+			return new Date(date).toISOString(); // '2026-01-01T00:00:00.000Z'
+		case 'utc':
+			return new Date(date).toUTCString(); // 'Thurs, 1 Jan 2026 00:00:00 GMT'
+		case 'year':
+			return parseInt(date.split('-')[0]); // 2026
+		default:
+			return date;
 	}
-
-	return new Date(date).toISOString();
 };
 
 export const getHash = (str: string): string => {

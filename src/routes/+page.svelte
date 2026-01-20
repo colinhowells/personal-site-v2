@@ -1,7 +1,7 @@
 <script lang="ts">
 	import SEOWebPage from '$lib/SEOWebPage.svelte';
 	import { getArticlesList } from '$lib/api/articles.remote';
-	import { getISODate } from '$lib/helpers';
+	import { getDateString } from '$lib/helpers';
 
 	const articlesList = await getArticlesList();
 	const playArticles = articlesList.filter((metadata) => 'work' !== metadata.type);
@@ -10,8 +10,8 @@
 <SEOWebPage
 	title="Welcome"
 	description="Personal website of Colin Howells, a web developer and designer living in Seattle"
-	datePublished={getISODate('2024-09-05')}
-	dateModified={getISODate('2024-09-05')}
+	datePublished={getDateString('2024-09-05', 'iso')}
+	dateModified={getDateString('2024-09-05', 'iso')}
 />
 
 <nav aria-label="Recent Writing">

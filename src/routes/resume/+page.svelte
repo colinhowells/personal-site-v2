@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { getYear } from '$lib/helpers';
+	import { getDateString } from '$lib/helpers';
 	import resume from '$lib/resume.json';
 	import SEOWebPage from '$lib/SEOWebPage.svelte';
 </script>
@@ -41,9 +41,9 @@
 						<a class="url" href={job.website}>{job.company}</a>,
 						<span class="dt-duration">
 							<time datetime={job.startDate} class="dt-start"
-								>{getYear(job.startDate).toString()}</time
+								>{getDateString(job.startDate, 'year').toString()}</time
 							>{#if job.endDate}–<time datetime={job.endDate} class="dt-end"
-									>{getYear(job.endDate).toString()}</time
+									>{getDateString(job.endDate, 'year').toString()}</time
 								>{/if},
 						</span>
 						<span class="p-location">{job.location}</span>
@@ -71,10 +71,12 @@
 						{schooling.institution},
 						<span class="dt-duration">
 							<time datetime={schooling.startDate} class="dt-start"
-								>{getYear(schooling.startDate).toString()}</time
+								>{getDateString(schooling.startDate, 'year').toString()}</time
 							>
 							{#if schooling.endDate}
-								–<time datetime="" class="dt-end">{getYear(schooling.endDate).toString()}</time>
+								–<time datetime="" class="dt-end"
+									>{getDateString(schooling.endDate, 'year').toString()}</time
+								>
 							{/if}
 						</span>
 					</h5>
