@@ -4,6 +4,9 @@ import { getDateString } from '$lib/helpers';
 import type { RequestHandler } from './$types';
 
 export const GET: RequestHandler = async () => {
+	// articlesList[0].datePublished
+	const defaultBuildDate = '2026-02-07';
+
 	const articlesList = await getArticlesList();
 
 	const headers = {
@@ -19,7 +22,7 @@ export const GET: RequestHandler = async () => {
 				<description>RSS feed</description>
 				<link>${PUBLIC_SITE_URL}</link>
 				<atom:link href="${PUBLIC_SITE_URL}/rss.xml" rel="self" type="application/rss+xml"/>
-				<lastBuildDate>${getDateString(articlesList[0].datePublished, 'utc')}</lastBuildDate>
+				<lastBuildDate>${getDateString(defaultBuildDate, 'utc')}</lastBuildDate>
 				${articlesList
 					.map(
 						(article) => `
@@ -28,7 +31,7 @@ export const GET: RequestHandler = async () => {
 							<![CDATA[<description>${article.description}</description>]]>
 							<link>${PUBLIC_SITE_URL}/${article.slug}</link>
 							<guid isPermaLink="true">${PUBLIC_SITE_URL}/${article.slug}</guid>
-							<pubDate>${getDateString(articlesList[0].datePublished, 'utc')}</pubDate>
+							<pubDate>${getDateString(article.datePublished, 'utc')}</pubDate>
 						</item>
 					`
 					)

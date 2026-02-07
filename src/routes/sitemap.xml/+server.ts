@@ -1,6 +1,5 @@
 import { PUBLIC_SITE_URL } from '$env/static/public';
 import { getArticlesList } from '$lib/api/articles.remote';
-import { getDateString } from '$lib/helpers';
 import type { RequestHandler } from './$types';
 
 export const GET: RequestHandler = async () => {
@@ -10,7 +9,7 @@ export const GET: RequestHandler = async () => {
 			(article) => `
 			  <url>
 			    <loc>${PUBLIC_SITE_URL}/${article.slug}</loc>
-			    <lastmod>${getDateString(article.dateModified, 'simple')}</lastmod>
+			    <lastmod>${article.dateModified}</lastmod>
 			  </url>
 			 `
 		)

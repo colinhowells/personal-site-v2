@@ -8,9 +8,9 @@ export const isValidDate = (date: string): boolean => {
 	return /^\d{4}-\d{2}-\d{2}$/.test(date);
 };
 
-/** get a date as YYYY-MM-DD, or ISO, or a year as a number */
+/** get an existing or new date as YYYY-MM-DD, or ISO, or a year as a number */
 export const getDateString = (
-	date: string,
+	date = new Date().toISOString(),
 	as: 'simple' | 'iso' | 'utc' | 'year'
 ): string | number => {
 	if (!isValidDate(date)) {
