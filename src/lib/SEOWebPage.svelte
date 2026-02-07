@@ -4,13 +4,14 @@
 	import { getHash, getSchemaNodeId, serializeSchema } from '$lib/helpers';
 
 	let props = $props();
+	let schemaGraphObjects: SchemaGraphObjects = [];
 
 	const isArticle = '/[slug]' === page.route.id;
 	const personNodeId = getSchemaNodeId('Person');
 	const siteNodeId = getSchemaNodeId('WebSite');
 	const webPageNodeId = page.url.toString();
-
-	let schemaGraphObjects: SchemaGraphObjects = [];
+	const defaultPublishedDate = '2024-09-05';
+	const defaultModifiedDate = '2026-02-07';
 
 	// page ------------------------------------------------------------------------------------
 
@@ -20,8 +21,9 @@
 		isPartOf: { '@id': siteNodeId },
 		url: page.url.toString(),
 		name: props.title,
-		datePublished: props.datePublished,
-		dateModified: props.dateModified,
+		description: props.description,
+		datePublished: props.datePublished ?? defaultPublishedDate,
+		dateModified: props.dateModified ?? defaultModifiedDate,
 		potentialAction: [
 			{
 				'@type': 'ReadAction',
@@ -60,7 +62,7 @@
 	<meta property="og:description" content={props.description} />
 	<meta property="og:type" content={isArticle ? 'article' : 'website'} />
 	<meta property="og:url" content={page.url.toString()} />
-	<meta property="og:updated_time" content={props.dateModified} />
+	<meta property="og:updated_time" content={props.dateModified ?? defaultModifiedDate} />
 	{#if isArticle}
 		<meta property="article:author" content={PUBLIC_SITE_URL} />
 		<meta property="article:published_time" content={props.datePublished} />

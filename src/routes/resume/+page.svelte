@@ -4,7 +4,11 @@
 	import SEOWebPage from '$lib/SEOWebPage.svelte';
 </script>
 
-<SEOWebPage title="Resume" description="Resume for Colin Howells" />
+<SEOWebPage
+	title="Resume"
+	description="Resume for Colin Howells"
+	dateModified={getDateString(resume.meta.lastModified, 'simple')}
+/>
 
 <article class="h-resume">
 	<h2 hidden class="p-name">{resume.basics.name}</h2>

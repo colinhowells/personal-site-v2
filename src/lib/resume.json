@@ -1,4 +1,5 @@
 {
+	"$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.2.1/schema.json",
 	"basics": {
 		"email": "colin@colinhowells.com",
 		"label": "Senior Web Developer",
@@ -30,7 +31,7 @@
 				"username": "colinhowells.com"
 			}
 		],
-		"summary": "Tenacious learner with 12 years of all-round web-development experience: creating branding, architecting back-end services, optimizing front-end performance, and improving user experiences.",
+		"summary": "Tenacious learner with 12 years of all-round design, web development, and engineering experience: creating branding, architecting back-end services, optimizing front-end performance, and improving user experiences.",
 		"website": "https://colinhowells.com"
 	},
 	"education": [
@@ -75,7 +76,7 @@
 			"reference": "I wanted to pass along that Colin Howells has been very gracious in helping me create a great-looking ad in your paper ... Colin has shared his time and expertise to improve the quality of what I have submitted. His professionalism and attitude is what will keep me [placing advertisements with you]."
 		},
 		{
-			"name": "Daniele Otto, Online Campaign Manager, GreaterGood Network",
+			"name": "Daniele Otto, Online Campaign Manager, GreaterGood (CharityUSA.com LLC)",
 			"reference": "I have had the chance to work with Colin in two different companies -- a publishing house in Ann Arbor, MI and a successful charity website in Seattle, WA. He is a talented designer, who pays attention to detail and works extremely well under pressure. He can analyze projects not only from a creative point of view, but also from a very broad and goal-oriented perspective. The financial success of my division could not have been attained without his hard work, knowledge and dedication."
 		}
 	],
@@ -180,14 +181,14 @@
 			"name": "Project Management & Business Intelligence"
 		},
 		{
-			"keywords": ["Claude", "Cursor", "GitHub Copilot"],
+			"keywords": ["Agents", "Claude", "Cursor", "GitHub Copilot", "MCP"],
 			"level": "Beginner",
 			"name": "AI"
 		}
 	],
 	"work": [
 		{
-			"company": "GreaterGood Network",
+			"company": "GreaterGood (CharityUSA.com LLC)",
 			"endDate": "2024-11-20",
 			"highlights": [
 				"Built a number of JavaScript-driven trivia games with an audience of tens of thousands using my proposed stack of SvelteKit hosted on Cloudflare as Workers, modeling and authoring content in headless CMSes, queried and mutated via GraphQL and REST. In addition to being technically much simpler than our typical architecture, it was much cheaper to host and run.",
@@ -202,10 +203,10 @@
 			"website": "https://greatergood.com"
 		},
 		{
-			"company": "GreaterGood Network",
+			"company": "GreaterGood (CharityUSA.com LLC)",
 			"endDate": "2016-09-28",
 			"highlights": [
-				"Handled the integrations, optimizations, and troubleshooting typical to enterprise-scale sites: SEO and structured markup, analytics (data modeling, custom events) and GTM, advertising (including header bidding), ecommerce integrations, custom APIs and middleware, machine-learning recommendation systems, hosting and caching, AWS (API Gateway, CloudFront, S3), as well as the repackaging of content for other platforms (ex. Facebook's Instant Articles).",
+				"Expanded and improved a WordPress publishing network, handling the integrations, optimizations, and troubleshooting typical to enterprise-scale sites: SEO and structured markup, analytics (data modeling, custom events) and GTM, advertising (including header bidding), ecommerce integrations, custom APIs and middleware, machine-learning recommendation systems, hosting and caching, AWS (API Gateway, CloudFront, S3), as well as the repackaging of content for other platforms (ex. Facebook’s Instant Articles).",
 				"Designed and built a number of applications enabling editors to create and schedule gamified conversion-funnel landing pages benefitting charities and nonprofits featuring videos and quizzes. Some of these were React-based, some Svelte."
 			],
 			"location": "Seattle, WA",
@@ -215,12 +216,12 @@
 			"website": "https://greatergood.com"
 		},
 		{
-			"company": "GreaterGood Network",
+			"company": "GreaterGood (CharityUSA.com LLC)",
 			"endDate": "2015-09-01",
 			"highlights": [
 				"Monetized more than 75 million pageviews a month for the benefit of nonprofits and charities.",
 				"Reached over 100 million Facebook fans.",
-				"The network became a significant revenue stream and massively changed the business model."
+				"The franchised content network became a significant revenue stream and massively changed the business model."
 			],
 			"location": "Seattle, WA",
 			"position": "Web Developer/Designer",
@@ -229,7 +230,7 @@
 			"website": "https://greatergood.com"
 		},
 		{
-			"company": "GreaterGood Network",
+			"company": "GreaterGood (CharityUSA.com LLC)",
 			"endDate": "2012-01-14",
 			"highlights": [
 				"Created initial Facebook presence for the company, and assisted in many successful social-networking promotions.",
@@ -243,7 +244,7 @@
 			"website": "https://greatergood.com"
 		},
 		{
-			"company": "GreaterGood Network",
+			"company": "GreaterGood (CharityUSA.com LLC)",
 			"endDate": "2010-01-01",
 			"highlights": [
 				"Responsible for conducting interviews of designers and making hiring decisions.",
@@ -257,7 +258,7 @@
 			"website": "https://greatergood.com"
 		},
 		{
-			"company": "GreaterGood Network",
+			"company": "GreaterGood (CharityUSA.com LLC)",
 			"endDate": "2008-01-01",
 			"location": "Seattle, WA",
 			"position": "Graphic Designer",
@@ -281,5 +282,10 @@
 			"summary": "Designed covers and editorial content, print advertisements, brochures, logos, and coupons, under tight deadlines.",
 			"website": "https://www.ecurrent.com"
 		}
-	]
+	],
+	"meta": {
+		"canonical": "https://colinhowells.com/resume.json",
+		"version": "v2.0.0",
+		"lastModified": "2026-02-07T21:36:28.663Z"
+	}
 }
