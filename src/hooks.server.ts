@@ -1,11 +1,17 @@
+import { dev } from '$app/environment';
 import { PUBLIC_ENVIRONMENT } from '$env/static/public';
 import type { Handle } from '@sveltejs/kit';
 
 export const handle: Handle = async ({ event, resolve }) => {
+	// https://svelte.dev/docs/cli/devtools-json
+	if (dev && event.url.pathname === '/.well-known/appspecific/com.chrome.devtools.json') {
+		return new Response(undefined, { status: 404 });
+	}
+
 	const response = await resolve(event, {
 		preload: ({ type }) => {
 			return type === 'font' || type === 'js' || type === 'css';
-		}
+		},
 	});
 
 	response.headers.set('Content-Security-Policy', "frame-ancestors 'none'; form-action 'self';");

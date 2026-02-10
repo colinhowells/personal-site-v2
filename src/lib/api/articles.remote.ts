@@ -14,8 +14,8 @@ export const getArticlesList = query(async (): Promise<ArticlesList> => {
 		const slug = getSlug(path);
 
 		if (file && typeof file === 'object' && 'metadata' in file && slug) {
-			let metadata = file.metadata as Omit<ArticleMetadata, 'slug'>;
-			const articleMetadata = { ...metadata, slug } satisfies ArticleMetadata;
+			let metadata = file.metadata as PageSEOData;
+			const articleMetadata = { ...metadata, slug };
 
 			// if article has a featured image (filename as 'image'), find the src for it and attach
 			if (articleMetadata?.image) {
@@ -28,7 +28,7 @@ export const getArticlesList = query(async (): Promise<ArticlesList> => {
 
 	return articlesList.sort(
 		(first, second) =>
-			new Date(second.datePublished).getTime() - new Date(first.datePublished).getTime()
+			new Date(second.datePublished!).getTime() - new Date(first.datePublished!).getTime(),
 	);
 });
 
@@ -48,6 +48,6 @@ export const getArticle = query(v.string(), async (slug): Promise<Article> => {
 
 	return {
 		content: html.body,
-		metadata: { ...article.metadata, slug }
+		metadata: { ...article.metadata, slug },
 	};
 });

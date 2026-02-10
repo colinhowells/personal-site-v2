@@ -5,25 +5,14 @@
 	import type { PageProps } from './$types';
 
 	let { params }: PageProps = $props();
-	// derived, because the props rune is involved
-	const article = $derived(await getArticle(params.slug));
+	const { content, metadata } = $derived(await getArticle(params.slug));
 </script>
 
-<SEOWebPage
-	title={article?.metadata.title}
-	description={article?.metadata.description}
-	datePublished={article?.metadata.datePublished}
-	dateModified={article?.metadata.dateModified}
-	articleSection={article?.metadata.type}
-	slug={'whaaat'}
-/>
+<SEOWebPage {metadata} />
 
 <article>
-	{#if article}
-		<h2 class="title" style:--transition-name="title-{article.metadata.slug}">
-			{article.metadata.title}
-		</h2>
-		{@html article.content}
-		<!-- <article.default /> -->
-	{/if}
+	<h2 class="title" style:--transition-name="title-{metadata.slug}">
+		{metadata.title}
+	</h2>
+	{@html content}
 </article>

@@ -15,8 +15,6 @@
 	 */
 	let schemaGraphObjects: SchemaGraphObjects = [];
 
-	// thanks to  for assistance
-
 	// site --------------------------------------------------------------------------------------
 
 	const WebSite = {
@@ -32,9 +30,9 @@
 			'@id': logoNodeId,
 			url: avatarUrl,
 			contentUrl: avatarUrl,
-			caption: 'Colin Howells'
+			caption: 'Colin Howells',
 		},
-		publisher: { '@id': personNodeId }
+		publisher: { '@id': personNodeId },
 	};
 	schemaGraphObjects.push(WebSite);
 
@@ -59,14 +57,14 @@
 			// streetAddress: resume.basics.location.address,
 			addressLocality: resume.basics.location.city,
 			addressRegion: resume.basics.location.region,
-			addressCountry: resume.basics.location.countryCode
+			addressCountry: resume.basics.location.countryCode,
 		},
 		description: resume.basics.summary,
 		sameAs: [] as Array<string>,
 		knowsAbout: [] as Array<string>,
 		hasCredential: [] as Array<Record<string, any>>,
 		jobTitle: resume.basics.label,
-		hasOccupation: [] as Array<Record<string, any>>
+		hasOccupation: [] as Array<Record<string, any>>,
 	};
 
 	// socials -----------------------------------------------------------------------------------
@@ -107,10 +105,10 @@
 					'@type': 'Organization',
 					'@id': universityNodeId + '/department',
 					name: 'School of Art & Architecture (now Penny W. Stamps School of Art and Design)',
-					url: 'https://stamps.umich.edu/'
-				}
-			}
-		}
+					url: 'https://stamps.umich.edu/',
+				},
+			},
+		},
 	};
 	Person.hasCredential.push(EducationalOccupationalCredential);
 
@@ -128,7 +126,7 @@
 				'@id': organizationNodeId,
 				name: job.company,
 				url: job.website,
-				location: job.location
+				location: job.location,
 			};
 			schemaGraphObjects.push(Organization);
 			companies.add(organizationNodeId);
@@ -143,7 +141,7 @@
 				roleName: job.position,
 				description: job.summary,
 				startDate: job.startDate,
-				endDate: job.endDate
+				endDate: job.endDate,
 			};
 			Person.hasOccupation.push(EmployeeRole);
 		} else {
@@ -153,7 +151,7 @@
 				'@id': getSchemaNodeId('Occupation'),
 				name: job.position,
 				description: job.summary,
-				owner: { '@id': organizationNodeId }
+				owner: { '@id': organizationNodeId },
 			};
 			Person.hasOccupation.push(Occupation);
 			Person.worksFor = [{ '@id': organizationNodeId }];

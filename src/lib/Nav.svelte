@@ -13,9 +13,6 @@
 		<li aria-current={page.url.pathname === '/portfolio' ? 'page' : undefined}>
 			<a href="/portfolio">Portfolio</a>
 		</li>
-		<li aria-current={page.url.pathname === '/contact' ? 'page' : undefined}>
-			<a href="/contact">Contact</a>
-		</li>
 	</ul>
 </nav>
 
@@ -44,9 +41,9 @@
 		background-color: var(--color-links);
 		color: var(--color-warm-100);
 		font-weight: 800;
-		font-size: clamp(0.7rem, 1.5vmin, 1rem);
+		font-size: 0.75rem;
 		font-family: var(--font-sans);
-		letter-spacing: 0.3vmin;
+		letter-spacing: 0.4vmin;
 		text-transform: uppercase;
 	}
 	li[aria-current='page'] {
@@ -59,7 +56,7 @@
 	}
 	li a {
 		display: block;
-		padding: var(--padding) calc(var(--padding) / 2);
+		padding: var(--padding);
 		color: inherit;
 		text-decoration: none;
 	}

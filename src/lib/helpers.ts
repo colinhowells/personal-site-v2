@@ -1,21 +1,18 @@
 import { PUBLIC_SITE_URL } from '$env/static/public';
 
-/** check that date is, or can have, a YYYY-MM-DD format */
-export const isValidDate = (date: string): boolean => {
-	// check for datetimes: '2025-02-18T00:00:00.000Z'
-	if (date.includes('T')) date = date.split('T')[0];
-	// test for 'YYYY-MM-DD'
-	return /^\d{4}-\d{2}-\d{2}$/.test(date);
-};
+export const capitalize = (str: string): string => str.charAt(0).toUpperCase() + str.slice(1) || '';
 
-/** get an existing or new date as YYYY-MM-DD, or ISO, or a year as a number */
+/** check if a string is a valid date */
+export const isValidDate = (date: string): boolean => !isNaN(Date.parse(date));
+
+/** get an existing or new date as YYYY-MM-DD, or ISO, in UTC, or extract the year */
 export const getDateString = (
 	date = new Date().toISOString(),
-	as: 'simple' | 'iso' | 'utc' | 'year'
-): string | number => {
+	as: 'simple' | 'iso' | 'utc' | 'year',
+): string => {
 	if (!isValidDate(date)) {
 		console.error('Invalid date format: ', date);
-		return 0;
+		return '';
 	}
 	switch (as) {
 		case 'simple':
@@ -25,7 +22,7 @@ export const getDateString = (
 		case 'utc':
 			return new Date(date).toUTCString(); // 'Thurs, 1 Jan 2026 00:00:00 GMT'
 		case 'year':
-			return parseInt(date.split('-')[0]); // 2026
+			return parseInt(date.split('-')[0]).toString(); // 2026
 		default:
 			return date;
 	}
@@ -49,7 +46,7 @@ export const getSchemaNodeId = (type: string, id: string | number = 1): string =
 export const serializeSchema = (schemaGraphObjects: Array<Record<string, any>>): string => {
 	let schema = {
 		'@context': 'https://schema.org',
-		'@graph': [...schemaGraphObjects]
+		'@graph': [...schemaGraphObjects],
 	};
 
 	return `<script type="application/ld+json">${JSON.stringify(schema, null, 2)}</script>`;
@@ -103,33 +100,4 @@ export const getImages = (): Images => {
 	}
 
 	return images;
-};
-
-/** only returns published articles */
-export const getArticlesList = (): ArticlesList => {
-	let articlesList: ArticlesList = [];
-	const filePaths = import.meta.glob('$lib/articles/*.md', { eager: true });
-	const images = getImages();
-
-	for (const path in filePaths) {
-		const file = filePaths[path];
-		const slug = getSlug(path);
-
-		if (file && typeof file === 'object' && 'metadata' in file && slug) {
-			let metadata = file.metadata as Omit<ArticleMetadata, 'slug'>;
-			const articleMetadata = { ...metadata, slug } satisfies ArticleMetadata;
-
-			// if article has a featured image (filename as 'image'), find the src for it and attach
-			if (articleMetadata?.image) {
-				articleMetadata.imgSrc = images[articleMetadata.image];
-			}
-
-			articleMetadata.published && articlesList.push({ ...articleMetadata, slug });
-		}
-	}
-
-	return articlesList.sort(
-		(first, second) =>
-			new Date(second.datePublished).getTime() - new Date(first.datePublished).getTime()
-	);
 };
