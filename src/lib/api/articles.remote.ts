@@ -1,10 +1,10 @@
-import { prerender } from '$app/server';
+import { query } from '$app/server';
 import { getImages, getSlug } from '$lib/helpers';
 import { error } from '@sveltejs/kit';
 import { render } from 'svelte/server';
 import * as v from 'valibot';
 
-function generateArticlesList(): ArticlesList {
+export const getArticlesList = query(async (): Promise<ArticlesList> => {
 	let articlesList: ArticlesList = [];
 	const filePaths = import.meta.glob('$lib/articles/*.md', { eager: true });
 	const images = getImages();
@@ -30,15 +30,9 @@ function generateArticlesList(): ArticlesList {
 		(first, second) =>
 			new Date(second.datePublished!).getTime() - new Date(first.datePublished!).getTime(),
 	);
-}
+});
 
-function generateInputs(): Array<string> {
-	return generateArticlesList()
-		.map((a) => a.slug!)
-		.sort();
-}
-
-async function generateArticle(slug: string): Promise<Article> {
+export const getArticle = query(v.string(), async (slug): Promise<Article> => {
 	const notFoundMessage = `Sorry, that isn't here; /${slug} may have been deleted or moved.`;
 	let article;
 	try {
@@ -56,10 +50,4 @@ async function generateArticle(slug: string): Promise<Article> {
 		content: html.body,
 		metadata: { ...article.metadata, slug },
 	};
-}
-
-export const getArticlesList = prerender(generateArticlesList);
-
-export const getArticle = prerender(v.string(), generateArticle, {
-	inputs: generateInputs,
 });
