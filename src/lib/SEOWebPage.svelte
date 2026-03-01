@@ -18,7 +18,7 @@
 	const defaultDatePublished = getDateString('2024-09-05', 'iso');
 	const defaultDateModified = getDateString('2026-02-07', 'iso');
 
-	let { metadata }: { metadata: PageSEOData } = $props();
+	let { metadata }: { metadata: PageMetadata } = $props();
 	let schemaGraphObjects = $derived.by(generateSchema);
 
 	function generateSchema() {

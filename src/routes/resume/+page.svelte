@@ -3,7 +3,7 @@
 	import resume from '$lib/resume.json';
 	import SEOWebPage from '$lib/SEOWebPage.svelte';
 
-	const metadata: PageSEOData = {
+	const metadata: PageMetadata = {
 		title: 'Resume',
 		description: 'Resume for Colin Howells',
 		dateModified: getDateString(resume.meta.lastModified, 'simple'),
