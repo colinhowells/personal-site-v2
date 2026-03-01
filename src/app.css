@@ -123,7 +123,7 @@
 	/** https://jameshfisher.com/2024/03/12/a-formula-for-responsive-font-size/ */
 	font-size: calc(1rem + 0.25dvw);
 
-	--transition-time: 0.3s;
+	--transition-time: 0.2s;
 
 	--hue-warm: 140deg;
 	--hue-cool: 180deg;

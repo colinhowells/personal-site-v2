@@ -252,25 +252,19 @@
 	svg {
 		display: none;
 	}
-	a {
-		transition: color var(--transition-time);
-		text-decoration: none;
-		&:hover,
-		&:focus-within {
-			color: var(--color-links-hover);
-			& svg {
-				fill: var(--color-links-hover);
-			}
-		}
-	}
 	#logo {
 		grid-column: 2;
 		margin: 0 0 1vmin 0;
 		color: var(--color-cool-50);
-		& svg {
+		svg {
 			display: block;
+			transition: color var(--transition-time);
 			width: 100%;
 			height: auto;
+		}
+		&:hover,
+		&:focus-within {
+			color: var(--color-links-hover);
 		}
 	}
 	#tagline-icons {
@@ -278,7 +272,6 @@
 		grid-column: 2;
 		flex-flow: column wrap;
 		align-items: center;
-		fill: var(--color-cool-50);
 		margin: 0 0 var(--gap) 0;
 		font-size: 1.25rem;
 		font-family: var(--font-sans);
@@ -292,14 +285,20 @@
 		display: flex;
 		flex: 1;
 		justify-content: space-around;
+		fill: var(--color-cool-50);
 		width: 100%;
-		& svg {
-			display: inline-block;
-			transition: fill var(--transition-time);
-			fill: white;
-			margin-top: 0.2lh;
-			width: auto;
-			height: 0.6lh;
+		a {
+			svg {
+				display: inline-block;
+				transition: fill var(--transition-time);
+				margin-top: 0.2lh;
+				width: auto;
+				height: 0.6lh;
+			}
+			&:hover,
+			&:focus-within {
+				fill: var(--color-links-hover);
+			}
 		}
 	}
 
@@ -310,7 +309,7 @@
 		#icons {
 			justify-content: flex-end;
 			width: auto;
-			& a {
+			a {
 				padding: 0 0 0 1rem;
 			}
 		}

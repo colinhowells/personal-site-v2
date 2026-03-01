@@ -45,6 +45,12 @@
 		font-family: var(--font-sans);
 		letter-spacing: 0.4vmin;
 		text-transform: uppercase;
+		a {
+			display: block;
+			padding: var(--padding);
+			color: inherit;
+			text-decoration: none;
+		}
 	}
 	li[aria-current='page'] {
 		background-color: var(--color-cool-50);
@@ -53,11 +59,5 @@
 	li:not([aria-current]):hover,
 	li:not([aria-current]):focus-within {
 		background-color: var(--color-links-hover);
-	}
-	li a {
-		display: block;
-		padding: var(--padding);
-		color: inherit;
-		text-decoration: none;
 	}
 </style>
