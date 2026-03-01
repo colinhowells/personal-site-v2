@@ -1,37 +1,34 @@
 declare module 'mdsvex';
 
-type SchemaGraphObjects = Array<Record<string, any>>;
-
-type Images = Record<string, string>;
-
-type FigureProps = {
-	src: string;
-	alt?: string;
-	caption?: string;
-	width?: string;
-	height?: string;
+type Article = {
+	content: string;
+	metadata: PageSEOData;
 };
+
+type ArticlesList = Array<PageSEOData>;
 
 type ArticleTypes = 'review' | 'article' | 'list' | 'work';
 
-type SEOData = {
-	dateModified: string;
-	datePublished: string;
-	description: string;
-	title: string;
+type FigureProps = {
+	alt?: string;
+	caption?: string;
+	height?: string;
+	src: string;
+	width?: string;
 };
 
-type ArticleMetadata = SEOData & {
-	published: boolean;
-	slug: string;
-	type: ArticleTypes;
+type Images = Record<string, string>;
+
+type PageSEOData = {
+	dateModified?: string;
+	datePublished?: string;
+	description: string;
 	image?: string;
 	imgSrc?: string;
+	published?: boolean;
+	slug?: string;
+	title: string;
+	type?: ArticleTypes;
 };
 
-type Article = {
-	content: string;
-	metadata: ArticleMetadata;
-};
-
-type ArticlesList = Array<ArticleMetadata>;
+type SchemaGraphObjects = Array<Record<string, any>>;

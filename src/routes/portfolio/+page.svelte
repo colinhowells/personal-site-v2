@@ -5,9 +5,14 @@
 
 	const articlesList = await getArticlesList();
 	const workArticles = articlesList.filter((metadata) => 'work' === metadata.type);
+
+	const metadata: PageSEOData = {
+		title: 'Portfolio',
+		description: 'Website work by Colin Howells',
+	};
 </script>
 
-<SEOWebPage title="Portfolio" description="Website work by Colin Howells" />
+<SEOWebPage {metadata} />
 
 <nav aria-label="Work Projects">
 	{#each workArticles as article}

@@ -6,14 +6,14 @@
 
 <header data-sveltekit-reload={updated.current ? '' : 'off'}>
 	<h1 id="name" class="sr-only">Colin Howells</h1>
-	<a href="/" aria-labelledby="name"
+	<a id="logo" href="/" aria-labelledby="name"
 		><svg width="788" height="89">
-			<use xlink:href="#logo" />
+			<use xlink:href="#logo-svg" />
 		</svg></a
 	>
-	<div>
-		<p>Web developer living in Seattle</p>
-		<nav>
+	<div id="tagline-icons">
+		<p id="tagline">Web developer living in Seattle</p>
+		<nav id="icons">
 			<a
 				rel="me"
 				href="https://github.com/colinhowells"
@@ -50,13 +50,14 @@
 					<use xlink:href="#icon-bluesky" />
 				</svg></a
 			>
-			<a
-				rel="external"
-				href="/rss.xml"
-				title="Colin Howells RSS feed"
-				aria-label="Colin Howells RSS feed"
+			<a rel="external" href="/rss.xml" title="RSS feed" aria-label="RSS feed"
 				><svg width="45" height="45">
 					<use xlink:href="#icon-rss" />
+				</svg></a
+			>
+			<a href="mailto:colin+contact@colinhowells.com" title="Email Colin" aria-label="Email Colin"
+				><svg width="45" height="45">
+					<use xlink:href="#icon-email" />
 				</svg></a
 			>
 		</nav>
@@ -64,58 +65,8 @@
 	<Nav />
 </header>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" role="img">
-	<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-	<symbol id="icon-github" viewBox="0 0 496 512">
-		<path
-			fill="currentFill"
-			d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-		/>
-	</symbol>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 548 548" role="img"
-	><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-	<symbol id="icon-linkedin" viewBox="0 0 548 548">
-		<path
-			fill="currentFill"
-			d="M196.3 512L103.4 512L103.4 212.9L196.3 212.9L196.3 512zM149.8 172.1C120.1 172.1 96 147.5 96 117.8C96 103.5 101.7 89.9 111.8 79.8C121.9 69.7 135.6 64 149.8 64C164 64 177.7 69.7 187.8 79.8C197.9 89.9 203.6 103.6 203.6 117.8C203.6 147.5 179.5 172.1 149.8 172.1zM543.9 512L451.2 512L451.2 366.4C451.2 331.7 450.5 287.2 402.9 287.2C354.6 287.2 347.2 324.9 347.2 363.9L347.2 512L254.4 512L254.4 212.9L343.5 212.9L343.5 253.7L344.8 253.7C357.2 230.2 387.5 205.4 432.7 205.4C526.7 205.4 544 267.3 544 347.7L544 512L543.9 512z"
-		/>
-	</symbol>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" role="img">
-	<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-	<symbol id="icon-mastodon" viewBox="0 0 448 512">
-		<path
-			fill="currentFill"
-			d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54a102.5 102.5 0 0 1 -.9-13.9c85.6 20.9 158.7 9.1 178.8 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.3V197c0-58.5-64-56.6-64-6.9v114.2H90.2c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175z"
-		/>
-	</symbol>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
-	<!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-	<symbol id="icon-bluesky" viewBox="0 0 512 512">
-		<path
-			fill="currentFill"
-			d="M111.8 62.2C170.2 105.9 233 194.7 256 242.4c23-47.6 85.8-136.4 144.2-180.2c42.1-31.6 110.3-56 110.3 21.8c0 15.5-8.9 130.5-14.1 149.2C478.2 298 412 314.6 353.1 304.5c102.9 17.5 129.1 75.5 72.5 133.5c-107.4 110.2-154.3-27.6-166.3-62.9l0 0c-1.7-4.9-2.6-7.8-3.3-7.8s-1.6 3-3.3 7.8l0 0c-12 35.3-59 173.1-166.3 62.9c-56.5-58-30.4-116 72.5-133.5C100 314.6 33.8 298 15.7 233.1C10.4 214.4 1.5 99.4 1.5 83.9c0-77.8 68.2-53.4 110.3-21.8z"
-		/>
-	</symbol>
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" role="img">
-	<!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-	<symbol id="icon-rss" viewBox="0 0 448 512">
-		<path
-			fill="currentFill"
-			d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM96 136c0-13.3 10.7-24 24-24c137 0 248 111 248 248c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-110.5-89.5-200-200-200c-13.3 0-24-10.7-24-24zm0 96c0-13.3 10.7-24 24-24c83.9 0 152 68.1 152 152c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-57.4-46.6-104-104-104c-13.3 0-24-10.7-24-24zm0 120a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"
-		/>
-	</symbol>
-</svg>
-
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 788 89" role="img">
-	<symbol id="logo" viewBox="0 0 788 89">
+	<symbol id="logo-svg" viewBox="0 0 788 89">
 		<g>
 			<path
 				fill="currentColor"
@@ -229,10 +180,68 @@
 	</symbol>
 </svg>
 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" role="img">
+	<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+	<symbol id="icon-github" viewBox="0 0 496 512">
+		<path
+			fill="currentFill"
+			d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+		/>
+	</symbol>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 548 548" role="img"
+	><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+	<symbol id="icon-linkedin" viewBox="0 0 548 548">
+		<path
+			fill="currentFill"
+			d="M196.3 512L103.4 512L103.4 212.9L196.3 212.9L196.3 512zM149.8 172.1C120.1 172.1 96 147.5 96 117.8C96 103.5 101.7 89.9 111.8 79.8C121.9 69.7 135.6 64 149.8 64C164 64 177.7 69.7 187.8 79.8C197.9 89.9 203.6 103.6 203.6 117.8C203.6 147.5 179.5 172.1 149.8 172.1zM543.9 512L451.2 512L451.2 366.4C451.2 331.7 450.5 287.2 402.9 287.2C354.6 287.2 347.2 324.9 347.2 363.9L347.2 512L254.4 512L254.4 212.9L343.5 212.9L343.5 253.7L344.8 253.7C357.2 230.2 387.5 205.4 432.7 205.4C526.7 205.4 544 267.3 544 347.7L544 512L543.9 512z"
+		/>
+	</symbol>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" role="img">
+	<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+	<symbol id="icon-mastodon" viewBox="0 0 448 512">
+		<path
+			fill="currentFill"
+			d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54a102.5 102.5 0 0 1 -.9-13.9c85.6 20.9 158.7 9.1 178.8 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.3V197c0-58.5-64-56.6-64-6.9v114.2H90.2c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175z"
+		/>
+	</symbol>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+	<!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+	<symbol id="icon-bluesky" viewBox="0 0 512 512">
+		<path
+			fill="currentFill"
+			d="M111.8 62.2C170.2 105.9 233 194.7 256 242.4c23-47.6 85.8-136.4 144.2-180.2c42.1-31.6 110.3-56 110.3 21.8c0 15.5-8.9 130.5-14.1 149.2C478.2 298 412 314.6 353.1 304.5c102.9 17.5 129.1 75.5 72.5 133.5c-107.4 110.2-154.3-27.6-166.3-62.9l0 0c-1.7-4.9-2.6-7.8-3.3-7.8s-1.6 3-3.3 7.8l0 0c-12 35.3-59 173.1-166.3 62.9c-56.5-58-30.4-116 72.5-133.5C100 314.6 33.8 298 15.7 233.1C10.4 214.4 1.5 99.4 1.5 83.9c0-77.8 68.2-53.4 110.3-21.8z"
+		/>
+	</symbol>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" role="img">
+	<!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+	<symbol id="icon-rss" viewBox="0 0 448 512">
+		<path
+			fill="currentFill"
+			d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM96 136c0-13.3 10.7-24 24-24c137 0 248 111 248 248c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-110.5-89.5-200-200-200c-13.3 0-24-10.7-24-24zm0 96c0-13.3 10.7-24 24-24c83.9 0 152 68.1 152 152c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-57.4-46.6-104-104-104c-13.3 0-24-10.7-24-24zm0 120a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"
+		/>
+	</symbol>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img"
+	><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><symbol
+		id="icon-email"
+		viewBox="0 0 640 640"
+		><path
+			fill="currentFill"
+			d="M320 97.9L128.4 239.8L286.5 357C291.8 360.9 297.7 363.9 304 365.7L304 528C304 533.5 304.5 538.8 305.3 544L128 544C92.7 544 64 515.3 64 480L64 240.1C64 219.8 73.6 200.7 89.9 188.7L286.5 43C296.2 35.8 307.9 32 320 32C332.1 32 343.8 35.9 353.5 43L550.1 188.7C557.3 194 563.2 200.7 567.5 208.3C565 208.1 562.5 208 560 208L468.6 208L320 97.9zM352 304C352 277.5 373.5 256 400 256L560 256C586.5 256 608 277.5 608 304L608 528C608 554.5 586.5 576 560 576L400 576C373.5 576 352 554.5 352 528L352 304zM432 320C418.7 320 408 330.7 408 344C408 357.3 418.7 368 432 368L528 368C541.3 368 552 357.3 552 344C552 330.7 541.3 320 528 320L432 320zM432 416C418.7 416 408 426.7 408 440C408 453.3 418.7 464 432 464L488 464C501.3 464 512 453.3 512 440C512 426.7 501.3 416 488 416L432 416z"
+		/></symbol
+	></svg
+>
+
 <style>
-	svg {
-		display: none;
-	}
 	header {
 		display: grid;
 		grid-template-columns: subgrid;
@@ -240,56 +249,69 @@
 		grid-column: fullwidth;
 		padding: var(--gap) 0 0 0;
 	}
-	header > a {
+	svg {
+		display: none;
+	}
+	#logo {
 		grid-column: 2;
 		margin: 0 0 1vmin 0;
 		color: var(--color-cool-50);
-		& svg {
+		svg {
 			display: block;
+			transition: color var(--transition-time);
 			width: 100%;
 			height: auto;
 		}
-	}
-	div {
-		display: flex;
-		grid-column: 2;
-		flex-flow: row nowrap;
-		justify-content: space-between;
-		align-items: center;
-		margin: 0 0 var(--gap) 0;
-		font-family: var(--font-sans);
-		fill: var(--color-cool-50);
-		font-size: 0.8rem;
-		& p {
-			margin: 0;
-			color: white;
-		}
-		& svg {
-			display: inline-block;
-			width: auto;
-			height: 0.6lh;
-			fill: white;
-			transition: fill var(--transition-time);
-			margin-top: 0.2lh;
-		}
-	}
-	nav > a {
-		padding: 0 0.35dvw;
-	}
-	a {
-		transition: color var(--transition-time);
-		text-decoration: none;
 		&:hover,
 		&:focus-within {
 			color: var(--color-links-hover);
-			& svg {
+		}
+	}
+	#tagline-icons {
+		display: flex;
+		grid-column: 2;
+		flex-flow: column wrap;
+		align-items: center;
+		margin: 0 0 var(--gap) 0;
+		font-size: 1.25rem;
+		font-family: var(--font-sans);
+	}
+	#tagline {
+		margin: 0;
+		color: white;
+		text-align: center;
+	}
+	#icons {
+		display: flex;
+		flex: 1;
+		justify-content: space-around;
+		fill: var(--color-cool-50);
+		width: 100%;
+		a {
+			svg {
+				display: inline-block;
+				transition: fill var(--transition-time);
+				margin-top: 0.2lh;
+				width: auto;
+				height: 0.6lh;
+			}
+			&:hover,
+			&:focus-within {
 				fill: var(--color-links-hover);
 			}
 		}
 	}
-	@media (width > 380px) {
-		div {
-			font-size: clamp(0.5rem, 0.6rem + 1.75dvw, 1.35rem);
+
+	@media (width > 768px) {
+		#tagline-icons {
+			flex-flow: row nowrap;
+		}
+		#icons {
+			justify-content: flex-end;
+			width: auto;
+			a {
+				padding: 0 0 0 1rem;
+			}
 		}
 	}
 </style>

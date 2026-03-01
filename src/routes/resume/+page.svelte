@@ -2,13 +2,15 @@
 	import { getDateString } from '$lib/helpers';
 	import resume from '$lib/resume.json';
 	import SEOWebPage from '$lib/SEOWebPage.svelte';
+
+	const metadata: PageSEOData = {
+		title: 'Resume',
+		description: 'Resume for Colin Howells',
+		dateModified: getDateString(resume.meta.lastModified, 'simple'),
+	};
 </script>
 
-<SEOWebPage
-	title="Resume"
-	description="Resume for Colin Howells"
-	dateModified={getDateString(resume.meta.lastModified, 'simple')}
-/>
+<SEOWebPage {metadata} />
 
 <article class="h-resume">
 	<h2 hidden class="p-name">{resume.basics.name}</h2>
@@ -45,9 +47,9 @@
 						<a class="url" href={job.website}>{job.company}</a>,
 						<span class="dt-duration">
 							<time datetime={job.startDate} class="dt-start"
-								>{getDateString(job.startDate, 'year').toString()}</time
+								>{getDateString(job.startDate, 'year')}</time
 							>{#if job.endDate}–<time datetime={job.endDate} class="dt-end"
-									>{getDateString(job.endDate, 'year').toString()}</time
+									>{getDateString(job.endDate, 'year')}</time
 								>{/if},
 						</span>
 						<span class="p-location">{job.location}</span>
@@ -75,12 +77,10 @@
 						{schooling.institution},
 						<span class="dt-duration">
 							<time datetime={schooling.startDate} class="dt-start"
-								>{getDateString(schooling.startDate, 'year').toString()}</time
+								>{getDateString(schooling.startDate, 'year')}</time
 							>
 							{#if schooling.endDate}
-								–<time datetime="" class="dt-end"
-									>{getDateString(schooling.endDate, 'year').toString()}</time
-								>
+								–<time datetime="" class="dt-end">{getDateString(schooling.endDate, 'year')}</time>
 							{/if}
 						</span>
 					</h5>

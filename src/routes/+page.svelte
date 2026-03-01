@@ -4,12 +4,15 @@
 
 	const articlesList = await getArticlesList();
 	const playArticles = articlesList.filter((metadata) => 'work' !== metadata.type);
+
+	const metadata: PageSEOData = {
+		title: 'Welcome',
+		description:
+			'Personal website of Colin Howells, a web developer and designer living in Seattle',
+	};
 </script>
 
-<SEOWebPage
-	title="Welcome"
-	description="Personal website of Colin Howells, a web developer and designer living in Seattle"
-/>
+<SEOWebPage {metadata} />
 
 <nav aria-label="Recent Writing">
 	<ul>
