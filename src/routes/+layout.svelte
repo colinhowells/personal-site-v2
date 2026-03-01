@@ -5,6 +5,7 @@
 	import Header from '$lib/Header.svelte';
 	import SEO from '$lib/SEO.svelte';
 	import type { LayoutProps } from './$types';
+	import Error from './+error.svelte';
 
 	let { children }: LayoutProps = $props();
 
@@ -27,10 +28,7 @@
 	<svelte:boundary>
 		{@render children?.()}
 		{#snippet failed(error)}
-			<article>
-				<h2 class="title">Whoops</h2>
-				<p>{error instanceof Error ? error?.message : String(error)}</p>
-			</article>
+			<Error {error} />
 		{/snippet}
 	</svelte:boundary>
 </main>

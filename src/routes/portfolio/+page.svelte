@@ -6,7 +6,7 @@
 	const articlesList = await getArticlesList();
 	const workArticles = articlesList.filter((metadata) => 'work' === metadata.type);
 
-	const metadata: PageSEOData = {
+	const metadata: PageMetadata = {
 		title: 'Portfolio',
 		description: 'Website work by Colin Howells',
 	};

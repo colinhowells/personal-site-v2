@@ -2,10 +2,10 @@ declare module 'mdsvex';
 
 type Article = {
 	content: string;
-	metadata: PageSEOData;
+	metadata: PageMetadata;
 };
 
-type ArticlesList = Array<PageSEOData>;
+type ArticlesList = Array<PageMetadata>;
 
 type ArticleTypes = 'review' | 'article' | 'list' | 'work';
 
@@ -19,7 +19,7 @@ type FigureProps = {
 
 type Images = Record<string, string>;
 
-type PageSEOData = {
+type PageMetadata = {
 	dateModified?: string;
 	datePublished?: string;
 	description: string;
