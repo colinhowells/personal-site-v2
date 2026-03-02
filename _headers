@@ -5,10 +5,6 @@
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
 
-/rss.xml
-  Access-Control-Allow-Origin: *
-  Access-Control-Allow-Methods: GET, HEAD, OPTIONS
-
 https://:worker.:subdomain.workers.dev/*
   X-Robots-Tag: noindex
 
