@@ -10,7 +10,7 @@ export const GET: RequestHandler = async () => {
 	const articlesList = await getArticlesList();
 
 	const headers = {
-		'Access-Control-Allow-Access': '*',
+		'Access-Control-Allow-Origin': '*',
 		'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
 		'Cache-Control': 'max-age=0, s-maxage=3600',
 		'Content-Type': 'application/xml',
