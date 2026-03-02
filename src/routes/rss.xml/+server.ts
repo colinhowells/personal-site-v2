@@ -10,8 +10,10 @@ export const GET: RequestHandler = async () => {
 	const articlesList = await getArticlesList();
 
 	const headers = {
+		'Access-Control-Allow-Access': '*',
+		'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
 		'Cache-Control': 'max-age=0, s-maxage=3600',
-		'Content-Type': 'application/xml'
+		'Content-Type': 'application/xml',
 	};
 
 	const xml = `
@@ -33,7 +35,7 @@ export const GET: RequestHandler = async () => {
 							<guid isPermaLink="true">${PUBLIC_SITE_URL}/${article.slug}</guid>
 							<pubDate>${getDateString(article.datePublished, 'utc')}</pubDate>
 						</item>
-					`
+					`,
 					)
 					.join('')}
 			</channel>
