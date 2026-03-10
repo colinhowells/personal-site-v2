@@ -1,5 +1,8 @@
 import { PUBLIC_SITE_URL } from '$env/static/public';
 
+export const isError = (err: unknown): boolean =>
+	typeof Error.isError === 'function' ? Error.isError(err) : err instanceof Error;
+
 export const capitalize = (str: string): string => str.charAt(0).toUpperCase() + str.slice(1) || '';
 
 /** check if a string is a valid date */
