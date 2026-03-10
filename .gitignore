@@ -4,6 +4,7 @@ node_modules
 .claude
 CLAUDE.md
 **/CLAUDE.md
+.mcp.json
 
 # Output
 .output
