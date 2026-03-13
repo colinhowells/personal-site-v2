@@ -6,7 +6,7 @@
 	const metadata: PageMetadata = {
 		title: 'Resume',
 		description: 'Resume for Colin Howells',
-		dateModified: getDateString(resume.meta.lastModified, 'simple'),
+		dateModified: getDateString(resume.meta.lastModified, 'yyyy-mm-dd'),
 	};
 </script>
 

@@ -15,8 +15,8 @@
 	const siteNodeId = getSchemaNodeId('WebSite');
 	/** The page url, sourced from the page store */
 	const webPageNodeId = page.url.toString();
-	const defaultDatePublished = getDateString('2024-09-05', 'iso');
-	const defaultDateModified = getDateString('2026-02-07', 'iso');
+	const defaultDatePublished = getDateString('2024-09-05', 'iso8601');
+	const defaultDateModified = getDateString('2026-02-07', 'iso8601');
 
 	let { metadata }: { metadata: PageMetadata } = $props();
 	let schemaGraphObjects = $derived.by(generateSchema);

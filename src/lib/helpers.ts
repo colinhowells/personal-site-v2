@@ -1,33 +1,62 @@
 import { PUBLIC_SITE_URL } from '$env/static/public';
+import { Temporal } from 'temporal-polyfill';
 
 export const isError = (err: unknown): boolean =>
 	typeof Error.isError === 'function' ? Error.isError(err) : err instanceof Error;
 
 export const capitalize = (str: string): string => str.charAt(0).toUpperCase() + str.slice(1) || '';
 
-/** check if a string is a valid date */
-export const isValidDate = (date: string): boolean => !isNaN(Date.parse(date));
+/** Parse a date string to a Temporal.PlainDate, accepting both YYYY-MM-DD and full ISO strings */
+export const getTemporalPlainDate = (date: string): Temporal.PlainDate =>
+	Temporal.PlainDate.from(date.slice(0, 10));
 
-/** get an existing or new date as YYYY-MM-DD, or ISO, in UTC, or extract the year */
+/** check if a string is a valid YYYY-MM-DD date (also accepts full ISO strings) */
+export const isValidDate = (date: string): boolean => {
+	try {
+		getTemporalPlainDate(date);
+		return true;
+	} catch {
+		return false;
+	}
+};
+
+/** get an existing or new date as YYYY-MM-DD, ISO 8601 datetime, RFC 822, or extract the year */
 export const getDateString = (
-	date = new Date().toISOString(),
-	as: 'simple' | 'iso' | 'utc' | 'year',
+	date = Temporal.Now.plainDateISO().toString(),
+	as: 'yyyy-mm-dd' | 'iso8601' | 'rfc822' | 'year',
 ): string => {
 	if (!isValidDate(date)) {
 		console.error('Invalid date format: ', date);
 		return '';
 	}
 	switch (as) {
-		case 'simple':
+		case 'yyyy-mm-dd':
 			return date.split('T')[0]; // '2026-01-01'
-		case 'iso':
-			return new Date(date).toISOString(); // '2026-01-01T00:00:00.000Z'
-		case 'utc':
-			return new Date(date).toUTCString(); // 'Thurs, 1 Jan 2026 00:00:00 GMT'
+		case 'iso8601':
+			return getTemporalPlainDate(date).toZonedDateTime('UTC').toInstant().toString(); // '2026-01-01T00:00:00Z'
+		case 'rfc822': {
+			const zdt = getTemporalPlainDate(date).toZonedDateTime('UTC');
+			const DOW = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+			const MON = [
+				'Jan',
+				'Feb',
+				'Mar',
+				'Apr',
+				'May',
+				'Jun',
+				'Jul',
+				'Aug',
+				'Sep',
+				'Oct',
+				'Nov',
+				'Dec',
+			];
+			const dayName = DOW[zdt.dayOfWeek === 7 ? 0 : zdt.dayOfWeek];
+			const monthName = MON[zdt.month - 1];
+			return `${dayName}, ${String(zdt.day).padStart(2, '0')} ${monthName} ${zdt.year} 00:00:00 GMT`;
+		}
 		case 'year':
-			return parseInt(date.split('-')[0]).toString(); // 2026
-		default:
-			return date;
+			return parseInt(date.split('-')[0]).toString(); // '2026'
 	}
 };
 
@@ -63,10 +92,6 @@ export const stripTags = (str: string): string => {
 	str = str.replace(/<\/?[^>]+(>|$)/g, '');
 
 	return str;
-};
-
-export const getNextTootsUrl = (headers: Headers): string => {
-	return headers.get('Link')?.split(',')[0].slice(1, -13) ?? '';
 };
 
 export const slugify = (str: string): string => {
