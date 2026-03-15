@@ -10,16 +10,6 @@
 		"url": "git+https://github.com/colinhowells/personal-site-v2.git"
 	},
 	"type": "module",
-	"devEngines": {
-		"runtime": {
-			"name": "node",
-			"version": ">=22.0.0"
-		},
-		"packageManager": {
-			"name": "npm",
-			"version": ">=10.9.0"
-		}
-	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -43,7 +33,7 @@
 		"prettier-plugin-svelte": "^3.5.1",
 		"prism-themes": "^1.9.0",
 		"resumed": "^6.1.0",
-		"svelte": "^5.53.11",
+		"svelte": "^5.53.12",
 		"svelte-check": "^4.4.5",
 		"temporal-polyfill": "^0.3.2",
 		"tslib": "^2.8.1",
