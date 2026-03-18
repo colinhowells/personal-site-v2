@@ -9,6 +9,7 @@ image: zulawski-public-woman-milan.jpg
 ---
 
 <script>
+import { Temporal } from 'temporal-polyfill';
 import Figure from '$lib/Figure.svelte';
 
 import blueNote from '$lib/images/zulawski-blue-note.jpg';
@@ -78,7 +79,7 @@ The sweetness here
 Nor sorrow take  
 His endless look.
 
-_&copy; {new Date().getFullYear()} Estate of WH Auden_
+_&copy; {Temporal.Now.plainDateISO().year} Estate of WH Auden_
 
 <Figure src={important} alt="That Most Important Thing: Love, 1975" width="1024" height="618" caption="Yet another Żuławski love triangle – That Most Important Thing: Love, 1975" />
 

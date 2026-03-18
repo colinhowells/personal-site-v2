@@ -1,4 +1,4 @@
-import resume from '$lib/resume.json';
+import resume from '$lib/resume.json' with { type: 'json' };
 import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 

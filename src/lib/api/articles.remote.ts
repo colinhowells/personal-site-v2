@@ -1,5 +1,6 @@
 import { query } from '$app/server';
-import { getImages, getSlug } from '$lib/helpers';
+import { Temporal } from 'temporal-polyfill';
+import { getImages, getSlug, getTemporalPlainDate } from '$lib/helpers';
 import { error } from '@sveltejs/kit';
 import { render } from 'svelte/server';
 import * as v from 'valibot';
@@ -20,13 +21,21 @@ export const getArticlesList = query(async (): Promise<ArticlesList> => {
 			// if article has a featured image (filename as 'image'), find the src for it and attach
 			if (metadata?.image) metadata.imgSrc = images[metadata.image];
 
-			articlesList.push({ ...metadata, slug: getSlug(path) });
+			// normalize dates to YYYY-MM-DD (YAML parses date literals as JS Date objects)
+			articlesList.push({
+				...metadata,
+				datePublished: metadata.datePublished?.slice(0, 10),
+				dateModified: metadata.dateModified?.slice(0, 10),
+				slug: getSlug(path),
+			});
 		}
 	}
 
-	return articlesList.sort(
-		(first, second) =>
-			new Date(second.datePublished!).getTime() - new Date(first.datePublished!).getTime(),
+	return articlesList.sort((first, second) =>
+		Temporal.PlainDate.compare(
+			getTemporalPlainDate(second.datePublished!),
+			getTemporalPlainDate(first.datePublished!),
+		),
 	);
 });
 

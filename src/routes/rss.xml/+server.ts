@@ -24,7 +24,7 @@ export const GET: RequestHandler = async () => {
 				<description>RSS feed</description>
 				<link>${PUBLIC_SITE_URL}</link>
 				<atom:link href="${PUBLIC_SITE_URL}/rss.xml" rel="self" type="application/rss+xml"/>
-				<lastBuildDate>${getDateString(defaultBuildDate, 'utc')}</lastBuildDate>
+				<lastBuildDate>${getDateString(defaultBuildDate, 'rfc822')}</lastBuildDate>
 				${articlesList
 					.map(
 						(article) => `
@@ -33,7 +33,7 @@ export const GET: RequestHandler = async () => {
 							<![CDATA[<description>${article.description}</description>]]>
 							<link>${PUBLIC_SITE_URL}/${article.slug}</link>
 							<guid isPermaLink="true">${PUBLIC_SITE_URL}/${article.slug}</guid>
-							<pubDate>${getDateString(article.datePublished, 'utc')}</pubDate>
+							<pubDate>${getDateString(article.datePublished, 'rfc822')}</pubDate>
 						</item>
 					`,
 					)

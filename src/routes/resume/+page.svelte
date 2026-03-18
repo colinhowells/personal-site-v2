@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { getDateString } from '$lib/helpers';
-	import resume from '$lib/resume.json';
+	import resume from '$lib/resume.json' with { type: 'json' };
 	import SEOWebPage from '$lib/SEOWebPage.svelte';
 
 	const metadata: PageMetadata = {
 		title: 'Resume',
 		description: 'Resume for Colin Howells',
-		dateModified: getDateString(resume.meta.lastModified, 'simple'),
+		dateModified: getDateString(resume.meta.lastModified, 'yyyy-mm-dd'),
 	};
 </script>
 
