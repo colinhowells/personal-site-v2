@@ -168,6 +168,7 @@
 	<meta property="fediverse:creator" content="@colin_howells@toot.cafe" />
 	<link rel="me" href="https://toot.cafe/@colin_howells" />
 	<link rel="me" href="https://bsky.app/profile/colinhowells.com" />
+	<link rel="me" href="https://sifa.id/p/colinhowells.com" />
 	<link rel="me" href="https://github.com/colinhowells" />
 	<link rel="me" href="https://bandcamp.com/colinhowells" />
 	<meta property="og:locale" content="en_US" />
