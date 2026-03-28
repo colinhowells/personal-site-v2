@@ -5,7 +5,6 @@
 </script>
 
 <header data-sveltekit-reload={updated.current ? '' : 'off'}>
-	<h1 id="name" class="sr-only">Colin Howells</h1>
 	<a id="logo" href="/" aria-labelledby="name"
 		><svg width="788" height="89">
 			<use xlink:href="#logo-svg" />
