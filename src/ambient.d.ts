@@ -25,7 +25,9 @@ type FigureProps = {
 type Images = Record<string, string>;
 
 type PageMetadata = {
+	/** ISO 8601 datetime string (e.g. `2026-03-28T00:00:00.000Z`). Use `getDateString(date, 'iso8601')` to format. */
 	dateModified?: string;
+	/** ISO 8601 datetime string (e.g. `2026-03-28T00:00:00.000Z`). Use `getDateString(date, 'iso8601')` to format. */
 	datePublished?: string;
 	description: string;
 	image?: string;
