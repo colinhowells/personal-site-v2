@@ -1,7 +1,7 @@
 <script lang="ts">
+	import { getDateString } from '$lib/helpers';
 	import SEOWebPage from '$lib/SEOWebPage.svelte';
 	import Content from './content.md';
-	import { getDateString } from '$lib/helpers';
 
 	const metadata: PageMetadata = {
 		title: 'Resume',
@@ -13,5 +13,6 @@
 <SEOWebPage {metadata} />
 
 <article>
+	<h1 class="sr-only">Resume</h1>
 	<Content />
 </article>

@@ -14,7 +14,9 @@
 
 <SEOWebPage {metadata} />
 
-<nav aria-label="Work Projects">
+<h1 class="sr-only">Portfolio</h1>
+
+<nav aria-label="Work projects">
 	{#each workArticles as article}
 		<a href="/{article.slug}">
 			<div>
