@@ -281,7 +281,7 @@ button:not(:disabled):hover {
 	white-space: nowrap;
 }
 
-h2 {
+h1 {
 	color: var(--color-cool-700);
 	line-height: 1.2;
 	font-family: var(--font-hed);
@@ -295,11 +295,27 @@ article {
 		grid-column: content;
 		margin: 0 auto calc(var(--padding) * 2) auto;
 	}
-	h2.title {
+	h1.title {
 		view-transition-name: var(--transition-name);
 		font-size: clamp(1.5rem, 3dvw, 2rem);
 		text-align: center;
 		text-wrap: balance;
+	}
+	h2 {
+		margin: calc(var(--padding) * 2) auto;
+		color: var(--color-cool-500);
+		font-size: x-large;
+		font-family: var(--font-sans);
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+	h3 {
+		margin: var(--padding) auto;
+	}
+	h4 {
+		font-style: italic;
+		font-weight: normal;
+		font-size: smaller;
 	}
 	p,
 	address {

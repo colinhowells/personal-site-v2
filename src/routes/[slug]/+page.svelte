@@ -11,8 +11,8 @@
 <SEOWebPage {metadata} />
 
 <article>
-	<h2 class="title" style:--transition-name="title-{metadata.slug}">
+	<h1 class="title" style:--transition-name="title-{metadata.slug}">
 		{metadata.title}
-	</h2>
+	</h1>
 	{@html content}
 </article>

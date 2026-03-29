@@ -2,6 +2,8 @@ import { PUBLIC_SITE_URL } from '$env/static/public';
 import { getArticlesList } from '$lib/api/articles.remote';
 import type { RequestHandler } from './$types';
 
+const defaultDateModified = '2026-02-07';
+
 export const GET: RequestHandler = async () => {
 	const articlesList = await getArticlesList();
 	const articles = articlesList
@@ -26,6 +28,18 @@ export const GET: RequestHandler = async () => {
 				xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
 				xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
 			>
+				<url>
+					<loc>${PUBLIC_SITE_URL}</loc>
+					<lastmod>${defaultDateModified}</lastmod>
+				</url>
+				<url>
+					<loc>${PUBLIC_SITE_URL}/portfolio</loc>
+					<lastmod>${defaultDateModified}</lastmod>
+				</url>
+				<url>
+					<loc>${PUBLIC_SITE_URL}/resume</loc>
+					<lastmod>2026-03-28</lastmod>
+				</url>
 				${articles}
 			</urlset>`.trim(),
 		{

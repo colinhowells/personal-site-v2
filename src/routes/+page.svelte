@@ -12,9 +12,11 @@
 	};
 </script>
 
+<h1 class="sr-only">Welcome</h1>
+
 <SEOWebPage {metadata} />
 
-<nav aria-label="Recent Writing">
+<nav aria-label="Recent writing">
 	<ul>
 		{#each playArticles as article}
 			<li>
