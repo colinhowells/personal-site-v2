@@ -6,7 +6,7 @@ Tenacious learner with 12 years of all-round design, web development, and engine
 
 ### Senior Web Developer
 
-#### GreaterGood, Seattle, WA: 10/2016–11/2024
+#### GreaterGood, Seattle, WA: 10/2016-11/2024
 
 Built a number of JavaScript-driven trivia games with an audience of tens of thousands using my proposed stack of SvelteKit hosted on Cloudflare as Workers, modeling and authoring content in headless CMSes, queried and mutated via GraphQL and REST. In addition to being technically much simpler than our typical architecture, it was much cheaper to host and run.
 
@@ -18,7 +18,7 @@ Developed Shopify themes using Liquid and web components.
 
 ### Senior Web Designer
 
-#### GreaterGood: Seattle, WA: 09/2015–09/2016
+#### GreaterGood: Seattle, WA: 09/2015-09/2016
 
 Expanded and improved a WordPress publishing network, handling the integrations, optimizations, and troubleshooting typical to enterprise-scale sites: SEO and structured markup, analytics (data modeling, custom events) and GTM, advertising (including header bidding), ecommerce integrations, custom APIs and middleware, machine-learning recommendation systems, hosting and caching, AWS (API Gateway, CloudFront, S3), as well as the repackaging of content for other platforms (ex. Facebook’s Instant Articles, Google’s AMP, Apple News).
 
@@ -28,7 +28,7 @@ Designed and built a number of React- and Svelte-based applications enabling edi
 
 ### Web Developer/Designer
 
-#### GreaterGood, Seattle, WA: 01/2012–09/2015
+#### GreaterGood, Seattle, WA: 01/2012-09/2015
 
 Designed and developed a content network of more than 50 WordPress sites, some multisite, featuring custom-built themes, plugins, branding, and tables, with islands of React-driven interactivity.
 
@@ -40,7 +40,7 @@ Monetizing more than 75 million pageviews a month for the benefit of nonprofits 
 
 ### Web Designer, Email Marketing
 
-#### GreaterGood, Seattle, WA: 01/2010–01/2012
+#### GreaterGood, Seattle, WA: 01/2010-01/2012
 
 Created and revised email marketing templates to improve deliverability and presentation.
 
@@ -52,7 +52,7 @@ Studied best industry practices and competitors to keep up with the changing onl
 
 ### Graphics Department Manager
 
-#### GreaterGood, Seattle, WA: 02/2008–01/2010
+#### GreaterGood, Seattle, WA: 02/2008-01/2010
 
 Acted as traffic manager for design staff, assigning work and coordinating production of ecommerce online advertisements and product images.
 
@@ -64,7 +64,7 @@ Worked with product buyers and designers to develop and manufacture merchandise 
 
 ### Graphic Designer
 
-#### GreaterGood, Seattle, WA: 01/2005–01/2008
+#### GreaterGood, Seattle, WA: 01/2005-01/2008
 
 Created printed packaging for products as well as advertisements and promotional materials.
 
@@ -74,7 +74,7 @@ Color-corrected and masked raw product photographs.
 
 ### Print Designer
 
-#### SGI Publications, Ann Arbor, MI: 01/1997–01/2005
+#### SGI Publications, Ann Arbor, MI: 01/1997-01/2005
 
 Created an all-digital PDF prepress workﬂow to replace a camera-ready process.
 
