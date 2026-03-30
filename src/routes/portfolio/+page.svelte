@@ -80,6 +80,7 @@
 		font-weight: 900;
 		font-size: 1.25rem;
 		line-height: 1.1;
+		text-align: left;
 	}
 	img {
 		opacity: 0.8;

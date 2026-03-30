@@ -197,18 +197,6 @@
 	background-color: var(--accent-color);
 }
 
-:heading {
-	hyphens: none;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	hyphens: none;
-}
-
 html {
 	overflow-y: scroll;
 	scrollbar-color: var(--accent-color) var(--color-cool-600);
@@ -227,11 +215,6 @@ body {
 	width: 100%;
 	min-height: 100dvh;
 	font-family: var(--font-sans);
-	-webkit-hyphenate-limit-before: 3;
-	-webkit-hyphenate-limit-after: 3;
-	-webkit-hyphenate-limit-lines: 2;
-	hyphens: auto;
-	hyphenate-limit-chars: 6 3 3;
 }
 
 main {
@@ -258,6 +241,17 @@ main {
 	& > nav[aria-label='Work Projects'] {
 		--gap: 0;
 	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	hyphens: none;
+	text-align: center;
+	text-wrap: balance;
 }
 
 a {
@@ -310,16 +304,14 @@ button:not(:disabled):hover {
 	white-space: nowrap;
 }
 
-h1 {
+/*h1 {
 	color: var(--color-cool-700);
 	line-height: 1.2;
 	font-family: var(--font-hed);
-}
+}*/
 
 article {
-	hanging-punctuation: first;
 	font-family: var(--font-body);
-	text-wrap: pretty;
 	& > * {
 		grid-column: content;
 		margin: 0 auto calc(var(--padding) * 2) auto;
@@ -327,9 +319,11 @@ article {
 	h1.title {
 		view-transition-name: var(--transition-name);
 		margin: calc(var(--padding) * 2.5) auto;
-		font-size: clamp(1.5rem, 3dvw, 2rem);
+		color: var(--color-cool-700);
+		font-size: clamp(1.5rem, 3.5dvw, 2rem);
+		line-height: 1.2;
+		font-family: var(--font-hed);
 		text-align: center;
-		text-wrap: balance;
 	}
 	h2 {
 		margin: calc(var(--padding) * 2) auto;
@@ -346,6 +340,14 @@ article {
 		font-style: italic;
 		font-weight: normal;
 		font-size: smaller;
+	}
+	p {
+		-webkit-hyphenate-limit-before: 3;
+		-webkit-hyphenate-limit-after: 3;
+		-webkit-hyphenate-limit-lines: 2;
+		hanging-punctuation: first;
+		hyphens: auto;
+		hyphenate-limit-chars: 6 3 3;
 	}
 	p,
 	address {

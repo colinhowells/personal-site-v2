@@ -28,6 +28,7 @@
 		font-weight: 500;
 		line-height: 1.2;
 		text-align: center;
+		text-wrap: balance;
 	}
 	a {
 		color: var(--color-cool-50);
