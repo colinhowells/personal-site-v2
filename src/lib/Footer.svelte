@@ -25,9 +25,8 @@
 		grid-column: 2;
 		margin: 0;
 		color: var(--color-cool-100);
-		font-weight: medium;
+		font-weight: 500;
 		line-height: 1.2;
-		font-family: var(--font-sans);
 		text-align: center;
 	}
 	a {
@@ -37,7 +36,6 @@
 	}
 	a:hover,
 	a:focus-within {
-		color: var(--color-cool-50);
 		text-decoration: underline;
 	}
 </style>

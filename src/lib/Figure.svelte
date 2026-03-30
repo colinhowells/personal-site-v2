@@ -4,7 +4,7 @@
 	let { src, alt = '', caption, width, height }: FigureProps = $props();
 </script>
 
-<figure aria-label={caption}>
+<figure>
 	<img
 		{src}
 		{alt}
