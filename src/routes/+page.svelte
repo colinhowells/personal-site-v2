@@ -12,9 +12,9 @@
 	};
 </script>
 
-<h1 class="sr-only">Welcome</h1>
-
 <SEOWebPage {metadata} />
+
+<h1 class="sr-only">Welcome</h1>
 
 <nav aria-label="Recent writing">
 	<ul>
