@@ -197,18 +197,6 @@
 	background-color: var(--accent-color);
 }
 
-:heading {
-	hyphens: none;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	hyphens: none;
-}
-
 html {
 	overflow-y: scroll;
 	scrollbar-color: var(--accent-color) var(--color-cool-600);
@@ -258,6 +246,15 @@ main {
 	& > nav[aria-label='Work Projects'] {
 		--gap: 0;
 	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	hyphens: none;
 }
 
 a {
