@@ -15,11 +15,10 @@
 <SEOWebPage {metadata} />
 
 <h1 class="sr-only">Portfolio</h1>
-
 <nav aria-label="Work projects">
 	{#each workArticles as article}
 		<a href="/{article.slug}">
-			<div>
+			<div class="text-container">
 				<h3 style:--transition-name="title-{article.slug}">{article.title}</h3>
 				<p>{article.description}</p>
 			</div>
@@ -44,6 +43,7 @@
 			/* fluid columns, but max out at n */ minmax(min(100%, max(12rem, 100%/4)), 1fr)
 		);
 		grid-column: fullwidth;
+		padding-top: 0;
 		line-height: 1.2;
 		font-family: var(--font-sans);
 	}
@@ -51,9 +51,9 @@
 		display: flex;
 		flex-flow: column wrap;
 		justify-content: space-between;
-		gap: var(--padding);
+		gap: calc(var(--padding) * 2.5);
 		transition: background-color var(--transition-time);
-		padding: clamp(1.5rem, 3dvw, 3rem);
+		padding: clamp(1rem, 2dvw, 1.5rem);
 		font-weight: normal;
 		& * {
 			margin: 0;
@@ -68,18 +68,17 @@
 			}
 		}
 	}
-	div {
+	.text-container {
 		display: flex;
 		flex-direction: column;
 		gap: var(--padding);
-		& > * {
-			margin: 0;
-		}
 	}
 	h3 {
 		view-transition-name: var(--transition-name);
+		margin: 0;
 		font-weight: 900;
 		font-size: 1.25rem;
+		line-height: 1.1;
 	}
 	img {
 		opacity: 0.8;
@@ -93,6 +92,7 @@
 		object-fit: cover;
 	}
 	p {
+		margin: 0;
 		color: initial;
 	}
 </style>

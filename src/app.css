@@ -113,15 +113,13 @@
 
 :root {
 	overscroll-behavior: none;
-	--gap: clamp(1rem, 4dvw, 3rem);
+	--gap: clamp(1.5rem, 3.5dvw, 3rem);
 	--padding: 0.5rem;
 	--border-radius: 0.3vmax;
 
 	--font-sans: 'ManifoldCF', system-ui, sans-serif;
 	--font-body: 'Gimlet Text', serif;
 	--font-hed: 'Gimlet Display Narrow', serif;
-	/** https://jameshfisher.com/2024/03/12/a-formula-for-responsive-font-size/ */
-	font-size: calc(1rem + 0.25dvw);
 
 	--transition-time: 0.2s;
 
@@ -158,6 +156,19 @@
 	--color-links-hover: var(--color-warm-600);
 
 	--accent-color: var(--color-cool-100);
+
+	font-size: 1rem;
+}
+
+@media (pointer: fine) {
+	:root {
+		font-size: calc(1rem + 0.25vw);
+	}
+}
+@media (pointer: coarse) {
+	:root {
+		font-size: 1rem;
+	}
 }
 
 /* // for MPAs
@@ -182,14 +193,26 @@
 	background: var(--accent-color);
 }
 
+::selection {
+	background-color: var(--accent-color);
+}
+
+:heading {
+	hyphens: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	hyphens: none;
+}
+
 html {
 	overflow-y: scroll;
 	scrollbar-color: var(--accent-color) var(--color-cool-600);
 	accent-color: var(--accent-color);
-}
-
-::selection {
-	background-color: var(--accent-color);
 }
 
 body {
@@ -203,7 +226,12 @@ body {
 	padding: 0;
 	width: 100%;
 	min-height: 100dvh;
-	font-family: system-ui, sans-serif;
+	font-family: var(--font-sans);
+	-webkit-hyphenate-limit-before: 3;
+	-webkit-hyphenate-limit-after: 3;
+	-webkit-hyphenate-limit-lines: 2;
+	hyphens: auto;
+	hyphenate-limit-chars: 6 3 3;
 }
 
 main {
@@ -241,7 +269,8 @@ a {
 	&:focus-within {
 		color: var(--color-links-hover);
 		text-decoration: underline;
-		text-decoration-color: color-mix(in srgb, currentColor, transparent 75%);
+		text-decoration-color: color-mix(in srgb, currentColor, transparent 60%);
+		text-underline-offset: 0.1rem;
 	}
 	&.title {
 		view-transition-name: var(--transition-name);
@@ -297,6 +326,7 @@ article {
 	}
 	h1.title {
 		view-transition-name: var(--transition-name);
+		margin: calc(var(--padding) * 2.5) auto;
 		font-size: clamp(1.5rem, 3dvw, 2rem);
 		text-align: center;
 		text-wrap: balance;

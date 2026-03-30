@@ -38,10 +38,10 @@
 		list-style: none;
 	}
 	li {
-		margin: 0 0 var(--padding) 0;
+		margin: 0 0 calc(var(--padding) * 2) 0;
 		color: var(--color-cool-700);
 		font-size: 1.5rem;
-		line-height: 1.2;
+		line-height: 1.1;
 		font-family: var(--font-hed);
 		span {
 			margin-left: 0.25rem;
