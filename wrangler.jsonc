@@ -13,7 +13,7 @@
 		"staging": {
 			"name": "colinhowells-site-staging",
 			"vars": {
-				"PUBLIC_ENVIRONMENT": "staging",
+				"ENVIRONMENT": "staging",
 				"PUBLIC_SITE_URL": "https://colinhowells-site-staging.colin-395.workers.dev",
 			},
 			"workers_dev": true,
@@ -26,7 +26,7 @@
 		"production": {
 			"name": "colinhowells-site",
 			"vars": {
-				"PUBLIC_ENVIRONMENT": "production",
+				"ENVIRONMENT": "production",
 				"PUBLIC_SITE_URL": "https://colinhowells.com",
 			},
 			"workers_dev": false,
