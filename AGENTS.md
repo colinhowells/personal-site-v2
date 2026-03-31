@@ -12,4 +12,4 @@ This file provides guidance to AI agents when working with code in this reposito
 - Valibot for schema validation
 - Vite as the build tool
 - Cloudflare Workers adapter for deployment
-- Node 22.x, npm 10.x
+- [v3 of Cloudflare's build system](https://developers.cloudflare.com/pages/configuration/build-image/#tools): Node 22.16.0, pnpm 10.11.1

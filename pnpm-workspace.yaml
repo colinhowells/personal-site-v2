@@ -1,0 +1,5 @@
+minimumReleaseAge: 10080 # 1 week as min
+trustPolicy: no-downgrade
+# allowed to execute "preinstall", "install", and/or "postinstall" scripts
+# onlyBuiltDependencies:
+# - somepackage
