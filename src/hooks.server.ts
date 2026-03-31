@@ -1,5 +1,5 @@
 import { dev } from '$app/environment';
-import { PUBLIC_ENVIRONMENT } from '$env/static/public';
+import { ENVIRONMENT } from '$env/static/private';
 import type { Handle } from '@sveltejs/kit';
 
 export const handle: Handle = async ({ event, resolve }) => {
@@ -20,7 +20,7 @@ export const handle: Handle = async ({ event, resolve }) => {
 	response.headers.set('X-Content-Type-Options', 'nosniff');
 	response.headers.set('X-Frame-Options', 'DENY');
 
-	if (PUBLIC_ENVIRONMENT !== 'production') {
+	if (ENVIRONMENT !== 'production') {
 		response.headers.set('X-Robots-Tag', 'noindex');
 	}
 
