@@ -1,5 +1,8 @@
 minimumReleaseAge: 10080 # 1 week as min
 # allowed to execute "preinstall", "install", and/or "postinstall" scripts
+# Cloudflare likes these particular build scripts accessible
 onlyBuiltDependencies:
+  - esbuild
+  - sharp
   - workerd
 trustPolicy: no-downgrade
