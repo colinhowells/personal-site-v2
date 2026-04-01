@@ -56,6 +56,9 @@ importers:
       vite:
         specifier: ^8.0.3
         version: 8.0.3(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)(@types/node@25.5.0)(esbuild@0.27.3)
+      wrangler:
+        specifier: ^4.79.0
+        version: 4.79.0(@cloudflare/workers-types@4.20260331.1)
 
 packages:
 
