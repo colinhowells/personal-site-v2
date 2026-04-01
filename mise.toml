@@ -1,2 +1,8 @@
+# https://developers.cloudflare.com/pages/configuration/build-image/#tools
+
 [tools]
 node = "22.16.0"
+pnpm = "10.11.1"
+
+[settings]
+npm.package_manager = "pnpm"
