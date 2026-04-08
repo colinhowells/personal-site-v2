@@ -1,9 +1,13 @@
 /*
   Content-Security-Policy: default-src 'self'; frame-ancestors 'none'; form-action 'self';
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
   Permissions-Policy: interest-cohort=()
   Referrer-Policy: strict-origin-when-cross-origin
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
+  X-Permitted-Cross-Domain-Policies: none
+  X-XSS-Protection: 0
 
 https://:worker.:subdomain.workers.dev/*
   X-Robots-Tag: noindex
