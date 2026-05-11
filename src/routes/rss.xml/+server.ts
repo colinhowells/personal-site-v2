@@ -1,6 +1,6 @@
 import { PUBLIC_SITE_URL } from '$env/static/public';
 import { getArticlesList } from '$lib/api/articles.remote';
-import { getDateString } from '$lib/helpers';
+import { getDateString, xmlEscape } from '$lib/helpers';
 import type { RequestHandler } from './$types';
 
 export const GET: RequestHandler = async () => {
@@ -29,8 +29,8 @@ export const GET: RequestHandler = async () => {
 					.map(
 						(article) => `
 						<item>
-							<![CDATA[<title>${article.title}</title>]]>
-							<![CDATA[<description>${article.description}</description>]]>
+							<title>${xmlEscape(article.title)}</title>
+							<description>${xmlEscape(article.description)}</description>
 							<link>${PUBLIC_SITE_URL}/${article.slug}</link>
 							<guid isPermaLink="true">${PUBLIC_SITE_URL}/${article.slug}</guid>
 							<pubDate>${getDateString(article.datePublished, 'rfc822')}</pubDate>
