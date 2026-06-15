@@ -12,6 +12,7 @@
 	import Nav from '$lib/Nav.svelte';
 </script>
 
+<!-- @TODO `'off'` becomes `false`. '' can become undefined -->
 <header data-sveltekit-reload={updated.current ? '' : 'off'}>
 	<a id="logo" href="/" aria-label="Colin Howells">
 		{@html logo}

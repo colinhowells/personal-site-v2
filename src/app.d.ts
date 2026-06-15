@@ -10,6 +10,7 @@ declare global {
 		interface Platform {
 			caches: CacheStorage & { default: Cache };
 			cf: IncomingRequestCfProperties;
+			// @TODO: `context` becomes `ctx`
 			context: {
 				waitUntil(promise: Promise<any>): void;
 			};
