@@ -6,6 +6,15 @@ export const isError = (err: unknown): boolean =>
 
 export const capitalize = (str: string): string => str.charAt(0).toUpperCase() + str.slice(1) || '';
 
+export const xmlEscape = (str: string): string =>
+	str
+		.replaceAll('&', '&amp;')
+		.replaceAll('<', '&lt;')
+		.replaceAll('>', '&gt;')
+		.replaceAll('"', '&quot;')
+		.replaceAll("'", '&#39;')
+		.replaceAll('…', '&#8230;');
+
 /** Parse a date string to a Temporal.PlainDate, accepting both YYYY-MM-DD and full ISO strings */
 export const getTemporalPlainDate = (date: string): Temporal.PlainDate =>
 	Temporal.PlainDate.from(date.slice(0, 10));

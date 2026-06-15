@@ -1,4 +1,4 @@
-import { dev } from '$app/environment';
+import { dev } from '$app/environment'; // @TODO now `$app/env`
 import { ENVIRONMENT } from '$env/static/private';
 import type { Handle } from '@sveltejs/kit';
 
