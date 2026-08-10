@@ -112,6 +112,17 @@
 }
 
 :root {
+	/* https://css-tricks.com/we-completely-missed-width-height-stretch/ */
+	@supports (width: -moz-available) {
+	    --stretch: -moz-available;
+	}
+	@supports (width: -webkit-fill-available) {
+		--stretch: -webkit-fill-available;
+	}
+	@supports (width: stretch) {
+		--stretch: stretch;
+	}
+
 	overscroll-behavior: none;
 	--gap: clamp(1.5rem, 3.5dvw, 3rem);
 	--padding: 0.5rem;
@@ -315,6 +326,7 @@ article {
 	& > * {
 		grid-column: content;
 		margin: 0 auto calc(var(--padding) * 2) auto;
+		width: var(--stretch);
 	}
 	h1.title {
 		view-transition-name: var(--transition-name);
