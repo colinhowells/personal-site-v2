@@ -1,7 +1,7 @@
 # https://developers.cloudflare.com/pages/configuration/build-image/#tools
 
 [tools]
-node = "22.16.0"
+node = "24.18.0"
 pnpm = "10.11.1"
 
 [settings]
