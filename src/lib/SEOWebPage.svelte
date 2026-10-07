@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import { PUBLIC_SITE_URL } from '$env/static/public';
+	import { PUBLIC_SITE_URL } from '$app/env/public';
 	import {
 		capitalize,
 		getDateString,
 		getHash,
 		getSchemaNodeId,
 		serializeSchema,
-	} from '$lib/helpers';
+	} from '#lib/helpers.js';
 
 	const isArticle = '/[slug]' === page.route.id;
 	const isIndex = '/' === page.route.id;
@@ -86,6 +86,7 @@
 	<meta property="og:url" content={webPageNodeId} />
 	{#if isArticle}
 		<meta property="article:author" content={PUBLIC_SITE_URL} />
+
 		<meta
 			property="article:published_time"
 			content={metadata.datePublished ?? defaultDatePublished}

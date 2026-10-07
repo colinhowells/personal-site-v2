@@ -1,19 +1,18 @@
 <script>
 	import { updated } from '$app/state';
 
-	import bluesky from '$lib/images/icon-bluesky.svg?raw';
-	import email from '$lib/images/icon-email.svg?raw';
-	import github from '$lib/images/icon-github.svg?raw';
-	import linkedin from '$lib/images/icon-linkedin.svg?raw';
-	import mastodon from '$lib/images/icon-mastodon.svg?raw';
-	import rss from '$lib/images/icon-rss.svg?raw';
-	import logo from '$lib/images/logo.svg?raw';
+	import bluesky from '#lib/images/icon-bluesky.svg?raw';
+	import email from '#lib/images/icon-email.svg?raw';
+	import github from '#lib/images/icon-github.svg?raw';
+	import linkedin from '#lib/images/icon-linkedin.svg?raw';
+	import mastodon from '#lib/images/icon-mastodon.svg?raw';
+	import rss from '#lib/images/icon-rss.svg?raw';
+	import logo from '#lib/images/logo.svg?raw';
 
-	import Nav from '$lib/Nav.svelte';
+	import Nav from '#lib/Nav.svelte';
 </script>
 
-<!-- @TODO `'off'` becomes `false`. '' can become undefined -->
-<header data-sveltekit-reload={updated.current ? '' : 'off'}>
+<header data-sveltekit-reload={updated.current}>
 	<a id="logo" href="/" aria-label="Colin Howells">
 		{@html logo}
 	</a>

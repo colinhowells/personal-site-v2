@@ -1,6 +1,6 @@
-import { dev } from '$app/environment'; // @TODO now `$app/env`
-import { ENVIRONMENT } from '$env/static/private';
-import type { Handle } from '@sveltejs/kit';
+import { dev } from '$app/env';
+import { ENVIRONMENT } from '$app/env/private';
+import type { Handle } from '@sveltejs/kit/hooks';
 
 export const handle: Handle = async ({ event, resolve }) => {
 	// https://svelte.dev/docs/cli/devtools-json

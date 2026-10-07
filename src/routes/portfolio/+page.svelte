@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { getArticlesList } from '$lib/api/articles.remote';
-	import { getSlug } from '$lib/helpers';
-	import SEOWebPage from '$lib/SEOWebPage.svelte';
+	import { getArticlesList } from '#lib/api/articles.remote.js';
+	import { getSlug } from '#lib/helpers.js';
+	import SEOWebPage from '#lib/SEOWebPage.svelte';
 
 	const articlesList = await getArticlesList();
 	const workArticles = articlesList.filter((metadata) => 'work' === metadata.type);

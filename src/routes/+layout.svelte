@@ -1,15 +1,16 @@
 <script lang="ts">
+	import '../app.css';
+	import Footer from '#lib/Footer.svelte';
+	import Header from '#lib/Header.svelte';
+	import SEO from '#lib/SEO.svelte';
 	import { onNavigate } from '$app/navigation';
-	import '$css';
-	import Footer from '$lib/Footer.svelte';
-	import Header from '$lib/Header.svelte';
-	import SEO from '$lib/SEO.svelte';
 	import type { LayoutProps } from './$types';
-	import Error from './+error.svelte';
+	import ErrorPage from './+error.svelte';
 
 	let { children }: LayoutProps = $props();
 
 	onNavigate((navigation) => {
+		if (navigation.shallow && navigation.type === 'goto') return;
 		if (!document.startViewTransition) return;
 
 		return new Promise((resolve) => {
@@ -28,7 +29,7 @@
 	<svelte:boundary>
 		{@render children?.()}
 		{#snippet failed(error)}
-			<Error {error} />
+			<ErrorPage error={error as App.Error} />
 		{/snippet}
 	</svelte:boundary>
 </main>

@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { PUBLIC_SITE_URL } from '$env/static/public';
-	import { getSchemaNodeId, serializeSchema } from '$lib/helpers';
+	import { PUBLIC_SITE_URL } from '$app/env/public';
+	import { getSchemaNodeId, serializeSchema } from '#lib/helpers.js';
 
 	// const avatarUrl = `${PUBLIC_SITE_URL}/images/colin-2023.jpg`;
 	const avatarUrl = 'https://github.com/colinhowells.png';

@@ -1,6 +1,6 @@
-import { PUBLIC_SITE_URL } from '$env/static/public';
-import { getArticlesList } from '$lib/api/articles.remote';
-import { getDateString, xmlEscape } from '$lib/helpers';
+import { getArticlesList } from '#lib/api/articles.remote.js';
+import { getDateString, xmlEscape } from '#lib/helpers.js';
+import { PUBLIC_SITE_URL } from '$app/env/public';
 import type { RequestHandler } from './$types';
 
 export const GET: RequestHandler = async () => {

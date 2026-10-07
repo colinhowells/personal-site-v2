@@ -8,18 +8,18 @@ published: true
 ---
 
 <script>
-import Figure from '$lib/Figure.svelte';
+import Figure from '#lib/Figure.svelte';
 
-import reservoir from '$lib/images/mount-tabor-reservoir.jpeg';
-import cloudy from '$lib/images/cloudy-gorge.jpeg';
-import multnomah from '$lib/images/multnomah-falls.jpeg';
-import latourell from '$lib/images/latourell-falls.jpeg';
-import windsurfers from '$lib/images/hood-river-windsurfers.jpeg';
-import hood from '$lib/images/mount-hood.jpeg';
-import timberlinePillar from '$lib/images/timberline-pillar.jpeg';
-import timberlineInterior from '$lib/images/timberline-interior.jpeg';
-import japaneseGarden1 from '$lib/images/portland-japanese-garden-01.jpeg';
-import japaneseGarden2 from '$lib/images/portland-japanese-garden-02.jpeg';
+import reservoir from '#lib/images/mount-tabor-reservoir.jpeg';
+import cloudy from '#lib/images/cloudy-gorge.jpeg';
+import multnomah from '#lib/images/multnomah-falls.jpeg';
+import latourell from '#lib/images/latourell-falls.jpeg';
+import windsurfers from '#lib/images/hood-river-windsurfers.jpeg';
+import hood from '#lib/images/mount-hood.jpeg';
+import timberlinePillar from '#lib/images/timberline-pillar.jpeg';
+import timberlineInterior from '#lib/images/timberline-interior.jpeg';
+import japaneseGarden1 from '#lib/images/portland-japanese-garden-01.jpeg';
+import japaneseGarden2 from '#lib/images/portland-japanese-garden-02.jpeg';
 </script>
 
 Took a week and headed to Portland to wander around; I'd been a few times, but didn't explore as much as I'd like. There were a few complications – a heat wave, a delayed train, a misplaced bag, a few bad falls on trails – but a great time was had and I'd definitely like to visit more places in Oregon now, including [Crater Lake](https://www.nps.gov/crla/index.htm).
