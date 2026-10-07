@@ -4,12 +4,6 @@ This file provides guidance to AI agents when working with code in this reposito
 
 @~/.claude/rules/svelte.md
 
-## Project Overview
+See [README.md](README.md) for the stack, commands, conventions, and gotchas.
 
-- SvelteKit 2 with Svelte 5 (runes, remote functions, async compiler)
-- TypeScript
-- Articles are Markdown files with Svelte components, which mdsvex 
-- Valibot for schema validation
-- Vite as the build tool
-- Cloudflare Workers adapter for deployment
-- [v3 of Cloudflare's build system](https://developers.cloudflare.com/pages/configuration/build-image/#tools): Node 22.16.0, pnpm 10.11.1
+@README.md
