@@ -8,17 +8,17 @@ published: true
 ---
 
 <script>
-import Figure from '$lib/Figure.svelte';
+import Figure from '#lib/Figure.svelte';
 
-import victoriaDay from '$lib/images/victoria-harbor-day.jpeg';
-import victoriaDusk from '$lib/images/victoria-harbor-dusk.jpeg';
-import saunaBoat from '$lib/images/sauna-boat.jpeg';
-import parliament from '$lib/images/victoria-bc-parliament.jpeg';
-import statue from '$lib/images/victoria-statue.jpeg';
-import butchart1 from '$lib/images/butchart-gardens-01.jpeg';
-import butchart2 from '$lib/images/butchart-gardens-02.jpeg';
-import butchart3 from '$lib/images/butchart-gardens-03.jpeg';
-import mum from '$lib/images/butchart-gardens-mum.jpeg';
+import victoriaDay from '#lib/images/victoria-harbor-day.jpeg';
+import victoriaDusk from '#lib/images/victoria-harbor-dusk.jpeg';
+import saunaBoat from '#lib/images/sauna-boat.jpeg';
+import parliament from '#lib/images/victoria-bc-parliament.jpeg';
+import statue from '#lib/images/victoria-statue.jpeg';
+import butchart1 from '#lib/images/butchart-gardens-01.jpeg';
+import butchart2 from '#lib/images/butchart-gardens-02.jpeg';
+import butchart3 from '#lib/images/butchart-gardens-03.jpeg';
+import mum from '#lib/images/butchart-gardens-mum.jpeg';
 </script>
 
 Headed to [Victoria](https://www.tourismvictoria.com) with my mum, which she'd never seen … If you go, I'd recommend taking a water taxi – or walking, if you don't mind a long walk – to [Spinnakers, a terrific brewpub](https://www.spinnakers.com).

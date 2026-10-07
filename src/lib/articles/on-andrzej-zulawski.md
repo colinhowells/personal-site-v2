@@ -10,16 +10,16 @@ image: zulawski-public-woman-milan.jpg
 
 <script>
 import { Temporal } from 'temporal-polyfill';
-import Figure from '$lib/Figure.svelte';
+import Figure from '#lib/Figure.svelte';
 
-import blueNote from '$lib/images/zulawski-blue-note.jpg';
-import devil from '$lib/images/zulawski-devil.jpg';
-import fidelity from '$lib/images/zulawski-fidelity.jpg';
-import kinski from '$lib/images/zulawski-important-love-kinski.jpg';
-import important from '$lib/images/zulawski-important-love.jpg';
-import frenzy from '$lib/images/zulawski-public-woman-frenzy.jpg';
-import stress from '$lib/images/zulawski-public-woman.jpg';
-import globe from '$lib/images/zulawski-silver-globe.jpg';
+import blueNote from '#lib/images/zulawski-blue-note.jpg';
+import devil from '#lib/images/zulawski-devil.jpg';
+import fidelity from '#lib/images/zulawski-fidelity.jpg';
+import kinski from '#lib/images/zulawski-important-love-kinski.jpg';
+import important from '#lib/images/zulawski-important-love.jpg';
+import frenzy from '#lib/images/zulawski-public-woman-frenzy.jpg';
+import stress from '#lib/images/zulawski-public-woman.jpg';
+import globe from '#lib/images/zulawski-silver-globe.jpg';
 </script>
 
 The Polish film director Andrzej Żuławski is known by people who like strange movies for one film, 1981’s _Possession._ I’ve been interested in Eastern European films more and more, and decided I needed to spend some time with Żuławski (along with fellow Poles Wojciech Jerzy Has, Agnieszka Holland, Jerzy Kawalerowicz, and Andrzej Wajda) beyond that film.

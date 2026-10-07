@@ -1,4 +1,4 @@
-import { PUBLIC_SITE_URL } from '$env/static/public';
+import { PUBLIC_SITE_URL } from '$app/env/public';
 import { Temporal } from 'temporal-polyfill';
 
 export const isError = (err: unknown): boolean =>
@@ -40,10 +40,14 @@ export const getDateString = (
 	}
 	switch (as) {
 		case 'yyyy-mm-dd':
-			return date.split('T')[0]; // '2026-01-01'
-		case 'iso8601':
-			return getTemporalPlainDate(date).toZonedDateTime('UTC').toInstant().toString(); // '2026-01-01T00:00:00Z'
-		case 'rfc822': {
+			return date.split('T')[0];
+
+		case // '2026-01-01'
+		'iso8601':
+			return getTemporalPlainDate(date).toZonedDateTime('UTC').toInstant().toString();
+
+		case // '2026-01-01T00:00:00Z'
+		'rfc822': {
 			const zdt = getTemporalPlainDate(date).toZonedDateTime('UTC');
 			const DOW = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 			const MON = [
@@ -65,8 +69,9 @@ export const getDateString = (
 			return `${dayName}, ${String(zdt.day).padStart(2, '0')} ${monthName} ${zdt.year} 00:00:00 GMT`;
 		}
 		case 'year':
-			return parseInt(date.split('-')[0]).toString(); // '2026'
+			return parseInt(date.split('-')[0]).toString();
 	}
+	// '2026'
 };
 
 export const getHash = (str: string): string => {
@@ -129,7 +134,7 @@ export const getImages = (): Images => {
 	 * @example
 	 * [ [ '/src/lib/images/filename.jpg', [Object: null prototype] [Module] { default: [Getter] } ], [...], [...] ]
 	 */
-	const imageModules = import.meta.glob('$lib/images/*', { eager: true });
+	const imageModules = import.meta.glob('#lib/images/*', { eager: true });
 
 	for (const [path, module] of Object.entries(imageModules)) {
 		const filename = path.split('/').pop() as string;

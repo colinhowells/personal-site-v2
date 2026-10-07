@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { getDateString } from '$lib/helpers';
-	import SEOWebPage from '$lib/SEOWebPage.svelte';
+	import { getDateString } from '#lib/helpers.js';
+	import SEOWebPage from '#lib/SEOWebPage.svelte';
 	import Content from './content.md';
 
 	const metadata: PageMetadata = {

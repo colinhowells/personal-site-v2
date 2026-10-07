@@ -1,5 +1,5 @@
+import { getImages, getSlug, getTemporalPlainDate } from '#lib/helpers.js';
 import { query } from '$app/server';
-import { getImages, getSlug, getTemporalPlainDate } from '$lib/helpers';
 import { error } from '@sveltejs/kit';
 import { render } from 'svelte/server';
 import { Temporal } from 'temporal-polyfill';
@@ -19,7 +19,7 @@ function isPublishedArticle(
 }
 
 export const getArticlesList = query(async (): Promise<ArticlesList> => {
-	const filePaths = import.meta.glob('$lib/articles/*.md', { eager: true });
+	const filePaths = import.meta.glob('#lib/articles/*.md', { eager: true });
 	const images = getImages();
 
 	return Object.entries(filePaths)
@@ -45,7 +45,7 @@ export const getArticle = query(v.string(), async (slug): Promise<Article> => {
 	let article;
 
 	try {
-		article = await import(`$lib/articles/${slug}.md`);
+		article = await import(`#lib/articles/${slug}.md`);
 		if (!article?.metadata?.published) throw new Error('Unpublished!');
 	} catch {
 		error(404, `Sorry, that isn't here; /${slug} may have been deleted or moved.`);

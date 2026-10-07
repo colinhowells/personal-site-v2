@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { getArticle } from '$lib/api/articles.remote';
-	import SEOWebPage from '$lib/SEOWebPage.svelte';
+	import { getArticle } from '#lib/api/articles.remote.js';
+	import SEOWebPage from '#lib/SEOWebPage.svelte';
 	import 'prism-themes/themes/prism-material-oceanic.css';
 	import type { PageProps } from './$types';
 

@@ -1,5 +1,5 @@
-import { PUBLIC_SITE_URL } from '$env/static/public';
-import { getArticlesList } from '$lib/api/articles.remote';
+import { getArticlesList } from '#lib/api/articles.remote.js';
+import { PUBLIC_SITE_URL } from '$app/env/public';
 import type { RequestHandler } from './$types';
 
 const defaultDateModified = '2026-02-07';
@@ -13,7 +13,7 @@ export const GET: RequestHandler = async () => {
 			    <loc>${PUBLIC_SITE_URL}/${article.slug}</loc>
 			    <lastmod>${article.dateModified}</lastmod>
 			  </url>
-			 `
+			 `,
 		)
 		.join('');
 
@@ -44,8 +44,8 @@ export const GET: RequestHandler = async () => {
 			</urlset>`.trim(),
 		{
 			headers: {
-				'Content-Type': 'application/xml'
-			}
-		}
+				'Content-Type': 'application/xml',
+			},
+		},
 	);
 };
