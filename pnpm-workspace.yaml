@@ -6,3 +6,6 @@ onlyBuiltDependencies:
   - sharp
   - workerd
 trustPolicy: no-downgrade
+# miniflare pins sharp@0.35.4 exactly; GHSA-wq5f-xc86-pv6w is patched in 0.35.5
+overrides:
+  sharp@<0.35.5: 0.35.5
