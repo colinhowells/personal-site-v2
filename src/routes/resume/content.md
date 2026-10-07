@@ -18,7 +18,7 @@ University of Michigan, Ann Arbor: **Bachelor of Fine Arts, Graphic Design**
 
 Created a number of JavaScript-driven trivia games with an audience of tens of thousands using my proposed stack of SvelteKit with Tailwind hosted on Cloudflare Workers, modeling and authoring content in headless CMSes, queried and mutated via GraphQL and REST. In addition to being simpler technically than our typical architecture, it was much cheaper to host and run.
 
-Built the front end for a network-wide paid loyalty program, which involved chronologically-delimited actions per user, multiple incentivized membership tiers, and product purchases redeemable with accumulated points which were displayed for the user in dashboards. Wrote documentation and drafted specifications for system design and APIs.
+Researched auth and payment providers, wrote the API spec and DB schemas, built the front end, and wrote the docs for a network-wide paid loyalty program, which involved chronologically-delimited actions per user, multiple incentivized membership tiers, and product purchases redeemable with accumulated points which were displayed for the user in dashboards.
 
 Developed Shopify themes using Liquid, the Online Store 2.0 theme architecture (sections, blocks, metafields, metaobjects), Storefront and Admin GraphQL APIs, and web components.
 
