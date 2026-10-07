@@ -8,14 +8,14 @@ published: true
 ---
 
 <script>
-import Figure from '$lib/Figure.svelte';
+import Figure from '#lib/Figure.svelte';
 
-import traversable from '$lib/images/rainier-traversable.jpeg';
-import porch from '$lib/images/rainier-hotel-porch.jpeg';
-import myrtle1 from '$lib/images/rainier-waterfall-01.jpeg';
-import myrtle2 from '$lib/images/rainier-waterfall-02.jpeg';
-import silver from '$lib/images/rainier-trail-waterfall.jpeg';
-import surroundings from '$lib/images/rainier-surroundings.jpeg';
+import traversable from '#lib/images/rainier-traversable.jpeg';
+import porch from '#lib/images/rainier-hotel-porch.jpeg';
+import myrtle1 from '#lib/images/rainier-waterfall-01.jpeg';
+import myrtle2 from '#lib/images/rainier-waterfall-02.jpeg';
+import silver from '#lib/images/rainier-trail-waterfall.jpeg';
+import surroundings from '#lib/images/rainier-surroundings.jpeg';
 </script>
 
 Thanks to my friend Lura, fulfilled a Pacific Northwest dream and made it on – not up, on – Mount Rainier!

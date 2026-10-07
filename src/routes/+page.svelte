@@ -1,6 +1,6 @@
 <script lang="ts">
-	import SEOWebPage from '$lib/SEOWebPage.svelte';
-	import { getArticlesList } from '$lib/api/articles.remote';
+	import SEOWebPage from '#lib/SEOWebPage.svelte';
+	import { getArticlesList } from '#lib/api/articles.remote.js';
 
 	const articlesList = await getArticlesList();
 	const playArticles = articlesList.filter((metadata) => 'work' !== metadata.type);
