@@ -5,6 +5,7 @@ datePublished: 2024-09-07
 dateModified: 2024-09-07
 type: diary
 published: true
+image: rainier-traversable.jpeg
 ---
 
 <script>

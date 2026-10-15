@@ -1,4 +1,4 @@
-import { getImages, getSlug, getTemporalPlainDate } from '#lib/helpers.js';
+import { getImgSrc, getSlug, getTemporalPlainDate } from '#lib/helpers.js';
 import { query } from '$app/server';
 import { error } from '@sveltejs/kit';
 import { render } from 'svelte/server';
@@ -20,14 +20,13 @@ function isPublishedArticle(
 
 export const getArticlesList = query(async (): Promise<ArticlesList> => {
 	const filePaths = import.meta.glob('#lib/articles/*.md', { eager: true });
-	const images = getImages();
 
 	return Object.entries(filePaths)
 		.filter(isPublishedArticle)
 		.map(([path, { metadata }]) => ({
 			...metadata,
 			// if article has a featured image (filename as 'image'), find the src for it and attach
-			imgSrc: metadata.image ? images[metadata.image] : undefined,
+			imgSrc: getImgSrc(metadata.image),
 			// YAML parses date literals as JS Date objects; normalize to YYYY-MM-DD
 			datePublished: metadata.datePublished?.slice(0, 10),
 			dateModified: metadata.dateModified?.slice(0, 10),
@@ -54,6 +53,10 @@ export const getArticle = query(v.string(), async (slug): Promise<Article> => {
 	// article.default is a SvelteComponent (eg a function) which a remote function can’t return
 	return {
 		content: render(article.default).body,
-		metadata: { ...article.metadata, slug },
+		metadata: {
+			...article.metadata,
+			imgSrc: getImgSrc(article.metadata.image),
+			slug,
+		},
 	};
 });

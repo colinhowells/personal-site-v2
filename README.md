@@ -9,7 +9,7 @@
 - [Valibot](https://valibot.dev) for schema validation
 - [Vite](https://vite.dev) as the build tool
 - Cloudflare Workers adapter for deployment
-- [v3 of Cloudflare's build system](https://developers.cloudflare.com/pages/configuration/build-image/#tools): Node 24.18.0, pnpm 10.11.1
+- [v3 of Cloudflare's build system](https://developers.cloudflare.com/pages/configuration/build-image/#tools): Node 24.21.0, pnpm 12.11.2
 
 ## Commands
 

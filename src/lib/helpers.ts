@@ -143,3 +143,10 @@ export const getImages = (): Images => {
 
 	return images;
 };
+
+/** Resolves a frontmatter `image` filename to its bundled (hashed, site-relative) asset path */
+export const getImgSrc = (image?: string): string | undefined =>
+	image ? getImages()[image] : undefined;
+
+/** Resolves a site-relative path against `PUBLIC_SITE_URL`, as schema.org and Open Graph require absolute URLs */
+export const getAbsoluteUrl = (path: string): string => new URL(path, PUBLIC_SITE_URL).href;
