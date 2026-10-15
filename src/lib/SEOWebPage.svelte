@@ -1,13 +1,14 @@
 <script lang="ts">
-	import { page } from '$app/state';
-	import { PUBLIC_SITE_URL } from '$app/env/public';
 	import {
 		capitalize,
+		getAbsoluteUrl,
 		getDateString,
 		getHash,
 		getSchemaNodeId,
 		serializeSchema,
 	} from '#lib/helpers.js';
+	import { PUBLIC_SITE_URL } from '$app/env/public';
+	import { page } from '$app/state';
 
 	const isArticle = '/[slug]' === page.route.id;
 	const isIndex = '/' === page.route.id;
@@ -26,6 +27,7 @@
 		let {
 			title,
 			description,
+			imgSrc,
 			slug,
 			datePublished = defaultDatePublished,
 			dateModified = defaultDateModified,
@@ -49,6 +51,7 @@
 					target: [webPageNodeId],
 				},
 			],
+			...(imgSrc && { primaryImageOfPage: getAbsoluteUrl(imgSrc) }),
 		};
 		schemaGraphObjects.push(WebPage);
 
@@ -92,6 +95,9 @@
 			content={metadata.datePublished ?? defaultDatePublished}
 		/>
 		<meta property="article:modified_time" content={metadata.dateModified ?? defaultDateModified} />
+		{#if metadata.imgSrc}
+			<meta property="og:image" content={getAbsoluteUrl(metadata.imgSrc)} />
+		{/if}
 	{/if}
 	{@html serializeSchema(schemaGraphObjects)}
 </svelte:head>

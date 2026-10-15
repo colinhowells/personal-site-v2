@@ -1,11 +1,13 @@
+blockExoticSubdeps: true
 minimumReleaseAge: 10080 # 1 week as min
+trustPolicy: no-downgrade
+trustPolicyExclude:
+  - 'chokidar@4.0.3'
 # allowed to execute "preinstall", "install", and/or "postinstall" scripts
 # Cloudflare likes these particular build scripts accessible
-onlyBuiltDependencies:
-  - esbuild
-  - sharp
-  - workerd
-trustPolicy: no-downgrade
 # miniflare pins sharp@0.35.4 exactly; GHSA-wq5f-xc86-pv6w is patched in 0.35.5
 overrides:
   sharp@<0.35.5: 0.35.5
+allowBuilds:
+  esbuild: true
+  workerd: true

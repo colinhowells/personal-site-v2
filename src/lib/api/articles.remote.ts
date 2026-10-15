@@ -1,33 +1,33 @@
-import { getImages, getSlug, getTemporalPlainDate } from '#lib/helpers.js';
+import { getImgSrc, getSlug, getTemporalPlainDate } from '#lib/helpers.js';
 import { query } from '$app/server';
 import { error } from '@sveltejs/kit';
+import type { Component } from 'svelte';
 import { render } from 'svelte/server';
 import { Temporal } from 'temporal-polyfill';
 import * as v from 'valibot';
 
-/** Narrows a glob import entry to one containing published article metadata */
-function isPublishedArticle(
-	entry: [string, unknown],
-): entry is [string, { metadata: PageMetadata }] {
-	const [, file] = entry;
-	return Boolean(
-		file &&
-		typeof file === 'object' &&
-		'metadata' in file &&
-		(file as { metadata: PageMetadata }).metadata.published,
-	);
-}
+type ArticleModule = { default: Component; metadata: PageMetadata };
+
+/**
+ * Lazy so the same glob serves both the list and single-article lookups. Mixing an eager glob
+ * with a dynamic `import()` of the same files triggers Vite's INEFFECTIVE_DYNAMIC_IMPORT warning.
+ */
+const articleModules = import.meta.glob<ArticleModule>('#lib/articles/*.md');
 
 export const getArticlesList = query(async (): Promise<ArticlesList> => {
-	const filePaths = import.meta.glob('#lib/articles/*.md', { eager: true });
-	const images = getImages();
+	const entries = await Promise.all(
+		Object.entries(articleModules).map(async ([path, load]) => ({
+			path,
+			metadata: (await load()).metadata,
+		})),
+	);
 
-	return Object.entries(filePaths)
-		.filter(isPublishedArticle)
-		.map(([path, { metadata }]) => ({
+	return entries
+		.filter(({ metadata }) => metadata.published)
+		.map(({ path, metadata }) => ({
 			...metadata,
 			// if article has a featured image (filename as 'image'), find the src for it and attach
-			imgSrc: metadata.image ? images[metadata.image] : undefined,
+			imgSrc: getImgSrc(metadata.image),
 			// YAML parses date literals as JS Date objects; normalize to YYYY-MM-DD
 			datePublished: metadata.datePublished?.slice(0, 10),
 			dateModified: metadata.dateModified?.slice(0, 10),
@@ -42,18 +42,19 @@ export const getArticlesList = query(async (): Promise<ArticlesList> => {
 });
 
 export const getArticle = query(v.string(), async (slug): Promise<Article> => {
-	let article;
+	const article = await articleModules[`/src/lib/articles/${slug}.md`]?.();
 
-	try {
-		article = await import(`#lib/articles/${slug}.md`);
-		if (!article?.metadata?.published) throw new Error('Unpublished!');
-	} catch {
+	if (!article?.metadata.published) {
 		error(404, `Sorry, that isn't here; /${slug} may have been deleted or moved.`);
 	}
 
 	// article.default is a SvelteComponent (eg a function) which a remote function can’t return
 	return {
 		content: render(article.default).body,
-		metadata: { ...article.metadata, slug },
+		metadata: {
+			...article.metadata,
+			imgSrc: getImgSrc(article.metadata.image),
+			slug,
+		},
 	};
 });
