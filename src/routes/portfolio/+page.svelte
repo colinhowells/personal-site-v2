@@ -4,11 +4,14 @@
 	import SEOWebPage from '#lib/SEOWebPage.svelte';
 
 	const articlesList = await getArticlesList();
-	const workArticles = articlesList.filter((metadata) => 'work' === metadata.type);
+	const workArticles = articlesList
+		.filter((metadata) => 'work' === metadata.type)
+		// stable sort, so ties keep the list's newest-published-first order
+		.sort((a, b) => (b.order ?? -Infinity) - (a.order ?? -Infinity));
 
 	const metadata: PageMetadata = {
 		title: 'Portfolio',
-		description: 'Website work by Colin Howells',
+		description: 'Website and print work by Colin Howells',
 	};
 </script>
 
@@ -83,7 +86,7 @@
 		text-align: left;
 	}
 	img {
-		opacity: 0.8;
+		opacity: 0.9;
 		view-transition-name: var(--transition-name);
 		transition: opacity var(--transition-time);
 		border: 1px solid var(--color-cool-200);

@@ -215,11 +215,15 @@ html {
 }
 
 body {
+	--content-width: min(50ch, 100% - var(--gap) * 2);
+	/* so descendants can use container queries against the page width */
+	container: page / inline-size;
 	display: grid;
 	grid-template-rows: [header-start] min-content [header-end content-start] 1fr [content-end footer-start] min-content [footer-end];
+	/* content is split at content-mid so half-width figures can span gutter + half of content */
 	grid-template-columns:
-		[fullwidth-start] 1fr [content-start] min(50ch, 100% - var(--gap) * 2)
-		[content-end] 1fr [fullwidth-end];
+		[fullwidth-start] 1fr [content-start] calc(var(--content-width) / 2)
+		[content-mid] calc(var(--content-width) / 2) [content-end] 1fr [fullwidth-end];
 	margin: 0;
 	background-color: var(--color-warm-300);
 	padding: 0;
@@ -237,13 +241,15 @@ main {
 	background: linear-gradient(180deg, var(--color-cool-50) 0%, var(--color-cool-100) 100%);
 	& > * {
 		display: grid;
-		grid-template-columns: subgrid;
+		/* a single track, so children fill the content column rather than landing in the first half of it */
+		grid-template-columns: minmax(0, 1fr);
 		grid-column: content;
 		align-content: flex-start;
 		padding: var(--gap) 0;
 		text-align: left;
 	}
 	& > article {
+		grid-template-columns: subgrid;
 		grid-column: fullwidth;
 	}
 	& > nav ul {
@@ -407,6 +413,33 @@ article {
 		grid-column: fullwidth;
 		max-width: max-content;
 		text-align: center;
+		/* kept within the content column, whatever the viewport */
+		&.contained,
+		&.half {
+			grid-column: content;
+		}
+		/*
+		 * On wide pages, consecutive half figures sit in pairs: one per half of the content column.
+		 * With no wrapper to pair them, the column alternates by position in the run of siblings
+		 * (more combinators = higher specificity, so the longest match wins). Handles runs up to 8.
+		 * Each side of the pair gets --padding on its inner edge, matching the 2x --padding below figures.
+		 */
+		@container page (min-width: 48rem) {
+			&.half,
+			&.half + &.half + &.half,
+			&.half + &.half + &.half + &.half + &.half,
+			&.half + &.half + &.half + &.half + &.half + &.half + &.half {
+				grid-column: content-start / content-mid;
+				margin-inline: 0 var(--padding);
+			}
+			&.half + &.half,
+			&.half + &.half + &.half + &.half,
+			&.half + &.half + &.half + &.half + &.half + &.half,
+			&.half + &.half + &.half + &.half + &.half + &.half + &.half + &.half {
+				grid-column: content-mid / content-end;
+				margin-inline: var(--padding) 0;
+			}
+		}
 	}
 	figcaption {
 		color: var(--color-cool-500);

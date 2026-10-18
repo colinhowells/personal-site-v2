@@ -20,11 +20,11 @@
 	nav {
 		display: grid;
 		grid-template-columns: subgrid;
-		grid-column: 1 / 4;
+		grid-column: fullwidth;
 	}
 	ul {
 		display: flex;
-		grid-column: 2;
+		grid-column: content;
 		flex-flow: row wrap;
 		justify-content: space-between;
 		gap: var(--padding);

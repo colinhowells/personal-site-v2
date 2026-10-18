@@ -22,7 +22,7 @@
 		font-family: var(--font-sans);
 	}
 	p {
-		grid-column: 2;
+		grid-column: content;
 		margin: 0;
 		color: var(--color-cool-100);
 		font-weight: 500;
