@@ -17,7 +17,7 @@
 		{@html logo}
 	</a>
 	<div id="tagline-icons">
-		<p id="tagline">Web developer living in Seattle</p>
+		<p id="tagline">Seattle designer/developer</p>
 		<nav id="icons">
 			<a
 				rel="me"
@@ -61,7 +61,7 @@
 		padding: var(--gap) 0 0 0;
 	}
 	#logo :global {
-		grid-column: 2;
+		grid-column: content;
 		margin: 0 0 1vmin 0;
 		color: var(--color-cool-50);
 		svg {
@@ -77,7 +77,7 @@
 	}
 	#tagline-icons {
 		display: flex;
-		grid-column: 2;
+		grid-column: content;
 		flex-flow: column wrap;
 		align-items: center;
 		margin: 0 0 var(--gap) 0;

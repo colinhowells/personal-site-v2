@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { getSlug } from '#lib/helpers.js';
 
-	let { src, alt = '', caption, width, height }: FigureProps = $props();
+	let { src, alt = '', caption, width, height, size }: FigureProps = $props();
 </script>
 
-<figure>
+<figure class={size}>
 	<img
 		{src}
 		{alt}

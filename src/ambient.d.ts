@@ -17,6 +17,8 @@ type FigureProps = {
 	alt?: string;
 	caption?: string;
 	height?: string;
+	/** Both stay within the content column. `half`: on wide viewports, consecutive half figures sit in side-by-side pairs, each half the content width. `contained`: just kept to the content column. */
+	size?: 'half' | 'contained';
 	src: string;
 	width?: string;
 };
@@ -31,6 +33,8 @@ type PageMetadata = {
 	description: string;
 	image?: string;
 	imgSrc?: string;
+	/** Manual sort for `work` pages on the portfolio: higher numbers appear first. Unset sorts last. */
+	order?: number;
 	published?: boolean;
 	slug?: string;
 	title: string;
