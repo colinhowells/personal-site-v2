@@ -9,7 +9,7 @@
 - [Valibot](https://valibot.dev) for schema validation
 - [Vite](https://vite.dev) as the build tool
 - Cloudflare Workers adapter for deployment
-- [v3 of Cloudflare's build system](https://developers.cloudflare.com/pages/configuration/build-image/#tools): Node 24.21.0, pnpm 12.11.2
+- Rather than using the defaults of [Cloudflare's build system](https://developers.cloudflare.com/workers/ci-cd/builds/build-image/) we pin Node 24.22.1 (LTS as of Oct 2026) and pnpm 12.11.2 in `mise.toml`, which Cloudflare's build detects. `.node-version` repeats the Node pin and `packageManager` in `package.json` repeats the pnpm pin. Bump them by hand for Node security releases
 
 ## Commands
 

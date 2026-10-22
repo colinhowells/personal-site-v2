@@ -1,6 +1,7 @@
 blockExoticSubdeps: true
 minimumReleaseAge: 10080 # 1 week as min
 trustPolicy: no-downgrade
+# https://github.com/sveltejs/language-tools/issues/2894
 trustPolicyExclude:
   - 'chokidar@4.0.3'
 # allowed to execute "preinstall", "install", and/or "postinstall" scripts

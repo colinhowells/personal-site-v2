@@ -1,7 +1,8 @@
-# https://developers.cloudflare.com/pages/configuration/build-image/#tools
+# Cloudflare's build reads this file (its log says "Detected the following tools
+# from environment"), as does local dev. Keep node in sync with .node-version
 
 [tools]
-node = "24.21.0"
+node = "24.22.1"
 pnpm = "12.11.2"
 
 [settings]
