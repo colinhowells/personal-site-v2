@@ -1,5 +1,6 @@
-# Cloudflare's build reads this file (its log says "Detected the following tools
-# from environment"), as does local dev. Keep node in sync with .node-version
+# Local dev only: Cloudflare's build ignores this file.
+# Node for CI is set in .node-version, pnpm in package.json's packageManager.
+# Keep node here in sync with .node-version
 
 [tools]
 node = "24.22.1"
