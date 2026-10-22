@@ -1,10 +1,5 @@
 # Local dev only: Cloudflare's build ignores this file.
 # Node for CI is set in .node-version, pnpm in package.json's packageManager.
-# Keep node here in sync with .node-version
-
-[tools]
-node = "24.22.1"
-pnpm = "12.11.2"
 
 [settings]
-npm.package_manager = "pnpm"
+idiomatic_version_file_enable_tools = ["node", "pnpm"]

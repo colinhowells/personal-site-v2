@@ -9,7 +9,7 @@
 - [Valibot](https://valibot.dev) for schema validation
 - [Vite](https://vite.dev) as the build tool
 - Cloudflare Workers adapter for deployment
-- Rather than using the defaults of [Cloudflare's build system](https://developers.cloudflare.com/workers/ci-cd/builds/build-image/) we pin Node 24.22.1 (LTS as of Oct 2026) in `.node-version` and pnpm 12.11.2 via `packageManager` in `package.json`. `mise.toml` mirrors both for local dev only; Cloudflare ignores it. Bump them by hand for Node security releases
+- Rather than using the defaults of [Cloudflare's build system](https://developers.cloudflare.com/workers/ci-cd/builds/build-image/) we pin Node 24.22.1 (LTS as of Oct 2026) in `.node-version` and pnpm 12.11.2 via `packageManager` in `package.json`. `mise.toml` makes local mise read those same two files; Cloudflare ignores it. Bump them by hand for Node security releases
 
 ## Commands
 
